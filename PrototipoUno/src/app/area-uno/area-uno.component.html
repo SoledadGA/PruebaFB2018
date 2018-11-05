@@ -1,0 +1,75 @@
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row prueba">
+  <div class="col-4"></div>
+  <div ><h1>{{titulo}}</h1></div>
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+
+<div class="row ">
+  <div class="col-5"></div>
+  <div  *ngIf="isLoggedIn" ><img src={{imagen[valor]}} width="200" height="200"></div>
+
+
+</div>
+
+<div class="row"><p></p></div>
+<div class="row">
+  <div class="col-4"></div>
+  <div  *ngIf="isLoggedIn"><h2>Pregunta {{valor+1}}. {{preguntas[valor]}}</h2></div>
+
+  <div class="col-3" *ngIf="!isLoggedIn">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let question of preguntas">
+        {{ question }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-1" *ngIf="!isLoggedIn"></div>
+  <div class="col-3" *ngIf="!isLoggedIn">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let answer of respuesta">
+        {{ answer }}
+      </li>
+    </ul>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-4"></div>
+  <div *ngIf="isLoggedIn"><audio src="{{audio[valor]}}" controls autoplay >
+    <p>Tu navegador no implementa el elemento audio</p>
+  </audio></div>
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-1"  *ngIf="isLoggedIn" ><button (click)="siguiente(8)" >Positivo</button></div>
+  <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
+
+
+  <div class="col-1"></div>
+  <div class="col-3" *ngIf="isLoggedIn"><button (click)="siguiente(0)">Negativo</button></div>
+
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row">
+  <div class="col-10"></div>
+  <div class="col-1"  *ngIf="!isLoggedIn" ><button [routerLink]="['/testImagen']" >Siguiente</button></div>
+</div>
