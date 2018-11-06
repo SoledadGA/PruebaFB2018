@@ -1,75 +1,204 @@
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row prueba">
-  <div class="col-4"></div>
-  <div ><h1>{{titulo}}</h1></div>
-</div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-
-<div class="row ">
-  <div class="col-5"></div>
-  <div  *ngIf="isLoggedIn" ><img src={{imagen[valor]}} width="200" height="200"></div>
-
-
-</div>
-
-<div class="row"><p></p></div>
 <div class="row">
-  <div class="col-4"></div>
-  <div  *ngIf="isLoggedIn"><h2>Pregunta {{valor+1}}. {{preguntas[valor]}}</h2></div>
-
-  <div class="col-3" *ngIf="!isLoggedIn">
-    <h3>Preguntas</h3>
-    <ul>
-      <li *ngFor="let question of preguntas">
-        {{ question }}
-      </li>
-    </ul>
+  <div class="col-sm-12">
+    <img src="imagenes/cabecera2.png" style="height: auto;width: 100%" >
   </div>
-  <div class="col-sm-1" *ngIf="!isLoggedIn"></div>
-  <div class="col-3" *ngIf="!isLoggedIn">
-    <h3>Respuestas</h3>
+</div>
+<div class="row"  *ngIf="mostrarEjemplo">
+  <div class="col-1"></div>
+  <div class="col-10 sa-borde">
+    <p>{{queDignostica[numeroEjemplo]}}</p>
+  </div>
+  <div class="col-1"></div>
+</div>
+<div class="row"  *ngIf="mostrarEjemplo"></div>
+<div class="row"  *ngIf="mostrarEjemplo">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <h2>{{nombreEjemplo[numeroEjemplo]}}</h2>
+  </div>
+  <div class="col-1"></div>
+</div>
+<div class="row"  *ngIf="mostrarEjemplo">
+  <div class="col-1"></div>
+  <div class="col-10 sa-borde">
+    <p>{{instruccion[numeroEjemplo]}}</p>
+  </div>
+  <div class="col-1"></div>
+</div>
+<div class="row"  *ngIf="mostrarEjemplo"><p></p></div>
+<div class="row"  *ngIf="mostrarEjemplo"><p></p></div>
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="col-1"></div>
+  <div class="col-3" >
+    <div class="row"><audio src="{{audioInstrucciones[numeroEjemplo]}}" controls autoplay >
+      <p>Tu navegador no implementa el elemento audio</p>
+    </audio></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p>{{textoInstruccion[numeroEjemplo]}}</p></div>
+  </div>
+  <div class="col-5"><img src="{{imagenesEjemplo[numeroEjemplo]}}" height="100%" width="100%"></div>
+  <div class="col-2">
+
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="iniciarPregutnas()">Siguiente</button>
+  </div>
+</div>
+
+
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo">
+  <div class="col-4"></div>
+  <div  *ngIf="propioCuerpo"><h2>Pregunta {{valor+1}}. {{preguntasP[valor]}}</h2></div>
+
+
+
+</div>
+<div class="row"*ngIf="propioCuerpo">
+  <div class="col-4"></div>
+  <div *ngIf="propioCuerpo"><audio src="{{audio[valor]}}" controls autoplay >
+    <p>Tu navegador no implementa el elemento audio</p>
+  </audio></div>
+</div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+
+<div class="row"*ngIf="propioCuerpo">
+  <div class="col-4"></div>
+  <div class="col-1"  *ngIf="propioCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente(8)" >Positivo</button></div>
+  <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
+
+
+  <div class="col-1"></div>
+  <div class="col-3" *ngIf="propioCuerpo"><button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguiente(0)">Negativo</button></div>
+
+</div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo"><p></p></div>
+<div class="row"*ngIf="propioCuerpo">
+  <div class="col-10"></div>
+
+</div>
+
+
+
+<div class="row" *ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo">
+  <div class="col-4"></div>
+  <div  *ngIf="espejo"><h2>Pregunta {{valor+1}}. {{preguntasE[valor]}}</h2></div>
+
+
+
+</div>
+<div class="row"*ngIf="espejo">
+  <div class="col-4"></div>
+  <div *ngIf="espejo"><audio src="{{audioE[valor]}}" controls autoplay >
+    <p>Tu navegador no implementa el elemento audio</p>
+  </audio></div>
+</div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+
+<div class="row"*ngIf="espejo">
+  <div class="col-4"></div>
+  <div class="col-1"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente1(8)" >Positivo</button></div>
+  <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
+
+
+  <div class="col-1"></div>
+  <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente1(0)">Negativo</button></div>
+
+</div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo"><p></p></div>
+<div class="row"*ngIf="espejo">
+  <div class="col-10"></div>
+
+</div>
+
+<div class="row"*ngIf="otroCuerpo"><p></p></div>
+<div class="row"*ngIf="otroCuerpo">
+  <div class="col-4"></div>
+  <div  *ngIf="otroCuerpo"><h2>Pregunta {{valor+1}}. {{preguntasO[valor]}}</h2></div>
+
+
+
+</div>
+<div class="row" *ngIf="otroCuerpo">
+  <div class="col-4"></div>
+  <div *ngIf="otroCuerpo"><audio src="{{audioO[valor]}}" controls autoplay >
+    <p>Tu navegador no implementa el elemento audio</p>
+  </audio></div>
+</div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+
+<div class="row" *ngIf="otroCuerpo">
+  <div class="col-4"></div>
+  <div class="col-1"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente2(8)" >Positivo</button></div>
+  <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
+
+
+  <div class="col-1"></div>
+  <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente2(0)">Negativo</button></div>
+
+</div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo"><p></p></div>
+<div class="row" *ngIf="otroCuerpo">
+  <div class="col-10"></div>
+
+</div>
+
+<div class="row" *ngIf="grafica">
+  <div class="col-1"></div>
+  <div class="col-3" >
+    <h3>Respuestas Propio Cuerpo</h3>
     <ul>
       <li *ngFor="let answer of respuesta">
         {{ answer }}
       </li>
     </ul>
   </div>
-
-</div>
-<div class="row">
-  <div class="col-4"></div>
-  <div *ngIf="isLoggedIn"><audio src="{{audio[valor]}}" controls autoplay >
-    <p>Tu navegador no implementa el elemento audio</p>
-  </audio></div>
-</div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-
-<div class="row">
-  <div class="col-4"></div>
-  <div class="col-1"  *ngIf="isLoggedIn" ><button (click)="siguiente(8)" >Positivo</button></div>
-  <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
-
-
-  <div class="col-1"></div>
-  <div class="col-3" *ngIf="isLoggedIn"><button (click)="siguiente(0)">Negativo</button></div>
-
-</div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row">
-  <div class="col-10"></div>
-  <div class="col-1"  *ngIf="!isLoggedIn" ><button [routerLink]="['/testImagen']" >Siguiente</button></div>
+  <div class="col-3" >
+    <h3>Respuestas en el Espejo</h3>
+    <ul>
+      <li *ngFor="let answer of respuestaE">
+        {{ answer }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3" >
+    <h3>Respuestas Otro Cuerpo</h3>
+    <ul>
+      <li *ngFor="let answer of respuestaO">
+        {{ answer }}
+      </li>
+    </ul>
+  </div>
 </div>
