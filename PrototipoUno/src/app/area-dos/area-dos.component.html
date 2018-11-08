@@ -51,7 +51,7 @@
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    
+
     <button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="iniciarPreguntas()">Siguiente</button>
   </div>
 </div>
@@ -73,7 +73,7 @@
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <div class="row">
-      <audio src="{{audioInstrucciones}}" controls autoplay >
+      <audio src="{{audio[valor]}}" controls autoplay >
         <p>Tu navegador no implementa el elemento audio</p>
       </audio>
     </div>
@@ -114,5 +114,11 @@
         {{ resp }}
       </li>
     </ul>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button style="background: cornflowerblue ; width: 200px ; height: 50px " [routerLink]="['/areaTresEspacial']">Siguiente</button>
   </div>
 </div>

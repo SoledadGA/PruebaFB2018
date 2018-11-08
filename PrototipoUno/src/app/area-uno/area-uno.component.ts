@@ -11,9 +11,9 @@ export class AreaUnoComponent implements OnInit {
   mostrarEjemplo=true;
 
   imagenesEjemplo=['imagenes/propioCuerpo.gif','imagenes/espejo.png','imagenes/compa.jpeg'];
-  audioInstrucciones=['audio/instruccion1.mp3',
-    'audio/instruccion2.mp3',
-    'audio/instruccion3.mp3'];
+  audioInstrucciones=['audio/area1/instruccion1.mp3',
+    'audio/area1/instruccion2.mp3',
+    'audio/area1/instruccion3.mp3'];
   textoInstruccion=['"Mira a los niños hacer lo que hacen, ahora tu harás lo mismo"',
     '"Ahora señalaremos en el espejo"',
     '"Ahora haremos lo mismo con otra persona"'];
@@ -39,9 +39,9 @@ export class AreaUnoComponent implements OnInit {
   preguntasE=['Señala tu cabeza','Señala tus manos', 'Señala tus piernas', 'Señala tus ojos'];
   preguntasO=['Señala los brazos de la otra persona','Señala las piernas de la otra persona', 'Señala la espalda de la otra persona', 'Señala el pecho de la otra persona'];
 
-  audio=['audio/Sboca.mp3','audio/Snariz.mp3','audio/Sojos.mp3','audio/Sdedo.mp3'];
-  audioE=['audio/Scabeza.mp3','audio/Smanos.mp3','audio/Spiernas.mp3','audio/Sojos.mp3'];
-  audioO=['audio/SbrazosO.mp3','audio/SpiernasO.mp3','audio/SespaldaO.mp3','audio/SpechoO.mp3'];
+  audio=['audio/area1/Sboca.mp3','audio/area1/Snariz.mp3','audio/area1/Sojos.mp3','audio/area1/Sdedo.mp3'];
+  audioE=['audio/area1/Scabeza.mp3','audio/area1/Smanos.mp3','audio/area1/Spiernas.mp3','audio/area1/Sojos.mp3'];
+  audioO=['audio/area1/SbrazosO.mp3','audio/area1/SpiernasO.mp3','audio/area1/SespaldaO.mp3','audio/area1/SpechoO.mp3'];
 
 
   iniciarPregutnas(){

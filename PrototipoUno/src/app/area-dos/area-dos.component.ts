@@ -14,12 +14,12 @@ export class AreaDosComponent implements OnInit {
     'El estudiante deberá realizar las actividades según las instrucciones que se da en cada literal.';
   textoInstruccion = '"Mira a la niña contestar el teléfono, ahora mira los objetos que están en la mesa y realiza las ' +
     'siguientes acciones."';
-  audioInstrucciones ='audio/instruccion1.mp3';
+  audioInstrucciones ='audio/area2/instruccion.mp3';
 
   mostrarPreguntas = false;
   parteTitulo=['Ojo','Mano','Oido','Pie'];
   preguntas = ['Mira por el tubo','Coge el lápiz y has un círculo','Coge el reloj y escucha si suena','Coge la pelota y patéala'];
-  audio=['audio/Sboca.mp3','audio/Snariz.mp3','audio/Sojos.mp3','audio/Sdedo.mp3'];
+  audio=['audio/area2/tubo.mp3','audio/area2/lapiz.mp3','audio/area2/relog.mp3','audio/area2/pelota.mp3'];
 
   mostrarRespuestas = false;
   respuesta =['Derecha','Derecha','Derecha','Derecha'];

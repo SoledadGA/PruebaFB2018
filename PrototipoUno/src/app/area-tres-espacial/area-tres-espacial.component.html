@@ -1,0 +1,144 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src="imagenes/CabeceraAreaTres.png" style="height: auto;width: 100%" >
+  </div>
+</div>
+<div class="row"><p></p></div>
+
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-2">
+    <div class="row">
+      <div class="col-2"></div>
+      <div>
+        <div class="row"><h3>{{titulo}}</h3></div>
+        <div class="row"><p></p></div>
+        <div class="row sa-borde" *ngIf="mostrarIndicacon">{{indicacion}}</div>
+        <div class="row"><p></p></div>
+        <div class="row">{{instruccion[valor]}}</div>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row" *ngIf="mostrarSonido"><audio src="{{audio[valor]}}" controls autoplay >
+      <p>Tu navegador no implementa el elemento audio</p>
+    </audio></div>
+
+
+  </div>
+  <div class="col-9" *ngIf="mostrarSilla" >
+    <div class="row">
+      <div class="col-3">
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <div class="col-1"><p></p></div>
+          <div class="col-7"><button style="background: white"><img src="imagenes/pelota.png" style="height: 100px ;width: 100%"
+                                                                    (click)="siguiente(2)"></button> </div>
+        </div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+      </div>
+      <div class="col-4 sa-imagen-fondo">
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <div class="col-2"><p></p></div>
+          <div class="col-8">
+            <div class="col-1"><p></p></div>
+            <div class="col-9">
+              <button style="background: white ; opacity: 100%"><img src="imagenes/pelota.png" style="height: 100px ;width: 100%"
+                                                                     (click)="siguiente(0)"></button> </div>
+          </div>
+
+        </div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <div class="col-2"><p></p></div>
+          <div class="col-8">
+            <div class="col-1"><p></p></div>
+            <div class="col-9">
+              <button style="background: white ; opacity: 100%"><img src="imagenes/pelota.png" style="height: 100px ;width: 100%"
+                                                                     (click)="siguiente(1)"></button> </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <div class="col-1"><p></p></div>
+          <div class="col-7"><button style="background: white"><img src="imagenes/pelota.png" style="height: 100px ;width: 100%"
+                                                                    (click)="siguiente(3)"></button> </div>
+        </div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+        <div class="row"><p></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-4"><p></p></div>
+  <div class="col-3" *ngIf="!mostrarSilla">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let resp of respuesta">
+        {{ resp }}
+      </li>
+    </ul>
+  </div>
+</div>
+

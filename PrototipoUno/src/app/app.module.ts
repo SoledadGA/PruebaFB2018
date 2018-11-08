@@ -8,6 +8,7 @@ import {RUTAS_APP} from "./app.rutas";
 import { InicioComponent } from './inicio/inicio.component';
 import { IngresarDatosComponent } from './ingresar-datos/ingresar-datos.component';
 import { AreaDosComponent } from './area-dos/area-dos.component';
+import { AreaTresEspacialComponent } from './area-tres-espacial/area-tres-espacial.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { AreaDosComponent } from './area-dos/area-dos.component';
     AreaUnoComponent,
     InicioComponent,
     IngresarDatosComponent,
-    AreaDosComponent
+    AreaDosComponent,
+    AreaTresEspacialComponent
   ],
   imports: [
     BrowserModule,
