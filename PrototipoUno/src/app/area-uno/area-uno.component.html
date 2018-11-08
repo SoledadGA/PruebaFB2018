@@ -177,30 +177,38 @@
 
 <div class="row" *ngIf="grafica">
   <div class="col-1"></div>
-  <div class="col-3" >
-    <h3>Respuestas Propio Cuerpo</h3>
-    <ul>
-      <li *ngFor="let answer of respuesta">
-        {{ answer }}
-      </li>
-    </ul>
+  <div class="col-4">
+    <h2>Resultado</h2>
   </div>
-  <div class="col-3" >
-    <h3>Respuestas en el Espejo</h3>
-    <ul>
-      <li *ngFor="let answer of respuestaE">
-        {{ answer }}
-      </li>
-    </ul>
-  </div>
-  <div class="col-3" >
-    <h3>Respuestas Otro Cuerpo</h3>
-    <ul>
-      <li *ngFor="let answer of respuestaO">
-        {{ answer }}
-      </li>
-    </ul>
-  </div>
+
+</div>
+<div class="row"><p></p></div>
+<div class="row" *ngIf="grafica">
+    <div class="col-2"></div>
+    <div class="col-3" >
+      <h3>Propio Cuerpo</h3>
+      <ul>
+        <li *ngFor="let answer of respuesta">
+          {{ answer }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-3" >
+      <h3>En el Espejo</h3>
+      <ul>
+        <li *ngFor="let answer of respuestaE">
+          {{ answer }}
+        </li>
+      </ul>
+    </div>
+    <div class="col-3" >
+      <h3>Otro Cuerpo</h3>
+      <ul>
+        <li *ngFor="let answer of respuestaO">
+          {{ answer }}
+        </li>
+      </ul>
+    </div>
 </div>
 <div class="row" *ngIf="grafica">
   <div class="col-10"><p></p></div>

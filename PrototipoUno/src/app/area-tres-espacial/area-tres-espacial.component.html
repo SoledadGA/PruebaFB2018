@@ -131,7 +131,15 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-4"><p></p></div>
+  <div class="col-3"><p></p></div>
+  <div class="col-4" *ngIf="!mostrarSilla">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let pregunta of instruccion">
+        {{ pregunta }}
+      </li>
+    </ul>
+  </div>
   <div class="col-3" *ngIf="!mostrarSilla">
     <h3>Respuestas</h3>
     <ul>
