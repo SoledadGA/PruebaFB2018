@@ -14,13 +14,13 @@ export class AreaUnoComponent implements OnInit {
   audioInstrucciones=['audio/instruccion1.mp3',
     'audio/instruccion2.mp3',
     'audio/instruccion3.mp3'];
-  textoInstruccion=['"Mira a los niños hacer lo que hance, ahora tu aras lo mismo"',
+  textoInstruccion=['"Mira a los niños hacer lo que hacen, ahora tu harás lo mismo"',
     '"Ahora señalaremos en el espejo"',
-    '"Ahora aremos lo mismo con otra persona"'];
+    '"Ahora haremos lo mismo con otra persona"'];
 
   queDignostica=['Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo',
     'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo frente a un espejo',
-    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en en otra persona'];
+    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en otra persona'];
   nombreEjemplo=['En su propio cuerpo - Ejemplo',
     'En el espejo - Ejemplo',
     'En otra persona - Ejemplo'];
@@ -66,7 +66,6 @@ export class AreaUnoComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         console.log(this.respuesta[this.valor]);
       }
-
       this.valor=0;
       this.mostrarEjemplo=true;
       this.propioCuerpo=false;

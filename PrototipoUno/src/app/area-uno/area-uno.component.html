@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-sm-12">
-    <img src="imagenes/cabecera2.png" style="height: auto;width: 100%" >
+    <img src="imagenes/CabeceraAreaUno.png" style="height: auto;width: 100%" >
   </div>
 </div>
 <div class="row"  *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
-  <div class="col-10 sa-borde">
+  <div class="col-10 sa-contorno">
     <p>{{queDignostica[numeroEjemplo]}}</p>
   </div>
   <div class="col-1"></div>
@@ -20,7 +20,7 @@
 </div>
 <div class="row"  *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
-  <div class="col-10 sa-borde">
+  <div class="col-10 sa-contorno">
     <p>{{instruccion[numeroEjemplo]}}</p>
   </div>
   <div class="col-1"></div>
@@ -80,11 +80,11 @@
 
 <div class="row"*ngIf="propioCuerpo">
   <div class="col-4"></div>
-  <div class="col-1"  *ngIf="propioCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente(8)" >Positivo</button></div>
+  <div class="col-2"  *ngIf="propioCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
 
 
-  <div class="col-1"></div>
+
   <div class="col-3" *ngIf="propioCuerpo"><button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguiente(0)">Negativo</button></div>
 
 </div>
@@ -120,11 +120,11 @@
 
 <div class="row"*ngIf="espejo">
   <div class="col-4"></div>
-  <div class="col-1"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente1(8)" >Positivo</button></div>
+  <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente1(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
 
 
-  <div class="col-1"></div>
+
   <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente1(0)">Negativo</button></div>
 
 </div>
@@ -158,11 +158,11 @@
 
 <div class="row" *ngIf="otroCuerpo">
   <div class="col-4"></div>
-  <div class="col-1"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente2(8)" >Positivo</button></div>
+  <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente2(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
 
 
-  <div class="col-1"></div>
+
   <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente2(0)">Negativo</button></div>
 
 </div>
@@ -200,5 +200,11 @@
         {{ answer }}
       </li>
     </ul>
+  </div>
+</div>
+<div class="row" *ngIf="grafica">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button style="background: cornflowerblue ; width: 200px ; height: 50px " [routerLink]="['/areaDos']">Siguiente</button>
   </div>
 </div>

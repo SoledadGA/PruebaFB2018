@@ -7,13 +7,15 @@ import {RouterModule} from "@angular/router";
 import {RUTAS_APP} from "./app.rutas";
 import { InicioComponent } from './inicio/inicio.component';
 import { IngresarDatosComponent } from './ingresar-datos/ingresar-datos.component';
+import { AreaDosComponent } from './area-dos/area-dos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AreaUnoComponent,
     InicioComponent,
-    IngresarDatosComponent
+    IngresarDatosComponent,
+    AreaDosComponent
   ],
   imports: [
     BrowserModule,
