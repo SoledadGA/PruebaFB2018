@@ -5,6 +5,8 @@ import {IngresarDatosComponent} from "./ingresar-datos/ingresar-datos.component"
 import {AreaDosComponent} from './area-dos/area-dos.component';
 import {AreaTresEspacialComponent} from "./area-tres-espacial/area-tres-espacial.component";
 import {AreaTresTemporalComponent} from "./area-tres-temporal/area-tres-temporal.component";
+import {AreaCuatroComponent} from "./area-cuatro/area-cuatro.component";
+import {AreaCincoComponent} from "./area-cinco/area-cinco.component";
 
 
 
@@ -32,6 +34,14 @@ export const RUTAS_APP: Routes = [
   {
     path: 'areaTresEspacial',
     component: AreaTresEspacialComponent,
+  },
+  {
+    path: 'areaCuatro',
+    component: AreaCuatroComponent,
+  },
+  {
+    path: 'areaCinco',
+    component: AreaCincoComponent,
   },
 
 

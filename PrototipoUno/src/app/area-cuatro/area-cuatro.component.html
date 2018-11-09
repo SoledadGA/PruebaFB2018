@@ -1,0 +1,74 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src="imagenes/CabeceraAreaCuatro.png" style="height: auto;width: 100%" >
+  </div>
+</div>
+<div class="row"><p></p></div>
+
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde"><p>{{criterio[valor]}}</p></div>
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-5">
+    <div class="row">
+      <div class="col-2"><p></p> </div>
+      <div class="col-9"><h5>{{instruccion[valor]}}</h5></div>
+
+    </div>
+    <div class="row">
+      <div class="col-2"><p></p> </div>
+      <div class="col-9">
+        <div class="row"><audio src="{{audio[valor]}}" controls autoplay >
+          <p>Tu navegador no implementa el elemento audio</p>
+        </audio></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-4">
+    <img src="{{imagenes[valor]}}">
+  </div>
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row"*ngIf="mostrarPreguntas">
+  <div class="col-4"></div>
+  <div class="col-2"   ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente(8)" >Positivo</button></div>
+  <div class="col-3"  ><button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguiente(0)">Negativo</button></div>
+
+</div>
+
+<div class="row">
+  <div class="col-4"><p></p></div>
+  <div class="col-3" *ngIf="!mostrarPreguntas">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let preg of instruccion">
+        {{ preg }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3" *ngIf="!mostrarPreguntas">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let resp of respuesta">
+        {{ resp }}
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button style="background: cornflowerblue ; width: 200px ; height: 50px " [routerLink]="['/areaCinco']">Siguiente</button>
+  </div>
+</div>

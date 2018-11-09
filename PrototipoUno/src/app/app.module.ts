@@ -10,6 +10,8 @@ import { IngresarDatosComponent } from './ingresar-datos/ingresar-datos.componen
 import { AreaDosComponent } from './area-dos/area-dos.component';
 import { AreaTresEspacialComponent } from './area-tres-espacial/area-tres-espacial.component';
 import { AreaTresTemporalComponent } from './area-tres-temporal/area-tres-temporal.component';
+import { AreaCuatroComponent } from './area-cuatro/area-cuatro.component';
+import { AreaCincoComponent } from './area-cinco/area-cinco.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AreaTresTemporalComponent } from './area-tres-temporal/area-tres-tempor
     IngresarDatosComponent,
     AreaDosComponent,
     AreaTresEspacialComponent,
-    AreaTresTemporalComponent
+    AreaTresTemporalComponent,
+    AreaCuatroComponent,
+    AreaCincoComponent
   ],
   imports: [
     BrowserModule,
