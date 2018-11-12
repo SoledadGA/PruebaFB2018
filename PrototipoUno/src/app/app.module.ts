@@ -15,6 +15,7 @@ import { AreaCincoComponent } from './area-cinco/area-cinco.component';
 import { AreaSeisComponent } from './area-seis/area-seis.component';
 import { AreaSieteComponent } from './area-siete/area-siete.component';
 import { AreaOchoComponent } from './area-ocho/area-ocho.component';
+import { AreaOnceComponent } from './area-once/area-once.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { AreaOchoComponent } from './area-ocho/area-ocho.component';
     AreaCincoComponent,
     AreaSeisComponent,
     AreaSieteComponent,
-    AreaOchoComponent
+    AreaOchoComponent,
+    AreaOnceComponent
   ],
   imports: [
     BrowserModule,
