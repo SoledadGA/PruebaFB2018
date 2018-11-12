@@ -52,6 +52,8 @@ export class AreaCincoComponent implements OnInit {
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
         console.log(this.respuesta[this.valor]);
+      }else{
+        this.respuesta[this.valor]='Positivo';
       }
       this.mostrarPreguntas=false;
     }else{

@@ -6,26 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-tres-temporal.component.css']
 })
 export class AreaTresTemporalComponent implements OnInit {
-  imagenCabecera = 'imagenes/CabeceraAreaTres.png';
+  imagenCabecera = 'imagenes/area3T/CabeceraAreaTres.png';
   valor = 0;
   errorAudio = 'Tu navegador no implementa el elemento audio';
 
   mostrarEjemplo = true;
-  nombreEjemplo = 'Temporal Ejemplo';
+  nombreEjemplo = 'Orientación Temporal Ejemplo';
   queDiagnostica = 'Mide la orientación temporal';
   textoInstruccion = '¿Los niños van a la escuela de día o de noche?';
   audioInstruccion = 'audio/area3T/ejemplo.mp3';
-  imagenEjemplo = ['imagenes/noche.png', 'imagenes/dia.jpg'];
+  imagenEjemplo = ['imagenes/area3T/noche.png', 'imagenes/area3T/dia.jpg'];
 
   mostrarPreguntas = false;
-  parteTitulo = 'Temporal';
+  parteTitulo = 'Orientación Temporal';
   preguntas = ['¿En este momento es de día o de noche?', '¿Qué haces por las noches?',
     '¿Qué hiciste ayer en la escuela o en tu casa?', '¿Qué hiciste hoy?'];
   audio = ['audio/area3T/diaOnoche.mp3', 'audio/area3T/enLasNoches.mp3', 'audio/area3T/ayer.mp3', 'audio/area3T/hoy.mp3'];
   mostrarImagenes = false;
-  esconderImagenes = false;
-  respuestaPositiva = ['imagenes/dia.jpg', 'imagenes/dormir.png'];
-  respuestaNegativa = ['imagenes/noche.png', 'imagenes/jugar.jpg'];
+  respuestaPositiva = ['imagenes/area3T/dia.jpg', 'imagenes/area3T/dormir.png'];
+  respuestaNegativa = ['imagenes/area3T/noche.png', 'imagenes/area3T/jugar.jpg'];
 
   mostrarRespuestas = false;
   respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo'];
@@ -41,14 +40,10 @@ export class AreaTresTemporalComponent implements OnInit {
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.valor = this.valor + 1;
-      } else {
-        console.log(this.respuesta[this.valor]);
-        this.valor = this.valor + 1;
       }
       this.mostrarImagenes = false;
-      this.esconderImagenes = true;
-    } else if (this.valor + 1 == 4){
+    }
+    if (this.valor + 1 == 4){
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
@@ -56,17 +51,13 @@ export class AreaTresTemporalComponent implements OnInit {
       this.mostrarPreguntas = false;
       this.mostrarRespuestas = true;
       this.mostrarImagenes = false;
-      this.esconderImagenes = false;
     } else {
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.valor = this.valor + 1;
-      } else {
-        console.log(this.respuesta[this.valor]);
-        this.valor = this.valor + 1;
       }
     }
+    this.valor = this.valor + 1;
   }
   constructor() { }
 

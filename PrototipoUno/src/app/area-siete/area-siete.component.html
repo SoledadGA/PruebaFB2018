@@ -5,15 +5,6 @@
 <!--Ejemplo><!-->
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"><p></p></div>
-  <div class="col-10">
-    <h3>{{nombreEjemplo}}</h3>
-  </div>
-  <div class="col-1"><p></p></div>
-</div>
-
-<div class="row"><p></p></div>
-<div class="row" *ngIf="mostrarEjemplo">
-  <div class="col-1"><p></p></div>
   <div class="col-10 sa-borde sa-centrar">
     <p>{{queDiagnostica}}</p>
   </div>
@@ -21,20 +12,16 @@
 </div>
 
 <div class="row" *ngIf="mostrarEjemplo">
-  <div class="col-4"><p></p></div>
-  <div class="col-5">
+  <div class="col-5"><p></p></div>
+  <div class="col-6">
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    <h5>{{textoInstruccion}}</h5>
-    <div class="row"><p></p></div>
-    <div class="row"><p></p></div>
+    <p>{{instruccion}}</p>
+    <p>{{instruccion2}}</p>
     <div class="row">
-      <div class="col-2"><p></p></div>
-      <div class="col-3">
-        <audio src="{{audioInstruccion}}" controls autoplay >
-          <p>{{errorAudio}}</p>
-        </audio>
-      </div>
+      <audio src="{{audioInstruccion}}" controls autoplay >
+        <p>{{errorAudio}}</p>
+      </audio>
     </div>
   </div>
 </div>
@@ -59,25 +46,17 @@
 
 <!--Preguntas><!-->
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-1"></div>
-  <div class="col-10">
-    <h3>{{parteTitulo}}</h3>
-  </div>
-  <div class="col-1"></div>
-</div>
-
-<div class="row" *ngIf="mostrarPreguntas">
   <div class="col-4"></div>
-  <div class="col-4">
+  <div class="col-6">
     <div class="row">
       <h5>{{valor+1}}. {{preguntas[valor]}}</h5>
     </div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <div class="row">
-      <div class="col-2"><p></p></div>
+      <div class="col-1"></div>
       <div class="col-3">
-        <audio src="{{audioInstruccion}}" controls autoplay >
+        <audio src="{{audio[valor]}}" controls autoplay >
           <p>{{errorAudio}}</p>
         </audio>
       </div>
@@ -90,23 +69,14 @@
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
+
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-3"><p></p></div>
-  <div class="col-3" *ngIf="mostrarImagenes">
-    <button class="sa-btnimg" (click)="siguientePregunta(0)">
-      <img src={{respuestaNegativa[valor]}} class="sa-img">
-    </button>
-  </div>
-  <div class="col-3" *ngIf="!mostrarImagenes">
+  <div class="col-3">
     <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
   </div>
   <div class="col-1"><p></p></div>
-  <div class="col-3" *ngIf="mostrarImagenes">
-    <button class="sa-btnimg" (click)="siguientePregunta(1)">
-      <img src={{respuestaPositiva[valor]}} class="sa-img">
-    </button>
-  </div>
-  <div class="col-3" *ngIf="!mostrarImagenes">
+  <div class="col-3">
     <button class="sa-btn" (click)="siguientePregunta(0)">Negativo</button>
   </div>
 </div>
@@ -114,7 +84,7 @@
 <!--Respuestas><!-->
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-1"></div>
-  <div class="col-4">
+  <div class="col-5">
     <h3>Preguntas</h3>
     <ul>
       <li *ngFor="let question of preguntas">
@@ -136,6 +106,6 @@
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" [routerLink]="['/areaTresEspacial']">Siguiente</button>
+    <button class="sa-btn" [routerLink]="['/areaOcho']">Siguiente</button>
   </div>
 </div>

@@ -12,6 +12,9 @@ import { AreaTresEspacialComponent } from './area-tres-espacial/area-tres-espaci
 import { AreaTresTemporalComponent } from './area-tres-temporal/area-tres-temporal.component';
 import { AreaCuatroComponent } from './area-cuatro/area-cuatro.component';
 import { AreaCincoComponent } from './area-cinco/area-cinco.component';
+import { AreaSeisComponent } from './area-seis/area-seis.component';
+import { AreaSieteComponent } from './area-siete/area-siete.component';
+import { AreaOchoComponent } from './area-ocho/area-ocho.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { AreaCincoComponent } from './area-cinco/area-cinco.component';
     AreaTresEspacialComponent,
     AreaTresTemporalComponent,
     AreaCuatroComponent,
-    AreaCincoComponent
+    AreaCincoComponent,
+    AreaSeisComponent,
+    AreaSieteComponent,
+    AreaOchoComponent
   ],
   imports: [
     BrowserModule,

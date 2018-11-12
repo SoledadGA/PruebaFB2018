@@ -7,6 +7,9 @@ import {AreaTresEspacialComponent} from "./area-tres-espacial/area-tres-espacial
 import {AreaTresTemporalComponent} from "./area-tres-temporal/area-tres-temporal.component";
 import {AreaCuatroComponent} from "./area-cuatro/area-cuatro.component";
 import {AreaCincoComponent} from "./area-cinco/area-cinco.component";
+import {AreaSeisComponent} from "./area-seis/area-seis.component";
+import {AreaSieteComponent} from "./area-siete/area-siete.component";
+import {AreaOchoComponent} from "./area-ocho/area-ocho.component";
 
 
 
@@ -43,6 +46,19 @@ export const RUTAS_APP: Routes = [
     path: 'areaCinco',
     component: AreaCincoComponent,
   },
+  {
+    path: 'areaSeis',
+    component: AreaSeisComponent,
+  },
+  {
+    path: 'areaSiete',
+    component: AreaSieteComponent,
+  },
+  {
+    path: 'areaOcho',
+    component: AreaOchoComponent,
+  },
+
 
 
   {
