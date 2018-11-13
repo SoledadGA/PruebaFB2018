@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-cinco.component.css']
 })
 export class AreaCincoComponent implements OnInit {
+  cabecera='imagenes/cabeceras/CabeceraArea5.png';
   mostrarCriterio=true;
   contadorErrores=0;
   valor=0;

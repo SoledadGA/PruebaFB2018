@@ -6,11 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-cuatro.component.css']
 })
 export class AreaCuatroComponent implements OnInit {
+  cabecera='imagenes/cabeceras/CabeceraArea4.png';
   valor=0;
   criterio=['No se admite zig-zag.', 'No se admite zig-zag, ni sobre boteo.'];
   instruccion=['Salta en un solo pie','Botea la pelota con una mano'];
   audio=['audio/area4/salto.mp3','audio/area4/pelota.mp3'];
-  imagenes=['imagenes/saltar.jpg','imagenes/ninoPelota.png'];
+  imagenes=['imagenes/area4/saltar.jpg','imagenes/area4/ninoPelota.png'];
   respuesta=['positivo','positivo'];
   mostrarPreguntas=true;
 

@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-dos.component.css']
 })
 export class AreaDosComponent implements OnInit {
+  cabecera='imagenes/cabeceras/CabeceraArea2.png';
   mostrarEjemplo=true;
   valor=0;
   nombreEjemplo = 'Ejemplo';
-  imagenEjemplo = 'imagenes/EjemploA2.jpg';
+  imagenEjemplo = 'imagenes/area2/EjemploA2.jpg';
   queDignostica = 'Diagnostica la dominancia lateral, con una serie de actividades con el ojo, mano, oído y pie.\n' +
     'El estudiante deberá realizar las actividades según las instrucciones que se da en cada literal.';
   textoInstruccion = '"Mira a la niña contestar el teléfono, ahora mira los objetos que están en la mesa y realiza las ' +

@@ -1,5 +1,7 @@
 <div class="row">
-  <img src={{imagenCabecera}} class="sa-img" >
+  <div class="col-sm-12">
+    <img src="{{imagenCabecera}}" style="height: auto;width: 100%" >
+  </div>
 </div>
 
 <!--Diagnsotico><!-->
@@ -12,6 +14,8 @@
 </div>
 
 <!--Preguntas><!-->
+<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-5"></div>
   <div class="col-6">
@@ -38,11 +42,10 @@
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-3"><p></p></div>
-  <div class="col-3">
+  <div class="col-4"><p></p></div>
+  <div class="col-2">
     <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
   </div>
-  <div class="col-1"><p></p></div>
   <div class="col-3">
     <button class="sa-btn" (click)="siguientePregunta(0)">Negativo</button>
   </div>

@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaUnoComponent implements OnInit {
 
+  cabecera='imagenes/cabeceras/CabeceraArea1.png';
   numeroEjemplo=0;
   mostrarEjemplo=true;
 
-  imagenesEjemplo=['imagenes/propioCuerpo.gif','imagenes/espejo.png','imagenes/compa.jpeg'];
+  imagenesEjemplo=['imagenes/area1/propioCuerpo.gif',
+    'imagenes/area1/espejo.png',
+    'imagenes/area1/compa.jpeg'];
   audioInstrucciones=['audio/area1/instruccion1.mp3',
     'audio/area1/instruccion2.mp3',
     'audio/area1/instruccion3.mp3'];

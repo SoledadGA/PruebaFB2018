@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-ocho.component.css']
 })
 export class AreaOchoComponent implements OnInit {
+  cabecera='imagenes/cabeceras/CabeceraArea8.png';
   mostrarCriterio=true;
   mostrarRespuesta=false;
   contadorErrores=0;
@@ -37,8 +38,8 @@ export class AreaOchoComponent implements OnInit {
     'imagenes/area8/2.png',
     'imagenes/area8/3.png',
     'imagenes/area8/4.png',
-    'imagenes/area8/5.jpg',
-    'imagenes/area8/6.jpg',
+    'imagenes/area8/5.png',
+    'imagenes/area8/6.png',
     'imagenes/area8/7.png',
     'imagenes/area8/8.png',
     'imagenes/area8/9.png',

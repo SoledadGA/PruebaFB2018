@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-tres-espacial.component.css']
 })
 export class AreaTresEspacialComponent implements OnInit {
+  cabecera='imagenes/cabeceras/CabeceraArea3.png'
   valor=0;
   titulo='Orientación Espacial';
   mostrarIndicacon=true;

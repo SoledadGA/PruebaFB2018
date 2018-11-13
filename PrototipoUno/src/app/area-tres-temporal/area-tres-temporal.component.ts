@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-tres-temporal.component.css']
 })
 export class AreaTresTemporalComponent implements OnInit {
-  imagenCabecera = 'imagenes/area3T/CabeceraAreaTres.png';
+  imagenCabecera = 'imagenes/cabeceras/CabeceraArea3.png';
   valor = 0;
   errorAudio = 'Tu navegador no implementa el elemento audio';
 

@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-seis.component.css']
 })
 export class AreaSeisComponent implements OnInit {
-  imagenCabecera = 'imagenes/area6/CabeceraAreaSeis.png';
+  imagenCabecera = 'imagenes/cabeceras/CabeceraArea6.png';
   valor = 0;
   pasarImg = 0;
   errorAudio = 'Tu navegador no implementa el elemento audio';
