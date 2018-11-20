@@ -26,7 +26,9 @@ export class AreaOnceComponent implements OnInit {
     'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3'];
 
   mostrarBoton=false;
-  mostrarRespuestas = false;
+  mostrarAreaPositiva = false;
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
   respuesta = ['Positivo'];
 
   siguientePregunta(entrada: number) {
@@ -47,16 +49,16 @@ export class AreaOnceComponent implements OnInit {
         if(this.valor+1==11){
           if (entrada == 1) {
             this.respuesta[this.valor] = 'Positivo';
+            this.mostrarAreaPositiva=true;
           } else {
             this.respuesta[this.valor] = 'Negativo';
+            this.mostrarAreaPositiva=false;
           }
           this.mostrarPreguntas = false;
-          this.mostrarRespuestas = true;
         }
       } else {
         this.respuesta[this.valor] = 'Negativo';
         this.mostrarPreguntas = false;
-        this.mostrarRespuestas = true;
       }
     } else {
       if (entrada == 0) {
@@ -77,15 +79,15 @@ export class AreaOnceComponent implements OnInit {
     }
 
     if(this.errores==2){
-      this.mostrarRespuestas=true;
       this.mostrarPreguntas=false;
       this.mostrarBoton=false;
+      this.mostrarAreaPositiva=false;
     }
   }
 
   botonAreaPositiva(){
     this.respuesta[this.valor]='Positivo';
-    this.mostrarRespuestas=true;
+    this.mostrarAreaPositiva=true;
     this.mostrarPreguntas=false;
     this.mostrarDiagnostico=false;
     this.mostrarBoton=false;

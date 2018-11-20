@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AreaSieteComponent implements OnInit {
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea7.png';
   valor = 0;
+  errores = 0;
   errorAudio = 'Tu navegador no implementa el elemento audio';
 
   mostrarEjemplo = true;
@@ -28,33 +29,49 @@ export class AreaSieteComponent implements OnInit {
     'audio/area7/diaOnoche.mp3', 'audio/area7/diaOnoche.mp3', 'audio/area7/diaOnoche.mp3', 'audio/area7/diaOnoche.mp3',
     'audio/area7/diaOnoche.mp3', 'audio/area7/diaOnoche.mp3'];
 
-  mostrarRespuestas = false;
-  respuesta = [
-    'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo',
-    'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo',];
+  mostrarRespuestas=false;
+  mostrarAreaPositiva = false;
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
+  respuesta = [];
 
   iniciarPreguntas() {
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
+    this.mostrarRespuestas = false;
   }
 
   siguientePregunta(entrada: number) {
     if (this.valor + 1 == 10){
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
+        this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
+      }else{
+        this.respuesta[this.valor] = 'Positivo';
       }
+      if(this.errores>3){
+        this.mostrarAreaPositiva=false;
+      }
+      this.mostrarAreaPositiva=true;
       this.mostrarPreguntas = false;
-      this.mostrarRespuestas = true;
+      this.mostrarRespuestas=true;
     } else {
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
+        this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
       } else {
+        this.respuesta[this.valor] = 'Positivo';
         console.log(this.respuesta[this.valor]);
       }
     }
     this.valor = this.valor + 1;
+    if(this.errores==3){
+      this.mostrarPreguntas=false;
+      this.mostrarRespuestas=true;
+      this.mostrarAreaPositiva=false;
+    }
   }
   constructor() { }
 

@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-sm-12">
-    <img src="{{imagenCabecera}}" style="height: auto;width: 100%" >
+    <img src={{imagenCabecera}} style="height: auto;width: 100%" >
   </div>
 </div>
 <!--Ejemplo><!-->
@@ -17,8 +17,9 @@
   <div class="col-6">
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    <p>{{instruccion}}</p>
-    <p>{{instruccion2}}</p>
+    <h5>{{instruccion}}</h5>
+    <div class="row"><p></p></div>
+    <h5>{{instruccion2}}</h5>
     <div class="row">
       <audio src="{{audioInstruccion}}" controls autoplay >
         <p>{{errorAudio}}</p>
@@ -100,6 +101,18 @@
         {{ resp }}
       </li>
     </ul>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
+<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="color: limegreen;" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="col-4 sa-color" style="color: crimson" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
   </div>
 </div>
 

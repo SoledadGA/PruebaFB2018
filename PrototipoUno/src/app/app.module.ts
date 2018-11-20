@@ -16,6 +16,12 @@ import { AreaSeisComponent } from './area-seis/area-seis.component';
 import { AreaSieteComponent } from './area-siete/area-siete.component';
 import { AreaOchoComponent } from './area-ocho/area-ocho.component';
 import { AreaOnceComponent } from './area-once/area-once.component';
+import { AreaCatorceComponent } from './area-catorce/area-catorce.component';
+import { AreaQuinceComponent } from './area-quince/area-quince.component';
+import { AreaDiecisieteComponent } from './area-diecisiete/area-diecisiete.component';
+import { AreaNueveComponent } from './area-nueve/area-nueve.component';
+import { AreaDiezComponent } from './area-diez/area-diez.component';
+import { AreaDoceComponent } from './area-doce/area-doce.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +37,13 @@ import { AreaOnceComponent } from './area-once/area-once.component';
     AreaSeisComponent,
     AreaSieteComponent,
     AreaOchoComponent,
-    AreaOnceComponent
+    AreaOnceComponent,
+    AreaCatorceComponent,
+    AreaQuinceComponent,
+    AreaDiecisieteComponent,
+    AreaNueveComponent,
+    AreaDiezComponent,
+    AreaDoceComponent
   ],
   imports: [
     BrowserModule,
