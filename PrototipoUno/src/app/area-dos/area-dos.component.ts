@@ -13,14 +13,13 @@ export class AreaDosComponent implements OnInit {
   imagenEjemplo = 'imagenes/area2/EjemploA2.jpg';
   queDignostica = 'Diagnostica la dominancia lateral, con una serie de actividades con el ojo, mano, oído y pie.\n' +
     'El estudiante deberá realizar las actividades según las instrucciones que se da en cada literal.';
-  textoInstruccion = '"Mira a la niña contestar el teléfono, ahora mira los objetos que están en la mesa y realiza las ' +
-    'siguientes acciones."';
+  textoInstruccion = '"Mira a la niña contestar el teléfono, ahora mira los objetos que están en la mesa, con estos objetos harás lo siguiente"';
   audioInstrucciones ='audio/area2/instruccion.mp3';
 
   mostrarPreguntas = false;
   parteTitulo=['Ojo','Mano','Oido','Pie'];
   preguntas = ['Mira por el tubo','Coge el lápiz y has un círculo','Coge el reloj y escucha si suena','Coge la pelota y patéala'];
-  audio=['audio/area2/tubo.mp3','audio/area2/lapiz.mp3','audio/area2/relog.mp3','audio/area2/pelota.mp3'];
+  audio=['audio/area2/1.mp3','audio/area2/2.mp3','audio/area2/3.mp3','audio/area2/4.mp3'];
 
   mostrarRespuestas = false;
   respuesta =['Derecha','Derecha','Derecha','Derecha'];

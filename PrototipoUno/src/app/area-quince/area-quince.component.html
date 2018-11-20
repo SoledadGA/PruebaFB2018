@@ -16,7 +16,7 @@
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-5"><p></p></div>
   <div class="col-6">
-    <h5>{{instruccion}}</h5>
+    <h5>{{valor+1}}. {{instruccion}}</h5>
   </div>
 </div>
 <div class="row" *ngIf="mostrarPreguntas">
@@ -90,6 +90,6 @@
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" [routerLink]="['/areaQuince']">Siguiente</button>
+    <button class="sa-btn" [routerLink]="['/areaDieciseis']">Siguiente</button>
   </div>
 </div>

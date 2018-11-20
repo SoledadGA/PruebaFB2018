@@ -19,7 +19,7 @@ export class AreaTresEspacialComponent implements OnInit {
   respuesta=['positivo','positivo','positivo','positivo'];
   audioInstrucciones=['audio/sillaArriba','audio/sillaDebajo','audio/sillaDelante','audio/sillaAtras'];
   mostrarSonido=true;
-  audio=['audio/area3E/arriba.mp3','audio/area3E/debajo.mp3','audio/area3E/adelante.mp3','audio/area3E/detras.mp3'];
+  audio=['audio/area3/5.mp3','audio/area3/6.mp3','audio/area3/7.mp3','audio/area3/8.mp3'];
 
   siguiente(entrada : number){
     this.mostrarIndicacon=false;

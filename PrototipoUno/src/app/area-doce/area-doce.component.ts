@@ -14,7 +14,7 @@ export class AreaDoceComponent implements OnInit {
 
   mostrarDiagnostico = true;
   mostrarBoton=false;
-  queDiagnostica = 'Diagnóstica discriminación auditiva.';
+  queDiagnostica = 'Diagnostica la coordinacipon visual auditiva motora, con patrón visual y auditivo.';
 
   mostrarPreguntas = true;
   instruccion = 'Mira, escucha y repite después de mí';

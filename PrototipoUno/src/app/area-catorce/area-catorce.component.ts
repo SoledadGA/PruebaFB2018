@@ -14,7 +14,8 @@ export class AreaCatorceComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio';
 
   mostrarDiagnostico = true;
-  queDiagnostica = 'Diagnóstica discriminación auditiva.';
+  queDiagnostica = 'Diagnostica la discriminación auditiva.\n' +
+    'El estudiante debe repetir las dos palabras juntas de cada ítem';
 
   mostrarPreguntas = true;
   instruccion = 'Escucha y repite después de mí';
@@ -22,9 +23,9 @@ export class AreaCatorceComponent implements OnInit {
     'pato - dato', 'cama - dama', 'caballo - cabello', 'rata - lata', 'hombre - hambre', 'mesa - misa',
     'mano - mono', 'tía - día', 'casa - pasa', 'pana - lana'];
   audio = [
-    'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3',
-    'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3',
-    'audio/area14/diaOnoche.mp3', 'audio/area14/diaOnoche.mp3'];
+    'audio/area14/instruccion-1.mp3', 'audio/area14/2.mp3', 'audio/area14/3.mp3', 'audio/area14/4.mp3',
+    'audio/area14/5.mp3', 'audio/area14/6.mp3', 'audio/area14/7.mp3', 'audio/area14/8.mp3',
+    'audio/area14/9.mp3', 'audio/area14/10.mp3'];
 
   mostrarAreaPositiva = false;
   areaDebilitada = 'Se considera como área debilitada';

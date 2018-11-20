@@ -13,7 +13,7 @@ export class AreaOchoComponent implements OnInit {
   valor=0;
   criterio='Diagnostica como se expresa el estudiante en forma viso-motora.';
   instruccion='"Ahora contestarás Sí o No"';
-  audioInicial='aundio/area8/instruccion.mp3';
+  audioInicial='audio/area8/instruccion.mp3';
   preguntas=['Martillo',
     'Guitarra',
     'Cuchara',
@@ -24,16 +24,16 @@ export class AreaOchoComponent implements OnInit {
     'Lápiz',
     'Cuchillo',
     'Escoba'];
-  audio=['audio/area8/pregunta1.mp3',
-    'audio/area8/pregunta2.mp3',
-    'audio/area8/pregunta3.mp3',
-    'audio/area8/pregunta4.mp3',
-    'audio/area8/pregunta5.mp3',
-    'audio/area8/pregunta6.mp3',
-    'audio/area8/pregunta7.mp3',
-    'audio/area8/pregunta8.mp3',
-    'audio/area8/pregunta9.mp3',
-    'audio/area8/pregunta10.mp3',];
+  audio=['audio/area8/1.mp3',
+    'audio/area8/2.mp3',
+    'audio/area8/3.mp3',
+    'audio/area8/4.mp3',
+    'audio/area8/5.mp3',
+    'audio/area8/6.mp3',
+    'audio/area8/7.mp3',
+    'audio/area8/8.mp3',
+    'audio/area8/9.mp3',
+    'audio/area8/10.mp3',];
   imagenes=['imagenes/area8/1.png',
     'imagenes/area8/2.png',
     'imagenes/area8/3.png',

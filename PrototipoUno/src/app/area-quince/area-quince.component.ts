@@ -19,7 +19,7 @@ export class AreaQuinceComponent implements OnInit {
   instruccion = 'Mira y copia este dibujo en una hoja';
   preguntas = ['imagenes/area15/1.png', 'imagenes/area15/2.png', 'imagenes/area15/3.png'];
   dibujos = ['Dibujo 1', 'Dibujo 2', 'Dibujo 3'];
-  audio = ['audio/area15/instruccion1.mp3', 'audio/area15/instruccion2.mp3', 'audio/area15/instruccion3.mp3'];
+  audio = ['audio/area15/1.mp3', 'audio/area15/2.mp3', 'audio/area15/3.mp3'];
   estilo=['sa-img','sa-img2','sa-img2'];
 
   mostrarAreaPositiva = false;

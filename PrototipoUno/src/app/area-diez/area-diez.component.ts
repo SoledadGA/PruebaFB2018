@@ -13,7 +13,7 @@ export class AreaDiezComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio';
 
   mostrarDiagnostico = true;
-  queDiagnostica = 'Diagnóstica discriminación auditiva.';
+  queDiagnostica = 'Diagnostica la pronunciación  con palabras cuyo esquema mental está estucturado.';
 
   mostrarPreguntas = true;
   instruccion = 'Escucha y repite después de mí';

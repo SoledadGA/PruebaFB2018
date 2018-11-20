@@ -10,7 +10,7 @@ export class AreaCuatroComponent implements OnInit {
   valor=0;
   criterio=['No se admite zig-zag.', 'No se admite zig-zag, ni sobre boteo.'];
   instruccion=['Salta en un solo pie','Botea la pelota con una mano'];
-  audio=['audio/area4/salto.mp3','audio/area4/pelota.mp3'];
+  audio=['audio/area4/1.mp3','audio/area4/2.mp3'];
   imagenes=['imagenes/area4/saltar.jpg','imagenes/area4/ninoPelota.png'];
   respuesta=['positivo','positivo'];
   mostrarPreguntas=true;

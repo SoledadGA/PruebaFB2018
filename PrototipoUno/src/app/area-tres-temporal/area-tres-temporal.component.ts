@@ -14,14 +14,14 @@ export class AreaTresTemporalComponent implements OnInit {
   nombreEjemplo = 'Orientación Temporal Ejemplo';
   queDiagnostica = 'Mide la orientación temporal';
   textoInstruccion = '¿Los niños van a la escuela de día o de noche?';
-  audioInstruccion = 'audio/area3T/ejemplo.mp3';
+  audioInstruccion = 'audio/area3/instruccion.mp3';
   imagenEjemplo = ['imagenes/area3T/noche.png', 'imagenes/area3T/dia.jpg'];
 
   mostrarPreguntas = false;
   parteTitulo = 'Orientación Temporal';
   preguntas = ['¿En este momento es de día o de noche?', '¿Qué haces por las noches?',
     '¿Qué hiciste ayer en la escuela o en tu casa?', '¿Qué hiciste hoy?'];
-  audio = ['audio/area3T/diaOnoche.mp3', 'audio/area3T/enLasNoches.mp3', 'audio/area3T/ayer.mp3', 'audio/area3T/hoy.mp3'];
+  audio = ['audio/area3/1.mp3', 'audio/area3/2.mp3', 'audio/area3/3.mp3', 'audio/area3/4.mp3'];
   mostrarImagenes = false;
   respuestaPositiva = ['imagenes/area3T/dia.jpg', 'imagenes/area3T/dormir.png'];
   respuestaNegativa = ['imagenes/area3T/noche.png', 'imagenes/area3T/jugar.jpg'];

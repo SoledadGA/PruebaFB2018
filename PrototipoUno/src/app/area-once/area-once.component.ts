@@ -21,9 +21,9 @@ export class AreaOnceComponent implements OnInit {
     '3 - 2 - 5', '2 - 5 - 1', '7 - 6 - 2 - 4', '1 - 3 - 5 - 2', '7 - 4 - 1 - 3 - 2', '2 - 5 - 4 - 6 - 9',
     '3 - 2 - 5 - 7 - 8 - 3', '9 - 2 - 6 - 7 - 5 - 8', '2 - 4 - 6 - 3 - 2 - 5 - 7', '5 - 4 - 7 - 9 - 7 - 6 - 2 - 3'];
   audio = [
-    'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3',
-    'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3',
-    'audio/area11/diaOnoche.mp3', 'audio/area11/diaOnoche.mp3'];
+    'audio/area11/instruccion-1.mp3', 'audio/area11/instruccion-2.mp3', 'audio/area11/instruccion-3.mp3', 'audio/area11/instruccion-4.mp3',
+    'audio/area11/instruccion-5.mp3', 'audio/area11/instruccion-6.mp3', 'audio/area11/instruccion-7.mp3', 'audio/area11/instruccion-8.mp3',
+    'audio/area11/instruccion-9.mp3', 'audio/area11/instruccion-10.mp3'];
 
   mostrarBoton=false;
   mostrarAreaPositiva = false;

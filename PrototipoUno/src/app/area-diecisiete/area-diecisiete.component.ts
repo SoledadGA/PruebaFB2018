@@ -20,7 +20,7 @@ export class AreaDiecisieteComponent implements OnInit {
   instruccion = 'Recorta lo más rápido que puedas las siguientes figuras, sin topar las líneas laterales';
   preguntas = ['imagenes/area17/1.png', 'imagenes/area17/2.png'];
   dibujos = ['Recorte 1', 'Recorte 2'];
-  audio = ['audio/area17/instruccion1.mp3', 'audio/area17/instruccion2.mp3'];
+  audio = ['audio/area17/1.mp3', 'audio/area17/2.mp3'];
 
   mostrarAreaPositiva = false;
   areaDebilitada = 'Se considera como área debilitada';

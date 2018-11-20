@@ -12,17 +12,14 @@ export class AreaSeisComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio';
 
   mostrarInstruccion = true;
-  queDiagnostica = 'Mide la orientación temporal';
+  queDiagnostica = 'Diagnostica si el estudiante precibe un estiímulo visual o no.';
 
   mostrarPreguntas = true;
   preguntas = ['Este niño está leyendo, busca otro que esté haciendo lo mismo.',
     'Esta persona está barriendo, busca otra que esté haciendo lo mismo.',
     'Esta es una llave, busca otra igual.', 'Esta es una tijera, busca otra igual.'];
   audio = [
-    'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3',
-    'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3',
-    'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3',
-    'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3', 'audio/area6/diaOnoche.mp3'];
+    'audio/area6/1.mp3', 'audio/area6/2.mp3', 'audio/area6/3.mp3', 'audio/area6/4.mp3'];
   imgMuestra = [
     'imagenes/area6/leyendoMuestra.jpg', 'imagenes/area6/barriendoMuestra.jpg',
     'imagenes/area6/llaveMuestra.png', 'imagenes/area6/tijeraMuestra.png'];

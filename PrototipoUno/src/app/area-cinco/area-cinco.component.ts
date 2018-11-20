@@ -28,21 +28,21 @@ export class AreaCincoComponent implements OnInit {
     '¿Las flores comen?',
     '¿Los trenes duermen?',
     '¿Los sapos saltan?'];
-  audio=['audio/area5/pregunta1.mp3',
-    'audio/area5/pregunta2.mp3',
-    'audio/area5/pregunta3.mp3',
-    'audio/area5/pregunta4.mp3',
-    'audio/area5/pregunta5.mp3',
-    'audio/area5/pregunta6.mp3',
-    'audio/area5/pregunta7.mp3',
-    'audio/area5/pregunta8.mp3',
-    'audio/area5/pregunta9.mp3',
-    'audio/area5/pregunta10.mp3',
-    'audio/area5/pregunta11.mp3',
-    'audio/area5/pregunta12.mp3',
-    'audio/area5/pregunta13.mp3',
-    'audio/area5/pregunta14.mp3',
-    'audio/area5/pregunta15.mp3',];
+  audio=['audio/area5/instruccion-1.mp3',
+    'audio/area5/2.mp3',
+    'audio/area5/3.mp3',
+    'audio/area5/4.mp3',
+    'audio/area5/5.mp3',
+    'audio/area5/6.mp3',
+    'audio/area5/7.mp3',
+    'audio/area5/8.mp3',
+    'audio/area5/9.mp3',
+    'audio/area5/10.mp3',
+    'audio/area5/11.mp3',
+    'audio/area5/12.mp3',
+    'audio/area5/13.mp3',
+    'audio/area5/14.mp3',
+    'audio/area5/15.mp3',];
   respuesta=['positivo'];
   mostrarPreguntas=true;
 
