@@ -44,14 +44,14 @@
 <div class="row"><p></p></div>
 
 <div class="row" *ngIf="mostrarEjemplo">
-  <div class="col-3"><p></p></div>
-  <div class="col-3">
+  <div class="col-2"><p></p></div>
+  <div class="col-5">
     <button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor]}} class="sa-img">
     </button>
   </div>
-  <div class="col-1"><p></p></div>
-  <div class="col-3">
+
+  <div class="col-5">
     <button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor+1]}} class="sa-img">
     </button>
@@ -92,22 +92,26 @@
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-4"><p></p></div>
-  <div class="col-3" *ngIf="mostrarImagenes">
+  <div class="col-2"><p></p></div>
+  <div class="col-5" *ngIf="mostrarImagenes">
     <button class="sa-btnimg" (click)="siguientePregunta(0)">
       <img src={{respuestaNegativa[valor]}} class="sa-img">
     </button>
   </div>
-  <div class="col-2" *ngIf="!mostrarImagenes">
-    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
-  </div>
-  <div class="col-3" *ngIf="mostrarImagenes">
+  <div class="col-5" *ngIf="mostrarImagenes">
     <button class="sa-btnimg" (click)="siguientePregunta(1)">
       <img src={{respuestaPositiva[valor]}} class="sa-img">
     </button>
   </div>
+</div>
+
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-4"><p></p></div>
+  <div class="col-2" *ngIf="!mostrarImagenes">
+    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
   <div class="col-3" *ngIf="!mostrarImagenes">
-    <button class="sa-btn" (click)="siguientePregunta(0)">Negativo</button>
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
   </div>
 </div>
 

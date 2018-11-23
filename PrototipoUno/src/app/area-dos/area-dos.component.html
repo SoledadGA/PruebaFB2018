@@ -52,7 +52,7 @@
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
 
-    <button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="iniciarPreguntas()">Siguiente</button>
+    <button style="background: cornflowerblue ; width: 100% ; height: 20% " (click)="iniciarPreguntas()">Siguiente</button>
   </div>
 </div>
 
@@ -88,11 +88,11 @@
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-4"></div>
   <div class="col-2">
-    <button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguientePregunta(0)">Izquierda</button>
+    <button style="background: cornflowerblue ; width: 100% ; height:  200% " (click)="siguientePregunta(0)">Izquierda</button>
   </div>
 
   <div class="col-3">
-    <button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguientePregunta(1)">Derecha</button>
+    <button style="background: cornflowerblue ; width:  65% ; height:  200%" (click)="siguientePregunta(1)">Derecha</button>
   </div>
 </div>
 
@@ -119,6 +119,6 @@
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button style="background: cornflowerblue ; width: 200px ; height: 50px " [routerLink]="['/areaTresTemporal']">Siguiente</button>
+    <button style="background: cornflowerblue ; width:  100% ; height:  200% " [routerLink]="['/areaTresTemporal']">Siguiente</button>
   </div>
 </div>

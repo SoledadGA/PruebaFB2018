@@ -11,8 +11,8 @@
 </div>
 <div class="row" *ngIf="mostrarCriterio"><p></p></div>
 <div class="row" *ngIf="mostrarCriterio">
-  <div class="col-5"><p></p></div>
-  <div class="col-7 "><p>{{instruccion}}</p></div>
+  <div class="col-4"><p></p></div>
+  <div class="col-7 "><h4> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{instruccion}}</h4></div>
 </div>
 <div class="row"><p></p></div>
 <div class="row"><p></p></div>
@@ -44,8 +44,8 @@
 <div class="row"><p></p></div>
 <div class="row"*ngIf="mostrarPreguntas">
   <div class="col-4"></div>
-  <div class="col-2"   ><button style="background: cornflowerblue ; width: 200px ; height: 50px "(click)="siguiente(8)" >Positivo</button></div>
-  <div class="col-3"  ><button style="background: cornflowerblue ; width: 200px ; height: 50px " (click)="siguiente(0)">Negativo</button></div>
+  <div class="col-2"   ><button style="background: cornflowerblue ; width: 100% ; height: 200% "(click)="siguiente(8)" >Positivo</button></div>
+  <div class="col-3"  ><button style="background: cornflowerblue ; width: 65%; height: 200% " (click)="siguiente(0)">Negativo</button></div>
 
 </div>
 
@@ -75,6 +75,6 @@
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button style="background: cornflowerblue ; width: 200px ; height: 50px " [routerLink]="['/areaSeis']">Siguiente</button>
+    <button style="background: cornflowerblue ; width: 100% ; height: 200% " [routerLink]="['/areaSeis']">Siguiente</button>
   </div>
 </div>

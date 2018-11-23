@@ -37,7 +37,7 @@ export class AreaDoceComponent implements OnInit {
   mostrarAreaPositiva = false;
   areaDebilitada = 'Se considera como área debilitada';
   areaPositiva = 'Se considera como área positiva';
-  respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo'];
+  respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo'];
 
   siguientePregunta( entrada: number){
     this.mostrarDiagnostico=false;

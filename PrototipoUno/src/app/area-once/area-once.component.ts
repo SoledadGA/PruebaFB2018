@@ -33,14 +33,9 @@ export class AreaOnceComponent implements OnInit {
 
   siguientePregunta(entrada: number) {
     this.mostrarDiagnostico = false;
-    if(this.valor+1==4){
-      this.mostrarBoton=true;
-    }
-
-    if(this.valor+1==6){
+    if(this.valor+1!=5){
       this.mostrarBoton=false;
     }
-
     if (this.valor+1>=9){
       if (entrada == 1) {
         this.respuesta[this.valor] = 'Positivo';
@@ -69,10 +64,20 @@ export class AreaOnceComponent implements OnInit {
         if(this.errores==1){
           this.respuesta[this.valor]='Positivo';
           this.valor=this.valor+1;
+          if(this.valor+1==5){
+            this.mostrarBoton=true;
+          }
         }else{
           this.respuesta[this.valor]='Positivo';
           this.respuesta[this.valor+1]='Positivo';
           this.valor=this.valor+2;
+          if(this.valor+1==5){
+            this.mostrarBoton=true;
+          }
+          if(this.valor+1>5){
+            this.mostrarBoton=false;
+
+          }
         }
         this.errores=0;
       }

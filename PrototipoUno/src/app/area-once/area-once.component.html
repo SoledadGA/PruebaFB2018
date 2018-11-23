@@ -19,7 +19,7 @@
   <div class="col-5"></div>
   <div class="col-6">
     <div class="row">
-      <h5>{{instruccion}}</h5>
+      <h4>{{instruccion}}</h4>
     </div>
     <div class="row">
       <h5>{{valor+1}}. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{preguntas[valor]}}</h5>
@@ -46,15 +46,16 @@
     <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
   </div>
   <div class="col-3">
-    <button class="sa-btn" (click)="siguientePregunta(0)">Negativo</button>
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
   </div>
 </div>
 
 <div class="row"><p></p></div>
 <div class="row"><p></p></div>
+<div class="row" *ngIf="mostrarBoton"><p></p></div>
 <div class="row" *ngIf="mostrarBoton">
   <div class="col-5"><p></p></div>
-  <div class="col-3">
+  <div class="col-2">
     <button class="sa-btn2" (click)="botonAreaPositiva()">Área Positiva</button>
   </div>
 </div>

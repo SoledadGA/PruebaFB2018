@@ -17,7 +17,7 @@ export class AreaUnoComponent implements OnInit {
   audioInstrucciones=['audio/area1/instruccion1.mp3',
     'audio/area1/instruccion2.mp3',
     'audio/area1/instruccion3.mp3'];
-  textoInstruccion=['"Mira a los niños hacer lo que hacen, ahora tu harás lo mismo"',
+  textoInstruccion=['"Mira a los niños lo que hacen, ahora tu harás lo mismo"',
     '"Ahora señala en el espejo"',
     '"Ahora haras lo mismo con otra persona"'];
 
@@ -41,7 +41,9 @@ export class AreaUnoComponent implements OnInit {
   preguntasP=['Señala tu nariz','Señala tu ojos', 'Señala tus boca', 'Señala tu dedo'];
   preguntasE=['Señala tu cabeza','Señala tus manos', 'Señala tus piernas', 'Señala tus ojos'];
   preguntasO=['Señala los brazos de la otra persona','Señala las piernas de la otra persona', 'Señala la espalda de la otra persona', 'Señala el pecho de la otra persona'];
-
+  estiloBotonEjemplo=['sa-boton-ejemplo1',
+  'sa-boton-ejemplo2',
+  'sa-boton-ejemplo3'];
   audio=['audio/area1/1-1.mp3',
     'audio/area1/1-2.mp3',
     'audio/area1/1-3.mp3',

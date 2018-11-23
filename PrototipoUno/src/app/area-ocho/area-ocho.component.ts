@@ -12,7 +12,7 @@ export class AreaOchoComponent implements OnInit {
   contadorErrores=0;
   valor=0;
   criterio='Diagnostica como se expresa el estudiante en forma viso-motora.';
-  instruccion='"Ahora contestarás Sí o No"';
+  instruccion='"Yo te nombro un objeto y tú responderás con mímica o señas"';
   audioInicial='audio/area8/instruccion.mp3';
   preguntas=['Martillo',
     'Guitarra',
@@ -24,7 +24,7 @@ export class AreaOchoComponent implements OnInit {
     'Lápiz',
     'Cuchillo',
     'Escoba'];
-  audio=['audio/area8/1.mp3',
+  audio=['audio/area8/instruccion-1.mp3',
     'audio/area8/2.mp3',
     'audio/area8/3.mp3',
     'audio/area8/4.mp3',
@@ -45,15 +45,12 @@ export class AreaOchoComponent implements OnInit {
     'imagenes/area8/9.png',
     'imagenes/area8/10.png'];
   respuesta=['positivo'];
-  mostrarPreguntas=false;
-  inicialrPreguntas(){
-    this.mostrarCriterio=false;
-    this.mostrarPreguntas=true;
-  }
+  mostrarPreguntas=true;
+
 
 
   siguiente( entrada: number){
-
+  this.mostrarCriterio=false;
     if (this.valor+1==10) {
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
