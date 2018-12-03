@@ -6,45 +6,61 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-tres-espacial.component.css']
 })
 export class AreaTresEspacialComponent implements OnInit {
-  cabecera='imagenes/cabeceras/CabeceraArea3.png'
-  valor=0;
-  titulo='Orientación Espacial';
-  mostrarIndicacon=true;
-  mostrarSilla=true;
-  indicacion='Mide orientación espacial (arriba, debajo, adelante, detrás)';
-  instruccion=['Señala la pelota que está arriba de la silla',
+
+  valor = 0;
+  errores = 0;
+  mostrarIndicacion = true;
+  mostrarSilla = true;
+  mostrarSonido = true;
+  mostrarAreaPositiva = false;
+  cabecera = 'imagenes/cabeceras/CabeceraArea3.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
+  titulo = 'Orientación Espacial';
+  indicacion = 'Mide orientación espacial (arriba, debajo, adelante, detrás)';
+  audio = [
+    'audio/area3/5.mp3',
+    'audio/area3/6.mp3',
+    'audio/area3/7.mp3',
+    'audio/area3/8.mp3'];
+  instruccion = [
+    'Señala la pelota que está arriba de la silla',
     'Señala la pelota que está debajo de la silla',
     'Señala la pelota que está adelante de la silla',
-    'Señala la pelota que está detrás de la silla',];
-  respuesta=['positivo','positivo','positivo','positivo'];
-  audioInstrucciones=['audio/sillaArriba','audio/sillaDebajo','audio/sillaDelante','audio/sillaAtras'];
-  mostrarSonido=true;
-  audio=['audio/area3/5.mp3','audio/area3/6.mp3','audio/area3/7.mp3','audio/area3/8.mp3'];
+    'Señala la pelota que está detrás de la silla'];
+  respuesta = [];
 
   siguiente(entrada : number){
-    this.mostrarIndicacon=false;
+    this.mostrarIndicacion=false;
     if(this.valor+1==4){
       if(entrada!=this.valor){
-        this.respuesta[this.valor]='negativo';
+        this.respuesta[this.valor]='Negativo';
+        this.errores=this.errores+1;
         console.log('negativo');
         this.mostrarSilla=false;
         this.mostrarSonido=false;
-      }
-      else{
+      }else{
         console.log('positivo');
+        this.respuesta[this.valor]='Positivo';
         this.mostrarSilla=false;
         this.mostrarSonido=false;
       }
+      if(this.errores>1){
+        this.mostrarAreaPositiva=false;
+      }else{
+        this.mostrarAreaPositiva=true;
+      }
     }
     if(entrada!=this.valor){
-      this.respuesta[this.valor]='negativo';
+      this.respuesta[this.valor]='Negativo';
+      this.errores=this.errores+1;
       console.log('negativo');
-    }
-    else {
+    }else {
+      this.respuesta[this.valor]='Positivo';
       console.log('positivo')
     }
     this.valor=this.valor+1;
-
   }
   constructor() { }
 

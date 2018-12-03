@@ -13,14 +13,14 @@
       <div>
         <div class="row"><h3>{{titulo}}</h3></div>
         <div class="row"><p></p></div>
-        <div class="row sa-borde" *ngIf="mostrarIndicacon">{{indicacion}}</div>
+        <div class="row sa-borde" *ngIf="mostrarIndicacion">{{indicacion}}</div>
         <div class="row"><p></p></div>
         <div class="row">{{instruccion[valor]}}</div>
       </div>
     </div>
     <div class="row"></div>
     <div class="row" *ngIf="mostrarSonido"><audio src="{{audio[valor]}}" controls autoplay >
-      <p>Tu navegador no implementa el elemento audio</p>
+      <p>{{errorAudio}}</p>
     </audio></div>
 
 
@@ -149,6 +149,19 @@
     </ul>
   </div>
 </div>
+
+<div class="row" *ngIf="!mostrarSilla"><p></p></div>
+<div class="row" *ngIf="!mostrarSilla"><p></p></div>
+<div class="row" *ngIf="!mostrarSilla">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
 <div class="row" *ngIf="!mostrarSilla">
   <div class="col-10"><p></p></div>
   <div class="col-2">

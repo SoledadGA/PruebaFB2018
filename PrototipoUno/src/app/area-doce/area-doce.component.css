@@ -25,3 +25,9 @@
   width:  100%;
   height:  200%
 }
+
+.sa-centrar{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

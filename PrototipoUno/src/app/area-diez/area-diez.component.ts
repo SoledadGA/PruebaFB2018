@@ -6,18 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-diez.component.css']
 })
 export class AreaDiezComponent implements OnInit {
-  imagenCabecera = 'imagenes/cabeceras/CabeceraArea10.png';
+
   valor = 0;
   errores = 0;
-
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-
   mostrarDiagnostico = true;
-  queDiagnostica = 'Diagnostica la pronunciación  con palabras cuyo esquema mental está estucturado.';
-
   mostrarPreguntas = true;
-  instruccion = 'Escucha y repite después de mí';
-  preguntas = ['Franela',
+  mostrarAreaPositiva = false;
+  imagenCabecera = 'imagenes/cabeceras/CabeceraArea10.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
+  queDiagnostica = 'Diagnostica la pronunciación  con palabras cuyo esquema mental está estucturado.';
+  instruccion = '"Escucha y repite después de mí"';
+  preguntas = [
+    'Franela',
     'Esferográfico',
     'Triciclo',
     'Lengua',
@@ -30,10 +32,7 @@ export class AreaDiezComponent implements OnInit {
     'audio/area10/4.mp3',
     'audio/area10/5.mp3',
     'audio/area10/6.mp3'];
-  mostrarAreaPositiva = false;
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
-  respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo'];
+  respuesta = [];
 
   siguientePregunta( entrada: number){
     this.mostrarDiagnostico=false;
@@ -42,6 +41,8 @@ export class AreaDiezComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
+      }else {
+        this.respuesta[this.valor]='Positivo';
       }
       if (this.errores>=3){
         this.mostrarAreaPositiva = false;
@@ -54,6 +55,8 @@ export class AreaDiezComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.errores);
+      }else {
+        this.respuesta[this.valor]='Positivo';
       }
       this.valor=this.valor+1;
     }

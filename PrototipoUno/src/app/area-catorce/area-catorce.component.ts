@@ -7,31 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaCatorceComponent implements OnInit {
 
-  imagenCabecera = 'imagenes/cabeceras/CabeceraArea14.png';
   valor = 0;
   errores = 0;
-
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-
   mostrarDiagnostico = true;
-  queDiagnostica = 'Diagnostica la discriminación auditiva.\n' +
-    'El estudiante debe repetir las dos palabras juntas de cada ítem';
-
   mostrarPreguntas = true;
-  instruccion = 'Escucha y repite después de mí';
-  preguntas = [
-    'pato - dato', 'cama - dama', 'caballo - cabello', 'rata - lata', 'hombre - hambre', 'mesa - misa',
-    'mano - mono', 'tía - día', 'casa - pasa', 'pana - lana'];
-  audio = [
-    'audio/area14/instruccion-1.mp3', 'audio/area14/2.mp3', 'audio/area14/3.mp3', 'audio/area14/4.mp3',
-    'audio/area14/5.mp3', 'audio/area14/6.mp3', 'audio/area14/7.mp3', 'audio/area14/8.mp3',
-    'audio/area14/9.mp3', 'audio/area14/10.mp3'];
-
   mostrarAreaPositiva = false;
+  imagenCabecera = 'imagenes/cabeceras/CabeceraArea14.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
   areaDebilitada = 'Se considera como área debilitada';
   areaPositiva = 'Se considera como área positiva';
-  respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo',
-    'Positivo'];
+  queDiagnostica = 'Diagnostica la discriminación auditiva.';
+  queDiagnostica2 = 'El estudiante debe repetir las dos palabras juntas de cada ítem';
+  instruccion = '"Escucha y repite después de mí"';
+  preguntas = [
+    'pato - dato',
+    'cama - dama',
+    'caballo - cabello',
+    'rata - lata',
+    'hombre - hambre',
+    'mesa - misa',
+    'mano - mono',
+    'tía - día',
+    'casa - pasa',
+    'pana - lana'];
+  audio = [
+    'audio/area14/instruccion-1.mp3',
+    'audio/area14/2.mp3',
+    'audio/area14/3.mp3',
+    'audio/area14/4.mp3',
+    'audio/area14/5.mp3',
+    'audio/area14/6.mp3',
+    'audio/area14/7.mp3',
+    'audio/area14/8.mp3',
+    'audio/area14/9.mp3',
+    'audio/area14/10.mp3'];
+  respuesta = [];
 
   siguientePregunta( entrada: number){
     this.mostrarDiagnostico=false;
@@ -40,6 +50,8 @@ export class AreaCatorceComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
+      }else {
+        this.respuesta[this.valor]='Positivo';
       }
       if (this.errores>=3){
         this.mostrarAreaPositiva = false;
@@ -52,6 +64,8 @@ export class AreaCatorceComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.errores);
+      }else {
+        this.respuesta[this.valor]='Positivo';
       }
       this.valor=this.valor+1;
     }

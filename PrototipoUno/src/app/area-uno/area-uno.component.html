@@ -3,6 +3,7 @@
     <img src="{{cabecera}}" style="height: auto;width: 100%" >
   </div>
 </div>
+<!-- Indicaciones y ejemplos!-->
 <div class="row"  *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-10 sa-contorno">
@@ -14,7 +15,7 @@
 <div class="row"  *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-10">
-    <h2>{{nombreEjemplo[numeroEjemplo]}}</h2>
+    <h3>{{nombreEjemplo[numeroEjemplo]}}</h3>
   </div>
   <div class="col-1"></div>
 </div>
@@ -30,12 +31,12 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-3" >
-    <div class="row"><audio src="{{audioInstrucciones[numeroEjemplo]}}" controls autoplay >
-      <p>Tu navegador no implementa el elemento audio</p>
+    <div class="row"><h6>{{textoInstruccion[numeroEjemplo]}}</h6></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row sa-centrar"><audio src="{{audioInstrucciones[numeroEjemplo]}}" controls autoplay >
+      <p>{{errorAudio}}</p>
     </audio></div>
-    <div class="row"><p></p></div>
-    <div class="row"><p></p></div>
-    <div class="row"><p>{{textoInstruccion[numeroEjemplo]}}</p></div>
   </div>
   <div class="col-5"><img src="{{imagenesEjemplo[numeroEjemplo]}}" height="100%" width="100%"></div>
   <div class="col-2">
@@ -54,39 +55,31 @@
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPregutnas()">Siguiente</button>
+    <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPreguntas()">Siguiente</button>
   </div>
 </div>
 
-
+<!-- Propio Cuerpo !-->
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo">
-  <div class="col-4"></div>
-  <div  *ngIf="propioCuerpo"><h2>{{valor+1}}. {{preguntasP[valor]}}</h2></div>
-
-
-
+  <!--  <div class="col-4"></div>!-->
+  <div class="sa-centrar" *ngIf="propioCuerpo"><h3>{{valor+1}}. {{preguntasP[valor]}}</h3></div>
 </div>
 <div class="row"*ngIf="propioCuerpo">
-  <div class="col-4"></div>
-  <div *ngIf="propioCuerpo"><audio src="{{audio[valor]}}" controls autoplay >
-    <p>Tu navegador no implementa el elemento audio</p>
+  <!--<div class="col-3"></div>!-->
+  <div class="sa-centrar" *ngIf="propioCuerpo"><audio src="{{audio[valor]}}" controls autoplay >
+    <p>{{errorAudio}}</p>
   </audio></div>
 </div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
-
 <div class="row"*ngIf="propioCuerpo">
   <div class="col-4"></div>
   <div class="col-2"  *ngIf="propioCuerpo" ><button style="background: cornflowerblue ; width: 100% ; height:200%  "(click)="siguiente(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
-
-
-
   <div class="col-3" *ngIf="propioCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:200%  " (click)="siguiente(0)">Negativo</button></div>
-
 </div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
@@ -94,39 +87,29 @@
 <div class="row"*ngIf="propioCuerpo"><p></p></div>
 <div class="row"*ngIf="propioCuerpo">
   <div class="col-10"></div>
-
 </div>
 
-
-
+<!-- En el espejo !-->
 <div class="row" *ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo">
-  <div class="col-4"></div>
-  <div  *ngIf="espejo"><h2> {{valor+1}}. {{preguntasE[valor]}}</h2></div>
-
-
-
+  <!--  <div class="col-4"></div>!-->
+  <div class="sa-centrar" *ngIf="espejo"><h3> {{valor+1}}. {{preguntasE[valor]}}</h3></div>
 </div>
 <div class="row"*ngIf="espejo">
-  <div class="col-4"></div>
-  <div *ngIf="espejo"><audio src="{{audioE[valor]}}" controls autoplay >
-    <p>Tu navegador no implementa el elemento audio</p>
+  <!--<div class="col-4"></div>!-->
+  <div class="sa-centrar" *ngIf="espejo"><audio src="{{audioE[valor]}}" controls autoplay >
+    <p>{{errorAudio}}</p>
   </audio></div>
 </div>
 <div class="row"*ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo"><p></p></div>
-
 <div class="row"*ngIf="espejo">
   <div class="col-4"></div>
   <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 100% ; height:200% "(click)="siguiente1(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
-
-
-
   <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente1(0)">Negativo</button></div>
-
 </div>
 <div class="row"*ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo"><p></p></div>
@@ -134,37 +117,29 @@
 <div class="row"*ngIf="espejo"><p></p></div>
 <div class="row"*ngIf="espejo">
   <div class="col-10"></div>
-
 </div>
 
+<!-- En el otro cuerpo !-->
 <div class="row"*ngIf="otroCuerpo"><p></p></div>
 <div class="row"*ngIf="otroCuerpo">
-  <div class="col-4"></div>
-  <div  *ngIf="otroCuerpo"><h2>{{valor+1}}. {{preguntasO[valor]}}</h2></div>
-
-
-
+  <!--<div class="col-4"></div>!-->
+  <div class="sa-centrar" *ngIf="otroCuerpo"><h3>{{valor+1}}. {{preguntasO[valor]}}</h3></div>
 </div>
 <div class="row" *ngIf="otroCuerpo">
-  <div class="col-4"></div>
-  <div *ngIf="otroCuerpo"><audio src="{{audioO[valor]}}" controls autoplay >
-    <p>Tu navegador no implementa el elemento audio</p>
+  <!--<div class="col-4"></div>!-->
+  <div class="sa-centrar" *ngIf="otroCuerpo"><audio src="{{audioO[valor]}}" controls autoplay >
+    <p>{{errorAudio}}</p>
   </audio></div>
 </div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
-
 <div class="row" *ngIf="otroCuerpo">
   <div class="col-4"></div>
   <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ;width: 100% ; height:200%"(click)="siguiente2(8)" >Positivo</button></div>
   <!--<div class="col-1"  ><button (click)="siguiente()" >Positivo</button></div>-->
-
-
-
   <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente2(0)">Negativo</button></div>
-
 </div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
@@ -172,15 +147,14 @@
 <div class="row" *ngIf="otroCuerpo"><p></p></div>
 <div class="row" *ngIf="otroCuerpo">
   <div class="col-10"></div>
-
 </div>
 
+<!-- Resultados !-->
 <div class="row" *ngIf="grafica">
   <div class="col-1"></div>
   <div class="col-4">
     <h2>Resultado</h2>
   </div>
-
 </div>
 <div class="row"><p></p></div>
 <div class="row" *ngIf="grafica">
@@ -210,6 +184,19 @@
       </ul>
     </div>
 </div>
+
+<div class="row" *ngIf="grafica"><p></p></div>
+<div class="row" *ngIf="grafica"><p></p></div>
+<div class="row" *ngIf="grafica">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
 <div class="row" *ngIf="grafica">
   <div class="col-10"><p></p></div>
   <div class="col-2">

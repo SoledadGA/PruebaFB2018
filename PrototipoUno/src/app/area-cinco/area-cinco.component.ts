@@ -6,14 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-cinco.component.css']
 })
 export class AreaCincoComponent implements OnInit {
-  cabecera='imagenes/cabeceras/CabeceraArea5.png';
-  mostrarCriterio=true;
-  contadorErrores=0;
-  valor=0;
-  criterio='Diagnostica la capacidad para escuchar una orden y codificarla en respuesta (Sí o No)';
-  instruccion='"Ahora contestarás Sí o No"';
-  audioInstruccion='aundio/area5/instruccion.mp3';
-  preguntas=['¿Los pájaros comen?',
+
+  errores = 0;
+  valor = 0;
+  mostrarCriterio = true;
+  mostrarPreguntas=true;
+  mostrarAreaPositiva = false;
+  cabecera = 'imagenes/cabeceras/CabeceraArea5.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
+  criterio = 'Diagnostica la capacidad para escuchar una orden y codificarla en respuesta (Sí o No)';
+  instruccion = '"Ahora contestarás Sí o No"';
+  preguntas=[
+    '¿Los pájaros comen?',
     '¿Los gatos vuelan?',
     '¿Los bebés lloran?',
     '¿Los árboles bailan?',
@@ -28,7 +34,8 @@ export class AreaCincoComponent implements OnInit {
     '¿Las flores comen?',
     '¿Los trenes duermen?',
     '¿Los sapos saltan?'];
-  audio=['audio/area5/instruccion-1.mp3',
+  audio = [
+    'audio/area5/instruccion-1.mp3',
     'audio/area5/2.mp3',
     'audio/area5/3.mp3',
     'audio/area5/4.mp3',
@@ -43,9 +50,7 @@ export class AreaCincoComponent implements OnInit {
     'audio/area5/13.mp3',
     'audio/area5/14.mp3',
     'audio/area5/15.mp3',];
-  respuesta=['positivo'];
-  mostrarPreguntas=true;
-
+  respuesta=[];
 
   siguiente( entrada: number){
     this.mostrarCriterio=false;
@@ -53,6 +58,7 @@ export class AreaCincoComponent implements OnInit {
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
         console.log(this.respuesta[this.valor]);
+        this.errores=this.errores+1;
       }else{
         this.respuesta[this.valor]='Positivo';
       }
@@ -60,7 +66,7 @@ export class AreaCincoComponent implements OnInit {
     }else{
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
-        this.contadorErrores=this.contadorErrores+1;
+        this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
         this.valor=this.valor+1;
       }else {
@@ -68,13 +74,13 @@ export class AreaCincoComponent implements OnInit {
         this.respuesta[this.valor]='Positivo';
         this.valor=this.valor+1;
       }
-
     }
-    if (this.contadorErrores==3){
+    if (this.errores==3){
       this.mostrarPreguntas=false;
-
+      this.mostrarAreaPositiva=false;
+    }else{
+      this.mostrarAreaPositiva=true;
     }
-
   }
   constructor() { }
 

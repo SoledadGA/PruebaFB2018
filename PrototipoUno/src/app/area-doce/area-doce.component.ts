@@ -6,17 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-doce.component.css']
 })
 export class AreaDoceComponent implements OnInit {
-  imagenCabecera = 'imagenes/cabeceras/CabeceraArea12.png';
+
   valor = 0;
   errores = 0;
-
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-
   mostrarDiagnostico = true;
-  mostrarBoton=false;
-  queDiagnostica = 'Diagnostica la coordinacipon visual auditiva motora, con patrón visual y auditivo.';
-
   mostrarPreguntas = true;
+  mostrarBoton = false;
+  mostrarAreaPositiva = false;
+  imagenCabecera = 'imagenes/cabeceras/CabeceraArea12.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
+  queDiagnostica = 'Diagnostica la coordinacipon visual auditiva motora, con patrón visual y auditivo.';
   instruccion = 'Mira, escucha y repite después de mí';
   preguntas=[
   '000',
@@ -34,9 +35,6 @@ export class AreaDoceComponent implements OnInit {
     'audio/area12/5.mp4',
     'audio/area12/6.mp4',
     'audio/area12/7.mp4',];
-  mostrarAreaPositiva = false;
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
   respuesta = ['Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo', 'Positivo'];
 
   siguientePregunta( entrada: number){
@@ -51,6 +49,8 @@ export class AreaDoceComponent implements OnInit {
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
+      }else{
+        this.respuesta[this.valor]='Positivo';
       }
       if (this.errores>=3){
         this.mostrarAreaPositiva = false;
@@ -58,12 +58,13 @@ export class AreaDoceComponent implements OnInit {
         this.mostrarAreaPositiva = true;
       }
       this.mostrarPreguntas=false;
-
     }else{
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
         this.errores=this.errores+1;
         console.log(this.errores);
+      }else{
+        this.respuesta[this.valor]='Positivo';
       }
       this.valor=this.valor+1;
     }

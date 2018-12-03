@@ -3,10 +3,13 @@
     <img src="{{cabecera}}" style="height: auto;width: 100%" >
   </div>
 </div>
+
+<!-- Ejemplo !-->
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-10 sa-borde">
-    <p>{{queDignostica}}</p>
+    <p>{{queDiagnostica}}</p>
+    <p>{{queDiagnostica2}}</p>
   </div>
   <div class="col-1"></div>
 </div>
@@ -14,19 +17,19 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-10">
-    <p>{{nombreEjemplo}}</p>
+    <h3>{{nombreEjemplo}}</h3>
   </div>
-  <div class="col-1"></div>
 </div>
+<div class="row"><p></p></div>
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"></div>
   <div class="col-4">
-    <p>{{textoInstruccion}}</p>
+    <h6>{{textoInstruccion}}</h6>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    <div class="row">
+    <div class="row sa-centrar">
       <audio src="{{audioInstrucciones}}" controls autoplay >
-        <p>Tu navegador no implementa el elemento audio</p>
+        <p>{{errorAudio}}</p>
       </audio>
     </div>
   </div>
@@ -56,6 +59,7 @@
   </div>
 </div>
 
+<!-- Preguntas !-->
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-1"></div>
   <div class="col-10">
@@ -65,20 +69,17 @@
 </div>
 
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-5"></div>
-  <div class="col-3">
-    <div class="row">
-      <h5>{{preguntas[valor]}}</h5>
-    </div>
-    <div class="row"><p></p></div>
-    <div class="row"><p></p></div>
-    <div class="row">
-      <audio src="{{audio[valor]}}" controls autoplay >
-        <p>Tu navegador no implementa el elemento audio</p>
-      </audio>
-    </div>
+  <!--<div class="col-5"></div>!-->
+  <div class="sa-centrar">
+    <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
-  <div class="col-5"></div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="sa-centrar">
+      <audio src="{{audio[valor]}}" controls autoplay >
+        <p>{{errorAudio}}</p>
+      </audio>
+  </div>
 </div>
 
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
@@ -96,6 +97,7 @@
   </div>
 </div>
 
+<!-- Respuestas !-->
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-1"></div>
   <div class="col-4">
@@ -116,6 +118,19 @@
     </ul>
   </div>
 </div>
+
+<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
+<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="col-4 sa-color" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-10"><p></p></div>
   <div class="col-2">

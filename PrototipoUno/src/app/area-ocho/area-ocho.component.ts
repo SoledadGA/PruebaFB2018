@@ -6,25 +6,32 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-ocho.component.css']
 })
 export class AreaOchoComponent implements OnInit {
-  cabecera='imagenes/cabeceras/CabeceraArea8.png';
-  mostrarCriterio=true;
-  mostrarRespuesta=false;
-  contadorErrores=0;
+
+  errores=0;
   valor=0;
+  mostrarCriterio=true;
+  mostrarPreguntas=true;
+  mostrarRespuesta=false;
+  mostrarAreaPositiva = false;
+  cabecera='imagenes/cabeceras/CabeceraArea8.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio';
+  areaDebilitada = 'Se considera como área debilitada';
+  areaPositiva = 'Se considera como área positiva';
   criterio='Diagnostica como se expresa el estudiante en forma viso-motora.';
   instruccion='"Yo te nombro un objeto y tú responderás con mímica o señas"';
-  audioInicial='audio/area8/instruccion.mp3';
-  preguntas=['Martillo',
+  preguntas=[
+    'Martillo',
     'Guitarra',
     'Cuchara',
-    'teléfono',
+    'Teléfono',
     'Cepillo y pasta de dientes',
     'Tijeras',
     'Sacapuntas',
     'Lápiz',
     'Cuchillo',
     'Escoba'];
-  audio=['audio/area8/instruccion-1.mp3',
+  audio=[
+    'audio/area8/instruccion-1.mp3',
     'audio/area8/2.mp3',
     'audio/area8/3.mp3',
     'audio/area8/4.mp3',
@@ -34,7 +41,8 @@ export class AreaOchoComponent implements OnInit {
     'audio/area8/8.mp3',
     'audio/area8/9.mp3',
     'audio/area8/10.mp3',];
-  imagenes=['imagenes/area8/1.png',
+  imagenes=[
+    'imagenes/area8/1.png',
     'imagenes/area8/2.png',
     'imagenes/area8/3.png',
     'imagenes/area8/4.png',
@@ -44,10 +52,7 @@ export class AreaOchoComponent implements OnInit {
     'imagenes/area8/8.png',
     'imagenes/area8/9.png',
     'imagenes/area8/10.png'];
-  respuesta=['positivo'];
-  mostrarPreguntas=true;
-
-
+  respuesta=[];
 
   siguiente( entrada: number){
   this.mostrarCriterio=false;
@@ -64,7 +69,7 @@ export class AreaOchoComponent implements OnInit {
     }else{
       if (entrada==0){
         this.respuesta[this.valor]='Negativo';
-        this.contadorErrores=this.contadorErrores+1;
+        this.errores=this.errores+1;
         console.log(this.respuesta[this.valor]);
         this.valor=this.valor+1;
       }else {
@@ -74,7 +79,7 @@ export class AreaOchoComponent implements OnInit {
       }
 
     }
-    if (this.contadorErrores==3){
+    if (this.errores==3){
       this.mostrarPreguntas=false;
       this.mostrarRespuesta=true;
 

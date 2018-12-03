@@ -32,3 +32,9 @@
   width: 200px;
   height: 50px;
 }
+
+.sa-centrar{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

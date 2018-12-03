@@ -6,28 +6,27 @@
 <!--Diagnsotico><!-->
 <div class="row" *ngIf="mostrarDiagnostico">
   <div class="col-1"><p></p></div>
-  <div class="col-10 sa-borde sa-centrar">
+  <div class="col-10 sa-borde">
     <p>{{queDiagnostica}}</p>
   </div>
 </div>
 <div class="row" *ngIf="mostrarDiagnostico"><p></p></div>
 
-
 <!--Preguntas><!-->
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-3"></div>
-  <div class="col-6">
-    <div class="row">
-      <h5>{{valor+1}}. {{instruccion}}</h5>
-    </div>
-    <div class="row">
-      <video src="{{audio[valor]}}"  width="100%" height="100%" controls autoplay >
-        <p>{{errorAudio}}</p>
-      </video>
-    </div>
+  <div class="sa-centrar">
+    <h3>{{valor+1}}. {{instruccion}}</h3>
   </div>
-  <div class="col-5"></div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-2"></div>
+  <div class="col-7">
+    <video src="{{audio[valor]}}"  width="100%" height="100%" controls autoplay >
+      <p>{{errorAudio}}</p>
+    </video>
+  </div>
 </div>
 
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
@@ -58,8 +57,8 @@
 
 <!--Respuestas><!-->
 <div class="row" *ngIf="!mostrarPreguntas">
-  <div class="col-1"></div>
-  <div class="col-5">
+  <div class="col-3"></div>
+  <div class="col-3">
     <h3>Preguntas</h3>
     <ul>
       <li *ngFor="let question of preguntas">
@@ -83,10 +82,10 @@
 <div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-4"><p></p></div>
-  <div class="col-4" style="color: limegreen;" *ngIf="mostrarAreaPositiva">
+  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>
   </div>
-  <div class="col-4 sa-color" style="color: crimson" *ngIf="!mostrarAreaPositiva">
+  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
     <h5>{{areaDebilitada}}</h5>
   </div>
 </div>
