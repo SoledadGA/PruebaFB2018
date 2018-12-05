@@ -1,0 +1,257 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src={{imagenCabecera}} style="height: auto;width: 100%" >
+  </div>
+</div>
+<div class="row"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde">
+    <p>{{indicacion}}</p>
+  </div>
+  <div class="col-1"><p></p></div>
+</div>
+<div class="row" *ngIf="mostrar_ejemplo"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="col-1"><p></p></div>
+  <div class="col-10">
+    <h3>Ejemplo</h3>
+  </div>
+  <div class="col-1"><p></p></div>
+</div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="sa-centrar">
+    <h3>{{texto_ejemplo}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="sa-centrar">
+    <audio src="{{audio}}" controls autoplay >
+    </audio>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejemplo"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="col-3"><p></p></div>
+  <div class="col-6">
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(1)"><h1>&nbsp;{{arreglo1[0]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(2)"><h1>&nbsp;{{arreglo1[1]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(3)"><h1>&nbsp;{{arreglo1[2]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(4)"><h1>&nbsp;{{arreglo1[3]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(5)"><h1>&nbsp;{{arreglo1[4]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(6)"><h1>&nbsp;{{arreglo1[5]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(7)"><h1>&nbsp;{{arreglo1[6]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(8)"><h1>&nbsp;{{arreglo1[7]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(9)"><h1>&nbsp;{{arreglo1[8]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(10)"><h1>&nbsp;{{arreglo1[9]}}</h1></button></div>
+      <div class="col-1"><p></p></div>
+    </div>
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(11)"><h1>&nbsp;{{arreglo1[10]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(12)"><h1>&nbsp;{{arreglo1[11]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(13)"><h1>&nbsp;{{arreglo1[12]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(14)"><h1>&nbsp;{{arreglo1[13]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(15)"><h1>&nbsp;{{arreglo1[14]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(16)"><h1>&nbsp;{{arreglo1[15]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(17)"><h1>&nbsp;{{arreglo1[16]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(18)"><h1>&nbsp;{{arreglo1[17]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(19)"><h1>&nbsp;{{arreglo1[18]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones0" (click)="funcionClicE(20)"><h1>&nbsp;{{arreglo1[19]}}</h1></button></div>
+      <div class="col-1"><p></p></div>
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejemplo"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo"><p></p></div>
+<div class="row" *ngIf="mostrar_ejemplo">
+  <div class="col-10"><p></p></div>
+  <div class="col-2"><button class="sa-btn" (click)="terminar_ejemplo()">Siguiente</button></div>
+  <div class="col-1"><p></p></div>
+</div>
+<div class="row" *ngIf="elegir_opcion"><p></p></div>
+<div class="row" *ngIf="elegir_opcion"><p></p></div>
+<div class="row" *ngIf="elegir_opcion"><p></p></div>
+<div class="row" *ngIf="elegir_opcion"><p></p></div>
+<div class="row" *ngIf="elegir_opcion">
+  <div class="col-2"><p></p></div>
+  <div class="col-4">
+    <div class="row">
+      <h3>Realizar Prueba en Papel</h3>
+    </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-8"><button class="sa-btn" (click)="prueba_en_papel()">Papel</button></div>
+    </div>
+  </div>
+  <div class="col-1"><p></p></div>
+  <div class="col-4">
+    <div class="row">
+      <h3>Realizar Prueba en Computadora</h3>
+    </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-8"><button class="sa-btn" (click)="prueba_en_computadora()">Computadora</button></div>
+    </div>
+  </div>
+
+</div>
+
+
+<div class="row" *ngIf="mostrar_ejercicio_en_computadora">
+  <div class="col-10">
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(1)"><h1>&nbsp;{{arreglo[0]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(2)"><h1>&nbsp;{{arreglo[1]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(3)"><h1>&nbsp;{{arreglo[2]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(4)"><h1>&nbsp;{{arreglo[3]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(5)"><h1>&nbsp;{{arreglo[4]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(6)"><h1>&nbsp;{{arreglo[5]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(7)"><h1>&nbsp;{{arreglo[6]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(8)"><h1>&nbsp;{{arreglo[7]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(9)"><h1>&nbsp;{{arreglo[8]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(10)"><h1>&nbsp;{{arreglo[9]}}</h1></button></div>
+      <div class="col-1"><p></p></div>
+    </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-1"><p></p></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(11)"><h1>&nbsp;{{arreglo[10]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(12)"><h1>&nbsp;{{arreglo[11]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(13)"><h1>&nbsp;{{arreglo[12]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(14)"><h1>&nbsp;{{arreglo[13]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(15)"><h1>&nbsp;{{arreglo[14]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(16)"><h1>&nbsp;{{arreglo[15]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(17)"><h1>&nbsp;{{arreglo[16]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(18)"><h1>&nbsp;{{arreglo[17]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(19)"><h1>&nbsp;{{arreglo[18]}}</h1></button></div>
+      <div class="col-1"><button class="sa-botones" (click)="funcionClic(20)"><h1>&nbsp;{{arreglo[19]}}</h1></button></div>
+      <div class="col-1"><p></p></div>
+    </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div><div class="row">
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(21)"><h1>&nbsp;{{arreglo[20]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(22)"><h1>&nbsp;{{arreglo[21]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(23)"><h1>&nbsp;{{arreglo[22]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(24)"><h1>&nbsp;{{arreglo[23]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(25)"><h1>&nbsp;{{arreglo[24]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(26)"><h1>&nbsp;{{arreglo[25]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(27)"><h1>&nbsp;{{arreglo[26]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(28)"><h1>&nbsp;{{arreglo[27]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(29)"><h1>&nbsp;{{arreglo[28]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(30)"><h1>&nbsp;{{arreglo[29]}}</h1></button></div>
+    <div class="col-1"><p></p></div>
+  </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div><div class="row">
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(31)"><h1>&nbsp;{{arreglo[30]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(32)"><h1>&nbsp;{{arreglo[31]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(33)"><h1>&nbsp;{{arreglo[32]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(34)"><h1>&nbsp;{{arreglo[33]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(35)"><h1>&nbsp;{{arreglo[34]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(36)"><h1>&nbsp;{{arreglo[35]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(37)"><h1>&nbsp;{{arreglo[36]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(38)"><h1>&nbsp;{{arreglo[37]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(39)"><h1>&nbsp;{{arreglo[38]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(40)"><h1>&nbsp;{{arreglo[39]}}</h1></button></div>
+    <div class="col-1"><p></p></div>
+  </div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div><div class="row">
+    <div class="col-1"><p></p></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(41)"><h1>&nbsp;{{arreglo[40]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(42)"><h1>&nbsp;{{arreglo[41]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(43)"><h1>&nbsp;{{arreglo[42]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(44)"><h1>&nbsp;{{arreglo[43]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(45)"><h1>&nbsp;{{arreglo[44]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(46)"><h1>&nbsp;{{arreglo[45]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(47)"><h1>&nbsp;{{arreglo[46]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(48)"><h1>&nbsp;{{arreglo[47]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(49)"><h1>&nbsp;{{arreglo[48]}}</h1></button></div>
+    <div class="col-1"><button class="sa-botones" (click)="funcionClic(50)"><h1>&nbsp;{{arreglo[49]}}</h1></button></div>
+    <div class="col-1"><p></p></div>
+  </div>
+  </div>
+  <div class="col-2">
+    <div class="row">
+      <h3>Cronometro</h3>
+    </div>
+    <div class="row" *ngIf="!mostrar_mensaje">
+      <div class="col-1"><p></p></div>
+      <div class="col-1">
+        <h1>{{contador_segundos}}</h1>
+      </div>
+
+    </div>
+    <div class="row" *ngIf="mostrar_botones_cronometro">
+
+      <div class="col-10">
+        <button class="sa-btn" (click)="cargar()">Iniciar</button>
+      </div>
+
+    </div>
+    <div class="row" *ngIf="mostrar_mensaje">
+      <h6>{{mensaje}}</h6>
+    </div>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" >
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde">{{mensaje_papel}}</div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="sa-centrar">
+    <h3>{{texto_ejemplo}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="sa-centrar">
+    <audio src="{{audio}}" controls autoplay >
+    </audio>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="col-4"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
+  <div class="col-3">
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrar_respuesta">
+  <div class="col-5"><p></p></div>
+  <div class="col-6" *ngIf="respuesta_computadora"><h2>{{resultados}}</h2> <h1>{{recorrer}} puntos</h1>
+    <h2>{{respuesta_papel}}</h2></div>
+  <div class="col-6" *ngIf="mostrar_respuesta_papel"><h2>{{respuesta_papel}}</h2></div>
+</div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" [routerLink]="['/areaDiecisiete']">Siguiente</button>
+  </div>
+</div>
+

@@ -22,6 +22,7 @@ import { AreaDiecisieteComponent } from './area-diecisiete/area-diecisiete.compo
 import { AreaNueveComponent } from './area-nueve/area-nueve.component';
 import { AreaDiezComponent } from './area-diez/area-diez.component';
 import { AreaDoceComponent } from './area-doce/area-doce.component';
+import { AreaDieciseisComponent } from './area-dieciseis/area-dieciseis.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AreaDoceComponent } from './area-doce/area-doce.component';
     AreaDiecisieteComponent,
     AreaNueveComponent,
     AreaDiezComponent,
-    AreaDoceComponent
+    AreaDoceComponent,
+    AreaDieciseisComponent
   ],
   imports: [
     BrowserModule,
