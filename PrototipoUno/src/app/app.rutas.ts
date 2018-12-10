@@ -18,6 +18,7 @@ import {AreaNueveComponent} from "./area-nueve/area-nueve.component";
 import {AreaDiezComponent} from "./area-diez/area-diez.component";
 import {AreaDoceComponent} from "./area-doce/area-doce.component";
 import {AreaDieciseisComponent} from "./area-dieciseis/area-dieciseis.component";
+import {AreaCincoDosComponent} from "./area-cinco-dos/area-cinco-dos.component";
 
 
 
@@ -99,6 +100,10 @@ export const RUTAS_APP: Routes = [
   {
     path: 'areaDiecisiete',
     component: AreaDiecisieteComponent,
+  },
+  {
+    path: 'areaCincoDos',
+    component: AreaCincoDosComponent,
   },
 
 

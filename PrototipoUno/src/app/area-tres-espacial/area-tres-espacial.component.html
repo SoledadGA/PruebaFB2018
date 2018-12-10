@@ -15,16 +15,18 @@
         <div class="row"><p></p></div>
         <div class="row sa-borde" *ngIf="mostrarIndicacion">{{indicacion}}</div>
         <div class="row"><p></p></div>
-        <div class="row">{{instruccion[valor]}}</div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <h3>{{instruccion[valor]}}</h3>
+        </div>
       </div>
     </div>
     <div class="row"></div>
     <div class="row" *ngIf="mostrarSonido"><audio src="{{audio[valor]}}" controls autoplay >
       <p>{{errorAudio}}</p>
     </audio></div>
-
-
   </div>
+
   <div class="col-9" *ngIf="mostrarSilla" >
     <div class="row">
       <div class="col-3">
@@ -168,4 +170,3 @@
     <button class="sa-btn" [routerLink]="['/areaCuatro']">Siguiente</button>
   </div>
 </div>
-

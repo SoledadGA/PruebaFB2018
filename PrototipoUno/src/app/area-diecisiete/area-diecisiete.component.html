@@ -54,7 +54,7 @@
 
 <!--Respuestas><!-->
 <div class="row" *ngIf="!mostrarPreguntas">
-  <div class="col-3"></div>
+  <div class="col-4"></div>
   <div class="col-2">
     <h3>Preguntas</h3>
     <ul>
@@ -78,11 +78,10 @@
 <div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="!mostrarPreguntas">
-  <div class="col-4"><p></p></div>
-  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>
   </div>
-  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
     <h5>{{areaDebilitada}}</h5>
   </div>
 </div>

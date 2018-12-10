@@ -54,7 +54,7 @@
 <!--Preguntas><!-->
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
-      <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
+    <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
 </div>
 <div class="row" *ngIf="mostrarPreguntas">
@@ -82,7 +82,7 @@
 
 <!--Respuestas><!-->
 <div class="row" *ngIf="mostrarRespuestas">
-  <div class="col-1"></div>
+  <div class="col-2"></div>
   <div class="col-5">
     <h3>Preguntas</h3>
     <ul>
@@ -91,8 +91,7 @@
       </li>
     </ul>
   </div>
-  <div class="col-1"></div>
-  <div class="col-4">
+  <div class="col-2">
     <h3>Respuestas</h3>
     <ul>
       <li *ngFor="let resp of respuesta">
@@ -105,11 +104,10 @@
 <div class="row" *ngIf="mostrarRespuestas"><p></p></div>
 <div class="row" *ngIf="mostrarRespuestas"><p></p></div>
 <div class="row" *ngIf="mostrarRespuestas"><p></p>
-  <div class="col-4"><p></p></div>
-  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>
   </div>
-  <div class="col-4 sa-color" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
     <h5>{{areaDebilitada}}</h5>
   </div>
 </div>
