@@ -1,0 +1,42 @@
+.sa-borde {
+  border: black solid 1px;
+  width: 100%;
+}
+
+.sa-centrar {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sa-btn {
+  background: cornflowerblue;
+  width: 100%;
+  height: 200%;
+}
+
+.sa-btn1 {
+  background: cornflowerblue;
+  width: 65%;
+  height: 200%;
+}
+
+.hoja {
+  font-family: Arial;
+}
+
+.estilo1 {
+  width: 5%;
+}
+
+.estilo2 {
+  width: 50%;
+}
+
+.estilo3 {
+  width: 3%;
+}
+
+.estilo4{
+  width: 10%;
+}

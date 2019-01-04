@@ -19,6 +19,8 @@ import {AreaDiezComponent} from "./area-diez/area-diez.component";
 import {AreaDoceComponent} from "./area-doce/area-doce.component";
 import {AreaDieciseisComponent} from "./area-dieciseis/area-dieciseis.component";
 import {AreaTreceComponent} from "./area-trece/area-trece.component";
+import {FormularioComponent} from './formulario/formulario.component';
+import {EstadisticasComponent} from './estadisticas/estadisticas.component';
 
 
 
@@ -107,7 +109,15 @@ export const RUTAS_APP: Routes = [
     component: AreaDiecisieteComponent,
   },
 
+  {
+    path: 'formulario',
+    component: FormularioComponent,
+  },
 
+  {
+    path: 'estadisticas',
+    component: EstadisticasComponent,
+  },
 
   {
     path: '**',

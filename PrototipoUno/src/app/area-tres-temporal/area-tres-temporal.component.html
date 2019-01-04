@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarEjemplo"><br></div>
+<div class="row"><br></div>
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-1"><p></p></div>
   <div class="col-10 sa-borde">
@@ -22,7 +22,7 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="sa-centrar">
     <br>
-    <h5>{{textoInstruccion}}</h5>
+    <h3>{{textoInstruccion}}</h3>
   </div>
 </div>
 <div class="row" *ngIf="mostrarEjemplo">
@@ -35,13 +35,13 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-2"><p></p></div>
   <div class="col-5">
-    <button class="sa-btnimg" (click)="iniciarPreguntas()" >
+    <button mat-flat-button="" button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor]}} class="sa-img">
     </button>
   </div>
 
   <div class="col-5">
-    <button class="sa-btnimg" (click)="iniciarPreguntas()" >
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor+1]}} class="sa-img">
     </button>
   </div>
@@ -72,12 +72,12 @@
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-2"><p></p></div>
   <div class="col-5" *ngIf="mostrarImagenes">
-    <button class="sa-btnimg" (click)="siguientePregunta(0)">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(0)">
       <img src={{respuestaNegativa[valor]}} class="sa-img">
     </button>
   </div>
   <div class="col-5" *ngIf="mostrarImagenes">
-    <button class="sa-btnimg" (click)="siguientePregunta(1)">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(1)">
       <img src={{respuestaPositiva[valor]}} class="sa-img">
     </button>
   </div>

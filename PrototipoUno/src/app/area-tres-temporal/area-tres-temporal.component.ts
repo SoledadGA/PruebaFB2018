@@ -24,14 +24,14 @@ export class AreaTresTemporalComponent implements OnInit {
   parteTitulo = 'Orientación Temporal.';
   imagenEjemplo = [
     'imagenes/area3T/noche.png',
-    'imagenes/area3T/dia.jpg'];
+    'imagenes/area3T/dia.png'];
   preguntas = [
     'En este momento. ¿Es de día o es de noche?',
     '¿Qué haces por las noches?',
     '¿Qué hiciste ayer en la escuela o en tu casa?',
     '¿Qué hiciste hoy?'];
   respuestaPositiva = [
-    'imagenes/area3T/dia.jpg',
+    'imagenes/area3T/dia.png',
     'imagenes/area3T/dormir.png'];
   respuestaNegativa = [
     'imagenes/area3T/noche.png',
