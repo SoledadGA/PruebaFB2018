@@ -1,0 +1,139 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src="{{imagenCabecera}}" style="height: auto;width: 100%" >
+  </div>
+</div>
+<!--Ejemplo><!-->
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="col-1"><p></p></div>
+  <div class="col-10">
+    <h3>{{nombreEjemplo}}</h3>
+  </div>
+</div>
+
+<div class="row"><br></div>
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde">
+    <p>{{queDiagnostica}}</p>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="sa-centrar">
+    <br>
+    <h3>{{textoInstruccion}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="sa-centrar">
+    <audio src="{{audioInstruccion}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarEjemplo"><br><br></div>
+<div class="row" *ngIf="mostrarEjemplo">
+  <div class="col-2"><p></p></div>
+  <div class="col-5">
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
+      <img src={{imagenEjemplo[valor]}} class="sa-img">
+    </button>
+  </div>
+
+  <div class="col-5">
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
+      <img src={{imagenEjemplo[valor+1]}} class="sa-img">
+    </button>
+  </div>
+</div>
+
+<!--Preguntas><!-->
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <h3>{{parteTitulo}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="sa-centrar">
+    <br>
+    <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="sa-centrar">
+    <audio src="{{audio[valor]}}" controls autoplay >
+      <p>{{errorAudio}}</p>
+    </audio>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-2"><p></p></div>
+  <div class="col-5" *ngIf="mostrarImagenes">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(0)">
+      <img src={{respuestaNegativa[valor]}} class="sa-img">
+    </button>
+  </div>
+  <div class="col-5" *ngIf="mostrarImagenes">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(1)">
+      <img src={{respuestaPositiva[valor]}} class="sa-img">
+    </button>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-4"><p></p></div>
+  <div class="col-2" *ngIf="!mostrarImagenes">
+    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
+  <div class="col-3" *ngIf="!mostrarImagenes">
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+  </div>
+</div>
+
+<!--Respuestas><!-->
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <h2>Resultado - {{parteTitulo}}</h2>
+  </div>
+</div>
+<div class="row"><br></div>
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-3"></div>
+  <div class="col-4">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let question of preguntas">
+        {{ question }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let resp of respuesta">
+        {{ resp }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarRespuestas"><br><br></div>
+<div class="row" *ngIf="mostrarRespuestas"><p></p>
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" [routerLink]="['/areaTresEspacial']">Siguiente</button>
+  </div>
+</div>

@@ -1,0 +1,510 @@
+<!-- >Cabecera<!-->
+<div class="hoja">
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1 sa-centrar">
+      <br>
+      <img src={{imagenCabecera}} style="height: auto;width: 120%" >
+    </div>
+    <div class="col-9 sa-centrar">
+      <h4>{{cabecera1}}</h4>
+      <br>
+      <h4>{{cabecera2}} {{anioLectivo}} - {{anioLectivo+1}}</h4>
+      <br>
+      <h4>{{cabecera3}}</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Datos estudiante<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10 sa-borde">
+      <div class="row">
+        <div class="col-1">
+          <h5>{{datos[valor]}}</h5>
+        </div>
+        <div class="col-5">
+          {{respuesta[valor]}}
+        </div>
+        <div class="col-2">
+          <h5>{{datos[valor+1]}}</h5>
+        </div>
+        <div class="col-1">
+          {{respuesta[valor+1]}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <h5>{{datos[valor+2]}}</h5>
+        </div>
+        <div class="col-5">
+          {{respuesta[valor+2]}}
+        </div>
+        <div class="col-2">
+          <h5>{{datos[valor+3]}}</h5>
+        </div>
+        <div class="col-1">
+          {{respuesta[valor+3]}}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <h5>{{datos[valor+4]}}</h5>
+        </div>
+        <div class="col-5">
+          {{respuesta[valor+4]}}
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area1<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea1; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- >Area2<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+1]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+1]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea2; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- >Area3<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+2]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+2]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area3T<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h5>{{subtituloArea3[valor]}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea3T; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- >Area3E<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h5>{{subtituloArea3[valor+1]}}</h5>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea3E; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- >Area4<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+3]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+3]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea4; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- >Area5<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+4]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+4]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea5; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area6<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+5]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+5]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea6; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area7<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+6]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+6]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea7; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area8<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+7]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+7]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea8; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area9<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+8]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+8]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea9; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area10<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+9]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+9]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea10; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area11<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+10]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+10]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea11; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area12<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+11]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+11]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea12; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area13<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+12]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+12]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea13; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area14<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+13]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+13]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea14; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area15<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+14]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+14]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea15; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area16<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+15]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+15]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea16; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area17<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+16]}}</h4>
+    </div>
+    <div class="col-5">
+      <h6>{{calificacion[valor+16]}}</h6>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul type="none">
+        <li *ngFor="let indice=index;let respuesta of respuestasArea17; " style="display: inline; padding-right:10%;" >
+          <div style="display: inline">{{indice+1}}. {{respuesta}}</div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-4"><p></p></div>
+    <div class="col-2">
+      <button class="sa-btn" (click)="imprimir()">Imprimir</button>
+    </div>
+    <div class="col-3">
+      <button class="sa-btn1" [routerLink]="['/recomendaciones']">Recomendaciones</button>
+    </div>
+  </div>
+</div>

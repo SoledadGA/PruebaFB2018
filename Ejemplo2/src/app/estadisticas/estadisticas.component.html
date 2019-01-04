@@ -1,0 +1,133 @@
+<!-- >Cabecera<!-->
+<div class="hoja">
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1 sa-centrar">
+      <br>
+      <img src={{imagenCabecera}} style="height: auto;width: 120%" >
+    </div>
+    <div class="col-9 sa-centrar">
+      <h4>{{cabecera1}}</h4>
+      <br>
+      <h4>{{cabecera2}} {{anioLectivo}} - {{anioLectivo+1}}</h4>
+      <br>
+      <h4>{{cabecera3}}</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Cuadro 1<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h4>{{subtitulos[valor]}}</h4>
+    </div>
+  </div>
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <table>
+        <thead>
+        <tr>
+          <th class="sa-borde sa-centrar" rowspan="3" style="width:5%">{{cabeceraTabla[valor]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="3" style="width:50%">{{cabeceraTabla[valor+1]}}</th>
+          <th class="sa-borde sa-centrar" colspan="18">{{cabeceraTabla[valor+2]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="3" style="width:10%">{{cabeceraTabla[valor+3]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="3" style="width:10%">{{cabeceraTabla[valor+4]}}</th>
+        </tr>
+        <tr>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+1]}}</th>
+          <th class="sa-borde sa-centrar" colspan="2">{{cabeceraAreasTabla[valor+2]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+3]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+4]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+5]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+6]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+7]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+8]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+9]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+10]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+11]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+12]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+13]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+14]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+15]}}</th>
+          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+16]}}</th>
+        </tr>
+        <tr>
+          <th class="sa-borde sa-centrar" style="width:3%">{{cabeceraAreasTabla[valor+17]}}</th>
+          <th class="sa-borde sa-centrar" style="width:3%">{{cabeceraAreasTabla[valor+18]}}</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let lista of nomina;let ind=index">
+          <td *ngFor="let dat of datos;let indice=index" class="sa-borde sa-centrar {{estiloTabla[indice]}}">{{dat}}</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor]}}</th>
+          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let positivo of valoresAfirmativos">{{positivo}}</td>
+        </tr>
+        <tr>
+          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+1]}}</th>
+          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let porcentajeP of porcentajesAfirmativos">{{porcentajeP}}</td>
+        </tr>
+        <tr>
+          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+2]}}</th>
+          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let negativo of valoresNegativos">{{negativo}}</td>
+        </tr>
+        <tr>
+          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+3]}}</th>
+          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let porcentajeNeg of porcentajesNegativo">{{porcentajeNeg}}</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Gráfico 1<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h4>{{subtitulos[valor+1]}}</h4>
+    </div>
+  </div>
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <p-chart type="bar"
+               [data]="datosGrafico"
+               [options]="opcionesGrafico"></p-chart>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Cuadro 2<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <h4>{{subtitulos[valor+2]}}</h4>
+    </div>
+  </div>
+
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-4"><p></p></div>
+    <div class="col-2">
+      <button class="sa-btn" (click)="imprimir()">Imprimir</button>
+    </div>
+    <div class="col-3">
+      <button class="sa-btn1" [routerLink]="['/inicio']">Inicio</button>
+    </div>
+  </div>
+</div>
