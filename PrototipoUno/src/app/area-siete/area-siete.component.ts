@@ -11,13 +11,13 @@ export class AreaSieteComponent implements OnInit {
   errores = 0;
   mostrarEjemplo = true;
   mostrarPreguntas = false;
-  mostrarRespuestas=false;
+  mostrarRespuestas = false;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea7.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
-  nombreEjemplo = 'Ejemplo';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
+  nombreEjemplo = 'Ejemplo.';
   queDiagnostica = 'Diagnostica codificaciones y decodificaciones abstractas del estudiante.';
   instruccion = '"Completa la frase que yo quiero decir."';
   instruccion2 = 'El arroz es para comer, el agua es para...';
@@ -31,7 +31,7 @@ export class AreaSieteComponent implements OnInit {
     'El humo sube, la lluvia...',
     'Yo me siento en una silla, tu duermes en una...',
     'El fuego significa calor, el hielo significa...',
-    'Yo como en un plato, tú tomas en una...',
+    'Yo como en un plato, tú tomas en un...',
     'Juan es un niño, María es una...',
     'Los oídos son para escuchar, los ojos son para...',
     'Yo estoy despierto durante el día, tú estás dormido durante la...',
@@ -56,24 +56,24 @@ export class AreaSieteComponent implements OnInit {
   }
 
   siguientePregunta(entrada: number) {
-    if (this.valor + 1 == 10){
+    if (this.valor + 1 == 10) {
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
-        this.errores=this.errores+1;
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-      }else{
+      } else {
         this.respuesta[this.valor] = 'Positivo';
       }
-      if(this.errores>3){
-        this.mostrarAreaPositiva=false;
+      if (this.errores > 3) {
+        this.mostrarAreaPositiva = false;
       }
-      this.mostrarAreaPositiva=true;
+      this.mostrarAreaPositiva = true;
       this.mostrarPreguntas = false;
-      this.mostrarRespuestas=true;
+      this.mostrarRespuestas = true;
     } else {
       if (entrada == 0) {
         this.respuesta[this.valor] = 'Negativo';
-        this.errores=this.errores+1;
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
       } else {
         this.respuesta[this.valor] = 'Positivo';
@@ -81,10 +81,10 @@ export class AreaSieteComponent implements OnInit {
       }
     }
     this.valor = this.valor + 1;
-    if(this.errores==3){
-      this.mostrarPreguntas=false;
-      this.mostrarRespuestas=true;
-      this.mostrarAreaPositiva=false;
+    if (this.errores > 2) {
+      this.mostrarPreguntas = false;
+      this.mostrarRespuestas = true;
+      this.mostrarAreaPositiva = false;
     }
   }
   constructor() { }

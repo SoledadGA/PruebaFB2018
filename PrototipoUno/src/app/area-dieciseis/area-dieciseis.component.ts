@@ -6,14 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-dieciseis.component.css']
 })
 export class AreaDieciseisComponent implements OnInit {
-  imagenCabecera = 'imagenes/cabeceras/CabeceraArea16.png';
+  cabecera = 'imagenes/cabeceras/CabeceraArea16.png'
   contador_segundos = 60;
+  contador_segundos_papel = 20;
+  mostrar_alarma = false;
+  imagen_cronometro = 'imagenes/area16/cronometro.png';
+  alarma = 'audio/area16/alarma.mp3';
   mostrar_mensaje = false;
   indicacion = 'Diagnóstica atención y fatiga. Esta área se puede realizar tanto' +
     ' en la computadora como en el papel, queda a criterio del evaluador.';
   mostrar_botones_cronometro = true;
   mensaje = 'Se termino el tiempo';
   mostrar_ejemplo = true;
+  mostrar_cronometro_papel = true;
   recorrer = 0;
   recorrerE = 0;
   arreglo = [];
@@ -28,7 +33,8 @@ export class AreaDieciseisComponent implements OnInit {
   cronometro_iniciado = false;
   respuesta_computadora = false;
   mostrar_respuesta_papel = false;
-  respuesta_papel = 'Area Positiva';
+  mensaje_computadora = 'Se considera como área negativa';
+  respuesta_papel = 'Se considera como área negativa';
   mensaje_papel = 'Diagnóstica atención y fatiga.\n' +
     'De izquierda a derecha y de arriba hacia abajo.\n' +
     'No se admite que haga bombas o rallas, además no debe saltarse cuadros.';
@@ -37,9 +43,9 @@ export class AreaDieciseisComponent implements OnInit {
     this.mostrar_ejercicio_en_papel = false;
     this.mostrar_respuesta_papel = true;
     if (numero == 1){
-      this.respuesta_papel = 'Area Positiva';
+      this.respuesta_papel = 'Se considera como área positiva';
     } else {
-      this.respuesta_papel = 'Area Negativa';
+      this.respuesta_papel = 'Se considera como área debilitada';
     }
   }
   terminar_ejemplo() {
@@ -57,17 +63,18 @@ export class AreaDieciseisComponent implements OnInit {
   funcionClic(posicion: number ) {
     if (this.recorrer + 1 == 1){
       if(!this.cronometro_iniciado){
-        alert('Iniciar el Cronometro');
+        alert('Sigue las instrucciones como esta en el ejemplo');
       }
     }
-    if (this.recorrer + 1 == 50){
-      this.mostrar_ejercicio_en_computadora = false;
-      this.mostrar_respuesta = true;
-    }
+    // if (this.recorrer + 1 == 50){
+    //   this.mostrar_ejercicio_en_computadora = false;
+    //   this.mostrar_respuesta = true;
+    // }
     if (this.recorrer + 1 == posicion) {
       this.arreglo[this.recorrer] = '.';
       this.recorrer = this.recorrer + 1;
     }
+    console.log(this.recorrer);
   }
   funcionClicE(posicion: number ) {
     if (this.recorrerE + 1 == posicion) {
@@ -76,22 +83,36 @@ export class AreaDieciseisComponent implements OnInit {
     }
   }
   cargar() {
-    this.mostrar_botones_cronometro = false;
     this.cronometro_iniciado = true;
     this.respuesta_computadora = true;
     window.setInterval(
       () => {
         this.contador_segundos = this.contador_segundos - 1;
+        if (this.recorrer >= 50) {
+          this.mensaje_computadora = 'Se considera como área Positiva';
+          console.log('Area Posi');
+        }
         if (this.contador_segundos ==  0) {
           this.mostrar_mensaje = true;
           this.mostrar_ejercicio_en_computadora = false;
           this.mostrar_respuesta = true;
-          this.respuesta_papel = 'Area Negativa';
         }
       },
       1000);
   }
-
+  cronometroPapel() {
+    this.mostrar_botones_cronometro = false;
+    this.mostrar_respuesta_papel = true;
+    window.setInterval(
+      () => {
+        this.contador_segundos_papel = this.contador_segundos_papel - 1 ;
+        if (this.contador_segundos_papel ==  0) {
+          this.mostrar_alarma = true;
+          this.mostrar_cronometro_papel = false;
+        }
+      },
+      1000);
+  }
   constructor() { }
 
   ngOnInit() {

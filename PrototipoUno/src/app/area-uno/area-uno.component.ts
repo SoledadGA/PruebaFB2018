@@ -19,40 +19,40 @@ export class AreaUnoComponent implements OnInit {
   grafica = false;
   mostrarAreaPositiva = false;
   cabecera = 'imagenes/cabeceras/CabeceraArea1.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   textoInstruccion = [
-    '"Mira a los niños lo que hacen, ahora tu harás lo mismo"',
-    '"Ahora señala en el espejo"',
-    '"Ahora harás lo mismo con otra persona"'];
+    '"Mira a los niños lo que hacen, ahora tu harás lo mismo."',
+    '"Ahora señala en el espejo."',
+    '"Ahora, harás lo mismo con otra persona."'];
   queDignostica = [
-    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo',
-    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo frente a un espejo',
-    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en otra persona'];
+    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo.',
+    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en su propio cuerpo frente a un espejo.',
+    'Diagnostica el conocimiento que tiene el estudiante del esquema corporal en otra persona.'];
   nombreEjemplo = [
-    'En su propio cuerpo - Ejemplo',
-    'En el espejo - Ejemplo',
-    'En otra persona - Ejemplo'];
+    'En su propio cuerpo - Ejemplo.',
+    'En el espejo - Ejemplo.',
+    'En otra persona - Ejemplo.'];
   instruccion = [
-    'Se pide señalar las siguientes 4 partes finas(boca, ojos, nariz, dedo)',
-    'Se pide señalar partes finas o gruesas(cabeza, manos, piernas, ojos)',
-    'Se pide señalar las siguientes 4 partes gruesas(brazos, piernas, espalda, pecho)'];
+    'Se pide señalar las siguientes 4 partes finas (boca, ojos, nariz, dedo).',
+    'Se pide señalar partes finas o gruesas (cabeza, manos, piernas, ojos).',
+    'Se pide señalar las siguientes 4 partes gruesas (brazos, piernas, espalda, pecho).'];
   preguntasP = [
-    'Señala tu nariz',
-    'Señala tus ojos',
-    'Señala tu boca',
-    'Señala tu dedo'];
+    'Señala tu nariz.',
+    'Señala tus ojos.',
+    'Señala tu boca.',
+    'Señala tu dedo.'];
   preguntasE = [
-    'Señala tu cabeza',
-    'Señala tus manos',
-    'Señala tus piernas',
-    'Señala tus ojos'];
+    'Señala tu cabeza.',
+    'Señala tus manos.',
+    'Señala tus piernas.',
+    'Señala tus ojos.'];
   preguntasO = [
-    'Señala los brazos de la otra persona',
-    'Señala las piernas de la otra persona',
-    'Señala la espalda de la otra persona',
-    'Señala el pecho de la otra persona'];
+    'Señala los brazos de la otra persona.',
+    'Señala las piernas de la otra persona.',
+    'Señala la espalda de la otra persona.',
+    'Señala el pecho de la otra persona.'];
   imagenesEjemplo = [
     'imagenes/area1/propioCuerpo.gif',
     'imagenes/area1/espejo.png',
@@ -85,97 +85,97 @@ export class AreaUnoComponent implements OnInit {
   respuestaO = [];
 
 
-  iniciarPreguntas(){
-    this.mostrarEjemplo=false;
-    if(this.numeroEjemplo==0){
-      this.propioCuerpo=true;
+  iniciarPreguntas() {
+    this.mostrarEjemplo = false;
+    if (this.numeroEjemplo == 0) {
+      this.propioCuerpo = true;
     }
-    if(this.numeroEjemplo==1){
-      this.espejo=true;
+    if (this.numeroEjemplo == 1) {
+      this.espejo = true;
     }
-    if(this.numeroEjemplo==2){
-      this.otroCuerpo=true;
+    if (this.numeroEjemplo == 2) {
+      this.otroCuerpo = true;
     }
-    this.numeroEjemplo=this.numeroEjemplo+1;
+    this.numeroEjemplo = this.numeroEjemplo + 1;
   }
 
-  siguiente( entrada: number){
-    if (this.valor+1==4) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        console.log(this.respuesta[this.valor])
-        this.errores=this.errores+1;
-      }else{
-        this.respuesta[this.valor]='Positivo';
-      }
-      this.valor=0;
-      this.mostrarEjemplo=true;
-      this.propioCuerpo=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
+  siguiente(entrada: number) {
+    if (this.valor + 1 == 4) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.valor=this.valor+1;
-        this.errores=this.errores+1;
-      }else {
+        this.errores = this.errores + 1;
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
+      }
+      this.valor = 0;
+      this.mostrarEjemplo = true;
+      this.propioCuerpo = false;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.respuesta[this.valor]='Positivo';
-        this.valor=this.valor+1;
+        this.valor = this.valor + 1;
+        this.errores = this.errores + 1;
+      } else {
+        console.log(this.respuesta[this.valor]);
+        this.respuesta[this.valor] = 'Positivo';
+        this.valor = this.valor + 1;
       }
     }
   }
 
-  siguiente1( entrada: number){
-    if (this.valor+1==4) {
-      if (entrada==0){
-        this.respuestaE[this.valor]='Negativo';
+  siguiente1(entrada: number) {
+    if (this.valor + 1 == 4) {
+      if (entrada == 0) {
+        this.respuestaE[this.valor] = 'Negativo';
         console.log(this.respuestaE[this.valor]);
-        this.erroresE=this.erroresE+1;
-      }else{
-        this.respuestaE[this.valor]='Positivo';
+        this.erroresE = this.erroresE + 1;
+      } else {
+        this.respuestaE[this.valor] = 'Positivo';
       }
-      this.valor=0;
-      this.mostrarEjemplo=true;
-      this.espejo=false;
-    }else{
-      if (entrada==0){
-        this.respuestaE[this.valor]='Negativo';
+      this.valor = 0;
+      this.mostrarEjemplo = true;
+      this.espejo = false;
+    } else {
+      if (entrada == 0) {
+        this.respuestaE[this.valor] = 'Negativo';
         console.log(this.respuestaE[this.valor]);
-        this.erroresE=this.erroresE+1;
-        this.valor=this.valor+1;
-      }else {
-        this.respuestaE[this.valor]='Positivo';
+        this.erroresE = this.erroresE + 1;
+        this.valor = this.valor + 1;
+      } else {
+        this.respuestaE[this.valor] = 'Positivo';
         console.log(this.respuestaE[this.valor]);
-        this.valor=this.valor+1;
+        this.valor = this.valor + 1;
       }
     }
   }
 
-  siguiente2( entrada: number){
-    if (this.valor+1==4) {
-      if (entrada==0){
-        this.respuestaO[this.valor]='Negativo';
+  siguiente2(entrada: number) {
+    if (this.valor + 1 == 4) {
+      if (entrada == 0) {
+        this.respuestaO[this.valor] = 'Negativo';
         console.log(this.respuestaO[this.valor]);
-        this.erroresO=this.erroresO+1;
-      }else{
-        this.respuestaO[this.valor]='Positivo';
+        this.erroresO = this.erroresO + 1;
+      } else {
+        this.respuestaO[this.valor] = 'Positivo';
       }
-      if((this.errores+this.erroresE+this.erroresO)>3){
-        this.mostrarAreaPositiva=false;
-      }else{
-        this.mostrarAreaPositiva=true;
+      if ((this.errores + this.erroresE + this.erroresO) > 3) {
+        this.mostrarAreaPositiva = false;
+      } else {
+        this.mostrarAreaPositiva = true;
       }
-      this.grafica=true;
-      this.otroCuerpo=false;
-    }else{
-      if (entrada==0){
-        this.respuestaO[this.valor]='Negativo';
+      this.grafica = true;
+      this.otroCuerpo = false;
+    } else {
+      if (entrada == 0) {
+        this.respuestaO[this.valor] = 'Negativo';
         console.log(this.respuestaO[this.valor]);
-        this.erroresO=this.erroresO+1;
-        this.valor=this.valor+1;
-      }else {
-        this.respuestaO[this.valor]='Positivo';
-        this.valor=this.valor+1;
+        this.erroresO = this.erroresO + 1;
+        this.valor = this.valor + 1;
+      } else {
+        this.respuestaO[this.valor] = 'Positivo';
+        this.valor = this.valor + 1;
       }
     }
   }

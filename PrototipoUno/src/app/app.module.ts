@@ -1,5 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {ChartModule} from 'primeng/chart';
+import {TableModule} from 'primeng/table';
 
 import { AppComponent } from './app.component';
 import { AreaUnoComponent } from './area-uno/area-uno.component';
@@ -23,7 +25,8 @@ import { AreaNueveComponent } from './area-nueve/area-nueve.component';
 import { AreaDiezComponent } from './area-diez/area-diez.component';
 import { AreaDoceComponent } from './area-doce/area-doce.component';
 import { AreaDieciseisComponent } from './area-dieciseis/area-dieciseis.component';
-import { AreaCincoDosComponent } from './area-cinco-dos/area-cinco-dos.component';
+import { AreaTreceComponent } from './area-trece/area-trece.component';
+import { DragDropModule } from  '@angular/cdk/drag-drop'
 
 @NgModule({
   declarations: [
@@ -47,15 +50,18 @@ import { AreaCincoDosComponent } from './area-cinco-dos/area-cinco-dos.component
     AreaDiezComponent,
     AreaDoceComponent,
     AreaDieciseisComponent,
-    AreaCincoDosComponent
+    AreaTreceComponent
   ],
   imports: [
     BrowserModule,
+    ChartModule,
+    TableModule,
     RouterModule.forRoot(
 
       RUTAS_APP, {useHash: true}
 
     ),
+    DragDropModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,7 +10,7 @@
     <p>{{queDiagnostica}}</p>
   </div>
 </div>
-<div class="row" *ngIf="mostrarDiagnostico"><p></p></div>
+<div class="row" *ngIf="mostrarDiagnostico"><br></div>
 <div class="row" *ngIf="mostrarDiagnostico">
   <div class="sa-centrar">
     <h3>{{instruccion}}</h3>
@@ -18,9 +18,9 @@
 </div>
 
 <!--Preguntas><!-->
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
+    <br><br>
     <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
 </div>
@@ -32,11 +32,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-4"><p></p></div>
   <div class="col-2">
@@ -48,6 +44,14 @@
 </div>
 
 <!--Respuestas><!-->
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-1"></div>
+  <div class="col-4">
+    <h2>Resultado</h2>
+  </div>
+</div>
+<div class="row"><br></div>
+
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-4"></div>
   <div class="col-2">
@@ -70,8 +74,7 @@
 </div>
 
 
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>

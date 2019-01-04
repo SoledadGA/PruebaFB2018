@@ -13,11 +13,11 @@ export class AreaDiezComponent implements OnInit {
   mostrarPreguntas = true;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea10.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnostica la pronunciación  con palabras cuyo esquema mental está estucturado.';
-  instruccion = '"Escucha y repite después de mí"';
+  instruccion = '"Escucha y repite después de mí."';
   preguntas = [
     'Franela',
     'Esferográfico',
@@ -34,31 +34,31 @@ export class AreaDiezComponent implements OnInit {
     'audio/area10/6.mp3'];
   respuesta = [];
 
-  siguientePregunta( entrada: number){
-    this.mostrarDiagnostico=false;
-    if (this.valor+1==6) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+  siguientePregunta(entrada: number) {
+    this.mostrarDiagnostico = false;
+    if (this.valor + 1 == 6) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-      }else {
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      if (this.errores>=3){
+      if (this.errores > 0) {
         this.mostrarAreaPositiva = false;
-      }else{
+      } else {
         this.mostrarAreaPositiva = true;
       }
-      this.mostrarPreguntas=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+      this.mostrarPreguntas = false;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.errores);
-      }else {
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      this.valor=this.valor+1;
+      this.valor = this.valor + 1;
     }
   }
   constructor() { }

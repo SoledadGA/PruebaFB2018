@@ -11,14 +11,14 @@ export class AreaOnceComponent implements OnInit {
   errores = 0;
   mostrarDiagnostico = true;
   mostrarPreguntas = true;
-  mostrarBoton=false;
+  mostrarBoton = false;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea11.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnóstico la memoria auditiva del estudiante.';
-  instruccion = '"Escucha y repite después de mí"';
+  instruccion = '"Escucha y repite después de mí."';
   preguntas = [
     '3 - 2 - 5',
     '2 - 5 - 1',
@@ -45,21 +45,21 @@ export class AreaOnceComponent implements OnInit {
 
   siguientePregunta(entrada: number) {
     this.mostrarDiagnostico = false;
-    if(this.valor+1!=5){
-      this.mostrarBoton=false;
+    if (this.valor + 1 != 5) {
+      this.mostrarBoton = false;
     }
-    if (this.valor+1>=9){
+    if (this.valor + 1 >= 9) {
       if (entrada == 1) {
         this.respuesta[this.valor] = 'Positivo';
         this.valor = this.valor + 1;
         console.log('Entré al if');
-        if(this.valor+1==11){
+        if (this.valor + 1 == 11) {
           if (entrada == 1) {
-            //this.respuesta[this.valor] = 'Positivo';
-            this.mostrarAreaPositiva=true;
+            // this.respuesta[this.valor] = 'Positivo';
+            this.mostrarAreaPositiva = true;
           } else {
             this.respuesta[this.valor] = 'Negativo';
-            this.mostrarAreaPositiva=false;
+            this.mostrarAreaPositiva = false;
           }
           this.mostrarPreguntas = false;
         }
@@ -73,43 +73,40 @@ export class AreaOnceComponent implements OnInit {
         this.valor = this.valor + 1;
         this.errores = this.errores + 1;
       } else {
-        if(this.errores==1){
-          this.respuesta[this.valor]='Positivo';
-          this.valor=this.valor+1;
-          if(this.valor+1==5){
-            this.mostrarBoton=true;
+        if (this.errores == 1) {
+          this.respuesta[this.valor] = 'Positivo';
+          this.valor = this.valor + 1;
+          if (this.valor + 1 == 5) {
+            this.mostrarBoton = true;
           }
-        }else{
-          this.respuesta[this.valor]='Positivo';
-          this.respuesta[this.valor+1]='Positivo';
-          this.valor=this.valor+2;
-          if(this.valor+1==5){
-            this.mostrarBoton=true;
+        } else {
+          this.respuesta[this.valor] = 'Positivo';
+          this.respuesta[this.valor + 1] = 'Positivo';
+          this.valor = this.valor + 2;
+          if (this.valor + 1 == 5) {
+            this.mostrarBoton = true;
           }
-          if(this.valor+1>5){
-            this.mostrarBoton=false;
-
+          if (this.valor + 1 > 5) {
+            this.mostrarBoton = false;
           }
         }
-        this.errores=0;
+        this.errores = 0;
       }
     }
-
-    if(this.errores==2){
-      this.mostrarPreguntas=false;
-      this.mostrarBoton=false;
-      this.mostrarAreaPositiva=false;
+    if (this.errores == 2) {
+      this.mostrarPreguntas = false;
+      this.mostrarBoton = false;
+      this.mostrarAreaPositiva = false;
     }
   }
 
-  botonAreaPositiva(){
-    this.respuesta[this.valor]='Positivo';
-    this.mostrarAreaPositiva=true;
-    this.mostrarPreguntas=false;
-    this.mostrarDiagnostico=false;
-    this.mostrarBoton=false;
+  botonAreaPositiva() {
+    this.respuesta[this.valor] = 'Positivo';
+    this.mostrarAreaPositiva = true;
+    this.mostrarPreguntas = false;
+    this.mostrarDiagnostico = false;
+    this.mostrarBoton = false;
   }
-
   constructor() { }
 
   ngOnInit() {

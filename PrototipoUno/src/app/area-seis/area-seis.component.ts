@@ -15,9 +15,9 @@ export class AreaSeisComponent implements OnInit {
   mostrarRespuestas = false;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea6.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnostica si el estudiante precibe un estiímulo visual o no.';
   preguntas = [
     'Este niño está leyendo, busca otro que esté haciendo lo mismo.',
@@ -57,41 +57,41 @@ export class AreaSeisComponent implements OnInit {
     'imagenes/area6/tijera1.png'];
   respuesta = [];
 
-  siguientePregunta(entrada:string){
-    this.mostrarInstruccion=false;
-    this.pasarImg = this.pasarImg+4;
-    if(this.valor+1==4){
-      this.mostrarRespuestas=true;
-      this.mostrarPreguntas=false;
-      if(entrada!=this.respuestaPositiva[this.valor]){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+  siguientePregunta(entrada: string) {
+    this.mostrarInstruccion = false;
+    this.pasarImg = this.pasarImg + 4;
+    if (this.valor + 1 == 4) {
+      this.mostrarRespuestas = true;
+      this.mostrarPreguntas = false;
+      if (entrada != this.respuestaPositiva[this.valor]) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log('negativo ' + this.respuestaPositiva[this.valor].toString());
       }
-      else{
-        this.respuesta[this.valor]='Positivo';
-        console.log('positivo '  + this.respuestaPositiva[this.valor].toString());
+      else {
+        this.respuesta[this.valor] = 'Positivo';
+        console.log('positivo ' + this.respuestaPositiva[this.valor].toString());
       }
-      if (this.errores>1){
-        this.mostrarAreaPositiva = false
+      if (this.errores > 1) {
         this.mostrarAreaPositiva = false;
-      }else{
+        this.mostrarAreaPositiva = false;
+      } else {
         this.mostrarAreaPositiva = true;
         this.mostrarAreaPositiva = true;
       }
     }
 
-    if(entrada!=this.respuestaPositiva[this.valor]){
+    if (entrada != this.respuestaPositiva[this.valor]) {
       console.log(entrada);
       this.respuesta[this.valor] = 'Negativo';
-      this.errores=this.errores+1;
+      this.errores = this.errores + 1;
       console.log('negativo ' + this.respuestaPositiva[this.valor].toString());
-    }else{
-      this.respuesta[this.valor]='Positivo';
+    } else {
+      this.respuesta[this.valor] = 'Positivo';
       console.log(entrada);
       console.log('positivo ' + this.respuestaPositiva[this.valor].toString());
     }
-    this.valor=this.valor+1;
+    this.valor = this.valor + 1;
   }
 
   constructor() { }

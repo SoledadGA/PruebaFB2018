@@ -13,19 +13,18 @@
 </div>
 
 <!--Preguntas><!-->
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
+    <br><br>
     <h3>{{instruccion}}</h3>
   </div>
 </div>
-<div class="row"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
+    <br><br>
     <h3>{{valor+1}}. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{preguntas[valor]}}</h3>
   </div>
 </div>
-<div class="row"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
     <audio src="{{audio[valor]}}" controls autoplay >
@@ -34,32 +33,29 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-4"><p></p></div>
+  <div class="col-4" *ngIf="!mostrarBoton"><p></p></div>
+  <div class="col-3" *ngIf="mostrarBoton"><p></p></div>
   <div class="col-2">
     <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
+  <div class="col-2" *ngIf="mostrarBoton">
+    <button class="sa-btn2" (click)="botonAreaPositiva()">Área Positiva</button>
   </div>
   <div class="col-3">
     <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
   </div>
 </div>
 
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row" *ngIf="mostrarBoton"><p></p></div>
-<div class="row" *ngIf="mostrarBoton">
-  <div class="col-5"><p></p></div>
-  <div class="col-2">
-    <button class="sa-btn2" (click)="botonAreaPositiva()">Área Positiva</button>
+<!--Respuestas><!-->
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-1"></div>
+  <div class="col-4">
+    <h2>Resultado</h2>
   </div>
 </div>
-
-<!--Respuestas><!-->
+<div class="row" *ngIf="!mostrarPreguntas"><br></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-4"></div>
   <div class="col-3">
@@ -80,8 +76,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>

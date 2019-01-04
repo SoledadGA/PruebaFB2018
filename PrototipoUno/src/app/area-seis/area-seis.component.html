@@ -9,7 +9,6 @@
   <div class="col-10 sa-borde">
     <p>{{queDiagnostica}}</p>
   </div>
-
 </div>
 
 <!--Preguntas><!-->
@@ -19,7 +18,6 @@
     <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
 </div>
-<div class="row"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
     <audio src="{{audio[valor]}}" controls autoplay >
@@ -28,17 +26,14 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
+    <br>
     <img src={{imgMuestra[valor]}} class="sa-img">
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-3">
     <button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg])">
@@ -66,6 +61,13 @@
 
 <!--Respuestas><!-->
 <div class="row" *ngIf="mostrarRespuestas">
+  <div class="col-1"></div>
+  <div class="col-4">
+    <h2>Resultado</h2>
+  </div>
+</div>
+<div class="row"><br></div>
+<div class="row" *ngIf="mostrarRespuestas">
   <div class="col-2"></div>
   <div class="col-5">
     <h3>Preguntas</h3>
@@ -85,8 +87,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
-<div class="row" *ngIf="mostrarRespuestas"><p></p></div>
+<div class="row" *ngIf="mostrarRespuestas"><br><br></div>
 <div class="row" *ngIf="mostrarRespuestas"><p></p>
   <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>

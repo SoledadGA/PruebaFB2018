@@ -7,19 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaOchoComponent implements OnInit {
 
-  errores=0;
-  valor=0;
-  mostrarCriterio=true;
-  mostrarPreguntas=true;
-  mostrarRespuesta=false;
+  errores = 0;
+  valor = 0;
+  mostrarCriterio = true;
+  mostrarPreguntas = true;
+  mostrarRespuesta = false;
   mostrarAreaPositiva = false;
-  cabecera='imagenes/cabeceras/CabeceraArea8.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
-  criterio='Diagnostica como se expresa el estudiante en forma viso-motora.';
-  instruccion='"Yo te nombro un objeto y tú responderás con mímica o señas"';
-  preguntas=[
+  cabecera = 'imagenes/cabeceras/CabeceraArea8.png';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
+  criterio = 'Diagnostica como se expresa el estudiante en forma viso-motora.';
+  instruccion = '"Yo te nombro un objeto y tú responderás con mímica o señas."';
+  preguntas = [
     'Martillo',
     'Guitarra',
     'Cuchara',
@@ -30,7 +30,7 @@ export class AreaOchoComponent implements OnInit {
     'Lápiz',
     'Cuchillo',
     'Escoba'];
-  audio=[
+  audio = [
     'audio/area8/instruccion-1.mp3',
     'audio/area8/2.mp3',
     'audio/area8/3.mp3',
@@ -40,8 +40,8 @@ export class AreaOchoComponent implements OnInit {
     'audio/area8/7.mp3',
     'audio/area8/8.mp3',
     'audio/area8/9.mp3',
-    'audio/area8/10.mp3',];
-  imagenes=[
+    'audio/area8/10.mp3'];
+  imagenes = [
     'imagenes/area8/1.png',
     'imagenes/area8/2.png',
     'imagenes/area8/3.png',
@@ -52,39 +52,36 @@ export class AreaOchoComponent implements OnInit {
     'imagenes/area8/8.png',
     'imagenes/area8/9.png',
     'imagenes/area8/10.png'];
-  respuesta=[];
+  respuesta = [];
 
-  siguiente( entrada: number){
-  this.mostrarCriterio=false;
-    if (this.valor+1==10) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
+  siguiente(entrada: number) {
+    this.mostrarCriterio = false;
+    if (this.valor + 1 == 10) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      else{
-        this.respuesta[this.valor]='Positivo';
-      }
-      this.mostrarPreguntas=false;
-      this.mostrarRespuesta=true;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+      this.mostrarPreguntas = false;
+      this.mostrarRespuesta = true;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-        this.valor=this.valor+1;
-      }else {
+        this.valor = this.valor + 1;
+      } else {
         console.log(this.respuesta[this.valor]);
-        this.respuesta[this.valor]='Positivo';
-        this.valor=this.valor+1;
+        this.respuesta[this.valor] = 'Positivo';
+        this.valor = this.valor + 1;
       }
-
     }
-    if (this.errores==3){
-      this.mostrarPreguntas=false;
-      this.mostrarRespuesta=true;
-
+    if (this.errores > 2) {
+      this.mostrarPreguntas = false;
+      this.mostrarRespuesta = true;
     }
-
   }
   constructor() { }
 

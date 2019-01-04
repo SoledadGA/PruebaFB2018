@@ -12,12 +12,12 @@ export class AreaCuatroComponent implements OnInit {
   mostrarPreguntas = true;
   mostrarAreaPositiva = false;
   cabecera = 'imagenes/cabeceras/CabeceraArea4.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   instruccion = [
-    'Salta en un solo pie',
-    'Botea la pelota con una mano'];
+    'Salta en un solo pie.',
+    'Botea la pelota con una mano.'];
   criterio = [
     'No se admite zig-zag.',
     'No se admite zig-zag, ni sobre boteo.'];
@@ -29,31 +29,31 @@ export class AreaCuatroComponent implements OnInit {
     'imagenes/area4/ninoPelota.png'];
   respuesta = [];
 
-  siguiente( entrada: number){
-    if (this.valor+1==2) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
+  siguiente(entrada: number) {
+    if (this.valor + 1 == 2) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.errores=this.errores+1;
-      }else{
-        this.respuesta[this.valor]='Positivo';
+        this.errores = this.errores + 1;
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      if(this.errores>0){
-        this.mostrarAreaPositiva=false;
-      }else{
-        this.mostrarAreaPositiva=true;
+      if (this.errores > 0) {
+        this.mostrarAreaPositiva = false;
+      } else {
+        this.mostrarAreaPositiva = true;
       }
-      this.mostrarPreguntas=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
+      this.mostrarPreguntas = false;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
         console.log(this.respuesta[this.valor]);
-        this.errores=this.errores+1;
-        this.valor=this.valor+1;
-      }else {
-        this.respuesta[this.valor]='Positivo';
+        this.errores = this.errores + 1;
+        this.valor = this.valor + 1;
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
         console.log(this.respuesta[this.valor]);
-        this.valor=this.valor+1;
+        this.valor = this.valor + 1;
       }
     }
 

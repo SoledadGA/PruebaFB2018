@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AreaCincoDosComponent } from './area-cinco-dos.component';
+import { AreaTreceComponent } from './area-trece.component';
 
-describe('AreaCincoDosComponent', () => {
-  let component: AreaCincoDosComponent;
-  let fixture: ComponentFixture<AreaCincoDosComponent>;
+describe('AreaTreceComponent', () => {
+  let component: AreaTreceComponent;
+  let fixture: ComponentFixture<AreaTreceComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AreaCincoDosComponent ]
+      declarations: [ AreaTreceComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AreaCincoDosComponent);
+    fixture = TestBed.createComponent(AreaTreceComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

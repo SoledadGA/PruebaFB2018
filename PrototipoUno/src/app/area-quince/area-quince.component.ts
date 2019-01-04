@@ -13,11 +13,11 @@ export class AreaQuinceComponent implements OnInit {
   mostrarPreguntas = true;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea15.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnóstica coordinación visomotora.';
-  instruccion = 'Mira y copia este dibujo en una hoja';
+  instruccion = 'Mira y copia este dibujo en una hoja.';
   preguntas = [
     'imagenes/area15/1.png',
     'imagenes/area15/2.png',
@@ -30,37 +30,37 @@ export class AreaQuinceComponent implements OnInit {
     'audio/area15/1.mp3',
     'audio/area15/2.mp3',
     'audio/area15/3.mp3'];
-  estilo=[
+  estilo = [
     'sa-img',
     'sa-img2',
     'sa-img2'];
   respuesta = [];
 
-  siguientePregunta( entrada: number){
-    this.mostrarDiagnostico=false;
-    if (this.valor+1==3) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+  siguientePregunta(entrada: number) {
+    this.mostrarDiagnostico = false;
+    if (this.valor + 1 == 3) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-      }else{
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      if (this.errores>=1){
+      if (this.errores >= 1) {
         this.mostrarAreaPositiva = false;
-      }else{
+      } else {
         this.mostrarAreaPositiva = true;
       }
-      this.mostrarPreguntas=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+      this.mostrarPreguntas = false;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.errores);
-      }else{
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      this.valor=this.valor+1;
+      this.valor = this.valor + 1;
     }
   }
   constructor() { }

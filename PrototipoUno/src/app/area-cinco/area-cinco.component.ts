@@ -10,15 +10,15 @@ export class AreaCincoComponent implements OnInit {
   errores = 0;
   valor = 0;
   mostrarCriterio = true;
-  mostrarPreguntas=true;
+  mostrarPreguntas = true;
   mostrarAreaPositiva = false;
   cabecera = 'imagenes/cabeceras/CabeceraArea5.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
-  criterio = 'Diagnostica la capacidad para escuchar una orden y codificarla en respuesta (Sí o No)';
-  instruccion = '"Ahora contestarás Sí o No"';
-  preguntas=[
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
+  criterio = 'Diagnostica la capacidad para escuchar una orden y codificarla en respuesta (Sí o No).';
+  instruccion = '"Ahora contestarás Sí o No."';
+  preguntas = [
     '¿Los pájaros comen?',
     '¿Los gatos vuelan?',
     '¿Los bebés lloran?',
@@ -49,37 +49,54 @@ export class AreaCincoComponent implements OnInit {
     'audio/area5/12.mp3',
     'audio/area5/13.mp3',
     'audio/area5/14.mp3',
-    'audio/area5/15.mp3',];
-  respuesta=[];
+    'audio/area5/15.mp3'];
+  respuestaCorrectas = [
+    'Si',
+    'No',
+    'Si',
+    'No',
+    'Si',
+    'No',
+    'No',
+    'Si',
+    'No',
+    'Si',
+    'No',
+    'Si',
+    'No',
+    'No',
+    'Si'];
+  respuesta = [];
 
-  siguiente( entrada: number){
-    this.mostrarCriterio=false;
-    if (this.valor+1==15) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        console.log(this.respuesta[this.valor]);
-        this.errores=this.errores+1;
-      }else{
-        this.respuesta[this.valor]='Positivo';
+  siguiente(entrada: string) {
+    this.mostrarCriterio = false;
+    if (this.valor + 1 == 15) {
+      console.log(this.respuestaCorrectas[this.valor]);
+      if (entrada.localeCompare(this.respuestaCorrectas[this.valor])) {
+        this.respuesta[this.valor] = 'Negativo';
+        console.log(this.respuestaCorrectas[this.valor]);
+        this.errores = this.errores + 1;
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      this.mostrarPreguntas=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+      this.mostrarPreguntas = false;
+    } else {
+      if (entrada.localeCompare(this.respuestaCorrectas[this.valor])) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-        this.valor=this.valor+1;
-      }else {
+        this.valor = this.valor + 1;
+      } else {
         console.log(this.respuesta[this.valor]);
-        this.respuesta[this.valor]='Positivo';
-        this.valor=this.valor+1;
+        this.respuesta[this.valor] = 'Positivo';
+        this.valor = this.valor + 1;
       }
     }
-    if (this.errores==3){
-      this.mostrarPreguntas=false;
-      this.mostrarAreaPositiva=false;
-    }else{
-      this.mostrarAreaPositiva=true;
+    if (this.errores > 2) {
+      this.mostrarPreguntas = false;
+      this.mostrarAreaPositiva = false;
+    } else {
+      this.mostrarAreaPositiva = true;
     }
   }
   constructor() { }

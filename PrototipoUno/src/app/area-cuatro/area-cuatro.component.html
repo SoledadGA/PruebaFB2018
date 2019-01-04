@@ -3,19 +3,17 @@
     <img src="{{cabecera}}" style="height: auto;width: 100%" >
   </div>
 </div>
-<div class="row"><p></p></div>
 <!--Preguntas!-->
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-1"><p></p></div>
   <div class="col-10 sa-borde"><p>{{criterio[valor]}}</p></div>
 </div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
-<div class="row"><p></p></div>
+<div class="row" *ngIf="mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-5">
+  <div class="col-1"></div>
+  <div class="col-3">
     <div class="row">
-      <div class="sa-centrar"><h3>{{valor+1}}. {{instruccion[valor]}}</h3></div>
+      <div><h3>{{valor+1}}. {{instruccion[valor]}}</h3></div>
     </div>
     <div class="row">
       <div class="sa-centrar"><audio src="{{audio[valor]}}" controls autoplay >
@@ -23,7 +21,7 @@
       </audio></div>
     </div>
   </div>
-
+  <div class="col-1"></div>
   <div class="col-4">
     <img src="{{imagenes[valor]}} " style="width: 60% ; height: 95%">
   </div>
@@ -35,6 +33,13 @@
 
 </div>
 
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-1"></div>
+  <div class="col-4">
+    <h2>Resultado</h2>
+  </div>
+</div>
+<div class="row"><br></div>
 <div class="row">
   <div class="col-3"><p></p></div>
   <div class="col-3" *ngIf="!mostrarPreguntas">
@@ -55,8 +60,7 @@
     </ul>
   </div>
 </div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
     <h5>{{areaPositiva}}</h5>
@@ -66,10 +70,7 @@
   </div>
 </div>
 
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
-<div class="row" *ngIf="!mostrarPreguntas"><p></p></div>
+<div class="row" *ngIf="!mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-10"><p></p></div>
   <div class="col-2">

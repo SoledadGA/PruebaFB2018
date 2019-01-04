@@ -13,12 +13,12 @@ export class AreaCatorceComponent implements OnInit {
   mostrarPreguntas = true;
   mostrarAreaPositiva = false;
   imagenCabecera = 'imagenes/cabeceras/CabeceraArea14.png';
-  errorAudio = 'Tu navegador no implementa el elemento audio';
-  areaDebilitada = 'Se considera como área debilitada';
-  areaPositiva = 'Se considera como área positiva';
+  errorAudio = 'Tu navegador no implementa el elemento audio.';
+  areaDebilitada = 'Se considera como área debilitada.';
+  areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnostica la discriminación auditiva.';
-  queDiagnostica2 = 'El estudiante debe repetir las dos palabras juntas de cada ítem';
-  instruccion = '"Escucha y repite después de mí"';
+  queDiagnostica2 = 'El estudiante debe repetir las dos palabras juntas de cada ítem.';
+  instruccion = '"Escucha y repite después de mí."';
   preguntas = [
     'pato - dato',
     'cama - dama',
@@ -43,31 +43,31 @@ export class AreaCatorceComponent implements OnInit {
     'audio/area14/10.mp3'];
   respuesta = [];
 
-  siguientePregunta( entrada: number){
-    this.mostrarDiagnostico=false;
-    if (this.valor+1==10) {
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+  siguientePregunta(entrada: number) {
+    this.mostrarDiagnostico = false;
+    if (this.valor + 1 == 10) {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.respuesta[this.valor]);
-      }else {
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      if (this.errores>=3){
+      if (this.errores > 2) {
         this.mostrarAreaPositiva = false;
-      }else{
+      } else {
         this.mostrarAreaPositiva = true;
       }
-      this.mostrarPreguntas=false;
-    }else{
-      if (entrada==0){
-        this.respuesta[this.valor]='Negativo';
-        this.errores=this.errores+1;
+      this.mostrarPreguntas = false;
+    } else {
+      if (entrada == 0) {
+        this.respuesta[this.valor] = 'Negativo';
+        this.errores = this.errores + 1;
         console.log(this.errores);
-      }else {
-        this.respuesta[this.valor]='Positivo';
+      } else {
+        this.respuesta[this.valor] = 'Positivo';
       }
-      this.valor=this.valor+1;
+      this.valor = this.valor + 1;
     }
   }
 
