@@ -19,6 +19,8 @@ export class AreaOnceComponent implements OnInit {
   areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnóstico la memoria auditiva del estudiante.';
   instruccion = '"Escucha y repite después de mí."';
+  explicacionBotonVerde = 'Si la respuesta es correcta y el estudiante tiene 5 años o menos, utilizar el botón verde.' +
+    ' Caso contrario, si la respuesta es incorrecta dar clic en el botón Negativo y continuar con la prueba.';
   preguntas = [
     '3 - 2 - 5',
     '2 - 5 - 1',
@@ -107,6 +109,7 @@ export class AreaOnceComponent implements OnInit {
     this.mostrarDiagnostico = false;
     this.mostrarBoton = false;
   }
+
   constructor() { }
 
   ngOnInit() {

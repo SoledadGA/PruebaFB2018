@@ -19,6 +19,8 @@ export class AreaDoceComponent implements OnInit {
   areaPositiva = 'Se considera como área positiva.';
   queDiagnostica = 'Diagnostica la coordinacipon visual auditiva motora, con patrón visual y auditivo.';
   instruccion = 'Mira, escucha y repite después de mí.';
+  explicacionBotonVerde = 'Si la respuesta es correcta y el estudiante tiene 5 años o menos, utilizar el botón verde.' +
+    ' Caso contrario, si la respuesta es incorrecta dar clic en el botón Negativo y continuar con la prueba.';
   preguntas = [
     '000',
     '00 – 00 ',

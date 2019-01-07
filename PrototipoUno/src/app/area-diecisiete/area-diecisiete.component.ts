@@ -17,8 +17,8 @@ export class AreaDiecisieteComponent implements OnInit {
   areaDebilitada = 'Se considera como área debilitada';
   areaPositiva = 'Se considera como área positiva';
   queDiagnostica = 'Diagnostica la motricidad fina.';
-  queDiagnostica2 = 'Se considera positivo si corta más del 50% del dibujo.';
-  instruccion = 'Recorta lo más rápido que puedas las siguientes figuras, sin topar las líneas laterales';
+  queDiagnostica2 = 'Se considera positivo si corta más del 50% de la figura.';
+  instruccion = 'Recorta lo más rápido que puedas la siguiente figura, siguiendo la línea.';
   preguntas = [
     'imagenes/area17/1.png',
     'imagenes/area17/2.png'];

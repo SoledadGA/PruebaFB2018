@@ -21,9 +21,9 @@
 
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="sa-centrar">
-    <h3>{{instruccion}}</h3>
+    <h5>{{instruccion}}</h5>
     <div class="row"><p></p></div>
-    <h3>{{instruccion2}}</h3>
+    <h5>{{instruccion2}}</h5>
   </div>
 </div>
 <div class="row" *ngIf="mostrarEjemplo">
@@ -39,13 +39,13 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-3"><p></p></div>
   <div class="col-3">
-    <button class="sa-btnimg" (click)="iniciarPreguntas()" >
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor]}} class="sa-img">
     </button>
   </div>
   <div class="col-1"><p></p></div>
   <div class="col-3">
-    <button class="sa-btnimg" (click)="iniciarPreguntas()" >
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor+1]}} class="sa-img">
     </button>
   </div>
@@ -54,7 +54,8 @@
 <!--Preguntas><!-->
 <div class="row" *ngIf="mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="sa-centrar">
+  <div class="col-1"></div>
+  <div class="col-10 sa-centrar">
     <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
 </div>

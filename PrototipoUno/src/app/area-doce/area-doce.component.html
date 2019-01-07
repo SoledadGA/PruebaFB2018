@@ -22,16 +22,27 @@
 
 <div class="row" *ngIf="mostrarPreguntas"><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-1"></div>
+  <div class="col-2"></div>
   <div class="col-8 sa-centrar">
     <video src="{{audio[valor]}}"  width="100%" height="100%" controls autoplay >
       <p>{{errorAudio}}</p>
     </video>
     {{preguntas[valor]}}
   </div>
+  <div class="col-2"></div>
 </div>
 
-<div class="row" *ngIf="mostrarPreguntas"><br><br></div>
+<div class="row" *ngIf="!mostrarBoton"><br><br></div>
+<div class="row" *ngIf="mostrarBoton"><br><br></div>
+<div class="row" *ngIf="mostrarBoton">
+  <div class="col-2"></div>
+  <div class="col-8 sa-borde">
+    <p>{{explicacionBotonVerde}}</p>
+  </div>
+  <div class="col-2"></div>
+</div>
+<div class="row" *ngIf="mostrarBoton"><br></div>
+
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-4" *ngIf="!mostrarBoton"><p></p></div>
   <div class="col-3" *ngIf="mostrarBoton"><p></p></div>

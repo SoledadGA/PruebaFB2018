@@ -3,21 +3,31 @@
     <img src="imagenes/cabeceras/CabeceraArea13.png" style="height: auto;width: 100%" >
   </div>
 </div>
+<!--Diagnostico><!-->
 <div class="row" *ngIf="parteUno">
   <div class="col-1"></div>
-  <div class="col-10"style="border: solid black 1px"><p>{{queDiagnostica}}</p></div>
+  <div class="col-10"style="border: solid black 1px">
+    <p>{{queDiagnostica}}</p>
+  </div>
+</div>
+
+<!--Parte Uno><!-->
+<div class="row"  *ngIf="parteUno"><br></div>
+<div class="row"  *ngIf="parteUno">
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
+    <h3>{{numeroNivel+1}}. {{instruccion}}</h3>
+  </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteUno">
-  <div class="col-4"><p></p></div>
-  <div class="col-4"><h5>{{instruccion}}</h5></div>
-</div>
-<div class="row"  *ngIf="parteUno">
-  <div class="col-4"><p></p></div>
-  <div class="col-4">
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
     <audio src="{{audio}}" controls autoplay >
       <p>Tu navegador no implementa el elemento audio</p>
     </audio>
   </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteUno">
   <div class="col-1"><p></p></div>
@@ -52,24 +62,29 @@
   </div>
 </div>
 
+<!--Parte Dos><!-->
+<div class="row"  *ngIf="parteDos"><br></div>
 <div class="row"  *ngIf="parteDos">
-  <div class="col-4"><p></p></div>
-  <div class="col-4"><h5>{{instruccion}}</h5></div>
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
+    <h3>{{numeroNivel+1}}. {{instruccion}}</h3>
+  </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteDos">
-  <div class="col-4"><p></p></div>
-  <div class="col-4">
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
     <audio src="{{audio}}" controls autoplay >
       <p>Tu navegador no implementa el elemento audio</p>
     </audio>
   </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteDos">
-  <div class="col-1"><p></p></div>
   <div class="col-10">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-9"><img src="imagenes/area13/parteDos.png" style="width: 100% ; height: 100%"></div>
+      <div class="col-1"></div>
+      <div class="col-10"><img src="imagenes/area13/parteDos.png" style="width: 120% ; height: 100%"></div>
     </div>
   </div>
 </div>
@@ -95,25 +110,28 @@
   </div>
 </div>
 
-
+<!--Parte Tres><!-->
+<div class="row"  *ngIf="parteTres"><br></div>
 <div class="row"  *ngIf="parteTres">
-  <div class="col-4"><p></p></div>
-  <div class="col-4"><h5>{{instruccion}}</h5></div>
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
+    <h3>{{numeroNivel+1}}. {{instruccion}}</h3>
+  </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteTres">
-  <div class="col-4"><p></p></div>
-  <div class="col-4">
+  <div class="col-1"><p></p></div>
+  <div class="col-10" style="text-align: center; margin-left: auto; margin-right: auto;">
     <audio src="{{audio}}" controls autoplay >
       <p>Tu navegador no implementa el elemento audio</p>
     </audio>
   </div>
+  <div class="col-1"><p></p></div>
 </div>
 <div class="row"  *ngIf="parteTres">
-  <div class="col-1"><p></p></div>
-  <div class="col-10">
+  <div class="col-11">
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10"><img src="imagenes/area13/parteTres.png" style="width: 100% ; height: 100%"></div>
+      <div class="col-10"><img src="imagenes/area13/parteTres.png" style="width: 130% ; height: 120%"></div>
     </div>
   </div>
 </div>
@@ -138,14 +156,28 @@
     <button style="background: cornflowerblue ; width: 100% ; height: 200% " (click)="calificarTres()">Siguiente</button>
   </div>
 </div>
-<div class="row" *ngIf="mostrarResultado"><br><br></div>
+
+<!--Resultados><!-->
 <div class="row" *ngIf="mostrarResultado">
-  <div class="col-4"><p></p></div>
-  <div class="col-4"><h3>Niveles superados: {{numeroNivel}}</h3> </div>
+  <div class="col-1"></div>
+  <div class="col-10">
+    <h3>Resultado</h3>
+  </div>
 </div>
 <div class="row" *ngIf="mostrarResultado">
   <div class="col-4"><p></p></div>
-  <div class="col-4"><h3>{{resultadoArea}}</h3></div>
+  <div class="col-4" style="text-align: center; margin-left: auto; margin-right: auto;">
+    <h3>Niveles superados: {{numeroNivel}}</h3>
+  </div>
+  <div class="col-4"><p></p></div>
+</div>
+<div class="row" *ngIf="mostrarResultado"><br><br></div>
+<div class="row" *ngIf="mostrarResultado">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="text-align: center; margin-left: auto; margin-right: auto;">
+    <h5>{{resultadoArea}}</h5>
+  </div>
+  <div class="col-4"><p></p></div>
 </div>
 <div class="row" *ngIf="mostrarResultado">
   <div class="col-10"><p></p></div>
