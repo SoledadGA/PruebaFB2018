@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AreaDieciseisComponent implements OnInit {
   cabecera = 'imagenes/cabeceras/CabeceraArea16.png';
-  contador_segundos = 2;
-  contador_segundos_papel = 2;
+  contador_segundos = 60;
+  contador_segundos_papel = 10;
   mostrar_alarma = false;
   imagen_cronometro = 'imagenes/area16/cronometro.png';
   alarma = 'audio/area16/alarma.mpeg';

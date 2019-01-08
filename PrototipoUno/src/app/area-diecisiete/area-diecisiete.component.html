@@ -30,7 +30,34 @@
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
-  <div class="col-3"></div>
+  <div class="col-3">
+    <audio *ngIf="sonar_alarma_uno" src="{{alarma}}" autoplay></audio>
+    <audio *ngIf="sonar_alarma_dos" src="{{alarma}}" autoplay></audio>
+    <div class="row" *ngIf="mosatrar_alarma_uno" >
+      <div class="col-4"><p></p></div>
+      <div class="col-4">
+        <div class="row"><h5>Cronómetro</h5></div>
+        <div class="row sa-centrar" ><h1>{{contador_segundos_uno}}</h1></div>
+      </div>
+      <div class="col-2" *ngIf="mostrar_boton_alarma_uno">
+        <button style="background: cornflowerblue" (click)="cronometro1()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>
+      </div>
+      <div class="col-2" >
+      </div>
+    </div>
+    <div class="row" *ngIf="mosatrar_alarma_dos" >
+      <div class="col-4"><p></p></div>
+      <div class="col-4">
+        <div class="row"><h5>Cronómetro</h5></div>
+        <div class="row sa-centrar" ><h1>{{contador_segundos_dos}}</h1></div>
+      </div>
+      <div class="col-2" *ngIf="mostrar_boton_alarma_dos">
+        <button style="background: cornflowerblue" (click)="cronometro2()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>
+      </div>
+      <div class="col-2" >
+      </div>
+    </div>
+  </div>
   <div class="col-7">
     <div class="row">
       <img src={{preguntas[valor]}} class="sa-img2">
