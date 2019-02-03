@@ -15,7 +15,7 @@
 <div class="row" *ngIf="mostrarPreguntas"><p></p></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
-    <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
+      <h3>{{valor+1}}. {{preguntas[valor]}}</h3>
   </div>
 </div>
 <div class="row" *ngIf="mostrarPreguntas">
@@ -36,22 +36,22 @@
 <div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-3">
-    <button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg])">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg])">
       <img src={{imgRespuesta[pasarImg]}} class="sa-img">
     </button>
   </div>
   <div class="col-3">
-    <button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+1])">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+1])">
       <img src={{imgRespuesta[pasarImg+1]}} class="sa-img">
     </button>
   </div>
   <div class="col-3">
-    <button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+2])">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+2])">
       <img src={{imgRespuesta[pasarImg+2]}} class="sa-img">
     </button>
   </div>
   <div class="col-3">
-    <button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+3])">
+    <button mat-flat-button class="sa-btnimg" (click)="siguientePregunta(imgRespuesta[pasarImg+3])">
       <img src={{imgRespuesta[pasarImg+3]}} class="sa-img">
     </button>
   </div>
@@ -72,7 +72,7 @@
   <div class="col-5">
     <h3>Preguntas</h3>
     <ul>
-      <li *ngFor="let question of preguntas">
+      <li *ngFor="let question of preguntas" style="font-size:1.2vw;">
         {{ question }}
       </li>
     </ul>
@@ -80,7 +80,7 @@
   <div class="col-2">
     <h3>Respuestas</h3>
     <ul>
-      <li *ngFor="let resp of respuesta">
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
         {{ resp }}
       </li>
     </ul>

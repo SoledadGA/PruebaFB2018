@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-ingresar-datos',
@@ -7,7 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IngresarDatosComponent implements OnInit {
 
-  constructor() { }
+  nombre;
+  anioEGB;
+  paralelo;
+  fecha = new Date();
+  txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
+
+  guardar() {
+    location.href = '/#/areaUno';
+    console.log('Nombre: ' + this.nombre);
+    console.log('Año: ' + this.anioEGB);
+    console.log('Paralelo: ' + this.paralelo);
+    console.log('Fecha: ' + this.fecha);
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

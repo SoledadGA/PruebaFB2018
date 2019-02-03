@@ -40,3 +40,39 @@
 .estilo4{
   width: 10%;
 }
+
+h1{
+  font-size:3vw;
+}
+
+h2{
+  font-size:2.5vw;
+}
+
+h3{
+  font-size:2.1vw;
+}
+
+h4{
+  font-size:1.8vw;
+}
+
+h5{
+  font-size:1.5vw;
+}
+
+p{
+  font-size:1.2vw;
+}
+
+table {
+  width: 100%;
+}
+
+.example-first-header-row th {
+  border-bottom: none;
+}
+
+.example-second-header-row {
+  border-bottom: none;
+}

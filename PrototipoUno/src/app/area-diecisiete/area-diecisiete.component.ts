@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-area-diecisiete',
@@ -6,9 +6,8 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./area-diecisiete.component.css']
 })
 export class AreaDiecisieteComponent implements OnInit {
-
-  contador_segundos_uno = 3;
-  contador_segundos_dos = 3;
+  contador_segundos_uno = 60;
+  contador_segundos_dos = 60;
   mosatrar_alarma_uno = true;
   mosatrar_alarma_dos = false;
   sonar_alarma_dos = false;
@@ -43,6 +42,7 @@ export class AreaDiecisieteComponent implements OnInit {
 
   siguientePregunta(entrada: number) {
     this.mostrarDiagnostico = false;
+    this.mosatrar_alarma_uno = false;
     if (this.contador == 0){
       this.mosatrar_alarma_dos = true;
       this.contador = this.contador + 1;
@@ -98,9 +98,7 @@ export class AreaDiecisieteComponent implements OnInit {
       },
       1000);
   }
-
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import {Component, OnInit} from '@angular/core';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
@@ -8,12 +7,13 @@ import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
   styleUrls: ['./area-trece.component.css']
 })
 export class AreaTreceComponent implements OnInit {
+
   parteUno = true;
   parteDos = false;
   parteTres = false;
-  mostrarUno =false;
-  mostrarDos=false;
-  mostrarTres = false ;
+  mostrarUno = false;
+  mostrarDos = false;
+  mostrarTres = false;
   mostrarResultado = false;
   resultadoArea = 'Se considera como área negativa';
   numeroNivel = 0;
@@ -64,77 +64,86 @@ export class AreaTreceComponent implements OnInit {
     'imagenes/area13/3.png'
   ];
   audio = 'audio/area13/instruccion.mp3';
+
   drop(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.timePeriods, event.previousIndex, event.currentIndex);
 
   }
+
   drop1(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.timePeriods2, event.previousIndex, event.currentIndex);
 
   }
+
   drop2(event: CdkDragDrop<string[]>) {
     moveItemInArray(this.timePeriods3, event.previousIndex, event.currentIndex);
 
   }
-  iniciarUno(){
+
+  iniciarUno() {
     this.parteUno = false;
     this.mostrarUno = true;
   }
-  calificarUno(){
+
+  calificarUno() {
     this.mostrarUno = false;
-    if (this.primeraParte[0] == this.timePeriods[0]){
-      if (this.primeraParte[1] == this.timePeriods[1]){
+    if (this.primeraParte[0] == this.timePeriods[0]) {
+      if (this.primeraParte[1] == this.timePeriods[1]) {
         this.parteDos = true;
         console.log('true');
-        this.numeroNivel = this.numeroNivel + 1 ;
-      }else {
+        this.numeroNivel = this.numeroNivel + 1;
+      } else {
         this.mostrarResultado = true;
         console.log('false');
       }
-    }else {
+    } else {
       this.mostrarResultado = true;
       console.log('false');
     }
   }
-  iniciarDos(){
+
+  iniciarDos() {
     this.parteDos = false;
     this.mostrarDos = true;
   }
+
   calificarDos() {
     this.mostrarDos = false;
-    if (this.segundaParte [0] == this.timePeriods2[0]){
+    if (this.segundaParte [0] == this.timePeriods2[0]) {
       console.log('1 si');
-      if (this.segundaParte [1] == this.timePeriods2[1]){
+      if (this.segundaParte [1] == this.timePeriods2[1]) {
         console.log('2 si');
-        if (this.segundaParte [2] == this.timePeriods2[2]){
+        if (this.segundaParte [2] == this.timePeriods2[2]) {
           console.log('3 si');
-          if (this.segundaParte [3] == this.timePeriods2[3]){
+          if (this.segundaParte [3] == this.timePeriods2[3]) {
             console.log('4 si');
-            if (this.segundaParte [4] == this.timePeriods2[4]){
+            if (this.segundaParte [4] == this.timePeriods2[4]) {
               this.parteTres = true;
-              this.numeroNivel = this.numeroNivel + 1 ;
+              this.numeroNivel = this.numeroNivel + 1;
               console.log('Parte dos True');
             } else {
-              this.mostrarResultado =true;
+              this.mostrarResultado = true;
             }
           } else {
-            this.mostrarResultado =true;
+            this.mostrarResultado = true;
           }
         } else {
-          this.mostrarResultado =true;
+          this.mostrarResultado = true;
         }
 
       } else {
-        this.mostrarResultado =true;
+        this.mostrarResultado = true;
       }
     } else {
-      this.mostrarResultado =true;
+      this.mostrarResultado = true;
     }
   }
-  iniciarTres(){
+
+  iniciarTres() {
     this.parteTres = false;
     this.mostrarTres = true;
   }
+
   calificarTres() {
     this.mostrarTres = false;
     if (this.terceraParte[0] == this.timePeriods3[0]) {
@@ -145,36 +154,37 @@ export class AreaTreceComponent implements OnInit {
               if (this.terceraParte[5] == this.timePeriods3[5]) {
                 if (this.terceraParte[6] == this.timePeriods3[6]) {
                   if (this.terceraParte[7] == this.timePeriods3[7]) {
-                    this.numeroNivel = this.numeroNivel + 1 ;
+                    this.numeroNivel = this.numeroNivel + 1;
                     this.resultadoArea = 'Se considera área positiva';
-                    this.mostrarResultado =true;
-                  } else{
+                    this.mostrarResultado = true;
+                  } else {
                     this.mostrarResultado = true;
                   }
-                } else{
+                } else {
                   this.mostrarResultado = true;
                 }
-              } else{
+              } else {
                 this.mostrarResultado = true;
               }
-            } else{
+            } else {
               this.mostrarResultado = true;
             }
-          } else{
+          } else {
             this.mostrarResultado = true;
           }
-        } else{
+        } else {
           this.mostrarResultado = true;
         }
-      } else{
+      } else {
         this.mostrarResultado = true;
       }
-    } else{
+    } else {
       this.mostrarResultado = true;
     }
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

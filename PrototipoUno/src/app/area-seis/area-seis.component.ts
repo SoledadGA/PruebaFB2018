@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-seis',
@@ -94,7 +94,8 @@ export class AreaSeisComponent implements OnInit {
     this.valor = this.valor + 1;
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

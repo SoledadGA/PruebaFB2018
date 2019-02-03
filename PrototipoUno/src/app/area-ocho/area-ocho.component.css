@@ -8,3 +8,19 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+h2{
+  font-size:2.5vw;
+}
+
+h3{
+  font-size:2.1vw;
+}
+
+h5{
+  font-size:1.5vw;
+}
+
+p{
+  font-size:1.2vw;
+}

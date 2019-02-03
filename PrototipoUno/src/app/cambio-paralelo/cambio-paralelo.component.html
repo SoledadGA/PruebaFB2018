@@ -1,0 +1,51 @@
+<div class="row"><p></p></div>
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <img src="imagenes/logo1.png" class="sa-img">
+  </div>
+  <div class="col-4"></div>
+</div>
+<div class="row"><p></p></div>
+<div class="row"><p></p></div>
+<div class="row">
+  <div class="col-3"> </div>
+  <div class="col-6 sa-bordes">
+    <div class="row sa-bordes sa-fondo">
+      <h5>Datos del Estudiante</h5></div>
+    <div class="row"><p></p></div>
+    <div class="row"><p></p></div>
+    <div class="row">
+      <div class="col-3">
+        <label>
+          <h5>Nombre</h5>
+        </label>
+      </div>
+      <div class="col-9">
+        <input type="text" pattern="[A-Za-zñÑáÁéÉíÍóÓúÚ ]{1,}" class="form-control input-sm" disabled
+               placeholder="Nombre del estudiante" value={{nombre}} title="Sólo ingresar letras">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-3">
+        <label>
+          <h5>Paralelo</h5>
+        </label>
+      </div>
+      <div class="col-9">
+        <input type="text" pattern="[A-Z]{1}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"
+               placeholder="X" value={{paralelo}} MAXLENGTH=1 title="Sólo ingresar una letra mayúscula">
+      </div>
+    </div>
+    <div class="row">
+      <br><br>
+      <div class="col-9"></div>
+      <div class="col-3">
+        <button class="sa-btn" (click)="guardar()">Guardar</button>
+      </div>
+    </div>
+    <div class="row"><p></p></div>
+  </div>
+
+</div>

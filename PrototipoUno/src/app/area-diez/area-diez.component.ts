@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-diez',
@@ -61,7 +61,9 @@ export class AreaDiezComponent implements OnInit {
       this.valor = this.valor + 1;
     }
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

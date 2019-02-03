@@ -29,71 +29,213 @@
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
-      <table>
-        <thead>
-        <tr>
-          <th class="sa-borde sa-centrar" rowspan="3" style="width:5%">{{cabeceraTabla[valor]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="3" style="width:50%">{{cabeceraTabla[valor+1]}}</th>
-          <th class="sa-borde sa-centrar" colspan="18">{{cabeceraTabla[valor+2]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="3" style="width:10%">{{cabeceraTabla[valor+3]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="3" style="width:10%">{{cabeceraTabla[valor+4]}}</th>
-        </tr>
-        <tr>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+1]}}</th>
-          <th class="sa-borde sa-centrar" colspan="2">{{cabeceraAreasTabla[valor+2]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+3]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+4]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+5]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+6]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+7]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+8]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+9]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+10]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+11]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+12]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+13]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+14]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+15]}}</th>
-          <th class="sa-borde sa-centrar" rowspan="2" style="width:3%">{{cabeceraAreasTabla[valor+16]}}</th>
-        </tr>
-        <tr>
-          <th class="sa-borde sa-centrar" style="width:3%">{{cabeceraAreasTabla[valor+17]}}</th>
-          <th class="sa-borde sa-centrar" style="width:3%">{{cabeceraAreasTabla[valor+18]}}</th>
-        </tr>
-        </thead>
+      <div class="row">
+        <table mat-table [dataSource]="datos2" class="mat-elevation-z8" multiTemplateDataRows>
 
-        <tbody>
-        <tr *ngFor="let lista of nomina;let ind=index">
-          <td *ngFor="let dat of datos;let indice=index" class="sa-borde sa-centrar {{estiloTabla[indice]}}">{{dat}}</td>
-        </tr>
-        </tbody>
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell *matCellDef="let element"> {{element.position}}</td>
+            <td mat-footer-cell *matFooterCellDef></td>
+            <td mat-footer-cell *matFooterCellDef></td>
+          </ng-container>
 
-        <tfoot>
-        <tr>
-          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor]}}</th>
-          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let positivo of valoresAfirmativos">{{positivo}}</td>
-        </tr>
-        <tr>
-          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+1]}}</th>
-          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let porcentajeP of porcentajesAfirmativos">{{porcentajeP}}</td>
-        </tr>
-        <tr>
-          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+2]}}</th>
-          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let negativo of valoresNegativos">{{negativo}}</td>
-        </tr>
-        <tr>
-          <th class="sa-borde sa-centrar" colspan="2">{{pieTabla[valor+3]}}</th>
-          <td class="sa-borde sa-centrar" style="width:3%" *ngFor="let porcentajeNeg of porcentajesNegativo">{{porcentajeNeg}}</td>
-        </tr>
-        </tfoot>
-      </table>
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell *matCellDef="let element" (click)="irFormulario()"> {{element.name}}</td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef> Total Aciertos<br>Total Errores</td>
+          </ng-container>
+
+          <!-- Area Column -->
+          <ng-container matColumnDef="area1">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar" colspan="18"> ÁREAS EXAMINADAS </th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area1}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>4 <br>6</td>
+          </ng-container>
+          <ng-container matColumnDef="area2">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar" colspan=2>TOTAL</th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area2}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area3T">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area3T}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area3E">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area3E}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>6 <br>4</td>
+          </ng-container>
+          <ng-container matColumnDef="area4">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area4}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>4 <br>6</td>
+          </ng-container>
+          <ng-container matColumnDef="area5">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area5}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area6">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area6}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area7">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area7}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>6 <br>4</td>
+          </ng-container>
+          <ng-container matColumnDef="area8">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area8}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>4 <br>6</td>
+          </ng-container>
+          <ng-container matColumnDef="area9">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area9}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area10">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area10}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area11">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area11}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>6 <br>4</td>
+          </ng-container>
+          <ng-container matColumnDef="area12">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area12}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>4 <br>6</td>
+          </ng-container>
+          <ng-container matColumnDef="area13">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area13}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area14">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area14}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+          <ng-container matColumnDef="area15">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area15}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>6 <br>4</td>
+          </ng-container>
+          <ng-container matColumnDef="area16">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area16}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>4 <br>6</td>
+          </ng-container>
+          <ng-container matColumnDef="area17">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.area17}} </td>
+            <td mat-footer-cell class="sa-centrar" *matFooterCellDef>5 <br>5</td>
+          </ng-container>
+
+          <ng-container matColumnDef="totalAciertos">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.totalAciertos}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+          </ng-container>
+          <ng-container matColumnDef="totalErrores">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.totalErrores}} </td>
+            <td mat-footer-cell *matFooterCellDef></td>
+          </ng-container>
+
+          <ng-container matColumnDef="0">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> No. </th>
+          </ng-container>
+          <ng-container matColumnDef="1">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> NÓMINA </th>
+          </ng-container>
+          <ng-container matColumnDef="2">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> I </th>
+          </ng-container>
+          <ng-container matColumnDef="3">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> II </th>
+          </ng-container>
+          <ng-container matColumnDef="4">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> III T </th>
+          </ng-container>
+          <ng-container matColumnDef="5">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> III E </th>
+          </ng-container>
+          <ng-container matColumnDef="6">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> IV </th>
+          </ng-container>
+          <ng-container matColumnDef="7">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> V </th>
+          </ng-container>
+          <ng-container matColumnDef="8">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VI </th>
+          </ng-container>
+          <ng-container matColumnDef="area">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VII </th>
+          </ng-container>
+          <ng-container matColumnDef="9">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VIII </th>
+          </ng-container>
+          <ng-container matColumnDef="areaExa">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> IX </th>
+          </ng-container>
+          <ng-container matColumnDef="10">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> X </th>
+          </ng-container>
+          <ng-container matColumnDef="11">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XI </th>
+          </ng-container>
+          <ng-container matColumnDef="12">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XII </th>
+          </ng-container>
+          <ng-container matColumnDef="13">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XIII </th>
+          </ng-container>
+          <ng-container matColumnDef="14">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XIV </th>
+          </ng-container>
+          <ng-container matColumnDef="15">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XV </th>
+          </ng-container>
+          <ng-container matColumnDef="16">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XVI </th>
+          </ng-container>
+          <ng-container matColumnDef="17">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XVII </th>
+          </ng-container>
+          <ng-container matColumnDef="18">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> ACIERTOS </th>
+          </ng-container>
+          <ng-container matColumnDef="total">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar"> ERRORES </th>
+          </ng-container>
+
+          <!-- The table will render two header rows, one data row per data object, and two footer rows. -->
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" class="example-first-header-row"></tr>
+
+          <tr mat-header-row style="font-weight: bold;" *matHeaderRowDef="['0', '1', '2', '3', '4', '5', '6', '7', '8',
+          'area', '9', 'areaExa', '10', '11', '12', '13', '14', '15', '16', '17', '18', 'total']">
+          </tr>
+          <tr mat-footer-row style="font-weight: bold;" *matFooterRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+      </div>
+
     </div>
     <div class="col-1"></div>
   </div>
 
   <!-- >Gráfico 1<!-->
-  <div class="row"><br></div>
+  <div class="row"><br><br></div>
   <div class="row">
     <div class="col-1"></div>
     <div class="col-10">
@@ -119,7 +261,61 @@
       <h4>{{subtitulos[valor+2]}}</h4>
     </div>
   </div>
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <div class="row">
+        <table mat-table [dataSource]="datos3" class="mat-elevation-z8">
+          <!--- Note that these columns can be defined in any order.
+                The actual rendered columns are set as a property on the row definition" -->
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar">No.</th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.position}}</td>
+          </ng-container>
 
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar">NÓMINA</th>
+            <td mat-cell *matCellDef="let element"> {{element.name}}</td>
+          </ng-container>
+
+          <!-- Errores -->
+          <ng-container matColumnDef="totalErrores">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar">ERRORES</th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.totalErrores}} </td>
+          </ng-container>
+
+          <!-- Grupos -->
+          <ng-container matColumnDef="grupo">
+            <th mat-header-cell *matHeaderCellDef class="sa-centrar">GRUPOS</th>
+            <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.grupo}} </td>
+          </ng-container>
+          <ng-container matColumnDef="disclaimer">
+            <td mat-footer-cell *matFooterCellDef colspan="4">
+              <br>
+                {{descripcionGrupos[valor]}}: {{descripcionGrupos[valor+1]}}.
+              <br>
+                {{descripcionGrupos[valor+2]}}: {{descripcionGrupos[valor+3]}}.
+              <br>
+                {{descripcionGrupos[valor+4]}}: {{descripcionGrupos[valor+5]}}.
+              <br>
+              <br>
+            </td>
+          </ng-container>
+
+          <!-- The table will render two header rows, one data row per data object, and two footer rows. -->
+          <tr mat-header-row *matHeaderRowDef="displayedColumns2">
+          </tr>
+          <tr mat-footer-row *matFooterRowDef="['disclaimer']"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- >Botones<!-->
   <div class="row"><br></div>
   <div class="row">
     <div class="col-4"><p></p></div>

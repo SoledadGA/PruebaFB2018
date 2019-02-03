@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-formulario',
@@ -189,7 +189,9 @@ export class FormularioComponent implements OnInit {
       window.print();
     }
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

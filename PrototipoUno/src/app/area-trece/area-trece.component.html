@@ -50,7 +50,9 @@
   <div class="col-2"><p></p></div>
   <div class="col-8">
     <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
-      <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag><img class="imagenes" src="{{timePeriod}}"></div>
+      <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>
+        <img class="imagenes" src="{{timePeriod}}" style="height:100%;width:100%">
+      </div>
     </div>
   </div>
 </div>
@@ -99,7 +101,9 @@
 <div class="row" *ngIf="mostrarDos"><br><br></div>
 <div class="row"  *ngIf="mostrarDos">
   <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop1($event)">
-    <div class="example-box" *ngFor="let timePeriod of timePeriods2" cdkDrag><img class="imagenes" src="{{timePeriod}}"></div>
+    <div class="example-box" *ngFor="let timePeriod of timePeriods2" cdkDrag>
+      <img class="imagenes" src="{{timePeriod}}" style="height:100%;width:100%">
+    </div>
   </div>
 </div>
 <div class="row" *ngIf="mostrarDos"><br><br></div>
@@ -146,7 +150,9 @@
 <div class="row" *ngIf="mostrarTres"><br><br></div>
 <div class="row"  *ngIf="mostrarTres">
   <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop2($event)">
-    <div class="example-box" *ngFor="let timePeriod of timePeriods3" cdkDrag><img class="imagenes3" src="{{timePeriod}}"></div>
+    <div class="example-box" *ngFor="let timePeriod of timePeriods3" cdkDrag>
+      <img class="imagenes3" src="{{timePeriod}}" style="height:100%;width:100%">
+    </div>
   </div>
 </div>
 <div class="row" *ngIf="mostrarTres"><br><br></div>

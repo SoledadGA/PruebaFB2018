@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-cuatro',
@@ -58,7 +58,9 @@ export class AreaCuatroComponent implements OnInit {
     }
 
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

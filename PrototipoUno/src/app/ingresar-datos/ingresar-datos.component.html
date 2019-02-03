@@ -1,45 +1,72 @@
 <div class="row"><p></p></div>
 <div class="row">
-  <div class="col-5"></div>
-  <div class="col-5"><img src="imagenes/logo1.png"></div>
+  <div class="col-4"></div>
+  <div class="col-4">
+    <img src="imagenes/logo1.png" class="sa-img">
+  </div>
+  <div class="col-4"></div>
 </div>
 <div class="row"><p></p></div>
 <div class="row"><p></p></div>
 <div class="row">
-  <div class="col-4"> </div>
-  <div class="col-5 sa-bordes">
-    <div class="row sa-bordes sa-fondo"><h5>Datos del Estudiante</h5></div>
+  <div class="col-3"> </div>
+  <div class="col-6 sa-bordes">
+    <div class="row sa-bordes sa-fondo">
+      <h5>Datos del Estudiante</h5></div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <div class="row">
       <div class="col-3">
-        <h5>Nombre</h5>
+        <label>
+          <h5>Nombre</h5>
+        </label>
       </div>
-      <div class="col-9"><input type="text" style="width: 100%"></div>
+      <div class="col-9">
+        <input type="text" pattern="[A-Za-zñÑáÁéÉíÍóÓúÚ ]{1,}" class="form-control input-sm"
+               placeholder="Nombre del estudiante" value={{nombre}} title="Sólo ingresar letras">
+      </div>
     </div>
+    <br>
     <div class="row">
       <div class="col-3">
-        <h5>Año de E.G.B</h5>
+        <label>
+          <h5>Año de E.G.B</h5>
+        </label>
       </div>
-      <div class="col-9"><input type="text" style="width: 60%"></div>
+      <div class="col-9">
+        <input type="text" pattern="[A-Za-zéÉ]{1,}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"
+               placeholder="Primero" value={{anioEGB}} title="Sólo ingresar letras">
+      </div>
     </div>
+    <br>
     <div class="row">
       <div class="col-3">
-        <h5>Paralelo</h5>
+        <label>
+          <h5>Paralelo</h5>
+        </label>
       </div>
-      <div class="col-9"><input type="text" style="width: 60%"></div>
+      <div class="col-9">
+        <input type="text" pattern="[A-Z]{1}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"
+               placeholder="X" value={{paralelo}} MAXLENGTH=1 title="Sólo ingresar una letra mayúscula">
+      </div>
     </div>
+    <br>
     <div class="row">
       <div class="col-3">
-        <h5>Fecha</h5>
+        <label>
+          <h5>Fecha</h5>
+        </label>
       </div>
-      <div class="col-9"><input type="text" style="width: 60%"></div>
+      <div class="col-9">
+        <input class="form-control input-sm" style="width: 100%; max-width: 15vw;" value={{txtFecha}} disabled>
+      </div>
     </div>
-    <div class="row"> <p></p></div>
-    <div class="row"> <p></p></div>
     <div class="row">
-      <div class="col-10"></div>
-      <div class="col-2"><button style="background: cornflowerblue" [routerLink]="['/areaUno']">Siguiente</button></div>
+      <br><br>
+      <div class="col-9"></div>
+      <div class="col-3">
+        <button class="sa-btn" (click)="guardar()">Siguiente</button>
+      </div>
     </div>
     <div class="row"><p></p></div>
   </div>

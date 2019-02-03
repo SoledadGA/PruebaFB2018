@@ -1,0 +1,88 @@
+<div class="row">
+  <ngb-carousel *ngIf="images" style="width: 100%">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" style="width: 100%" alt="Objetivo General">
+      <div class="carousel-caption">
+        <!--<h3>Objetivo General</h3>-->
+        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]"  style="width: 100%" alt="Objetivos Especificos">
+      <div class="carousel-caption">
+        <!--<h3>Objetivos Especificos</h3>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" style="width: 100%" alt="Utilidad">
+      <div class="carousel-caption">
+        <!--<h3>Objetivos Especificos</h3>-->
+        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="row ">
+  <div class="col-sm-1">
+    <hr color="cornflowerblue" size=3>
+  </div>
+  <div class="col-4">
+    <button mat-button [matMenuTriggerFor] = "prueba">Prueba</button>
+    <mat-menu #prueba="matMenu">
+      <button mat-menu-item [routerLink]="['/ingresarDatos']" >Iniciar Test</button>
+      <button mat-menu-item [routerLink]="['/ingresarDatos']">Iniciar Re-Test</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor] = "estadisticas">Estadisticas</button>
+    <mat-menu #estadisticas="matMenu">
+      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestInicial">Estadisticas Test Inicial</button>
+      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestCurso">Estadisticas por Curso</button>
+    </mat-menu>
+    <mat-menu #estadisticasTestInicial="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #paralelos="matMenu">
+      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/estadisticas']">{{curso}}</button>
+    </mat-menu>
+    <mat-menu #estadisticasTestCurso="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor] = "administrarParalelos">Administrar Paralelos</button>
+    <mat-menu #administrarParalelos="matMenu">
+      <button mat-menu-item [matMenuTriggerFor] = "sinParalelo">Estadisticas Test Inicial</button>
+      <button mat-menu-item [matMenuTriggerFor] = "cambiarParalelo">Estadisticas por Curso</button>
+    </mat-menu>
+    <mat-menu #sinParalelo="matMenu">
+      <button mat-menu-item  *ngFor="let anio of anioLectivo" [routerLink]="['/asignarParalelo']">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #cambiarParalelo="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos1" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #paralelos1="matMenu">
+      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/nominasParalelo']">{{curso}}</button>
+    </mat-menu>
+  </div>
+  <div class="col-7">
+    <hr color="cornflowerblue" size=3>
+  </div>
+</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+      bred for hunting.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>LIKE</button>
+    <button mat-button>SHARE</button>
+  </mat-card-actions>
+</mat-card>

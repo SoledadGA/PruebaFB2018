@@ -1,11 +1,17 @@
 import {BrowserModule} from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgModule} from '@angular/core';
-import {ChartModule} from 'primeng/chart';
 import {
   MatCheckboxModule,
   MatButtonModule,
   MatFormFieldModule,
+  MatMenuModule,
+  MatTableModule,
+  MatSortModule,
+  MatSelectModule
 } from '@angular/material';
+import {ChartModule} from 'primeng/chart';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import {AppComponent} from './app.component';
 import {AreaUnoComponent} from './area-uno/area-uno.component';
@@ -28,12 +34,19 @@ import {AreaDiecisieteComponent} from './area-diecisiete/area-diecisiete.compone
 import {AreaNueveComponent} from './area-nueve/area-nueve.component';
 import {AreaDiezComponent} from './area-diez/area-diez.component';
 import {AreaDoceComponent} from './area-doce/area-doce.component';
-import {AreaDieciseisComponent} from './area-dieciseis/area-dieciseis.component';
 import {AreaTreceComponent} from './area-trece/area-trece.component';
-import {DragDropModule} from '@angular/cdk/drag-drop';
-import { FormularioComponent } from './formulario/formulario.component';
-import { EstadisticasComponent } from './estadisticas/estadisticas.component';
-
+import {AreaDieciseisComponent} from './area-dieciseis/area-dieciseis.component';
+import {FormularioComponent} from './formulario/formulario.component';
+import {EstadisticasComponent} from './estadisticas/estadisticas.component';
+import {RecomendacionesComponent} from './recomendaciones/recomendaciones.component';
+import { AreaCinco2Component } from './area-cinco2/area-cinco2.component';
+import {HijoComponent} from './hijo/hijo.component';
+import { AsignarParalelosComponent } from './asignar-paralelos/asignar-paralelos.component';
+import { CambioParaleloComponent } from './cambio-paralelo/cambio-paralelo.component';
+import { NominaParaleloComponent } from './nomina-paralelo/nomina-paralelo.component';
+import { PruebaComponent } from './prueba/prueba.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {MatCardModule} from '@angular/material/card';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,21 +68,35 @@ import { EstadisticasComponent } from './estadisticas/estadisticas.component';
     AreaNueveComponent,
     AreaDiezComponent,
     AreaDoceComponent,
-    AreaDieciseisComponent,
     AreaTreceComponent,
+    AreaDieciseisComponent,
     FormularioComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    RecomendacionesComponent,
+    AreaCinco2Component,
+    HijoComponent,
+    AsignarParalelosComponent,
+    CambioParaleloComponent,
+    NominaParaleloComponent,
+    PruebaComponent
   ],
   imports: [
     BrowserModule,
-    ChartModule,
+    BrowserAnimationsModule,
     MatCheckboxModule,
     MatButtonModule,
     MatFormFieldModule,
+    ChartModule,
+    DragDropModule,
+    MatMenuModule,
+    MatTableModule,
+    MatSortModule,
+    MatSelectModule,
     RouterModule.forRoot(
       RUTAS_APP, {useHash: true}
     ),
-    DragDropModule,
+    NgbModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

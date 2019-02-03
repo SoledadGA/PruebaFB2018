@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-dieciseis',
@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AreaDieciseisComponent implements OnInit {
   cabecera = 'imagenes/cabeceras/CabeceraArea16.png';
   contador_segundos = 60;
-  contador_segundos_papel = 10;
+  contador_segundos_papel = 60;
   mostrar_alarma = false;
   imagen_cronometro = 'imagenes/area16/cronometro.png';
   alarma = 'audio/area16/alarma.mpeg';
@@ -116,7 +116,9 @@ export class AreaDieciseisComponent implements OnInit {
       },
       1000);
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

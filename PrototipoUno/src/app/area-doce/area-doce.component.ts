@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-doce',
@@ -82,7 +82,9 @@ export class AreaDoceComponent implements OnInit {
     this.mostrarPreguntas = false;
     this.mostrarBoton = false;
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

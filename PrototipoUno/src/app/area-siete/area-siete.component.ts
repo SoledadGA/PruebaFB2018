@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-siete',
@@ -87,7 +87,9 @@ export class AreaSieteComponent implements OnInit {
       this.mostrarAreaPositiva = false;
     }
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

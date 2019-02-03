@@ -13,7 +13,9 @@
       <div>
         <div class="row"><h3>{{titulo}}</h3></div>
         <div class="row"><br></div>
-        <div class="row sa-borde" *ngIf="mostrarIndicacion">{{indicacion}}</div>
+        <div class="row sa-borde" *ngIf="mostrarIndicacion">
+          <p>{{indicacion}}</p>
+        </div>
         <div class="row"><br><br></div>
         <div class="row">
           <h3>{{valor+1}}. {{instruccion[valor]}}</h3>
@@ -79,7 +81,7 @@
           <div class="col-7">
             <button mat-flat-button>
               <img src="imagenes/area3E/pelota.png" style="height: 100px ;width: 100%"
-                   (click)="siguiente(3)">
+                                                                    (click)="siguiente(3)">
             </button>
           </div>
         </div>
@@ -101,7 +103,7 @@
   <div class="col-4" *ngIf="!mostrarSilla">
     <h3>Preguntas</h3>
     <ul>
-      <li *ngFor="let pregunta of instruccion">
+      <li *ngFor="let pregunta of instruccion" style="font-size:1.2vw;">
         {{ pregunta }}
       </li>
     </ul>
@@ -109,7 +111,7 @@
   <div class="col-3" *ngIf="!mostrarSilla">
     <h3>Respuestas</h3>
     <ul>
-      <li *ngFor="let resp of respuesta">
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
         {{ resp }}
       </li>
     </ul>

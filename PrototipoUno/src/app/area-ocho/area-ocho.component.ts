@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-ocho',
@@ -63,6 +63,7 @@ export class AreaOchoComponent implements OnInit {
         console.log(this.respuesta[this.valor]);
       } else {
         this.respuesta[this.valor] = 'Positivo';
+        this.mostrarAreaPositiva = true;
       }
       this.mostrarPreguntas = false;
       this.mostrarRespuesta = true;
@@ -83,7 +84,9 @@ export class AreaOchoComponent implements OnInit {
       this.mostrarRespuesta = true;
     }
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

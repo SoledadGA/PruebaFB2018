@@ -302,7 +302,8 @@
       <div class="col-5"><p></p></div>
       <div class="col-3">
         <div class="row" *ngIf="mostrar_cronometro_papel"><h5>Cronómetro</h5></div>
-        <div class="row sa-centrar" *ngIf="mostrar_cronometro_papel"><h1>{{contador_segundos_papel}}</h1></div>
+        <div class="row sa-centrar" *ngIf="mostrar_cronometro_papel">
+          <h1>{{contador_segundos_papel}}</h1></div>
       </div>
       <div class="col-2" *ngIf="mostrar_botones_cronometro">
         <button style="background: cornflowerblue" (click)="cronometroPapel()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>

@@ -31,7 +31,11 @@
   <div class="col-2"></div>
 </div>
 <div class="row sa-centrar" *ngIf="mostrarPreguntas">
-  {{preguntas[valor]}}
+  <div class="col-1"></div>
+  <div class="col-10 sa-centrar">
+    {{preguntas[valor]}}
+  </div>
+  <div class="col-1"></div>
 </div>
 
 
@@ -72,7 +76,7 @@
   <div class="col-3">
     <h3>Preguntas</h3>
     <ul>
-      <li *ngFor="let question of preguntas">
+      <li *ngFor="let question of preguntas" style="font-size:1.2vw;">
         {{ question }}
       </li>
     </ul>
@@ -80,7 +84,7 @@
   <div class="col-2">
     <h3>Respuestas</h3>
     <ul>
-      <li *ngFor="let resp of respuesta">
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
         {{ resp }}
       </li>
     </ul>

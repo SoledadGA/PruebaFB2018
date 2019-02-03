@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-catorce',
@@ -71,7 +71,8 @@ export class AreaCatorceComponent implements OnInit {
     }
   }
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

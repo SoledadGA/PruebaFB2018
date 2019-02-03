@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-area-dos',
@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-dos.component.css']
 })
 export class AreaDosComponent implements OnInit {
-
   valor = 0;
   derecha = 0;
   izquierda = 4;
@@ -84,6 +83,9 @@ export class AreaDosComponent implements OnInit {
     }
   }
 
-  constructor() { }
-  ngOnInit() { }
+  constructor() {
+  }
+
+  ngOnInit() {
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-area-nueve',
@@ -24,13 +24,13 @@ export class AreaNueveComponent implements OnInit {
   imagenEjemplo = 'imagenes/area9/1.png';
   audioInstruccion = 'audio/area9/instruccion0.mp3';
   preguntas = [
-    'Lavado...',
+    'Lavado..',
     'Cepi...',
-    'Maripo...',
-    'Ara...',
-    'Pelo...'];
+    'Maripo..',
+    'Ara..',
+    'Pelo..'];
   audio = [
-    'audio/area9/instruccion-1.mp3',
+    'audio/area9/1.mp3',
     'audio/area9/2.mp3',
     'audio/area9/3.mp3',
     'audio/area9/4.mp3',
@@ -70,7 +70,9 @@ export class AreaNueveComponent implements OnInit {
       this.valor = this.valor + 1;
     }
   }
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

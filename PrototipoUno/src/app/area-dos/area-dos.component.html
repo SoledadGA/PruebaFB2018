@@ -35,7 +35,7 @@
     <img src="{{imagenEjemplo}}" style="width: 100%; height: 100%">
   </div>
   <div class="col-2">
-    <div class="row"><br><br><br><br><br><br><br><br><br><br><br></div>
+    <div class="row"><br><br><br><br><br><br><br><br><br><br><br><br></div>
     <button style="background: cornflowerblue ; width: 100% ; height: 20% " (click)="iniciarPreguntas()">Siguiente</button>
   </div>
 </div>
@@ -55,7 +55,7 @@
 </div>
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="sa-centrar">
-    <audio src="{{audio[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+      <audio src="{{audio[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
   </div>
 </div>
 
@@ -84,7 +84,7 @@
   <div class="col-3">
     <h3>Preguntas</h3>
     <ul>
-      <li *ngFor="let question of preguntas">
+      <li *ngFor="let question of preguntas" style="font-size:1.2vw;">
         {{ question }}
       </li>
     </ul>
@@ -93,7 +93,7 @@
   <div class="col-4">
     <h3>Respuestas</h3>
     <ul>
-      <li *ngFor="let resp of respuesta">
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
         {{ resp }}
       </li>
     </ul>

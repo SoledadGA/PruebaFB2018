@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./area-cinco.component.css']
 })
 export class AreaCincoComponent implements OnInit {
-
   errores = 0;
   valor = 0;
   mostrarCriterio = true;

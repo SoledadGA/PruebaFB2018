@@ -22,7 +22,7 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="sa-centrar">
     <br>
-    <h3>{{textoInstruccion}}</h3>
+    <h5>{{textoInstruccion}}</h5>
   </div>
 </div>
 <div class="row" *ngIf="mostrarEjemplo">
@@ -35,7 +35,7 @@
 <div class="row" *ngIf="mostrarEjemplo">
   <div class="col-2"><p></p></div>
   <div class="col-5">
-    <button mat-flat-button="" button class="sa-btnimg" (click)="iniciarPreguntas()" >
+    <button mat-flat-button class="sa-btnimg" (click)="iniciarPreguntas()" >
       <img src={{imagenEjemplo[valor]}} class="sa-img">
     </button>
   </div>
@@ -106,7 +106,7 @@
   <div class="col-4">
     <h3>Preguntas</h3>
     <ul>
-      <li *ngFor="let question of preguntas">
+      <li *ngFor="let question of preguntas" style="font-size:1.2vw;">
         {{ question }}
       </li>
     </ul>
@@ -114,7 +114,7 @@
   <div class="col-3">
     <h3>Respuestas</h3>
     <ul>
-      <li *ngFor="let resp of respuesta">
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
         {{ resp }}
       </li>
     </ul>
