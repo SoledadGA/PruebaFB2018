@@ -1,0 +1,38 @@
+.sa-contorno{
+  border: black solid 1px;
+  width: 100%;
+}
+.sa-boton-ejemplo1{
+  width: 100% ;
+  height:8% ;
+}
+.sa-boton-ejemplo2{
+  width: 100% ;
+  height:15% ;
+}
+.sa-boton-ejemplo3{
+  width: 100% ;
+  height:20% ;
+}
+
+.sa-centrar{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  font-size:2.5vw;
+}
+
+h3{
+  font-size:2.1vw;
+}
+
+h5{
+  font-size:1.5vw;
+}
+
+p{
+  font-size:1.2vw;
+}

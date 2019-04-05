@@ -1,0 +1,96 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src={{imagenCabecera}} style="height: auto;width: 100%" >
+  </div>
+</div>
+<!--Diagnsotico><!-->
+<div class="row" *ngIf="mostrarDiagnostico">
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde">
+    <p>{{queDiagnostica}}</p>
+  </div>
+</div>
+
+<!--Preguntas><!-->
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="sa-centrar">
+    <br><br>
+    <h3>{{valor+1}}. {{instruccion}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="sa-centrar">
+    <audio src="{{audio[valor]}}" controls autoplay >
+      <p>{{errorAudio}}</p>
+    </audio>
+  </div>
+</div>
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-3"></div>
+  <div class="col-7">
+    <div class="row"><br><br></div>
+    <div class="row">
+      <img src={{preguntas[valor]}} class="{{estilo[valor]}}">
+    </div>
+    <div class="row"><br><br></div>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrarPreguntas"><br><br><br><br></div>
+<div class="row" *ngIf="mostrarPreguntas">
+  <div class="col-4"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
+  <div class="col-3">
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+  </div>
+</div>
+
+<!--Respuestas><!-->
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-1"></div>
+  <div class="col-4">
+    <h2>Resultado</h2>
+  </div>
+</div>
+<div class="row" *ngIf="!mostrarPreguntas"><br></div>
+
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-4"></div>
+  <div class="col-2">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let question of dibujos" style="font-size:1.2vw;">
+        {{ question }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-1"></div>
+  <div class="col-2">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
+        {{ resp }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row" *ngIf="!mostrarPreguntas"><br><br></div>
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="sa-centrar" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
+<div class="row" *ngIf="!mostrarPreguntas">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="agregarRespuestaAreaQuince()">Siguiente</button>
+  </div>
+</div>

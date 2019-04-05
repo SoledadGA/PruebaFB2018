@@ -1,0 +1,609 @@
+<!-- >Cabecera<!-->
+<div class="hoja" xmlns="http://www.w3.org/1999/html">
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1 sa-centrar">
+      <br>
+      <img src={{imagenCabecera}} style="height: auto;width: 120%" >
+    </div>
+    <div class="col-9 sa-centrar">
+      <h4>{{cabecera1}}</h4>
+      <br>
+      <h4>{{cabecera2}} {{estServ.selecionarEstudiante.anioLectivo}}</h4>
+      <br>
+      <h4>{{cabecera3}}</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Datos estudiante<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10 sa-borde">
+      <div class="row">
+        <div class="col-1">
+          <h5>{{datos[valor]}}</h5>
+        </div>
+        <div class="col-5">
+          <p>{{estServ.selecionarEstudiante.nombreEstudiante}}</p>
+        </div>
+        <div class="col-2">
+          <h5>{{datos[valor+1]}}</h5>
+        </div>
+        <div class="col-1">
+          <p>{{estServ.selecionarEstudiante.anioEGB}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1">
+          <h5>{{datos[valor+2]}}</h5>
+        </div>
+        <div class="col-5">
+          <p>{{estServ.selecionarEstudiante.fecha}}</p>
+        </div>
+        <div class="col-2">
+          <h5>{{datos[valor+3]}}</h5>
+        </div>
+        <div class="col-1">
+          <p>{{estServ.selecionarEstudiante.paralelo}}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4">
+          <h5>{{datos[valor+4]}}</h5>
+        </div>
+        <div class="col-5">
+          <p>{{estServ.selecionarEstudiante.nombreEvaluador}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area1<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area1Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>En su propio cuerpo: </b></p> {{estServ.selecionarEstudiante.area1a}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><p><b>En el espejo:</b></p>  {{estServ.selecionarEstudiante.area1b}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>En otra persona:</b></p>   {{estServ.selecionarEstudiante.area1c}}</div>
+
+  </div>
+
+
+  <!-- >Area2<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+1]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area2Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <b>Mano:</b>
+    </div>
+    <div class="col-2">
+      <b>Ojo:</b>
+    </div>
+    <div class="col-3">
+      <b>Oído:</b>
+    </div>
+    <div class="col-2">
+      <b>Pie:</b>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      {{estServ.selecionarEstudiante.area2a}}
+    </div>
+    <div class="col-2">
+      {{estServ.selecionarEstudiante.area2b}}
+    </div>
+    <div class="col-3">
+      {{estServ.selecionarEstudiante.area2c}}
+    </div>
+    <div class="col-2">
+      {{estServ.selecionarEstudiante.area2d}}
+    </div>
+
+  </div>
+
+  <!-- >Area3<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+2]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area16a}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area3T<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h5>{{subtituloArea3[valor]}}</h5>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.aera3TemporalTotal}}</b></p>
+    </div>
+    <div class="col-1"></div>
+
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <p><b>a.&nbsp;</b> {{estServ.selecionarEstudiante.area3Ta}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area3Tb}}</p>
+    </div>
+    <div class="col-3">
+      <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area3Tc}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area3Td}}</p>
+    </div>
+
+  </div>
+
+  <!-- >Area3E<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h5>{{subtituloArea3[valor+1]}}</h5>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.aera3EspacialTotal}}</b></p>
+    </div>
+    <div class="col-1"></div>
+
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <p><b>a.&nbsp;</b> {{estServ.selecionarEstudiante.area3Ea}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area3Eb}}</p>
+    </div>
+    <div class="col-3">
+      <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area3Ec}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area3Ed}}</p>
+    </div>
+
+  </div>
+
+  <!-- >Area4<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+3]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area4Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+      <p><b>Saltar:</b> &nbsp;{{estServ.selecionarEstudiante.area4a}}</p>
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-3">
+      <p><b>Botear:</b> &nbsp;{{estServ.selecionarEstudiante.area4b}}</p>
+    </div>
+  </div>
+
+
+
+
+  <!-- >Area5<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+4]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area5Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a.</b>  &nbsp; {{estServ.selecionarEstudiante.area5a}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><b>b.</b> &nbsp; {{estServ.selecionarEstudiante.area5b}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><b>c.</b>  &nbsp; {{estServ.selecionarEstudiante.area5c}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>d.</b>  &nbsp; {{estServ.selecionarEstudiante.area5d}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><b>e.</b> &nbsp; {{estServ.selecionarEstudiante.area5e}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><b>f.</b>  &nbsp; {{estServ.selecionarEstudiante.area5f}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>g.</b>  &nbsp; {{estServ.selecionarEstudiante.area5g}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><b>h.</b> &nbsp; {{estServ.selecionarEstudiante.area5h}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><b>i.</b>  &nbsp; {{estServ.selecionarEstudiante.area5i}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>j.</b>  &nbsp; {{estServ.selecionarEstudiante.area5j}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><b>k.</b> &nbsp; {{estServ.selecionarEstudiante.area5k}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><b>l.</b>  &nbsp; {{estServ.selecionarEstudiante.area5l}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>m.</b>  &nbsp; {{estServ.selecionarEstudiante.area5m}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><b>n.</b> &nbsp; {{estServ.selecionarEstudiante.area5n}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><b>o.</b>  &nbsp; {{estServ.selecionarEstudiante.area5o}}</div>
+  </div>
+
+
+  <!-- >Area6<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+5]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area6Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-3">
+      <p><b>a.</b> &nbsp;{{estServ.selecionarEstudiante.area6a}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>b.</b> &nbsp;{{estServ.selecionarEstudiante.area6b}}</p>
+    </div>
+    <div class="col-3">
+      <p><b>c.</b> &nbsp;{{estServ.selecionarEstudiante.area6c}}</p>
+    </div>
+    <div class="col-2">
+      <p><b>d.</b> &nbsp;{{estServ.selecionarEstudiante.area6d}}</p>
+    </div>
+
+  </div>
+
+
+  <!-- >Area7<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+6]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area7total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area7a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area7b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area7c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area7d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area7e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area7f}}</div>
+    <div class="col-2"><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area7g}}</div>
+    <div class="col-2"><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area7h}}</div>
+    <div class="col-2"><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area7i}}</div>
+    <div class="col-2"><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area7j}}</div>
+  </div>
+
+
+  <!-- >Area8<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+7]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area8total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area8a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area8b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area8c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area8d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area8e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area8f}}</div>
+    <div class="col-2"><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area8g}}</div>
+    <div class="col-2"><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area8h}}</div>
+    <div class="col-2"><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area8i}}</div>
+    <div class="col-2"><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area8j}}</div>
+  </div>
+
+  <!-- >Area9<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+8]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area9Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area9a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area9b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area9c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area9d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area9e}}</div>
+  </div>
+
+
+  <!-- >Area10<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+9]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area10total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area10a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area10b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area10c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area10d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area10e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area10f}}</div>
+  </div>
+
+  <!-- >Area11<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+10]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area11total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area11a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area11b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area11c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area11d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area11e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area11f}}</div>
+    <div class="col-2"><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area11g}}</div>
+    <div class="col-2"><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area11h}}</div>
+    <div class="col-2"><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area11i}}</div>
+    <div class="col-2"><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area11j}}</div>
+  </div>
+
+  <!-- >Area12<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-11">
+      <h4>{{tituloAreas[valor+11]}}</h4>
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area12total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area12a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area12b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area12c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area12d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area12e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area12f}}</div>
+    <div class="col-2"><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area12g}}</div>
+
+  </div>
+
+  <!-- >Area13<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+12]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area13Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>3 Tarjetas: </b></p> {{estServ.selecionarEstudiante.area13a}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><p><b>5 Tarjetas:</b></p>  {{estServ.selecionarEstudiante.area13b}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>8 Tarjetas:</b></p>   {{estServ.selecionarEstudiante.area13c}}</div>
+
+  </div>
+
+  <!-- >Area14<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+13]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area14total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>a. &nbsp;</b>{{estServ.selecionarEstudiante.area14a}}</div>
+    <div class="col-2"><b>b. &nbsp;</b>{{estServ.selecionarEstudiante.area14b}}</div>
+    <div class="col-2"><b>c. &nbsp;</b>{{estServ.selecionarEstudiante.area14c}}</div>
+    <div class="col-2"><b>d. &nbsp;</b>{{estServ.selecionarEstudiante.area14d}}</div>
+    <div class="col-2"><b>e. &nbsp;</b>{{estServ.selecionarEstudiante.area14e}}</div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><b>f. &nbsp;</b>{{estServ.selecionarEstudiante.area14f}}</div>
+    <div class="col-2"><b>g. &nbsp;</b>{{estServ.selecionarEstudiante.area14g}}</div>
+    <div class="col-2"><b>h. &nbsp;</b>{{estServ.selecionarEstudiante.area14h}}</div>
+    <div class="col-2"><b>i. &nbsp;</b>{{estServ.selecionarEstudiante.area14i}}</div>
+    <div class="col-2"><b>j. &nbsp;</b>{{estServ.selecionarEstudiante.area14j}}</div>
+  </div>
+
+
+  <!-- >Area15<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+14]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area15Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>Dibujo 1: </b></p> {{estServ.selecionarEstudiante.area15a}}</div>
+    <div class="col-2"></div>
+    <div class="col-2"><p><b>Dibujo 2: </b></p>  {{estServ.selecionarEstudiante.area15b}}</div>
+    <div class="col-1"></div>
+    <div class="col-2"><p><b>Dibujo 3: </b></p>   {{estServ.selecionarEstudiante.area15c}}</div>
+
+  </div>
+
+  <!-- >Area16<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+15]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area16Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+
+  <!-- >Area17<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h4>{{tituloAreas[valor+16]}}</h4>
+    </div>
+    <div class="col-5">
+      <p><b>{{estServ.selecionarEstudiante.area17Total}}</b></p>
+    </div>
+    <div class="col-1"></div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col-3">
+      <p><b>Recorte 1:&nbsp;</b> {{estServ.selecionarEstudiante.area17a}}</p>
+    </div>
+    <div class="col-1">
+    </div>
+    <div class="col-3">
+      <p><b>Recorte 2:&nbsp;</b> {{estServ.selecionarEstudiante.area17b}}</p>
+    </div>
+  </div>
+
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-4"><p></p></div>
+    <div class="col-2">
+      <button class="sa-btn" (click)="imprimir()">Imprimir</button>
+    </div>
+    <div class="col-3">
+      <button class="sa-btn1" [routerLink]="['/recomendaciones']">Recomendaciones</button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+.sa-borde{
+  border: black solid 1px;
+  width: 100%;
+}
+.sa-btn{
+  background: cornflowerblue;
+  width: 100%;
+  height:  200%;
+}
+.sa-btn1{
+  background: cornflowerblue;
+  width:  65%;
+  height:  200%;
+}
+.sa-btnimg{
+  width:100%;
+  height:100%;
+}
+.sa-img{
+  height:auto;
+  width:100%;
+}
+.sa-btn2{
+  background: #66CC44;
+  width:  100%;
+  height:  200%
+}
+
+.sa-centrar{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  font-size:2.5vw;
+}
+
+h3{
+  font-size:2.1vw;
+}
+
+h5{
+  font-size:1.5vw;
+}
+
+p{
+  font-size:1.2vw;
+}

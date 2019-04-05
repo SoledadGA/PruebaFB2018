@@ -123,6 +123,7 @@ export class AreaUnoComponent implements OnInit {
         this.valor = this.valor + 1;
       }
     }
+
   }
 
   siguiente1(entrada: number) {
@@ -160,7 +161,9 @@ export class AreaUnoComponent implements OnInit {
       } else {
         this.respuestaO[this.valor] = 'Positivo';
       }
-      if ((this.errores + this.erroresE + this.erroresO) > 3) {
+      if (this.errores > 1 || this.erroresE > 1 || this.erroresO > 1) {
+        this.mostrarAreaPositiva = false;
+      } else if ((this.errores + this.erroresE + this.erroresO) > 3) {
         this.mostrarAreaPositiva = false;
       } else {
         this.mostrarAreaPositiva = true;
@@ -179,6 +182,7 @@ export class AreaUnoComponent implements OnInit {
       }
     }
   }
+
 
   constructor() {
   }
