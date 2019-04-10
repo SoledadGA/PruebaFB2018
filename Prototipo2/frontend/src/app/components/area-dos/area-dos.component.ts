@@ -48,8 +48,10 @@ export class AreaDosComponent implements OnInit {
   respuestaTotal = 'Área Negativa';
 
   iniciarPreguntas() {
+    this.getEstudiante();
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
+
   }
 
   sumar(){
@@ -119,7 +121,6 @@ export class AreaDosComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

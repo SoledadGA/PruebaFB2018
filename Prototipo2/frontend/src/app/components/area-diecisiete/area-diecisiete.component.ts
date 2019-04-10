@@ -50,6 +50,7 @@ export class AreaDiecisieteComponent implements OnInit {
     this.mostrarDiagnostico = false;
     this.mosatrar_alarma_uno = false;
     if (this.contador == 0){
+      this.getEstudiante();
       this.mosatrar_alarma_dos = true;
       this.contador = this.contador + 1;
     }
@@ -77,6 +78,7 @@ export class AreaDiecisieteComponent implements OnInit {
       }
       this.valor = this.valor + 1;
     }
+
   }
 
   cronometro1() {
@@ -136,7 +138,6 @@ export class AreaDiecisieteComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

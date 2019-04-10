@@ -50,6 +50,7 @@ export class AreaTresTemporalComponent implements OnInit {
   respuestaTotal = 'Área Negativa';
 
   iniciarPreguntas() {
+    this.getEstudiante();
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
     this.mostrarImagenes = true;
@@ -125,7 +126,6 @@ export class AreaTresTemporalComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

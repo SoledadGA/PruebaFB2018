@@ -56,9 +56,11 @@ export class AreaSieteComponent implements OnInit {
   respuestaTotal = 'Área Negativa';
 
   iniciarPreguntas() {
+    this.getEstudiante();
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
     this.mostrarRespuestas = false;
+
   }
 
   siguientePregunta(entrada: number) {
@@ -88,8 +90,8 @@ export class AreaSieteComponent implements OnInit {
     }
     this.valor = this.valor + 1;
     if (this.errores > 2) {
-      this.mostrarPreguntas = false;
-      this.mostrarRespuestas = true;
+      //this.mostrarPreguntas = false;
+      //this.mostrarRespuestas = true;
       this.mostrarAreaPositiva = false;
     }
   }
@@ -132,7 +134,6 @@ export class AreaSieteComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

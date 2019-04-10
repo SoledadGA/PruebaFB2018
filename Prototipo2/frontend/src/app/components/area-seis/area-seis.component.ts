@@ -97,6 +97,9 @@ export class AreaSeisComponent implements OnInit {
       console.log(entrada);
       console.log('positivo ' + this.respuestaPositiva[this.valor].toString());
     }
+    if (this.valor == 2) {
+      this.getEstudiante();
+    }
     this.valor = this.valor + 1;
   }
 
@@ -132,7 +135,6 @@ export class AreaSeisComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

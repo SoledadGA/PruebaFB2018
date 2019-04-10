@@ -65,6 +65,9 @@ export class AreaTresEspacialComponent implements OnInit {
       this.respuesta[this.valor] = 'Positivo';
       console.log('positivo');
     }
+    if (this.valor == 1){
+      this.getEstudiante();
+    }
     this.valor = this.valor + 1;
   }
 
@@ -81,7 +84,7 @@ export class AreaTresEspacialComponent implements OnInit {
     if(this.estServ.selecionarEstudiante.aera3TemporalTotal == 'Área Negativa'){
       this.estServ.selecionarEstudiante.area16a = 'Área Negativa';
     }
-    if(this.estServ.selecionarEstudiante.aera3TemporalTotal == 'Área Negativa'){
+    if(this.estServ.selecionarEstudiante.aera3EspacialTotal == 'Área Negativa'){
       this.estServ.selecionarEstudiante.area16a = 'Área Negativa';
     }
   }
@@ -110,7 +113,7 @@ export class AreaTresEspacialComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
+
   }
 
   ngOnInit() {

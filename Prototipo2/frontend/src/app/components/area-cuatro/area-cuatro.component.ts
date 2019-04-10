@@ -61,6 +61,9 @@ export class AreaCuatroComponent implements OnInit {
         this.valor = this.valor + 1;
       }
     }
+    if (this.valor == 1){
+      this.getEstudiante();
+    }
 
   }
 
@@ -94,7 +97,6 @@ export class AreaCuatroComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

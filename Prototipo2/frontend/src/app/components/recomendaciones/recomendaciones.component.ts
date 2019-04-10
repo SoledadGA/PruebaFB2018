@@ -1,12 +1,16 @@
 import {Component, OnInit} from '@angular/core';
+import {EstudianteService} from "../../services/estudiante.service";
+import {Estudiante} from "../../models/estudiante";
 
 @Component({
   selector: 'app-recomendaciones',
   templateUrl: './recomendaciones.component.html',
-  styleUrls: ['./recomendaciones.component.css']
+  styleUrls: ['./recomendaciones.component.css'],
+  providers: [EstudianteService]
 })
 export class RecomendacionesComponent implements OnInit {
 
+  identificador = localStorage.getItem('identificador');
   valor = 0;
   anioLectivo = 2017;
   imagenCabecera = 'imagenes/logo4.png';
@@ -136,23 +140,97 @@ export class RecomendacionesComponent implements OnInit {
     'Tachar la figura de acuerdo al modelo.',
     'Cualquier otra actividad que el profesor/ra conozca y considere pertinente para afianzar esta destreza.'];
   resultadoAreas = [
-    true, false,
-    true, false,
-    true, false,
-    true, false,
-    true, false,
-    true, false,
-    true, false,
-    true, false,
+    true, true,
+    true, true,
+    true, true,
+    true, true,
+    true, true,
+    true, true,
+    true, true,
+    true, true,
     true];
 
+  contador = 0 ;
+
+  colectar(){
+    window.setTimeout(function(){ this.sumar; }, 3000);
+  }
+  sumar(){
+
+   if(this.estServ.selecionarEstudiante.area1Total == 'Área Negativa'){
+     this.resultadoAreas[0] = false;
+   }
+    if(this.estServ.selecionarEstudiante.area2Total == 'Área Negativa'){
+      this.resultadoAreas[1] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area16a == 'Área Negativa'){
+      this.resultadoAreas[2] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area4Total == 'Área Negativa'){
+      this.resultadoAreas[3] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area5Total == 'Área Negativa'){
+      this.resultadoAreas[4] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area6Total == 'Área Negativa'){
+      this.resultadoAreas[5] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area7total == 'Área Negativa'){
+      this.resultadoAreas[6] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area8total == 'Área Negativa'){
+      this.resultadoAreas[7] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area9Total == 'Área Negativa'){
+      this.resultadoAreas[8] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area10total == 'Área Negativa'){
+      this.resultadoAreas[9] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area11total == 'Área Negativa'){
+      this.resultadoAreas[10] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area12total == 'Área Negativa'){
+      this.resultadoAreas[11] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area13Total == 'Área Negativa'){
+      this.resultadoAreas[12] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area14total == 'Área Negativa'){
+      this.resultadoAreas[13] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area15Total == 'Área Negativa'){
+      this.resultadoAreas[14] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area16Total == 'Área Negativa'){
+      this.resultadoAreas[15] = false;
+    }
+    if(this.estServ.selecionarEstudiante.area17Total == 'Área Negativa'){
+      this.resultadoAreas[16] = false;
+    }
+    console.log('el valor es >'+this.estServ.selecionarEstudiante.area1Total);
+    console.log(this.resultadoAreas);
+
+  }
+  getEstudiante(){
+    console.log("El identificador es " +this.identificador);
+    this.estServ.getEstudiantebyID(this.identificador)
+      .subscribe(res => {
+        console.log(res)
+        this.estServ.selecionarEstudiante = res as Estudiante;
+      });
+
+    //console.log(this.employeeService.selectedEmployee);
+  }
   imprimir() {
     if (window.print) {
       window.print();
     }
   }
 
-  constructor() {
+  constructor(private estServ: EstudianteService) {
+    this.getEstudiante();
+    this.colectar();
   }
 
   ngOnInit() {

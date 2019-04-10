@@ -44,6 +44,7 @@ export class AreaNueveComponent implements OnInit {
   respuestaTotal = 'Área Negativa';
 
   iniciarPreguntas() {
+    this.getEstudiante();
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
     this.mostrarRespuestas = false;
@@ -110,7 +111,6 @@ export class AreaNueveComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

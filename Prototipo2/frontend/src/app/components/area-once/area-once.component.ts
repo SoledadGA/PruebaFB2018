@@ -100,6 +100,12 @@ export class AreaOnceComponent implements OnInit {
         this.errores = 0;
       }
     }
+    if (this.valor == 1){
+      this.getEstudiante();
+    }
+    if (this.valor == 2){
+      this.getEstudiante();
+    }
     if (this.errores == 2) {
       this.mostrarPreguntas = false;
       this.mostrarBoton = false;
@@ -153,7 +159,6 @@ export class AreaOnceComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

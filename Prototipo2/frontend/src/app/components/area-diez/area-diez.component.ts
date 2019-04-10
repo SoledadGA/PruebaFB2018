@@ -65,6 +65,9 @@ export class AreaDiezComponent implements OnInit {
       }
       this.valor = this.valor + 1;
     }
+    if (this.valor == 2){
+      this.getEstudiante();
+    }
   }
 
   getEstudiante(){
@@ -101,7 +104,6 @@ export class AreaDiezComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

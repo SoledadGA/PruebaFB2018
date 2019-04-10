@@ -80,6 +80,9 @@ export class AreaDoceComponent implements OnInit {
       this.mostrarBoton = false;
       this.mostrarAreaPositiva = false;
     }
+    if (this.valor == 1){
+      this.getEstudiante();
+    }
   }
 
   considerarPositivo() {
@@ -124,7 +127,6 @@ export class AreaDoceComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

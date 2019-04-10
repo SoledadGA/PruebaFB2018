@@ -52,6 +52,7 @@ export class AreaDieciseisComponent implements OnInit {
     this.mostrar_respuesta = true;
     this.mostrar_ejercicio_en_papel = false;
     this.mostrar_respuesta_papel = true;
+    this.getEstudiante();
     if (numero == 1){
       this.respuesta_papel = 'Área Positiva.';
     } else {
@@ -146,7 +147,6 @@ export class AreaDieciseisComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

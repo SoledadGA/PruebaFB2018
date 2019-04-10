@@ -87,6 +87,7 @@ export class AreaTreceComponent implements OnInit {
   }
 
   iniciarUno() {
+    this.getEstudiante();
     this.parteUno = false;
     this.mostrarUno = true;
   }
@@ -230,7 +231,6 @@ export class AreaTreceComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

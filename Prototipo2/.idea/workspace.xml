@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="formulario.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
+      <file leaf-file-name="recomendaciones.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="148">
+              <caret line="145" column="8" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="8" />
               <folding>
                 <element signature="e#0#48#0" expanded="true" />
               </folding>
@@ -26,116 +26,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="formulario.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html">
+      <file leaf-file-name="area-dieciseis.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="172" column="63" selection-start-line="172" selection-start-column="63" selection-end-line="172" selection-end-column="63" />
+            <state relative-caret-position="932">
+              <caret line="85" column="67" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recomendaciones.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-833">
+              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="area-dieciseis.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="111" column="12" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="111" selection-end-column="12" />
               <folding>
-                <element signature="e#538#1598#0" />
-                <element signature="e#1885#2233#0" />
-                <element signature="e#2525#2875#0" />
-                <element signature="e#4182#4188#0" expanded="true" />
-                <element signature="e#4349#4355#0" expanded="true" />
-                <element signature="e#4453#4459#0" expanded="true" />
-                <element signature="e#4558#4564#0" expanded="true" />
-                <element signature="e#4988#4994#0" expanded="true" />
-                <element signature="e#5152#5158#0" expanded="true" />
-                <element signature="e#5257#5263#0" expanded="true" />
-                <element signature="e#5362#5368#0" expanded="true" />
-                <element signature="e#5847#5853#0" expanded="true" />
-                <element signature="e#5984#5990#0" expanded="true" />
-                <element signature="e#6379#6857#0" />
-                <element signature="e#6480#6486#0" expanded="true" />
-                <element signature="e#6599#6605#0" expanded="true" />
-                <element signature="e#6723#6729#0" expanded="true" />
-                <element signature="e#6758#7134#0" />
-                <element signature="e#6840#6846#0" expanded="true" />
-                <element signature="e#6956#6962#0" expanded="true" />
-                <element signature="e#7073#7079#0" expanded="true" />
-                <element signature="e#7137#7513#0" />
-                <element signature="e#7219#7225#0" expanded="true" />
-                <element signature="e#7335#7341#0" expanded="true" />
-                <element signature="e#7452#7458#0" expanded="true" />
-                <element signature="e#7516#7892#0" />
-                <element signature="e#7598#7604#0" expanded="true" />
-                <element signature="e#7714#7720#0" expanded="true" />
-                <element signature="e#7831#7837#0" expanded="true" />
-                <element signature="e#7895#8271#0" />
-                <element signature="e#7977#7983#0" expanded="true" />
-                <element signature="e#8093#8099#0" expanded="true" />
-                <element signature="e#8210#8216#0" expanded="true" />
-                <element signature="e#8588#9065#0" />
-                <element signature="e#8679#8685#0" expanded="true" />
-                <element signature="e#8784#8790#0" expanded="true" />
-                <element signature="e#8889#8895#0" expanded="true" />
-                <element signature="e#8994#9000#0" expanded="true" />
-                <element signature="e#9455#9461#0" expanded="true" />
-                <element signature="e#9540#9546#0" expanded="true" />
-                <element signature="e#9625#9631#0" expanded="true" />
-                <element signature="e#9710#9716#0" expanded="true" />
-                <element signature="e#9795#9801#0" expanded="true" />
-                <element signature="e#9939#9945#0" expanded="true" />
-                <element signature="e#10024#10030#0" expanded="true" />
-                <element signature="e#10109#10115#0" expanded="true" />
-                <element signature="e#10194#10200#0" expanded="true" />
-                <element signature="e#10279#10285#0" expanded="true" />
-                <element signature="e#10737#10743#0" expanded="true" />
-                <element signature="e#10822#10828#0" expanded="true" />
-                <element signature="e#10907#10913#0" expanded="true" />
-                <element signature="e#10992#10998#0" expanded="true" />
-                <element signature="e#11077#11083#0" expanded="true" />
-                <element signature="e#11221#11227#0" expanded="true" />
-                <element signature="e#11306#11312#0" expanded="true" />
-                <element signature="e#11391#11397#0" expanded="true" />
-                <element signature="e#11476#11482#0" expanded="true" />
-                <element signature="e#11561#11567#0" expanded="true" />
-                <element signature="e#12018#12024#0" expanded="true" />
-                <element signature="e#12103#12109#0" expanded="true" />
-                <element signature="e#12188#12194#0" expanded="true" />
-                <element signature="e#12273#12279#0" expanded="true" />
-                <element signature="e#12358#12364#0" expanded="true" />
-                <element signature="e#12818#12824#0" expanded="true" />
-                <element signature="e#12903#12909#0" expanded="true" />
-                <element signature="e#12988#12994#0" expanded="true" />
-                <element signature="e#13073#13079#0" expanded="true" />
-                <element signature="e#13158#13164#0" expanded="true" />
-                <element signature="e#13277#13283#0" expanded="true" />
-                <element signature="e#13768#13774#0" expanded="true" />
-                <element signature="e#13853#13859#0" expanded="true" />
-                <element signature="e#13938#13944#0" expanded="true" />
-                <element signature="e#14023#14029#0" expanded="true" />
-                <element signature="e#14108#14114#0" expanded="true" />
-                <element signature="e#14252#14258#0" expanded="true" />
-                <element signature="e#14337#14343#0" expanded="true" />
-                <element signature="e#14422#14428#0" expanded="true" />
-                <element signature="e#14507#14513#0" expanded="true" />
-                <element signature="e#14592#14598#0" expanded="true" />
-                <element signature="e#15158#15164#0" expanded="true" />
-                <element signature="e#15244#15250#0" expanded="true" />
-                <element signature="e#15330#15336#0" expanded="true" />
-                <element signature="e#15416#15422#0" expanded="true" />
-                <element signature="e#15502#15508#0" expanded="true" />
-                <element signature="e#15647#15653#0" expanded="true" />
-                <element signature="e#15733#15739#0" expanded="true" />
-                <element signature="e#16867#16873#0" expanded="true" />
-                <element signature="e#16953#16959#0" expanded="true" />
-                <element signature="e#17039#17045#0" expanded="true" />
-                <element signature="e#17125#17131#0" expanded="true" />
-                <element signature="e#17211#17217#0" expanded="true" />
-                <element signature="e#17356#17362#0" expanded="true" />
-                <element signature="e#17442#17448#0" expanded="true" />
-                <element signature="e#17528#17534#0" expanded="true" />
-                <element signature="e#17614#17620#0" expanded="true" />
-                <element signature="e#17700#17706#0" expanded="true" />
-                <element signature="e#19219#19225#0" expanded="true" />
-                <element signature="e#19363#19369#0" expanded="true" />
+                <element signature="e#0#48#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>inici</find>
+      <find>sumar</find>
+    </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -146,45 +73,47 @@
         <option value="$PROJECT_DIR$/backend/Controladores/estudiante.controller.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/models/estudiante.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-trece/area-trece.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-trece/area-trece.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-trece/area-trece.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.ts" />
       </list>
     </option>
   </component>
@@ -260,7 +189,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="area-tres-espacial" type="462c0819:PsiDirectoryNode" />
+              <item name="formulario" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prototipo2" type="b2602c69:ProjectViewProjectNode" />
@@ -268,15 +197,8 @@
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prototipo2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prototipo2" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="recomendaciones" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -317,26 +239,27 @@
       <updated>1554285267525</updated>
       <workItem from="1554285287135" duration="14956000" />
       <workItem from="1554360981464" duration="11247000" />
-      <workItem from="1554478036893" duration="16784000" />
+      <workItem from="1554478036893" duration="17095000" />
+      <workItem from="1554912098156" duration="7196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42987000" />
+    <option name="totallyTimeSpent" value="50494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32343236" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.14026402" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -420,23 +343,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="96" column="4" selection-start-line="96" selection-start-column="4" selection-end-line="98" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/Rutas/estudiante.routes.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -504,88 +410,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="95" column="2" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="47" column="2" selection-start-line="47" selection-start-column="2" selection-end-line="47" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="115" column="113" selection-start-line="115" selection-start-column="113" selection-end-line="115" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="136" column="70" selection-start-line="136" selection-start-column="70" selection-end-line="136" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="53" column="33" lean-forward="true" selection-start-line="53" selection-start-column="33" selection-end-line="53" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="134" column="70" selection-start-line="134" selection-start-column="70" selection-end-line="134" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="76" column="114" selection-start-line="76" selection-start-column="114" selection-end-line="76" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="77" column="113" selection-start-line="77" selection-start-column="113" selection-end-line="77" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="134" column="64" selection-start-line="134" selection-start-column="64" selection-end-line="134" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -596,30 +424,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="583">
-          <caret line="118" column="65" lean-forward="true" selection-start-line="118" selection-start-column="65" selection-end-line="118" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="122" column="63" selection-start-line="122" selection-start-column="63" selection-end-line="122" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="123" column="32" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -630,30 +438,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="121" column="33" selection-start-line="121" selection-start-column="33" selection-end-line="121" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="118" column="8" lean-forward="true" selection-start-line="118" selection-start-column="8" selection-end-line="118" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="101" column="32" selection-start-line="101" selection-start-column="32" selection-end-line="101" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -664,16 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="87" column="45" selection-start-line="87" selection-start-column="45" selection-end-line="87" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -681,40 +459,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="139" column="64" selection-start-line="139" selection-start-column="64" selection-end-line="139" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="109" lean-forward="true" selection-start-line="109" selection-end-line="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-trece/area-trece.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="221" column="38" selection-start-line="221" selection-start-column="38" selection-end-line="221" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -732,16 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="98" column="66" lean-forward="true" selection-start-line="98" selection-start-column="66" selection-end-line="98" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -749,34 +487,144 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="93" column="37" selection-start-line="93" selection-start-column="37" selection-end-line="93" selection-end-column="37" />
+        <state relative-caret-position="17">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="85" column="67" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+        <state relative-caret-position="165">
+          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
           <folding>
-            <element signature="n#div#24;n#!!top" />
-            <element signature="n#div#0;n#div#27;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#27;n#!!top" />
-            <element signature="n#div#28;n#!!top" />
-            <element signature="n#div#29;n#!!top" />
+            <element signature="e#0#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="136" column="31" selection-start-line="136" selection-start-column="31" selection-end-line="136" selection-end-column="31" />
+        <state relative-caret-position="391">
+          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#3;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="109" column="37" lean-forward="true" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1870">
+          <caret line="134" column="70" selection-start-line="134" selection-start-column="70" selection-end-line="134" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="136" column="70" selection-start-line="136" selection-start-column="70" selection-end-line="136" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cuatro/area-cuatro.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="63" column="23" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="100" column="27" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="82" column="23" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-trece/area-trece.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360">
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -785,35 +633,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="124" column="68" selection-start-line="124" selection-start-column="68" selection-end-line="124" selection-end-column="68" />
+        <state relative-caret-position="286">
+          <caret line="77" column="45" lean-forward="true" selection-start-line="77" selection-start-column="45" selection-end-line="77" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="120" column="59" lean-forward="true" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="59" />
+        <state relative-caret-position="82">
+          <caret line="52" column="27" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
-          <caret line="28" column="13" lean-forward="true" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="1309">
+          <caret line="77" column="113" selection-start-line="77" selection-start-column="113" selection-end-line="77" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="104" column="7" selection-start-line="104" selection-start-column="7" selection-end-line="104" selection-end-column="7" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51">
-          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+        <state relative-caret-position="167">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
@@ -822,95 +677,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="172" column="63" selection-start-line="172" selection-start-column="63" selection-end-line="172" selection-end-column="63" />
+        <state relative-caret-position="120">
+          <caret line="166" column="65" selection-start-line="166" selection-start-column="25" selection-end-line="166" selection-end-column="65" />
           <folding>
-            <element signature="e#538#1598#0" />
-            <element signature="e#1885#2233#0" />
-            <element signature="e#2525#2875#0" />
             <element signature="e#4182#4188#0" expanded="true" />
-            <element signature="e#4349#4355#0" expanded="true" />
-            <element signature="e#4453#4459#0" expanded="true" />
-            <element signature="e#4558#4564#0" expanded="true" />
             <element signature="e#4988#4994#0" expanded="true" />
-            <element signature="e#5152#5158#0" expanded="true" />
-            <element signature="e#5257#5263#0" expanded="true" />
-            <element signature="e#5362#5368#0" expanded="true" />
-            <element signature="e#5847#5853#0" expanded="true" />
-            <element signature="e#5984#5990#0" expanded="true" />
-            <element signature="e#6379#6857#0" />
-            <element signature="e#6480#6486#0" expanded="true" />
-            <element signature="e#6599#6605#0" expanded="true" />
-            <element signature="e#6723#6729#0" expanded="true" />
-            <element signature="e#6758#7134#0" />
-            <element signature="e#6840#6846#0" expanded="true" />
-            <element signature="e#6956#6962#0" expanded="true" />
-            <element signature="e#7073#7079#0" expanded="true" />
-            <element signature="e#7137#7513#0" />
-            <element signature="e#7219#7225#0" expanded="true" />
-            <element signature="e#7335#7341#0" expanded="true" />
-            <element signature="e#7452#7458#0" expanded="true" />
-            <element signature="e#7516#7892#0" />
-            <element signature="e#7598#7604#0" expanded="true" />
-            <element signature="e#7714#7720#0" expanded="true" />
-            <element signature="e#7831#7837#0" expanded="true" />
-            <element signature="e#7895#8271#0" />
-            <element signature="e#7977#7983#0" expanded="true" />
-            <element signature="e#8093#8099#0" expanded="true" />
-            <element signature="e#8210#8216#0" expanded="true" />
-            <element signature="e#8588#9065#0" />
-            <element signature="e#8679#8685#0" expanded="true" />
-            <element signature="e#8784#8790#0" expanded="true" />
-            <element signature="e#8889#8895#0" expanded="true" />
-            <element signature="e#8994#9000#0" expanded="true" />
-            <element signature="e#9455#9461#0" expanded="true" />
-            <element signature="e#9540#9546#0" expanded="true" />
-            <element signature="e#9625#9631#0" expanded="true" />
-            <element signature="e#9710#9716#0" expanded="true" />
-            <element signature="e#9795#9801#0" expanded="true" />
-            <element signature="e#9939#9945#0" expanded="true" />
-            <element signature="e#10024#10030#0" expanded="true" />
-            <element signature="e#10109#10115#0" expanded="true" />
-            <element signature="e#10194#10200#0" expanded="true" />
-            <element signature="e#10279#10285#0" expanded="true" />
-            <element signature="e#10737#10743#0" expanded="true" />
-            <element signature="e#10822#10828#0" expanded="true" />
-            <element signature="e#10907#10913#0" expanded="true" />
-            <element signature="e#10992#10998#0" expanded="true" />
-            <element signature="e#11077#11083#0" expanded="true" />
-            <element signature="e#11221#11227#0" expanded="true" />
-            <element signature="e#11306#11312#0" expanded="true" />
-            <element signature="e#11391#11397#0" expanded="true" />
-            <element signature="e#11476#11482#0" expanded="true" />
-            <element signature="e#11561#11567#0" expanded="true" />
-            <element signature="e#12018#12024#0" expanded="true" />
-            <element signature="e#12103#12109#0" expanded="true" />
-            <element signature="e#12188#12194#0" expanded="true" />
-            <element signature="e#12273#12279#0" expanded="true" />
-            <element signature="e#12358#12364#0" expanded="true" />
-            <element signature="e#12818#12824#0" expanded="true" />
-            <element signature="e#12903#12909#0" expanded="true" />
-            <element signature="e#12988#12994#0" expanded="true" />
-            <element signature="e#13073#13079#0" expanded="true" />
-            <element signature="e#13158#13164#0" expanded="true" />
-            <element signature="e#13277#13283#0" expanded="true" />
-            <element signature="e#13768#13774#0" expanded="true" />
-            <element signature="e#13853#13859#0" expanded="true" />
-            <element signature="e#13938#13944#0" expanded="true" />
-            <element signature="e#14023#14029#0" expanded="true" />
-            <element signature="e#14108#14114#0" expanded="true" />
-            <element signature="e#14252#14258#0" expanded="true" />
-            <element signature="e#14337#14343#0" expanded="true" />
-            <element signature="e#14422#14428#0" expanded="true" />
-            <element signature="e#14507#14513#0" expanded="true" />
-            <element signature="e#14592#14598#0" expanded="true" />
-            <element signature="e#15158#15164#0" expanded="true" />
-            <element signature="e#15244#15250#0" expanded="true" />
-            <element signature="e#15330#15336#0" expanded="true" />
-            <element signature="e#15416#15422#0" expanded="true" />
-            <element signature="e#15502#15508#0" expanded="true" />
-            <element signature="e#15647#15653#0" expanded="true" />
-            <element signature="e#15733#15739#0" expanded="true" />
             <element signature="e#16867#16873#0" expanded="true" />
             <element signature="e#16953#16959#0" expanded="true" />
             <element signature="e#17039#17045#0" expanded="true" />
@@ -921,9 +692,71 @@
             <element signature="e#17528#17534#0" expanded="true" />
             <element signature="e#17614#17620#0" expanded="true" />
             <element signature="e#17700#17706#0" expanded="true" />
-            <element signature="e#19219#19225#0" expanded="true" />
-            <element signature="e#19363#19369#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="19" selection-end-line="95" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="83" column="59" selection-start-line="83" selection-start-column="41" selection-end-line="83" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="111" column="12" lean-forward="true" selection-start-line="98" selection-start-column="4" selection-end-line="111" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="145" column="8" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="85" column="67" selection-start-line="85" selection-start-column="67" selection-end-line="85" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/recomendaciones/recomendaciones.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
         </state>
       </provider>
     </entry>

@@ -219,17 +219,17 @@ export class AreaUnoComponent implements OnInit {
     if(this.respuestaE[3]=='Negativo'){
       this.contadorNegativos2 = this.contadorNegativos2 + 1;
     }
-    if(this.respuestaE[0]=='Negativo'){
-      this.contadorNegativos2 = this.contadorNegativos2 + 1;
+    if(this.respuestaO[0]=='Negativo'){
+      this.contadorNegativos2 = this.contadorNegativos3 + 1;
     }
-    if(this.respuestaE[1]=='Negativo'){
-      this.contadorNegativos2 = this.contadorNegativos2 + 1;
+    if(this.respuestaO[1]=='Negativo'){
+      this.contadorNegativos2 = this.contadorNegativos3 + 1;
     }
-    if(this.respuestaE[2]=='Negativo'){
-      this.contadorNegativos2 = this.contadorNegativos2 + 1;
+    if(this.respuestaO[2]=='Negativo'){
+      this.contadorNegativos2 = this.contadorNegativos3 + 1;
     }
-    if(this.respuestaE[3]=='Negativo'){
-      this.contadorNegativos2 = this.contadorNegativos2 + 1;
+    if(this.respuestaO[3]=='Negativo'){
+      this.contadorNegativos2 = this.contadorNegativos3 + 1;
     }
     if(this.contadorNegativos1>1){
       this.resputaA = 'Negativo';

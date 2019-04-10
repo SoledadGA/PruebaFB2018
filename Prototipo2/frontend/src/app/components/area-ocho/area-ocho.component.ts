@@ -16,7 +16,7 @@ export class AreaOchoComponent implements OnInit {
   mostrarCriterio = true;
   mostrarPreguntas = true;
   mostrarRespuesta = false;
-  mostrarAreaPositiva = false;
+  mostrarAreaPositiva = true;
   cabecera = 'imagenes/cabeceras/CabeceraArea8.png';
   errorAudio = 'Tu navegador no implementa el elemento audio.';
   areaDebilitada = 'Se considera como área debilitada.';
@@ -68,7 +68,7 @@ export class AreaOchoComponent implements OnInit {
         console.log(this.respuesta[this.valor]);
       } else {
         this.respuesta[this.valor] = 'Positivo';
-        this.mostrarAreaPositiva = true;
+        //this.mostrarAreaPositiva = true;
       }
       this.mostrarPreguntas = false;
       this.mostrarRespuesta = true;
@@ -85,8 +85,12 @@ export class AreaOchoComponent implements OnInit {
       }
     }
     if (this.errores > 2) {
-      this.mostrarPreguntas = false;
-      this.mostrarRespuesta = true;
+      this.mostrarAreaPositiva = false;
+      //this.mostrarPreguntas = false;
+      //this.mostrarRespuesta = true;
+    }
+    if (this.valor == 2){
+      this.getEstudiante();
     }
   }
 
@@ -130,7 +134,6 @@ export class AreaOchoComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {

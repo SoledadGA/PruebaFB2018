@@ -97,13 +97,17 @@ export class AreaCincoComponent implements OnInit {
         this.valor = this.valor + 1;
       }
     }
-    if (this.errores > 2) {
+    /*if (this.errores > 2) {
       this.mostrarPreguntas = false;
       this.mostrarAreaPositiva = false;
     } else {
       this.mostrarAreaPositiva = true;
+    }*/
+    if (this.valor == 2){
+      this.getEstudiante();
     }
   }
+
 
   getEstudiante(){
     console.log("El identificador es " +this.identificador);
@@ -148,7 +152,6 @@ export class AreaCincoComponent implements OnInit {
     }
   }
   constructor(private estServ: EstudianteService) {
-    this.getEstudiante();
   }
 
   ngOnInit() {
