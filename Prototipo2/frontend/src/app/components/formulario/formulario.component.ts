@@ -12,7 +12,13 @@ export class FormularioComponent implements OnInit {
 
   identificador = localStorage.getItem('identificador');
   valor = 0;
+  mostrarFormulario = false;
   anioLectivo = 2017;
+  cabecera = 'imagenes/formulario/foto4.png';
+  cabeceraF = 'imagenes/formulario/foto5.png';
+  cabeceraR = 'imagenes/formulario/foto6.png';
+  cabeceraF1 = 'imagenes/formulario/foto1.png';
+  cabeceraR1 = 'imagenes/formulario/foto2.png';
   imagenCabecera = 'imagenes/logo4.png';
   cabecera1 = 'UNIDAD EDUCATIVA MUNICIPAL EXPERIMENTAL “ANTONIO JOSÉ DE SUCRE”';
   cabecera2 = 'AÑO LECTIVO:';

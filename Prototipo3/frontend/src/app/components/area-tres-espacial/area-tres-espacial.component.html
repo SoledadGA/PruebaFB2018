@@ -1,0 +1,138 @@
+<div class="row">
+  <div class="col-sm-12">
+    <img src="{{cabecera}}" style="height: auto;width: 100%" >
+  </div>
+</div>
+<div class="row"><br></div>
+
+<div class="row" *ngIf="mostrarSilla">
+  <div class="col-1"></div>
+  <div class="col-2">
+    <div class="row">
+      <div class="col-2"></div>
+      <div>
+        <div class="row"><h3>{{titulo}}</h3></div>
+        <div class="row"><br></div>
+        <div class="row sa-borde" *ngIf="mostrarIndicacion">
+          <p>{{indicacion}}</p>
+        </div>
+        <div class="row"><br><br></div>
+        <div class="row">
+          <h3>{{valor+1}}. {{instruccion[valor]}}</h3>
+        </div>
+      </div>
+    </div>
+    <div class="row"></div>
+    <div class="row" *ngIf="mostrarSonido">
+      <audio src="{{audio[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+    </div>
+  </div>
+
+  <div class="col-9" *ngIf="mostrarSilla" >
+    <div class="row">
+      <div class="col-3">
+        <div class="row"><br><br><br><br><br><br><br><br><br></div>
+        <div class="row">
+          <div class="col-1"><p></p></div>
+          <div class="col-7">
+            <button mat-flat-button style="background-color: transparent">
+              <img src="imagenes/area3E/pelota.png" style="height: 100px ;width: 100%" (click)="siguiente(2)">
+            </button>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+      <div class="col-4 sa-imagen-fondo">
+        <div class="row"><br></div>
+        <div class="row"><p></p></div>
+        <div class="row">
+          <div class="col-2"><p></p></div>
+          <div class="col-8">
+            <div class="col-1"><p></p></div>
+            <div class="col-9">
+              <button mat-flat-button  style="background-color: transparent">
+                <img src="imagenes/area3E/pelota.png" style="height: 100px ;width: 100%" (click)="siguiente(0)">
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="row"><br><br><br><br><br><br></div>
+        <div class="row">
+          <div class="col-2"><p></p></div>
+          <div class="col-8">
+            <div class="col-1"><p></p></div>
+            <div class="col-9">
+              <button mat-flat-button  style="background-color: transparent">
+                <img src="imagenes/area3E/pelota.png" style="height: 100px ;width: 100%" (click)="siguiente(1)">
+              </button>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-4">
+
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="row"><br><br></div>
+        <div class="row">
+          <div class="col-1"><p></p></div>
+          <div class="col-7">
+            <button mat-flat-button  style="background-color: transparent">
+              <img src="imagenes/area3E/pelota.png" style="height: 100px ;width: 100%"
+                                                                    (click)="siguiente(3)">
+            </button>
+          </div>
+        </div>
+        <div class="row"><br><br><br><br><br></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row" *ngIf="!mostrarSilla">
+  <div class="col-1"></div>
+  <div class="col-5">
+    <h2>Resultado - {{titulo}}</h2>
+  </div>
+</div>
+<div class="row"><br></div>
+<div class="row">
+  <div class="col-3"><p></p></div>
+  <div class="col-4" *ngIf="!mostrarSilla">
+    <h3>Preguntas</h3>
+    <ul>
+      <li *ngFor="let pregunta of instruccion" style="font-size:1.2vw;">
+        {{ pregunta }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-3" *ngIf="!mostrarSilla">
+    <h3>Respuestas</h3>
+    <ul>
+      <li *ngFor="let resp of respuesta" style="font-size:1.2vw;">
+        {{ resp }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row" *ngIf="!mostrarSilla"><br><br></div>
+<div class="row" *ngIf="!mostrarSilla">
+  <div class="col-4"><p></p></div>
+  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+    <h5>{{areaPositiva}}</h5>
+  </div>
+  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+    <h5>{{areaDebilitada}}</h5>
+  </div>
+</div>
+
+<div class="row" *ngIf="!mostrarSilla">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="agregarRespuestaAreaTresEspacial()">Siguiente</button>
+  </div>
+</div>
+

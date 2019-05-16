@@ -1,0 +1,15 @@
+.sa-superior{
+  background: cornflowerblue;
+  border: black 2px groove;
+}
+
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('imagenes/logo4.png');
+  background-size: cover;
+}

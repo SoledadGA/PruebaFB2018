@@ -1,0 +1,400 @@
+<!-- >Cabecera<!-->
+<div class="hoja">
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-1 sa-centrar">
+      <br>
+      <img src={{imagenCabecera}} style="height: auto;width: 120%" >
+    </div>
+    <div class="col-9 sa-centrar">
+      <h4>{{cabecera1}}</h4>
+      <br>
+      <h4>{{cabecera2}} {{anioLectivo}} - {{anioLectivo+1}}</h4>
+      <br>
+      <h4>{{cabecera3}}</h4>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Datos estudiante<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-1"></div>
+    <div class="col-10 sa-borde">
+      <div class="row">
+        <div class="col-1">
+          <h5>{{datos[valor]}}</h5>
+        </div>
+        <div class="col-4">
+          <p>{{estServ.selecionarEstudiante.nombreEstudiante}}</p>
+        </div>
+        <div class="col-2">
+          <h5>{{datos[valor+1]}}</h5>
+        </div>
+        <div class="col-2">
+          <p>{{estServ.selecionarEstudiante.anioEGB}}</p>
+        </div>
+        <div class="col-1">
+          <h5>{{datos[valor+2]}}</h5>
+        </div>
+        <div class="col-1">
+          <p>{{estServ.selecionarEstudiante.paralelo}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area1<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea1; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area2<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+1]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+1]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+1]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+1]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea2; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area3<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+2]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+2]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+2]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+2]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea3; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area4<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+3]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+3]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+3]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+3]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea4; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area5<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+4]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+4]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+4]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+4]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea5; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area6<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+5]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+5]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+5]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+5]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea6; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area7<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+6]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+6]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+6]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+6]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea7; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area8<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+7]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+7]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+7]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+7]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea8; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area9<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+8]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+8]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+8]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+8]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea9; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area10<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+9]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+9]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+9]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+9]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea10; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area11<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+10]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+10]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+10]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+10]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea11; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area12<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+11]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+11]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+11]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+11]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea12; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area13<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+12]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+12]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+12]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+12]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea13; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area14<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+13]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+13]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+13]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+13]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea14; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area15<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+14]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+14]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+14]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+14]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea15; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area16<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+15]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+15]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+15]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+15]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea16; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Area17<!-->
+  <div class="row" *ngIf="!resultadoAreas[valor+16]"><br></div>
+  <div class="row" *ngIf="!resultadoAreas[valor+16]">
+    <div class="col-1"></div>
+    <div class="col-8">
+      <h4>{{areas[valor+16]}}</h4>
+    </div>
+  </div>
+  <div class="row" *ngIf="!resultadoAreas[valor+16]">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <ul>
+        <li *ngFor="let respuesta of sugerenciasArea17; " style="font-size:1.2vw;">
+          {{respuesta}}
+        </li>
+      </ul>
+    </div>
+    <div class="col-1"></div>
+  </div>
+
+  <!-- >Imprimir y Salir<!-->
+  <div class="row"><br></div>
+  <div class="row">
+    <div class="col-4"><p></p></div>
+    <div class="col-2">
+      <button class="sa-btn" (click)="imprimir()">Imprimir</button>
+    </div>
+    <div class="col-3">
+      <button class="sa-btn1" [routerLink]="['/inicio']">Inicio</button>
+    </div>
+  </div>
+</div>

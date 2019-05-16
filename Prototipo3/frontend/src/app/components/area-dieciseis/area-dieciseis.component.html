@@ -1,0 +1,88 @@
+<div class="row" *ngIf="!mostrar_ejercicio_en_computadora">
+  <div class="col-sm-12">
+    <img src="{{cabecera}}" style="height: auto;width: 100%" >
+  </div>
+</div>
+
+
+<!--Papel><!-->
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" >
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-borde">
+    <p>{{mensaje_papel}}</p>
+    <p>{{mensaje_papel_2}}</p>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="col-1"></div>
+  <div class="col-10 sa-centrar">
+    <h3>{{texto_papel}}</h3>
+  </div>
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel" ><p></p></div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="col-4">
+    <div class="row" *ngIf="mostrar_ejercicio_en_papel" >
+      <div class="col-5"><p></p></div>
+      <div class="col-3">
+        <div class="row" *ngIf="mostrar_cronometro_papel"><h5>Cronómetro</h5></div>
+        <div class="row sa-centrar" *ngIf="mostrar_cronometro_papel">
+          <h1>{{contador_segundos_papel}}</h1></div>
+      </div>
+      <div class="col-2" *ngIf="mostrar_botones_cronometro">
+        <button style="background: cornflowerblue" (click)="cronometroPapel()"><img src="{{imagen_cronometro}}" style="height: 10% ; width: 50%"></button>
+      </div>
+      <div class="col-2" *ngIf="mostrar_alarma">
+        <audio src="{{alarma}}" autoplay></audio>
+      </div>
+    </div>
+  </div>
+  <div class="col-1"><p></p></div>
+  <div class="col-7">
+    <div>
+      <audio src="{{audio}}" controls autoplay >
+      </audio>
+    </div>
+  </div>
+
+</div>
+<div class="row" *ngIf="mostrar_ejercicio_en_papel">
+  <div class="col-4"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+  </div>
+  <div class="col-3">
+    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+  </div>
+</div>
+
+<!--Respuesta><!-->
+<div class="row" *ngIf="mostrar_respuesta">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <h3>Resultado</h3>
+  </div>
+</div>
+
+<div class="row" *ngIf="mostrar_respuesta"><br></div>
+
+<div class="row" *ngIf="mostrar_respuesta">
+  <div class="col-1"><p></p></div>
+  <div class="col-10 sa-centrar" *ngIf="mostrar_respuesta_papel">
+    <h5>{{respuestaFinal}}</h5>
+  </div>
+  <div class="col-1"><p></p></div>
+</div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta"><p></p></div>
+<div class="row" *ngIf="mostrar_respuesta">
+  <div class="col-10"><p></p></div>
+  <div class="col-2">
+    <button class="sa-btn" (click)="agregarRespuestaAreaDieciseis()">Siguiente</button>
+  </div>
+</div>

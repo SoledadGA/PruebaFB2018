@@ -294,4 +294,8 @@ estudianteCtrl.deleteEstudiante= async (req, res) => {
     res.json({status: 'Estudiante Removed'});
 };
 
+estudianteCtrl.holaMundo= async (req, res) => {
+    Estudiante.find
+};
+
 module.exports = estudianteCtrl;

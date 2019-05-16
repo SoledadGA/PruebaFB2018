@@ -1,0 +1,128 @@
+<div class="row">
+  <ngb-carousel *ngIf="images" style="width: 100%">
+    <ng-template ngbSlide>
+      <img [src]="images[0]" style="width: 100%" alt="Objetivo General">
+      <div class="carousel-caption">
+        <!--<h3>Objetivo General</h3>-->
+        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[1]"  style="width: 100%" alt="Objetivos Especificos">
+      <div class="carousel-caption">
+        <!--<h3>Objetivos Especificos</h3>-->
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <img [src]="images[2]" style="width: 100%" alt="Utilidad">
+      <div class="carousel-caption">
+        <!--<h3>Objetivos Especificos</h3>-->
+        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="row ">
+  <div class="col-sm-1">
+    <hr color="cornflowerblue" size=3>
+  </div>
+  <div class="col-7">
+    <button mat-button [matMenuTriggerFor] = "prueba" style="background: #336BFF ; width: 25%">Prueba</button>
+    <mat-menu #prueba="matMenu">
+      <button mat-menu-item (click)="iniciarTest()" >Iniciar Test</button>
+      <button mat-menu-item (click)="iniciarReTest()">Iniciar Re-Test</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor] = "estadisticas" style="background: #3399FF  ; width: 45%">Estadisticas</button>
+    <mat-menu #estadisticas="matMenu">
+      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestInicial">Estadisticas Test Inicial</button>
+      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestCurso">Estadisticas por Curso</button>
+    </mat-menu>
+    <mat-menu #estadisticasTestInicial="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #paralelos="matMenu">
+      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/estadisticas']">{{curso}}</button>
+    </mat-menu>
+    <mat-menu #estadisticasTestCurso="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor] = "administrarParalelos" style="background: #33D7FF ; width: 25%">Administrar Paralelos</button>
+    <mat-menu #administrarParalelos="matMenu">
+      <button mat-menu-item [matMenuTriggerFor] = "sinParalelo">Estadisticas Test Inicial</button>
+      <button mat-menu-item [matMenuTriggerFor] = "cambiarParalelo">Estadisticas por Curso</button>
+    </mat-menu>
+    <mat-menu #sinParalelo="matMenu">
+      <button mat-menu-item  *ngFor="let anio of anioLectivo" [routerLink]="['/asignarParalelo']">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #cambiarParalelo="matMenu">
+      <button mat-menu-item  [matMenuTriggerFor] = "paralelos1" *ngFor="let anio of anioLectivo">{{anio}}</button>
+    </mat-menu>
+    <mat-menu #paralelos1="matMenu">
+      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/nominasParalelo']">{{curso}}</button>
+    </mat-menu>
+  </div>
+  <div class="col-4">
+    <hr color="cornflowerblue" size=3>
+  </div>
+</div>
+<div class="row"><br></div>
+<div class="row"><br></div>
+<div class="row">
+  <div class="col-4">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>U.E.M.S</mat-card-title>
+        <mat-card-subtitle>"Antonio José de Sucre"</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{imagen[0]}} alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Somos la centenaria Unidad Educativa Municipal "Antonio José de Sucre", del Distrito Metropolitano de Quito,
+          servimos a la ciudadanía en el ámbito educativo, cultural, deportivo y social, comprometidos con el desarrollo
+          integral de niños, niñas, jóvenes y adultos, mediante el trabajo en equipo para alcanzar los estándares de
+          calidad y de convivencia armónica.
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col-4">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>NEUROFUNCIONES</mat-card-title>
+        <mat-card-subtitle>Dr. Iván Espinosa Vega</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{imagen[2]}} alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Para evaluar la madurez de las funciones básicas basadas en la
+          Prueba de Funciones Básicas Adaptación UC.IE.DI.2000 del Dr. Iván Espinosa Vega,
+          la cual cuenta con 17 áreas que evalúan las funciones báscias que intervienen en el proceso
+          de la lecto-escritura siendo ellas: Esquema corporal, dominancia lateral, orientación temporo-espacial,
+          coordinación dinámica, receptiva auditiva, receptivo visual, asociación auditiva, expresivo manual,
+          cierre auditivo vocal, pronunciación, memoria secuencia auditiva, coordinación visual-auditivo-motora,
+          memoria visual, discriminación auditiva, coordinación viso-motora, desarrollo manual, atención y fatiga.
+        </p>
+      </mat-card-content>
+
+    </mat-card>
+
+  </div>
+  <div class="col-4">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Proyecto Integrador</mat-card-title>
+        <mat-card-subtitle>FIS - EPN</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src={{imagen[1]}} alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          DESARROLLO DE UNA APLICACIÓN WEB PARA EVALUAR EL NIVEL DE MADUREZ DE LAS FUNCIONES BÁSICAS EN NIÑOS DE 5 AÑOS
+        </p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
