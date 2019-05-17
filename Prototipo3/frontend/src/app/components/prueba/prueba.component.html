@@ -1,88 +1,117 @@
-<div class="row">
-  <ngb-carousel *ngIf="images" style="width: 100%">
-    <ng-template ngbSlide>
-      <img [src]="images[0]" style="width: 100%" alt="Objetivo General">
-      <div class="carousel-caption">
-        <!--<h3>Objetivo General</h3>-->
-        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="images[1]"  style="width: 100%" alt="Objetivos Especificos">
-      <div class="carousel-caption">
-        <!--<h3>Objetivos Especificos</h3>-->
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="images[2]" style="width: 100%" alt="Utilidad">
-      <div class="carousel-caption">
-        <!--<h3>Objetivos Especificos</h3>-->
-        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
-      </div>
-    </ng-template>
-  </ngb-carousel>
+<!--Cabecera-->
+<div class="row" *ngIf="mostrarCabecera">
+  <div class="row">
+    <div class="col-sm-12">
+      <img src="{{cabecera}}" style="height: auto;width: 100%" >
+    </div>
+  </div>
 </div>
-<div class="row ">
-  <div class="col-sm-1">
-    <hr color="cornflowerblue" size=3>
+
+<div class="row" *ngIf="mostrarPantallaPrincipal">
+  <div class="col-4">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Evaluación individual</mat-card-title>
+        <mat-card-subtitle>de todos los estudiantes</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src='imagenes/estadisticas/5.png' alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Nos da una evaluación individual de todos los estudiantes. Para su elaboración se
+          enlista a los alumnos y se ubica las áreas positivas y negativas permitiéndonos
+          identificar que áreas hay que fortalecer en ese estudiante.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button (click)="verCuadro1()">Ver Cuadro</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
   <div class="col-4">
-    <button mat-button [matMenuTriggerFor] = "prueba">Prueba</button>
-    <mat-menu #prueba="matMenu">
-      <button mat-menu-item [routerLink]="['/ingresarDatos']" >Iniciar Test</button>
-      <button mat-menu-item [routerLink]="['/ingresarDatos']">Iniciar Re-Test</button>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor] = "estadisticas">Estadisticas</button>
-    <mat-menu #estadisticas="matMenu">
-      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestInicial">Estadisticas Test Inicial</button>
-      <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestCurso">Estadisticas por Curso</button>
-    </mat-menu>
-    <mat-menu #estadisticasTestInicial="matMenu">
-      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #paralelos="matMenu">
-      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/estadisticas']">{{curso}}</button>
-    </mat-menu>
-    <mat-menu #estadisticasTestCurso="matMenu">
-      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
-    </mat-menu>
-    <button mat-button [matMenuTriggerFor] = "administrarParalelos">Administrar Paralelos</button>
-    <mat-menu #administrarParalelos="matMenu">
-      <button mat-menu-item [matMenuTriggerFor] = "sinParalelo">Estadisticas Test Inicial</button>
-      <button mat-menu-item [matMenuTriggerFor] = "cambiarParalelo">Estadisticas por Curso</button>
-    </mat-menu>
-    <mat-menu #sinParalelo="matMenu">
-      <button mat-menu-item  *ngFor="let anio of anioLectivo" [routerLink]="['/asignarParalelo']">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #cambiarParalelo="matMenu">
-      <button mat-menu-item  [matMenuTriggerFor] = "paralelos1" *ngFor="let anio of anioLectivo">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #paralelos1="matMenu">
-      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/nominasParalelo']">{{curso}}</button>
-    </mat-menu>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image2"></div>
+        <mat-card-title> ERRORES GRUPALES FRECUENTES</mat-card-title>
+        <mat-card-subtitle>perfil colectivo</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src='imagenes/estadisticas/6.png' alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Proporciona un
+          perfil colectivo
+          de la situación
+          en cada área
+          medida. Para
+          su elaboración
+          se toman los
+          porcentajes de
+          errores de cada
+          área del
+          Cuadro No. 1 y
+          se ubica en un
+          plano
+          cartesiano. El
+          resultado de
+          este ejercicio permite identificar en qué nivel se encuentran las áreas en relación al
+          grupo de estudiantes.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="verGrafico1()" mat-button>Ver Grafico</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
-  <div class="col-7">
-    <hr color="cornflowerblue" size=3>
+  <div class="col-4">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image3"></div>
+        <mat-card-title> Grupos de trabajo</mat-card-title>
+        <mat-card-subtitle>Ordenado de mayor a menor</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src='imagenes/estadisticas/7.png' alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          Permite formar grupos de trabajo. Para su elaboración ordenamos el grupo de mayor a
+          menor error, luego restamos el menor error del mayor, el producto dividimos para tres
+          (número de grupos a formarse).
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button  (click)="verCuadro2()" mat-button>Ver Cuadro</button>
+      </mat-card-actions>
+    </mat-card>
   </div>
 </div>
-<div class="row"><br></div>
-<mat-card class="example-card">
-  <mat-card-header>
-    <div mat-card-avatar class="example-header-image"></div>
-    <mat-card-title>Unidad Educativa Municipal Antonio José de Sucre</mat-card-title>
-    <mat-card-subtitle>UEMES</mat-card-subtitle>
-  </mat-card-header>
-  <img mat-card-image src="imagenes/uemes.png" alt="Photo of a Shiba Inu">
-  <mat-card-content>
-    <p>
-      The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-      A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-      bred for hunting.
-    </p>
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
+
+<!--Codigo Cuadro 1-->
+<div class="row" *ngIf="mostrarCuadro1">
+  <p>Aqui va el codigo el cuadro 1</p>
+</div>
+
+<!--Codigo Grafico 1-->
+<div class="row" *ngIf="mostrarGrafico1">
+  <p>Aqui va el codigo el Grafico 1</p>
+</div>
+
+<!--Codigo Cuadro 2-->
+<div class="row" *ngIf="mostrarCuadro2">
+  <p>Aqui va el codigo el cuadro 2</p>
+</div>
+
+
+<!--boton Regresar-->
+<div class="row" *ngIf="mostrarBotonRegresar">
+  <div class="col-1"></div>
+  <div class="col-1">
+    <div class="row">
+      <button mat-flat-button (click)="imprimir()" style="background-color: transparent ;width: 25% ; height: 200% "><img src="{{botonImprimir}}" style="height: 100%;width: 100%" ></button>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="row">
+      <button  mat-flat-button (click)="regresar()" style="background-color: transparent ;width: 100% ; height: 100% "> >Revisar Estadisticas</button>
+    </div>
+  </div>
+
+</div>

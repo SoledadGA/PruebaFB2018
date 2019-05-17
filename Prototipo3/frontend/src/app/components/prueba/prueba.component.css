@@ -10,6 +10,14 @@
 }
 
 .example-header-image {
-  background-image: url('imagenes/logo4.png');
+  background-image: url('imagenes/estadisticas/2.png');
+  background-size: cover;
+}
+.example-header-image2 {
+  background-image: url('imagenes/estadisticas/3.png');
+  background-size: cover;
+}
+.example-header-image3 {
+  background-image: url('imagenes/estadisticas/4.png');
   background-size: cover;
 }

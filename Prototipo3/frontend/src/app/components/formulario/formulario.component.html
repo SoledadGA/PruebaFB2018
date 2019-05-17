@@ -607,15 +607,19 @@
     <div class="row"><br></div>
     <div class="row">
       <div class="col-1"></div>
-      <div class="col-2">
+      <div class="col-1">
         <div class="row">
           <button mat-flat-button (click)="imprimir()" style="background-color: transparent ;width: 25% ; height: 200% "><img src="{{botonImprimir}}" style="height: 100%;width: 100%" ></button>
         </div>
       </div>
-      <div class="col-7"></div>
       <div class="col-2">
         <div class="row">
-          <button  mat-flat-button (click)="mostrarRecomendacionesR()" style="background-color: transparent ;width: 100% ; height: 100% ">Recomendaciones</button>
+          <button  mat-flat-button (click)="mostrarRecomendacionesR()" style="background-color: transparent ;width: 100% ; height: 100% "> >Recomendaciones</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="row">
+          <button  mat-flat-button [routerLink]="['/home']" style="background-color: transparent ;width: 100% ; height: 100% "> >Inicio</button>
         </div>
       </div>
 
@@ -1035,15 +1039,19 @@
     <div class="row"><br></div>
     <div class="row">
       <div class="col-1"></div>
-      <div class="col-2">
+      <div class="col-1">
         <div class="row">
           <button mat-flat-button (click)="imprimir()" style="background-color: transparent ;width: 25% ; height: 200% "><img src="{{botonImprimir}}" style="height: 100%;width: 100%" ></button>
         </div>
       </div>
-      <div class="col-7"></div>
       <div class="col-2">
         <div class="row">
-          <button  mat-flat-button (click)="mostrarFormularioF()" style="background-color: transparent ;width: 100% ; height: 100% ">Revisar Formulario</button>
+          <button  mat-flat-button (click)="mostrarFormularioF()" style="background-color: transparent ;width: 100% ; height: 100% "> >Revisar Formulario</button>
+        </div>
+      </div>
+      <div class="col-1">
+        <div class="row">
+          <button  mat-flat-button [routerLink]="['/home']" style="background-color: transparent ;width: 100% ; height: 100% "> >Inicio</button>
         </div>
       </div>
 

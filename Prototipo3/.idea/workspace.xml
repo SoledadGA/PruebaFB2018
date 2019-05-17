@@ -14,16 +14,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="area-nueve.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.html">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="area-nueve.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts">
+      <file leaf-file-name="inicio.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="estudiante.service.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="area-uno.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="274" column="9" lean-forward="true" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -44,13 +69,15 @@
       <find>resultadoArea</find>
       <find>respuesta_papel</find>
       <find>resultadoAreas</find>
+      <find>tipoTest</find>
+      <find>paralelos</find>
+      <find>estadisticasTestInicial</find>
+      <find>example-header-image</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-catorce/area-catorce.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.html" />
@@ -59,8 +86,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html" />
         <option value="$PROJECT_DIR$/backend/database.js" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
@@ -71,12 +96,8 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-ocho/area-ocho.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts" />
-        <option value="$PROJECT_DIR$/backend/index.js" />
-        <option value="$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
         <option value="$PROJECT_DIR$/backend/Modelos/estudiante.js" />
-        <option value="$PROJECT_DIR$/backend/Controladores/estudiante.controller.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/models/estudiante.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-diecisiete/area-diecisiete.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts" />
@@ -87,7 +108,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-diez/area-diez.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-once/area-once.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-doce/area-doce.component.ts" />
@@ -99,7 +119,16 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts" />
+        <option value="$PROJECT_DIR$/backend/index.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html" />
+        <option value="$PROJECT_DIR$/backend/Controladores/estudiante.controller.js" />
+        <option value="$PROJECT_DIR$/backend/Rutas/estudiante.routes.js" />
+        <option value="$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.ts" />
       </list>
     </option>
   </component>
@@ -119,7 +148,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="266" />
     <option name="y" value="-18" />
     <option name="width" value="697" />
@@ -130,6 +159,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,6 +175,18 @@
             <path>
               <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Controladores" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="Rutas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
               <item name="frontend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -175,7 +217,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="area-nueve" type="462c0819:PsiDirectoryNode" />
+              <item name="area-uno" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
@@ -184,7 +226,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="recomendaciones" type="462c0819:PsiDirectoryNode" />
+              <item name="inicio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
@@ -198,7 +240,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -245,24 +286,27 @@
       <workItem from="1557905050461" duration="15025000" />
       <workItem from="1557949163820" duration="3067000" />
       <workItem from="1558017206204" duration="19358000" />
+      <workItem from="1558043665979" duration="1821000" />
+      <workItem from="1558106727701" duration="17315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107803000" />
+    <option name="totallyTimeSpent" value="126939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.35478547" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.40264025" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.072607264" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -351,40 +395,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="11" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="69" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="280" column="65" selection-start-line="280" selection-start-column="65" selection-end-line="280" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="953">
@@ -420,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/models/estudiante.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4522">
@@ -438,13 +441,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="122" column="42" selection-start-line="122" selection-start-column="42" selection-end-line="122" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -462,27 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/database.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Rutas/estudiante.routes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/Modelos/estudiante.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -490,24 +465,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/Controladores/estudiante.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="141" column="65" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -592,34 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="78" selection-start-line="11" selection-start-column="78" selection-end-line="11" selection-end-column="78" />
-          <folding>
-            <element signature="e#308#314#0" expanded="true" />
-            <element signature="e#315#321#0" expanded="true" />
-            <element signature="e#322#328#0" expanded="true" />
-            <element signature="e#328#334#0" expanded="true" />
-            <element signature="e#334#340#0" expanded="true" />
-            <element signature="e#340#346#0" expanded="true" />
-            <element signature="e#346#352#0" expanded="true" />
-            <element signature="e#352#358#0" expanded="true" />
-            <element signature="e#359#365#0" expanded="true" />
-            <element signature="e#365#371#0" expanded="true" />
-            <element signature="e#371#377#0" expanded="true" />
-            <element signature="e#377#383#0" expanded="true" />
-            <element signature="e#383#389#0" expanded="true" />
-            <element signature="e#389#395#0" expanded="true" />
-            <element signature="e#402#408#0" expanded="true" />
-            <element signature="e#408#414#0" expanded="true" />
-            <element signature="e#414#420#0" expanded="true" />
-            <element signature="e#420#426#0" expanded="true" />
-            <element signature="e#426#432#0" expanded="true" />
-            <element signature="e#432#438#0" expanded="true" />
-            <element signature="e#438#444#0" expanded="true" />
-            <element signature="e#444#450#0" expanded="true" />
-            <element signature="e#450#456#0" expanded="true" />
-            <element signature="e#456#462#0" expanded="true" />
-            <element signature="e#462#468#0" expanded="true" />
-            <element signature="e#468#474#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,9 +616,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="50" column="53" lean-forward="true" selection-start-line="50" selection-start-column="53" selection-end-line="50" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -703,99 +633,123 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="25" column="15" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#2;n#div#1;n#div#0;n#div#2;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#4;n#div#1;n#div#0;n#div#2;n#div#2;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#1;n#div#2;n#div#0;n#div#2;n#div#2;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html">
+    <entry file="file://$PROJECT_DIR$/backend/database.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="1053" lean-forward="true" selection-start-line="1053" selection-end-line="1053" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-            <element signature="n#div#1;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#2;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#!!top" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#!!top" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#1;n#div#3;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#button#0;n#div#0;n#div#3;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#1;n#div#3;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#div#4;n#!!top" />
-            <element signature="e#21167#21232#0" expanded="true" />
-            <element signature="e#21262#21294#0" expanded="true" />
-            <element signature="e#21467#21533#0" expanded="true" />
-            <element signature="n#div#5;n#!!top" />
-            <element signature="e#21977#22009#0" expanded="true" />
-            <element signature="e#22703#22857#0" />
-            <element signature="e#22860#23157#0" />
-            <element signature="e#23243#23401#0" />
-            <element signature="e#23404#23703#0" />
-            <element signature="e#23489#23664#0" />
-            <element signature="e#23950#24249#0" />
-            <element signature="e#24335#24493#0" />
-            <element signature="e#24496#24795#0" />
-            <element signature="e#24881#25039#0" />
-            <element signature="e#25042#25341#0" />
-            <element signature="e#25427#25585#0" />
-            <element signature="e#25588#25887#0" />
-            <element signature="e#25973#26131#0" />
-            <element signature="e#26134#26433#0" />
-            <element signature="e#26519#26677#0" />
-            <element signature="e#26680#26979#0" />
-            <element signature="e#27065#27223#0" />
-            <element signature="e#27226#27525#0" />
-            <element signature="e#27612#27770#0" />
-            <element signature="e#27773#28073#0" />
-            <element signature="e#28161#28321#0" />
-            <element signature="e#28324#28625#0" />
-            <element signature="e#28713#28873#0" />
-            <element signature="e#28876#29177#0" />
-            <element signature="e#29265#29425#0" />
-            <element signature="e#29428#29729#0" />
-            <element signature="e#29514#29690#0" />
-            <element signature="e#29817#29977#0" />
-            <element signature="e#29903#29968#0" />
-            <element signature="e#29980#30281#0" />
-            <element signature="e#30369#30529#0" />
-            <element signature="e#30532#30833#0" />
-            <element signature="e#30921#31081#0" />
-            <element signature="e#31084#31385#0" />
-            <element signature="e#33642#33676#0" expanded="true" />
-            <element signature="e#33702#33734#0" expanded="true" />
-            <element signature="e#33885#33950#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-nueve/area-nueve.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2091">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rutas/estudiante.routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Controladores/estudiante.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="315" column="29" selection-start-line="315" selection-start-column="18" selection-end-line="315" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="1039" column="4" selection-start-line="1039" selection-start-column="4" selection-end-line="1057" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="42" column="33" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="274" column="9" lean-forward="true" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="48" column="15" selection-start-line="48" selection-start-column="15" selection-end-line="48" selection-end-column="15" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

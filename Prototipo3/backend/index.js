@@ -11,7 +11,7 @@ app.set('port', process.env.PORT || 3000);
 // Middlewares
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(cors({origin: 'http://192.168.1.4:4200'}));
+app.use(cors({origin: 'http://172.31.104.141:4200'}));
 
 //Routes
 app.use('/api/estudiante',require('./Rutas/estudiante.routes'));

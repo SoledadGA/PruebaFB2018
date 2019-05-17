@@ -7,6 +7,6 @@ router.post('/', estudianteC.createEstudiante);
 router.get('/:id', estudianteC.getEstudiante);
 router.put('/:id',estudianteC.editEstudiante);
 router.delete('/:id', estudianteC.deleteEstudiante);
-
+router.get('/:tipoTest?/:paralelo?/:anioLectivo?', estudianteC.estadisticasEstudiantes);
 module.exports = router;
 

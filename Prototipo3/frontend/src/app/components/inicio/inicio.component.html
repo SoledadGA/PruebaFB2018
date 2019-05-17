@@ -39,27 +39,13 @@
       <button mat-menu-item [matMenuTriggerFor] = "estadisticasTestCurso">Estadisticas por Curso</button>
     </mat-menu>
     <mat-menu #estadisticasTestInicial="matMenu">
-      <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #paralelos="matMenu">
-      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/estadisticas']">{{curso}}</button>
+      <button mat-menu-item *ngFor="let anio of anioLectivo">{{anio}}</button>
     </mat-menu>
     <mat-menu #estadisticasTestCurso="matMenu">
       <button mat-menu-item  [matMenuTriggerFor] = "paralelos" *ngFor="let anio of anioLectivo">{{anio}}</button>
     </mat-menu>
-    <button mat-button [matMenuTriggerFor] = "administrarParalelos" style="background: #33D7FF ; width: 25%">Administrar Paralelos</button>
-    <mat-menu #administrarParalelos="matMenu">
-      <button mat-menu-item [matMenuTriggerFor] = "sinParalelo">Estadisticas Test Inicial</button>
-      <button mat-menu-item [matMenuTriggerFor] = "cambiarParalelo">Estadisticas por Curso</button>
-    </mat-menu>
-    <mat-menu #sinParalelo="matMenu">
-      <button mat-menu-item  *ngFor="let anio of anioLectivo" [routerLink]="['/asignarParalelo']">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #cambiarParalelo="matMenu">
-      <button mat-menu-item  [matMenuTriggerFor] = "paralelos1" *ngFor="let anio of anioLectivo">{{anio}}</button>
-    </mat-menu>
-    <mat-menu #paralelos1="matMenu">
-      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/nominasParalelo']">{{curso}}</button>
+    <mat-menu #paralelos="matMenu">
+      <button mat-menu-item  *ngFor="let curso of cursos" [routerLink]="['/estadisticas']">{{curso}}</button>
     </mat-menu>
   </div>
   <div class="col-4">

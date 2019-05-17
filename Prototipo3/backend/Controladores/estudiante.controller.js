@@ -299,8 +299,23 @@ estudianteCtrl.deleteEstudiante= async (req, res) => {
     res.json({status: 'Estudiante Removed'});
 };
 
-estudianteCtrl.holaMundo= async (req, res) => {
-    Estudiante.find
+// estudianteCtrl.estadisticasEstudiantes = async (req, res) => {
+//     const{ tipoTest } = req.params;
+//     const{ anioLectivo } = req.params;
+//     const{ paralelo } = req.params;
+//     const estudiantesE =  await Estudiante.find({tipoTest:req.params.tipoTest,
+//         anioLectivo: req.params.anioLectivo,paralelo:req.params.paralelo});
+//     res.json(estudiantesE);
+// };
+
+estudianteCtrl.estadisticasEstudiantes = async (req, res) => {
+    const{ tipoTest } = req.params;
+    const{ paralelo } = req.params;
+    const{ anioLectivo } = req.params;
+    const estudiantesE =  await Estudiante.find({tipoTest
+        ,paralelo,anioLectivo});
+    res.json(estudiantesE);
 };
+
 
 module.exports = estudianteCtrl;
