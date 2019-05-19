@@ -14,6 +14,8 @@ export class AreaUnoComponent implements OnInit {
   numeroEjemplo = 0;
   valor = 0;
   errores = 0;
+  fecha = new Date();
+  txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
   erroresE = 0;
   erroresO = 0;
   mostrarEjemplo = true;
@@ -95,6 +97,11 @@ export class AreaUnoComponent implements OnInit {
   resputaC='Positivo';
   respuestaTotal = 1;
   tipoPrueba = 0 ;
+  Fechita  = '';
+
+  iniciarFecha(){
+    this.Fechita = this.txtFecha;
+  }
 
   tipoTest(){
     if(this.identificadorPrueba == 'reTest'){
@@ -278,6 +285,8 @@ export class AreaUnoComponent implements OnInit {
 
   agregarRespuestaAreaUno(){
     this.sumar();
+    this.iniciarFecha();
+    this.estServ.selecionarEstudiante.fecha = this.Fechita;
     this.estServ.selecionarEstudiante.tipoTest = this.tipoPrueba;
     this.estServ.selecionarEstudiante.area1Total = this.respuestaTotal;
     this.estServ.selecionarEstudiante.area1a = this.resputaA;

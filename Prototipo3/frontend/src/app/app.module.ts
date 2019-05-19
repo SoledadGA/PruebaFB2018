@@ -49,6 +49,8 @@ import { NominaParaleloComponent } from './components/nomina-paralelo/nomina-par
 import { PruebaComponent } from './components/prueba/prueba.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -101,6 +103,8 @@ import {MatCardModule} from '@angular/material/card';
     MatCardModule,
     FormsModule,
     HttpClientModule,
+    MatExpansionModule,
+
 
   ],
   providers: [],

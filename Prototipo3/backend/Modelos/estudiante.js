@@ -5,7 +5,7 @@ const EstudianteSchema= new Schema({
     tipoTest:{type: Number, required: false},
     nombreEstudiante:{type: String, required: true},
     anioEGB:{type: String, required: true},
-    fecha:{type: String, required: true},
+    fecha:{type: String, required: false},
     paralelo:{type: String, required: false},
     nombreEvaluador:{type: String, required: true},
     anioLectivo:{type: String, required: true},

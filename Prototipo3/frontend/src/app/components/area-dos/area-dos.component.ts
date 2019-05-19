@@ -10,6 +10,7 @@ import {Estudiante} from "../../models/estudiante";
 })
 export class AreaDosComponent implements OnInit {
 
+  identificadorPrueba = localStorage.getItem('tipoTest');
   identificador = localStorage.getItem('identificador');
   valor = 0;
   derecha = 0;
@@ -52,6 +53,12 @@ export class AreaDosComponent implements OnInit {
     this.mostrarEjemplo = false;
     this.mostrarPreguntas = true;
 
+  }
+
+  tipoTest(){
+    if(this.identificadorPrueba == 'test'){
+      this.estServ.selecionarEstudiante.paralelo = 'Inicial' ;
+    }
   }
 
   sumar(){
@@ -107,6 +114,7 @@ export class AreaDosComponent implements OnInit {
   }
 
   agregarRespuestaAreaDos(){
+    this.tipoTest();
     this.sumar();
     this.estServ.selecionarEstudiante.area2Total = this.respuestaTotal;
     this.estServ.selecionarEstudiante.area2a = this.respuesta[0];

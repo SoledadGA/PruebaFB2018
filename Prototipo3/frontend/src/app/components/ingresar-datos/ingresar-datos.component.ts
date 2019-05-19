@@ -11,13 +11,17 @@ import {NgForm} from "@angular/forms";
 export class IngresarDatosComponent implements OnInit {
 
   identificador = localStorage.getItem('tipoTest');
-  anioEGB = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto'];
+  anioEGB = ['Primero'];
   fecha = new Date();
   txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
   anioLectivo = [this.fecha.getFullYear() - 1, this.fecha.getFullYear()];
   mostrar = false;
   tipoPrueba = 0 ;
+  Fechita  = '';
 
+  iniciarFecha(){
+    this.Fechita = this.txtFecha;
+  }
   tipoTest(){
     if(this.identificador == 'reTest'){
       this.mostrar = true;
@@ -26,18 +30,65 @@ export class IngresarDatosComponent implements OnInit {
   }
 
   constructor(private estServ: EstudianteService) {
+    this.iniciarFecha();
+    console.log(this.Fechita);
   }
 
   ngOnInit() {
     this.tipoTest();
+
   }
   guardar(form: NgForm) {
 
-    console.log(form.value);
-    this.estServ.postEstudiante(form.value).subscribe(res => {
-      console.log(res)
-    });
-    location.href = '/#/areaUno';
+    if(this.tipoPrueba == 0){
+      if(form.controls['nombreEstudiante'].value==''){
+        window.alert('Favor ingresar el nombre del Estudiante');
+
+      }
+      if(form.controls['anioLectivo'].value==''){
+        window.alert('Favor ingresar el año lectivo');
+      }
+      if(form.controls['anioEGB'].value==''){
+        window.alert('Favor ingresar el año EGB');
+      }
+      if(form.controls['nombreEvaluador'].value==''){
+        window.alert('Favor ingresar el nombre del evaluador');
+      }
+      else{
+        console.log(form.value);
+        this.estServ.postEstudiante(form.value).subscribe(res => {
+          console.log(res)
+        });
+        location.href = '/#/areaUno';
+      }
+    }else{
+
+      if(form.controls['nombreEstudiante'].value==''){
+        window.alert('Favor ingresar el nombre del Estudiante');
+      }
+      if(form.controls['anioLectivo'].value==''){
+        window.alert('Favor ingresar el año lectivo');
+      }
+      if(form.controls['anioEGB'].value==''){
+        window.alert('Favor ingresar el año EGB');
+      }
+      if(form.controls['paralelo'].value==''){
+        window.alert('Favor ingresar el paralelo');
+      }
+      if(form.controls['nombreEvaluador'].value==''){
+        window.alert('Favor ingresar el nombre del evaluador');
+      }else{
+        console.log(form.value);
+        this.estServ.postEstudiante(form.value).subscribe(res => {
+          console.log(res)
+        });
+        location.href = '/#/areaUno';
+      }
+
+    }
+
   }
+
+
 
 }

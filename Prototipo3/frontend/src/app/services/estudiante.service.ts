@@ -9,7 +9,7 @@ export class EstudianteService {
 
   selecionarEstudiante: Estudiante;
   estudiantes: Estudiante[];
-  readonly URL_API = 'http://172.31.104.141:3000/api/estudiante';
+  readonly URL_API = 'http://192.168.1.4:3000/api/estudiante';
 
   constructor(private http: HttpClient) {
     this.selecionarEstudiante = new Estudiante();
@@ -33,8 +33,11 @@ export class EstudianteService {
   getEstudiantebyID(id : String){
     return this.http.get(this.URL_API + "/" + id);
   }
-  estadisticasEstudiantes(tipoTest : number , paralelo : String, anioLectivo : String){
-    return this.http.get(this.URL_API + "/" + tipoTest + "/" + paralelo + "/" + anioLectivo);
+  estadisticasEstudiantes(tipoTest : number , paralelo : String, _anioLectivo : String){
+    console.log(this.URL_API + "/" + tipoTest + "/" + paralelo + "/" + _anioLectivo);
+    console.log(this.URL_API + "/" + tipoTest + "/" + paralelo+ `/${_anioLectivo}`)
+    return this.http.get(this.URL_API + "/" + tipoTest + "/" + paralelo+ `/${_anioLectivo}`);
+
   }
 
 }
