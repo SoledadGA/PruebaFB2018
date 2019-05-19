@@ -14,23 +14,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ingresar-datos.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
+      <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="88" column="38" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="38" />
+            <state relative-caret-position="275">
+              <caret line="700" column="6" selection-start-line="700" selection-start-column="6" selection-end-line="700" selection-end-column="6" />
+              <folding>
+                <element signature="n#div#0;n#!!top" />
+                <element signature="n#mat-accordion#0;n#!!top" />
+                <element signature="n#mat-accordion#1;n#!!top" />
+                <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#3;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#23;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ingresar-datos.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
+      <file leaf-file-name="inicio.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1275">
-              <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#48#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="216">
+              <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -55,6 +59,7 @@
       <find>paralelos</find>
       <find>estadisticasTestInicial</find>
       <find>example-header-image</find>
+      <find>auditiva</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -100,17 +105,17 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts" />
         <option value="$PROJECT_DIR$/backend/index.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html" />
         <option value="$PROJECT_DIR$/backend/Modelos/estudiante.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
       </list>
     </option>
   </component>
@@ -202,33 +207,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="area-uno" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="estadisticas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ingresar-datos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
-              <item name="frontend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="inicio" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -301,24 +279,26 @@
       <workItem from="1558043665979" duration="1821000" />
       <workItem from="1558106727701" duration="17613000" />
       <workItem from="1558241211771" duration="26676000" />
+      <workItem from="1558269036181" duration="728000" />
+      <workItem from="1558295688800" duration="4883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153913000" />
+    <option name="totallyTimeSpent" value="159524000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21205357" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.35478547" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.4620462" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.36633664" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -407,13 +387,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/models/estudiante.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4522">
-          <caret line="266" column="55" selection-start-line="266" selection-start-column="55" selection-end-line="266" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-cinco/area-cinco.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
@@ -587,11 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/app.rutas.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2091">
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-2091" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/Rutas/estudiante.routes.js">
@@ -657,9 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="599">
           <caret line="105" column="21" lean-forward="true" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#2;n#div#5;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -667,16 +633,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -708,9 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
           <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,16 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="264" column="31" lean-forward="true" selection-start-line="264" selection-start-column="31" selection-end-line="264" selection-end-column="31" />
-          <folding>
-            <element signature="n#div#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -752,19 +695,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="17">
           <caret line="88" column="38" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="75" column="48" selection-start-line="75" selection-start-column="48" selection-end-line="75" selection-end-column="48" />
+        <state>
+          <caret selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="23" column="80" selection-start-line="23" selection-start-column="80" selection-end-line="23" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="700" column="6" selection-start-line="700" selection-start-column="6" selection-end-line="700" selection-end-column="6" />
           <folding>
-            <element signature="e#0#48#0" expanded="true" />
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#mat-accordion#0;n#!!top" />
+            <element signature="n#mat-accordion#1;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#2;n#div#1;n#div#3;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#23;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

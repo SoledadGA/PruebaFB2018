@@ -21,6 +21,7 @@ export class InicioComponent implements OnInit {
   imagen = ['imagenes/inicio/4.png', 'imagenes/inicio/5.png' , 'imagenes/inicio/6.jpg'];
   imagenTestI = 'imagenes/inicio/7.png';
   imagenTestF = 'imagenes/inicio/8.png';
+  title = ['imagenes/inicio/9.png','imagenes/inicio/10.png', 'imagenes/inicio/11.png'];
 
   iniciarTest(){
     localStorage.setItem('tipoTest', 'test');
