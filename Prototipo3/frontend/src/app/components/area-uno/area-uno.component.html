@@ -1,118 +1,163 @@
-<div class="row">
-  <div class="col-sm-12">
-    <img src="{{cabecera}}" style="height: auto;width: 100%" >
-  </div>
+<div class="row"*ngIf="iniciarTs" style="background-color: cornflowerblue">
+  <br><br><br>
 </div>
-<!-- Indicaciones y ejemplos!-->
-<div class="row"  *ngIf="mostrarEjemplo">
-  <div class="col-1"></div>
-  <div class="col-10 sa-contorno">
-    <p>{{queDignostica[numeroEjemplo]}}</p>
-  </div>
-</div>
-
-<div class="row"  *ngIf="mostrarEjemplo">
-  <div class="col-1"></div>
-  <div class="col-10">
-    <br>
-    <h3>{{nombreEjemplo[numeroEjemplo]}}</h3>
-  </div>
-</div>
-
-<div class="row"  *ngIf="mostrarEjemplo">
-  <div class="col-1"></div>
-  <div class="col-10 sa-contorno">
-    <p>{{instruccion[numeroEjemplo]}}</p>
-  </div>
-</div>
-
-<div class="row" *ngIf="mostrarEjemplo">
-  <div class="col-1"></div>
-  <div class="col-3" >
-    <br><br>
-    <div class="row">
-      <h5>{{textoInstruccion[numeroEjemplo]}}</h5>
+<div class="row" *ngIf="iniciarTs">
+  <div class="row">
+    <div class="col-4">
+      <img src={{imagenesEjemplo[3]}} style="height: 100%; width: 100%">
     </div>
-    <br>
-    <div class="row sa-centrar"><audio src="{{audioInstrucciones[numeroEjemplo]}}" controls autoplay >
-      <p>{{errorAudio}}</p>
-    </audio></div>
-  </div>
-  <div class="col-5">
-    <br>
-    <img src="{{imagenesEjemplo[numeroEjemplo]}}" height="100%" width="100%">
-  </div>
-  <div class="col-2">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPreguntas()">Siguiente</button>
+    <div class="col-4">
+      <div class="row">
+        <h2>Recomendaciones para el maestro/a</h2>
+      </div>
+      <div class="row">
+        <ul>
+          <li><p>Haber leído y comprendido con anterioridad la forma de aplicar la prueba. En lo
+            posible haber realizado una práctica con otras personas.</p></li>
+          <li><p>Comprender perfectamente y tomar muy en cuenta las consignas que se dan para
+            cada tarea. </p></li>
+          <li><p>Evitar que haya distractores (como sonidos fuertes, etc.), interrupciones (como
+            entrada y salida de personas del aula) o cualquier otro impedimento que impida al
+            estudiante concentrarse en el trabajo. </p></li>
+          <li><p>No interrumpir la prueba.</p></li>
+          <li><p>Tener listo el material con anticipación.</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="row"><br><br><br><br>
+        <br><br><br><br>
+        <br><br><br><br>
+        <br><br><br>
+      </div>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <button (click)="getEstudiantes()" style="height: 100%;width: 100% ; background-color: cornflowerblue"><p>Comenzar</p></button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- Propio Cuerpo !-->
-<div class="row"*ngIf="propioCuerpo">
-  <div class="sa-centrar">
-    <br><br>
-    <h3>{{valor+1}}. {{preguntasP[valor]}}</h3>
-    <br>
-    <audio src="{{audio[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
-  </div>
-</div>
 
-<div class="row"*ngIf="propioCuerpo"><br><br><br><br></div>
-<div class="row"*ngIf="propioCuerpo">
-  <div class="col-4"></div>
-  <div class="col-2"  *ngIf="propioCuerpo">
-    <button style="background: cornflowerblue ; width: 100% ; height:200%  "(click)="siguiente(8)" >Positivo</button>
-  </div>
-  <div class="col-3" *ngIf="propioCuerpo">
-    <button style="background: cornflowerblue ; width: 65% ; height:200%  " (click)="siguiente(0)">Negativo</button>
-  </div>
-</div>
 
-<!-- En el espejo !-->
-<div class="row"*ngIf="espejo">
-  <div class="sa-centrar" *ngIf="espejo">
-    <br><br>
-    <h3> {{valor+1}}. {{preguntasE[valor]}}</h3>
-    <br>
-    <audio src="{{audioE[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+  <div class="row"  *ngIf="!iniciarTs">
+    <div class="col-sm-12">
+      <img src="{{cabecera}}" style="height: auto;width: 100%" >
+    </div>
   </div>
-</div>
-
-<div class="row"*ngIf="espejo"><br><br><br><br></div>
-<div class="row"*ngIf="espejo">
-  <div class="col-4"></div>
-  <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 100% ; height:200% "(click)="siguiente1(8)" >Positivo</button></div>
-  <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente1(0)">Negativo</button></div>
-</div>
-
-<!-- En el otro cuerpo !-->
-<div class="row"*ngIf="otroCuerpo"><p></p></div>
-<div class="row"*ngIf="otroCuerpo">
-  <div class="sa-centrar" *ngIf="otroCuerpo">
-    <br><br>
-    <h3>{{valor+1}}. {{preguntasO[valor]}}</h3>
-    <br>
-    <audio src="{{audioO[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+  <!-- Indicaciones y ejemplos!-->
+  <div class="row"  *ngIf="mostrarEjemplo">
+    <div class="col-1"></div>
+    <div class="col-10 sa-contorno">
+      <p>{{queDignostica[numeroEjemplo]}}</p>
+    </div>
   </div>
-</div>
 
-<div class="row"*ngIf="otroCuerpo"><br><br><br><br></div>
-<div class="row" *ngIf="otroCuerpo">
-  <div class="col-4"></div>
-  <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ;width: 100% ; height:200%"(click)="siguiente2(8)" >Positivo</button></div>
-  <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente2(0)">Negativo</button></div>
-</div>
-
-<!-- Resultados !-->
-<div class="row" *ngIf="grafica">
-  <div class="col-1"></div>
-  <div class="col-4">
-    <h2>Resultado</h2>
+  <div class="row"  *ngIf="mostrarEjemplo">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <br>
+      <h3>{{nombreEjemplo[numeroEjemplo]}}</h3>
+    </div>
   </div>
-</div>
-<div class="row" *ngIf="grafica"><br></div>
-<div class="row" *ngIf="grafica">
+
+  <div class="row"  *ngIf="mostrarEjemplo">
+    <div class="col-1"></div>
+    <div class="col-10 sa-contorno">
+      <p>{{instruccion[numeroEjemplo]}}</p>
+    </div>
+  </div>
+
+  <div class="row" *ngIf="mostrarEjemplo">
+    <div class="col-1"></div>
+    <div class="col-3" >
+      <br><br>
+      <div class="row">
+        <h5>{{textoInstruccion[numeroEjemplo]}}</h5>
+      </div>
+      <br>
+      <div class="row sa-centrar"><audio src="{{audioInstrucciones[numeroEjemplo]}}" controls autoplay >
+        <p>{{errorAudio}}</p>
+      </audio></div>
+    </div>
+    <div class="col-5">
+      <br>
+      <img src="{{imagenesEjemplo[numeroEjemplo]}}" height="100%" width="100%">
+    </div>
+    <div class="col-2">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br>
+      <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPreguntas()">Siguiente</button>
+    </div>
+  </div>
+
+  <!-- Propio Cuerpo !-->
+  <div class="row"*ngIf="propioCuerpo">
+    <div class="sa-centrar">
+      <br><br>
+      <h3>{{valor+1}}. {{preguntasP[valor]}}</h3>
+      <br>
+      <audio src="{{audio[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+    </div>
+  </div>
+
+  <div class="row"*ngIf="propioCuerpo"><br><br><br><br></div>
+  <div class="row"*ngIf="propioCuerpo">
+    <div class="col-4"></div>
+    <div class="col-2"  *ngIf="propioCuerpo">
+      <button style="background: cornflowerblue ; width: 100% ; height:200%  "(click)="siguiente(8)" >Positivo</button>
+    </div>
+    <div class="col-3" *ngIf="propioCuerpo">
+      <button style="background: cornflowerblue ; width: 65% ; height:200%  " (click)="siguiente(0)">Negativo</button>
+    </div>
+  </div>
+
+  <!-- En el espejo !-->
+  <div class="row"*ngIf="espejo">
+    <div class="sa-centrar" *ngIf="espejo">
+      <br><br>
+      <h3> {{valor+1}}. {{preguntasE[valor]}}</h3>
+      <br>
+      <audio src="{{audioE[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+    </div>
+  </div>
+
+  <div class="row"*ngIf="espejo"><br><br><br><br></div>
+  <div class="row"*ngIf="espejo">
+    <div class="col-4"></div>
+    <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 100% ; height:200% "(click)="siguiente1(8)" >Positivo</button></div>
+    <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente1(0)">Negativo</button></div>
+  </div>
+
+  <!-- En el otro cuerpo !-->
+  <div class="row"*ngIf="otroCuerpo"><p></p></div>
+  <div class="row"*ngIf="otroCuerpo">
+    <div class="sa-centrar" *ngIf="otroCuerpo">
+      <br><br>
+      <h3>{{valor+1}}. {{preguntasO[valor]}}</h3>
+      <br>
+      <audio src="{{audioO[valor]}}" controls autoplay ><p>{{errorAudio}}</p></audio>
+    </div>
+  </div>
+
+  <div class="row"*ngIf="otroCuerpo"><br><br><br><br></div>
+  <div class="row" *ngIf="otroCuerpo">
+    <div class="col-4"></div>
+    <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ;width: 100% ; height:200%"(click)="siguiente2(8)" >Positivo</button></div>
+    <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente2(0)">Negativo</button></div>
+  </div>
+
+  <!-- Resultados !-->
+  <div class="row" *ngIf="grafica">
+    <div class="col-1"></div>
+    <div class="col-4">
+      <h2>Resultado</h2>
+    </div>
+  </div>
+  <div class="row" *ngIf="grafica"><br></div>
+  <div class="row" *ngIf="grafica">
     <div class="col-2"></div>
     <div class="col-3" >
       <h3>Propio Cuerpo</h3>
@@ -138,22 +183,24 @@
         </li>
       </ul>
     </div>
-</div>
+  </div>
 
-<div class="row" *ngIf="grafica"><br><br></div>
-<div class="row" *ngIf="grafica">
-  <div class="col-4"><p></p></div>
-  <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
-    <h5>{{areaPositiva}}</h5>
+  <div class="row" *ngIf="grafica"><br><br></div>
+  <div class="row" *ngIf="grafica">
+    <div class="col-4"><p></p></div>
+    <div class="col-4" style="font-weight: bold" *ngIf="mostrarAreaPositiva">
+      <h5>{{areaPositiva}}</h5>
+    </div>
+    <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
+      <h5>{{areaDebilitada}}</h5>
+    </div>
   </div>
-  <div class="col-4" style="font-weight: bold" *ngIf="!mostrarAreaPositiva">
-    <h5>{{areaDebilitada}}</h5>
-  </div>
-</div>
 
-<div class="row" *ngIf="grafica">
-  <div class="col-10"><p></p></div>
-  <div class="col-2">
-    <button style="background: cornflowerblue ; width: 100% ; height:200% " (click)="agregarRespuestaAreaUno()">Siguiente</button>
+  <div class="row" *ngIf="grafica">
+    <div class="col-10"><p></p></div>
+    <div class="col-2">
+      <button style="background: cornflowerblue ; width: 100% ; height:200% " (click)="agregarRespuestaAreaUno()">Siguiente</button>
+    </div>
   </div>
-</div>
+
+

@@ -278,6 +278,7 @@ export class FormularioComponent implements OnInit {
     }
   }
   iniciar(){
+    this.getEstudiante();
     this.mostrardatos = false;
     this.mostrarOpciones = true;
 

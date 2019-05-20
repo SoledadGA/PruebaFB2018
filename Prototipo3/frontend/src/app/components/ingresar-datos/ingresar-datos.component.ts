@@ -12,6 +12,7 @@ export class IngresarDatosComponent implements OnInit {
 
   identificador = localStorage.getItem('tipoTest');
   anioEGB = ['Primero'];
+  paralelo = ['A','B','C','D','E','F'];
   fecha = new Date();
   txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
   anioLectivo = [this.fecha.getFullYear() - 1, this.fecha.getFullYear()];

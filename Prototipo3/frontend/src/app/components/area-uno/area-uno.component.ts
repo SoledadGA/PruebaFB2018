@@ -9,6 +9,8 @@ import {Estudiante} from "../../models/estudiante";
   providers: [EstudianteService]
 })
 export class AreaUnoComponent implements OnInit {
+
+  iniciarTs = true;
   identificadorPrueba = localStorage.getItem('tipoTest');
   any = [];
   numeroEjemplo = 0;
@@ -18,7 +20,7 @@ export class AreaUnoComponent implements OnInit {
   txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
   erroresE = 0;
   erroresO = 0;
-  mostrarEjemplo = true;
+  mostrarEjemplo = false;
   propioCuerpo = false;
   espejo = false;
   otroCuerpo = false;
@@ -62,7 +64,8 @@ export class AreaUnoComponent implements OnInit {
   imagenesEjemplo = [
     'imagenes/area1/propioCuerpo.gif',
     'imagenes/area1/espejo.png',
-    'imagenes/area1/compa.jpeg'];
+    'imagenes/area1/compa.jpeg',
+    'imagenes/area1/1.png'];
   estiloBotonEjemplo = [
     'sa-boton-ejemplo1',
     'sa-boton-ejemplo2',
@@ -113,7 +116,7 @@ export class AreaUnoComponent implements OnInit {
     this.mostrarEjemplo = false;
     if (this.numeroEjemplo == 0) {
       this.propioCuerpo = true;
-      this.getEstudiantes();
+
     }
     if (this.numeroEjemplo == 1) {
       this.espejo = true;
@@ -270,6 +273,8 @@ export class AreaUnoComponent implements OnInit {
   }
 
   getEstudiantes() {
+    this.iniciarTs =false;
+    this.mostrarEjemplo = true;
     this.estServ.getEstudiantes()
       .subscribe(res => {
         this.estServ.estudiantes = res as Estudiante[];
