@@ -1,15 +1,25 @@
 <div class="row"*ngIf="iniciarTs" style="background-color: cornflowerblue">
   <br><br><br>
+  <div class="col-8"></div>
+  <div class="col-4"><button (click)="getEstudiantes()" style="width: 100%; height: 100% ; background-color: #66CC44"><h5>Verificar datos del Estudiante</h5></button></div>
 </div>
-<div class="row" *ngIf="iniciarTs">
+
+<div class="row"*ngIf="mostrarDatos" style="background-color: cornflowerblue">
+  <br><br><br>
+</div>
+<div class="row" *ngIf="mostrarDatos">
   <div class="row">
-    <div class="col-4">
-      <img src={{imagenesEjemplo[3]}} style="height: 100%; width: 100%">
-    </div>
-    <div class="col-4">
+
+    <div class="col-8">
+      <br><br><br>
       <div class="row">
-        <h2>Recomendaciones para el maestro/a</h2>
+        <div class="col-2"></div>
+        <div class="col-10">
+          <h2>Recomendaciones para el maestro/a</h2>
+        </div>
+
       </div>
+      <br><br>
       <div class="row">
         <ul>
           <li><p>Haber leído y comprendido con anterioridad la forma de aplicar la prueba. En lo
@@ -24,26 +34,48 @@
         </ul>
       </div>
     </div>
-    <div class="col-4">
-      <div class="row"><br><br><br><br>
-        <br><br><br><br>
-        <br><br><br><br>
-        <br><br><br>
-      </div>
-      <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
-          <button (click)="getEstudiantes()" style="height: 100%;width: 100% ; background-color: cornflowerblue"><p>Comenzar</p></button>
-        </div>
-      </div>
+    <div class="col-3">
+      <br>
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image5"></div>
+          <mat-card-title>Datos del Estudiante</mat-card-title>
+          <mat-card-subtitle>Verificar datos</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>
+            Es importante verificar que los datos ingresados son los correctos.
+            Por favor verifique que los siguientes datos corresponden al estudiante que
+            se está evaluando:
+          </p>
+          <ul>
+            <li><p>Nombre Estudiante: {{estServ.selecionarEstudiante.nombreEstudiante}}</p></li>
+          </ul>
+          <ul>
+            <li><p>Nombre Evaluador: {{estServ.selecionarEstudiante.nombreEvaluador}}</p></li>
+          </ul>
+          <ul>
+            <li><p>Paralelo: {{estServ.selecionarEstudiante.paralelo}}</p></li>
+          </ul>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="comenzar()" style="background-color: cornflowerblue">Iniciar</button>
+          <button mat-button [routerLink]="['/ingresarDatos']" style="background-color: cornflowerblue">Cambiar datos</button>
+        </mat-card-actions>
+      </mat-card>
+      <!--<img src={{imagenesEjemplo[3]}} style="height: 100%; width: 100%">-->
     </div>
-
   </div>
 </div>
 
+<div class="row" *ngIf="mostrarDatos"><br><br><br></div>
+
+<div class="row"*ngIf="mostrarDatos" style="background-color: cornflowerblue">
+  <br><br><br>
+</div>
 
 
-  <div class="row"  *ngIf="!iniciarTs">
+  <div class="row"  *ngIf="mostrarEjemplo">
     <div class="col-sm-12">
       <img src="{{cabecera}}" style="height: auto;width: 100%" >
     </div>

@@ -36,3 +36,13 @@ h5{
 p{
   font-size:1.2vw;
 }
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image5 {
+  /*background-image: url('imagenes/area1/2.png');*/
+  background-image: url('imagenes/area1/10.png');
+  background-size: cover;
+}

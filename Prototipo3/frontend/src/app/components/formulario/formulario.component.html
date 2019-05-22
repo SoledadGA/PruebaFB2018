@@ -747,7 +747,7 @@
 <div class="row" *ngIf="mostrarRecomendaciones">
   <div class="row" *ngIf="!resultadoAreasR[valor+2]"><br></div>
   <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>
-  <div class="col-10">
+  <div class="col-10" *ngIf="!resultadoAreasR[valor+2]">
     <h4>{{tituloAreas[valor+2]}}</h4>
   </div>
   <div class="col-1" *ngIf="!resultadoAreasR[valor+2]"></div>

@@ -14,7 +14,7 @@ export class InicioComponent implements OnInit {
   panel5 =  false;
   panel6 =  false;
   anio = '';
-  cuadernillo ='imagenes/Cuadernillo.docx';
+  cuadernillo ='imagenes/hojaCuadernillo.pdf';
   anioLectivo = ['2018 - 2019', '2019 - 2020' , '2020 - 2021'];
   cursos = ['A', 'B', 'C', 'D', 'E','F'];
   images = ['imagenes/inicio/1.png', 'imagenes/inicio/2.png', 'imagenes/inicio/3.png'];

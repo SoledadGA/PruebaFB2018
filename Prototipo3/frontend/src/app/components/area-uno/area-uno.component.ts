@@ -10,6 +10,9 @@ import {Estudiante} from "../../models/estudiante";
 })
 export class AreaUnoComponent implements OnInit {
 
+
+  verPrueba = false;
+  mostrarDatos = false;
   iniciarTs = true;
   identificadorPrueba = localStorage.getItem('tipoTest');
   any = [];
@@ -101,6 +104,7 @@ export class AreaUnoComponent implements OnInit {
   respuestaTotal = 1;
   tipoPrueba = 0 ;
   Fechita  = '';
+  id = '';
 
   iniciarFecha(){
     this.Fechita = this.txtFecha;
@@ -272,9 +276,11 @@ export class AreaUnoComponent implements OnInit {
   ngOnInit() {
   }
 
+
+
   getEstudiantes() {
     this.iniciarTs =false;
-    this.mostrarEjemplo = true;
+    this.mostrarDatos = true;
     this.estServ.getEstudiantes()
       .subscribe(res => {
         this.estServ.estudiantes = res as Estudiante[];
@@ -284,9 +290,16 @@ export class AreaUnoComponent implements OnInit {
         this.estServ.selecionarEstudiante = res[this.any.length-1];
         console.log(this.estServ.selecionarEstudiante._id);
         localStorage.setItem('identificador',this.estServ.selecionarEstudiante._id);
+
       });
 
   }
+
+  comenzar(){
+    this.mostrarDatos = false;
+    this.mostrarEjemplo = true;
+  }
+
 
   agregarRespuestaAreaUno(){
     this.sumar();
@@ -303,6 +316,8 @@ export class AreaUnoComponent implements OnInit {
     })
     location.href = '/#/areaDos';
   }
+
+
 
 
 
