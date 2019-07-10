@@ -76,12 +76,12 @@ export class EstadisticasComponent implements OnInit {
     63.16, 57.89, 52.63, 47.37, 42.11, 36.84,
     73.68, 52.63, 52.63, 15.79, 10.53, 52.63];
   titulo = [
-    'I', 'II',
-    'III', 'IV', 'V',
-    'VI', 'VII', 'VIII',
-    'IX', 'X', 'XI',
-    'XII', 'XIII', 'XIV',
-    'XV', 'XVI', 'XVII'];
+    'I. Esquema Corporal', 'II. Dominancia Lateral',
+    'III. Orientación', 'IV. Coordinación Dinámica', 'V. Receptiva Auditiva',
+    'VI. Receptivo Visual', 'VII. Asociación Auditiva', 'VIII. Expresivo Manual',
+    'IX. Cierre Auditivo Vocal', 'X. Pronunciación', 'XI. Memoria Secuencia Auditiva',
+    'XII. Ritmo', 'XIII. Memoria', 'XIV. Discriminación Auditiva',
+    'XV. Coordinación Visomotora', 'XVI. Atención y Fatiga', 'XVII. Desarrollo Manual'];
 
   /*Funciones cuadro 1*/
   transformacionPositivoNegativo(entrada: number) {
@@ -131,6 +131,22 @@ export class EstadisticasComponent implements OnInit {
       return b.totalAreasDebilitadas - a.totalAreasDebilitadas;
     });
   }
+  //
+  // definirGrupos(errores) {
+  //   let min, max, rango, grupo;
+  //   max = Math.max(this.datosOrdenados[0].totalAreasDebilitadas);
+  //   min = Math.min(this.datosOrdenados[this.any.length - 1].totalAreasDebilitadas);
+  //   rango = (max - min) / 3;
+  //   //console.log('Minimo ' + min + ' maximo: ' + max + ' rango: ' + rango);
+  //   if (errores >= min && errores < (rango + min)) {
+  //     grupo = 'Grupo Bueno';
+  //   } else if (errores >= (rango + min) && errores <= (max - rango)) {
+  //     grupo = 'Grupo Normal';
+  //   } else {
+  //     grupo = 'Grupo Inferior';
+  //   }
+  //   return grupo;
+  // }
 
   definirGrupos(errores) {
     let min, max, rango, grupo;
@@ -138,16 +154,15 @@ export class EstadisticasComponent implements OnInit {
     min = Math.min(this.datosOrdenados[this.any.length - 1].totalAreasDebilitadas);
     rango = (max - min) / 3;
     //console.log('Minimo ' + min + ' maximo: ' + max + ' rango: ' + rango);
-    if (errores >= min && errores < (rango + min)) {
+    if (errores >= min && errores <= (rango + min)) {
       grupo = 'Grupo Bueno';
-    } else if (errores >= (rango + min) && errores <= (max - rango)) {
+    } else if (errores > (rango + min) && errores <= (max - rango)) {
       grupo = 'Grupo Normal';
     } else {
       grupo = 'Grupo Inferior';
     }
     return grupo;
   }
-
   /*Funciones Grafico 1*/
   transformacionPorcentaje(entrada: number, arreglo) {
     let porcentaje;
@@ -264,7 +279,7 @@ export class EstadisticasComponent implements OnInit {
       labels: this.titulo,
       datasets: [
         {
-          label: 'Test',
+          label: 'Áreas Debilitadas',
           backgroundColor: '#82d4f5',
           borderColor: '#1f19e5',
           data: this.datosGrafico
