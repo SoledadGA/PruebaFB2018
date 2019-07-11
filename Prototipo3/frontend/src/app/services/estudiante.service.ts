@@ -39,5 +39,11 @@ export class EstudianteService {
     return this.http.get(this.URL_API + "/" + tipoTest + "/" + paralelo+ `/${_anioLectivo}`);
 
   }
+  estadisticasTipoTest(tipoTest : number , _anioLectivo : String){
+    console.log(this.URL_API + "/" + tipoTest +"/" + _anioLectivo);
+    console.log(this.URL_API + "/" + tipoTest + `/${_anioLectivo}`)
+    return this.http.get(this.URL_API + "/" + tipoTest + `/${_anioLectivo}`);
+
+  }
 
 }

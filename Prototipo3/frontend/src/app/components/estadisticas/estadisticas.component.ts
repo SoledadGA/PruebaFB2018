@@ -10,6 +10,7 @@ import {Estudiante} from "../../models/estudiante";
 })
 export class EstadisticasComponent implements OnInit {
 
+  color='colores1';
   tamanio = 0 ;
   identificador1 = localStorage.getItem('tipoE');
   identificador2 = localStorage.getItem('anioE');
@@ -93,7 +94,13 @@ export class EstadisticasComponent implements OnInit {
     }
     return calificacion;
   }
-
+  verificarDiscapacidad(entrada: number){
+    if(entrada == 1 ){
+      this.color = 'colores';
+    }else{
+      this.color = 'colores1';
+    }
+  }
   sumar() {
     let i = 0;
     this.totalAreasDebilitadasColumna = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];

@@ -21,6 +21,7 @@ export class IngresarDatosComponent implements OnInit {
   mostrar = false;
   tipoPrueba = 0 ;
   Fechita  = '';
+  discapacidad = '';
 
   iniciarFecha(){
     this.Fechita = this.txtFecha;
@@ -39,10 +40,16 @@ export class IngresarDatosComponent implements OnInit {
   }
 
   check(){
-    if(this.checkControlador)
-    this.checkControlador = false;
+    if(this.checkControlador){
+      this.checkControlador = false;
+      localStorage.setItem('discapacidad', 'no');
+      console.log('no');
+
+    }
     else {
       this.checkControlador =true;
+      localStorage.setItem('discapacidad', 'si');
+      console.log('chi');
     }
   }
   constructor(private estServ: EstudianteService) {

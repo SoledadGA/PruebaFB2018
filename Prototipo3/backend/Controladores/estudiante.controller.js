@@ -321,5 +321,13 @@ estudianteCtrl.estadisticasEstudiantes = async (req, res) => {
     res.json(estudiantesE);
 };
 
+estudianteCtrl.estadisticasTipoTest = async (req, res) => {
+    const{ tipoTest } = req.params;
+    const{ anioLectivo } = req.params;
+    const estudiantesE =  await Estudiante.find({tipoTest
+        ,anioLectivo});
+    res.json(estudiantesE);
+};
+
 
 module.exports = estudianteCtrl;
