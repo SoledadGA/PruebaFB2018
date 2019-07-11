@@ -9,7 +9,7 @@ export class EstudianteService {
 
   selecionarEstudiante: Estudiante;
   estudiantes: Estudiante[];
-  readonly URL_API = 'http://192.168.0.102:3000/api/estudiante';
+  readonly URL_API = 'http://localhost:3000/api/estudiante';
 
   constructor(private http: HttpClient) {
     this.selecionarEstudiante = new Estudiante();

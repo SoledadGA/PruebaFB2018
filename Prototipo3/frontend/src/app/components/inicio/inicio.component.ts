@@ -31,6 +31,10 @@ export class InicioComponent implements OnInit {
     localStorage.setItem('tipoTest', 'reTest');
     location.href = '/#/ingresarDatos';
   }
+  iniciarFreeTest(){
+    localStorage.setItem('tipoTest', 'freeTest');
+    location.href = '/#/ingresarDatos';
+  }
   getAnio(anio : string){
     this.anio = anio;
   }

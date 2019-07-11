@@ -10,8 +10,10 @@ import {NgForm} from "@angular/forms";
 })
 export class IngresarDatosComponent implements OnInit {
 
+  checkControlador = false;
   identificador = localStorage.getItem('tipoTest');
   anioEGB = ['Primero'];
+  anioEGB1 = ['Primero','Segundo','Tercero','Cuarto','Quinto','Sexto','Septimo'];
   paralelo = ['A','B','C','D','E','F'];
   fecha = new Date();
   txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
@@ -28,8 +30,21 @@ export class IngresarDatosComponent implements OnInit {
       this.mostrar = true;
       this.tipoPrueba = 1 ;
     }
+    if(this.identificador == 'freeTest'){
+      this.mostrar = true;
+      this.tipoPrueba = 2 ;
+      console.log(this.tipoPrueba);
+      this.anioEGB = this.anioEGB1;
+    }
   }
 
+  check(){
+    if(this.checkControlador)
+    this.checkControlador = false;
+    else {
+      this.checkControlador =true;
+    }
+  }
   constructor(private estServ: EstudianteService) {
     this.iniciarFecha();
     console.log(this.Fechita);

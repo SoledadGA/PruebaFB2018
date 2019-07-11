@@ -50,6 +50,7 @@ import { PruebaComponent } from './components/prueba/prueba.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { EstadisticasFreeComponent } from './components/estadisticas-free/estadisticas-free.component';
 
 @NgModule({
   declarations: [
@@ -82,7 +83,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AsignarParalelosComponent,
     CambioParaleloComponent,
     NominaParaleloComponent,
-    PruebaComponent
+    PruebaComponent,
+    EstadisticasFreeComponent
   ],
   imports: [
     BrowserModule,

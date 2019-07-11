@@ -1,0 +1,265 @@
+
+<div class="row hoja" ><br></div>
+<div class="row hoja">
+  <div class="col-1"></div>
+  <div class="col-1 sa-centrar">
+    <br>
+    <img src={{imagenCabecera}} style="height: auto;width: 120%">
+  </div>
+  <div class="col-9 sa-centrar">
+    <h4>{{cabecera1}}</h4>
+    <br>
+    <h4>{{cabecera2}} {{identificador2}}</h4>
+    <br>
+    <h4>{{cabecera3}}</h4>
+    <br>
+    <h4>{{cabecera4}} {{identificador3}}</h4>
+  </div>
+  <div class="col-1"></div>
+</div>
+<div class="row hoja" >
+  <div class="col-1"><br></div>
+  <div class="col-10">
+    <h4>{{subtitulos[0]}}</h4>
+  </div>
+</div>
+<div class="row hoja">
+  <div class="row"><br></div>
+  <div class="row"><br></div>
+  <div class="col-1"></div>
+  <div class="col-10">
+    <div class="row">
+      <table mat-table [dataSource]="listaGeneralEstudiantes" class="mat-elevation-z8" multiTemplateDataRows
+             id="Cuadro1">
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell *matCellDef="let element" (click)="irFormulario(element._id)"> {{element.nombreEstudiante}}</td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef> Total Aciertos<br>Total Errores</td>
+        </ng-container>
+
+        <!-- Area Column -->
+        <ng-container matColumnDef="area1">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar" colspan="18"> ÁREAS EXAMINADAS</th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area1Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[0]}}<br>{{totalAreasDebilitadasColumna[0]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area2">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar" colspan=2>TOTAL</th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area2Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[1]}}<br>{{totalAreasDebilitadasColumna[1]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area3">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area3Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[2]}}<br>{{totalAreasDebilitadasColumna[2]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area4">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area4Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[3]}}<br>{{totalAreasDebilitadasColumna[3]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area5">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area5Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[4]}}<br>{{totalAreasDebilitadasColumna[4]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area6">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area6Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[5]}}<br>{{totalAreasDebilitadasColumna[5]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area7">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area7total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[6]}}<br>{{totalAreasDebilitadasColumna[6]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area8">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area8total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[7]}}<br>{{totalAreasDebilitadasColumna[7]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area9">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area9Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[8]}}<br>{{totalAreasDebilitadasColumna[8]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area10">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area10total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[9]}}<br>{{totalAreasDebilitadasColumna[9]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area11">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area11total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[10]}}<br>{{totalAreasDebilitadasColumna[10]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area12">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area12total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[11]}}<br>{{totalAreasDebilitadasColumna[11]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area13">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area13Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[12]}}<br>{{totalAreasDebilitadasColumna[12]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area14">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area14total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[13]}}<br>{{totalAreasDebilitadasColumna[13]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area15">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area15Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[14]}}<br>{{totalAreasDebilitadasColumna[14]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area16">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area16Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[15]}}<br>{{totalAreasDebilitadasColumna[15]}}
+          </td>
+        </ng-container>
+        <ng-container matColumnDef="area17">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">
+            {{transformacionPositivoNegativo(element.area17Total)}}
+          </td>
+          <td mat-footer-cell class="sa-centrar" *matFooterCellDef>{{any.length - totalAreasDebilitadasColumna[16]}}<br>{{totalAreasDebilitadasColumna[16]}}
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef="totalAciertos">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element"> {{17 - element.totalAreasDebilitadas}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+        <ng-container matColumnDef="totalErrores">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"></th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element"> {{element.totalAreasDebilitadas}}</td>
+          <td mat-footer-cell *matFooterCellDef></td>
+        </ng-container>
+
+        <ng-container matColumnDef="1">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> NÓMINA</th>
+        </ng-container>
+        <ng-container matColumnDef="2">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> I</th>
+        </ng-container>
+        <ng-container matColumnDef="3">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> II</th>
+        </ng-container>
+        <ng-container matColumnDef="4">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> III</th>
+        </ng-container>
+        <ng-container matColumnDef="5">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> IV</th>
+        </ng-container>
+        <ng-container matColumnDef="6">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> V</th>
+        </ng-container>
+        <ng-container matColumnDef="7">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VI</th>
+        </ng-container>
+        <ng-container matColumnDef="area">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VII</th>
+        </ng-container>
+        <ng-container matColumnDef="9">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> VIII</th>
+        </ng-container>
+        <ng-container matColumnDef="areaExa">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> IX</th>
+        </ng-container>
+        <ng-container matColumnDef="10">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> X</th>
+        </ng-container>
+        <ng-container matColumnDef="11">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XI</th>
+        </ng-container>
+        <ng-container matColumnDef="12">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XII</th>
+        </ng-container>
+        <ng-container matColumnDef="13">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XIII</th>
+        </ng-container>
+        <ng-container matColumnDef="14">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XIV</th>
+        </ng-container>
+        <ng-container matColumnDef="15">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XV</th>
+        </ng-container>
+        <ng-container matColumnDef="16">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XVI</th>
+        </ng-container>
+        <ng-container matColumnDef="17">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> XVII</th>
+        </ng-container>
+        <ng-container matColumnDef="18">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> ACIERTOS</th>
+        </ng-container>
+        <ng-container matColumnDef="total">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar"> ERRORES</th>
+        </ng-container>
+
+        <!-- The table will render two header rows, one data row per data object, and two footer rows. -->
+        <tr mat-header-row *matHeaderRowDef="columnasCuadro1" class="example-first-header-row"></tr>
+
+        <tr mat-header-row style="font-weight: bold;" *matHeaderRowDef="['1', '2', '3', '4', '5', '6', '7',
+          'area', '9', 'areaExa', '10', '11', '12', '13', '14', '15', '16', '17', '18', 'total']">
+        </tr>
+        <tr mat-footer-row style="font-weight: bold;" *matFooterRowDef="columnasCuadro1"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnasCuadro1;"></tr>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="row hoja">
+  <div class="row"><br></div>
+</div>

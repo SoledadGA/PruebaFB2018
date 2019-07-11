@@ -1,6 +1,8 @@
 export class Estudiante {
   constructor(_id = '',
               tipoTest = 0,
+              discapacidad = 0,
+              observacion = '',
               nombreEstudiante = '',
               anioEGB = '',
               fecha = '',
@@ -134,6 +136,8 @@ export class Estudiante {
   ) {
 
     this._id = _id;
+    this.discapacidad = discapacidad;
+    this.observacion = observacion;
     this.tipoTest = tipoTest;
     this.nombreEstudiante = nombreEstudiante;
     this.anioEGB = anioEGB;
@@ -269,6 +273,8 @@ export class Estudiante {
   }
 
   _id: string;
+  discapacidad: number;
+  observacion : string;
   tipoTest: number;
   nombreEstudiante: string;
   anioEGB: string;

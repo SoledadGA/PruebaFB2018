@@ -114,6 +114,9 @@ export class AreaUnoComponent implements OnInit {
     if(this.identificadorPrueba == 'reTest'){
       this.tipoPrueba = 1 ;
     }
+    if(this.identificadorPrueba == 'freeTest'){
+      this.tipoPrueba = 2 ;
+    }
   }
 
   iniciarPreguntas() {

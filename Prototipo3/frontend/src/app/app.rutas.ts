@@ -28,6 +28,7 @@ import {CambioParaleloComponent} from './components/cambio-paralelo/cambio-paral
 import {NominaParaleloComponent} from './components/nomina-paralelo/nomina-paralelo.component';
 import {PruebaComponent} from './components/prueba/prueba.component';
 import {AreaCinco2Component} from './components/area-cinco2/area-cinco2.component';
+import {EstadisticasFreeComponent} from "./components/estadisticas-free/estadisticas-free.component";
 
 export const RUTAS_APP: Routes = [
   {
@@ -141,6 +142,10 @@ export const RUTAS_APP: Routes = [
   {
     path: 'areaCincoDos',
     component: AreaCinco2Component,
+  },
+  {
+    path: 'estadisticasFree',
+    component: EstadisticasFreeComponent,
   },
   {
     path: '**',

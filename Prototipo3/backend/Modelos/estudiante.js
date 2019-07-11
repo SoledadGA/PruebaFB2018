@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const {Schema} = mongoose;
 
 const EstudianteSchema= new Schema({
+    discapacidad :{type: Number, required: false},
+    observacion :{type: String, required: false},
     tipoTest:{type: Number, required: false},
     nombreEstudiante:{type: String, required: true},
     anioEGB:{type: String, required: true},

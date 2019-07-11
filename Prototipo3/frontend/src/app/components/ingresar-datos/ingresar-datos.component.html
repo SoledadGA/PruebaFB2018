@@ -2,14 +2,13 @@
 <div class="row"><p></p></div>
 <div class="row"><p></p></div>
 <div class="row">
-  <div class="col-3"> </div>
+  <div class="col-3"></div>
   <div class="col-6 sa-bordes">
     <div class="row sa-bordes sa-fondo">
       <h5>Datos del Estudiante</h5></div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
     <form #estudianteForm="ngForm" (ngSubmit)="guardar(estudianteForm)">
-
       <div class="row">
         <div class="col-3">
           <label for="nombre">
@@ -33,7 +32,6 @@
           <select class="form-control input-sm" title="Seleccionar una opción" style="width: 100%; max-width: 15vw;"
                   name="anioLectivo" #anioLectivoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.anioLectivo">
             <option *ngFor="let anio of anioLectivo">{{anio}} - {{anio+1}}</option>
-
           </select>
         </div>
       </div>
@@ -51,13 +49,10 @@
           </select>
         </div>
       </div>
-      <br>
-      <div class="row" *ngIf="mostrar" >
+      <br *ngIf="mostrar">
+      <div class="row" *ngIf="mostrar">
         <div class="col-3">
           <label>
-
-
-
             <h5>Paralelo</h5>
           </label>
         </div>
@@ -67,30 +62,26 @@
             <option *ngFor="let curso of paralelo">{{curso}}</option>
           </select>
         </div>
-
-
-
-
         <!--<div class="input-field col-9">-->
-          <!--<input type="text" pattern="[A-Z]{1}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"-->
-                 <!--placeholder="X" MAXLENGTH=1 title="Sólo ingresar una letra mayúscula"-->
-                 <!--name="paralelo" #paraleloE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.paralelo">-->
+        <!--<input type="text" pattern="[A-Z]{1}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"-->
+        <!--placeholder="X" MAXLENGTH=1 title="Sólo ingresar una letra mayúscula"-->
+        <!--name="paralelo" #paraleloE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.paralelo">-->
         <!--</div>-->
       </div>
-      <br>
+      <br *ngIf="!mostrar">
+      <br *ngIf="mostrar">
       <!--<div class="row">-->
-        <!--<div class="col-3">-->
-          <!--<label>-->
-            <!--<h5>Fecha</h5>-->
-          <!--</label>-->
-        <!--</div>-->
-        <!--<div class="col-9">-->
-          <!--<input type="txt" class="form-control input-sm" style="width: 100%; max-width: 15vw;"-->
-                 <!--name="fecha" [(ngModel)]="estServ.selecionarEstudiante.fecha" >-->
-          <!---->
-        <!--</div>-->
+      <!--<div class="col-3">-->
+      <!--<label>-->
+      <!--<h5>Fecha</h5>-->
+      <!--</label>-->
       <!--</div>-->
-      <br>
+      <!--<div class="col-9">-->
+      <!--<input type="txt" class="form-control input-sm" style="width: 100%; max-width: 15vw;"-->
+      <!--name="fecha" [(ngModel)]="estServ.selecionarEstudiante.fecha" >-->
+      <!---->
+      <!--</div>-->
+      <!--</div>-->
       <div class="row">
         <div class="col-3">
           <label>
@@ -103,6 +94,31 @@
                  [(ngModel)]="estServ.selecionarEstudiante.nombreEvaluador">
         </div>
       </div>
+      <br>
+      <div class="row">
+        <div class="col-3">
+          <label>
+            <h5>NEE/AD</h5>
+          </label>
+        </div>
+        <div class="col-1">
+          <input (click)="check()" type="checkbox" style="height:80%;width: 80%; max-width: 15vw;" >
+        </div>
+      </div>
+      <br>
+      <div class="row" *ngIf="checkControlador">
+        <div class="col-3">
+          <label>
+            <h5>Observaciones</h5>
+          </label>
+        </div>
+        <div class="col-8">
+          <textarea type="text" rows="2" class="form-control input-sm"
+                    name="observaciones" #observacion="ngModel"
+                    [(ngModel)]="estServ.selecionarEstudiante.observacion"></textarea>
+        </div>
+      </div>
+      <br><br>
       <div class="row">
         <br><br>
         <div class="col-9"></div>
