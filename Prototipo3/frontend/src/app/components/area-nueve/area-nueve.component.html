@@ -41,7 +41,7 @@
   </div>
   <div class="col-2">
     <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <button style="background: cornflowerblue; width: 100%; height:12% " (click)="iniciarPreguntas()">Siguiente</button>
+    <button style="background: cornflowerblue; width: 100%; height:12% " (click)="iniciarPreguntas()"><p>Siguiente</p></button>
   </div>
 </div>
 
@@ -64,10 +64,10 @@
 <div class="row" *ngIf="mostrarPreguntas">
   <div class="col-4"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+    <button class="sa-btn" (click)="siguientePregunta(1)"><p>Positivo</p></button>
   </div>
   <div class="col-3">
-    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+    <button class="sa-btn1" (click)="siguientePregunta(0)"><p>Negativo</p></button>
   </div>
 </div>
 
@@ -115,6 +115,6 @@
 <div class="row" *ngIf="mostrarRespuestas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" (click)="agregarRespuestaAreaNueve()">Siguiente</button>
+    <button class="sa-btn" (click)="agregarRespuestaAreaNueve()"><p>Siguiente</p></button>
   </div>
 </div>

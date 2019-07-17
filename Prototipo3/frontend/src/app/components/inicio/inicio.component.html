@@ -1,788 +1,211 @@
-<!--Cabecera-->
-<div class="row">
-  <ngb-carousel *ngIf="images" style="width: 100%">
-    <ng-template ngbSlide>
-      <img [src]="images[0]" style="width: 100%" alt="Objetivo General">
-      <div class="carousel-caption">
-        <!--<h3>Objetivo General</h3>-->
-        <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="images[1]"  style="width: 100%" alt="Objetivos Especificos">
-      <div class="carousel-caption">
-        <!--<h3>Objetivos Especificos</h3>-->
-        <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <img [src]="images[2]" style="width: 100%" alt="Utilidad">
-      <div class="carousel-caption">
-        <!--<h3>Objetivos Especificos</h3>-->
-        <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
-      </div>
-    </ng-template>
-  </ngb-carousel>
+<div class="row" style="background-color: midnightblue">
+  <div class="row">
+    <div class="col-4"></div>
+    <div class="col-4">
+      <img style="height: 100% ;width: 100%" src="imagenes/inicio/logo.png">
+    </div>
+    <div class="col-4"></div>
+  </div>
 </div>
-<!--Arbol-->
 
+<!--Cabecera-->
+<div class="row"  style="background-color: aliceblue">
+  <div class="col-3" style="background-color: aliceblue">
+    <div class="row" style="background-color: aliceblue">
+      <div class="col-4"></div><h5>PRUEBA</h5></div>
+    <!--Prueba Inicial-->
+    <mat-accordion>
+    <mat-expansion-panel (opened)="panel2 = true"
+                         (closed)="panel2 = false">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <b>Prueba Inicial</b>
+        </mat-panel-title>
+        <mat-panel-description>
 
-<mat-accordion>
-  <mat-expansion-panel (opened)="panelOpenState = true"
-                       (closed)="panelOpenState = false">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Prueba de Funciones Básicas
-      </mat-panel-title>
-      <mat-panel-description>
-        Rendir prueba
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <p>El objetivo general de la prueba de Funciones Básicas es
-      diagnosticar el nivel en el que se encuentran las Funciones Básicas indispensables para
-      el aprendizaje de la lectoescritura de los estudiantes del programa.</p>
-    <!--Primer hedder-->
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div class="row">
+        <p>Exclusiva para los estudiantes que ingresan a primero de básica </p>
+      </div>
+      <div class="row">
+        <button (click)="iniciarTest()" mat-flat-button style="background-color: #66CC44 ;width: 100% "><p>Comenzar Prueba</p></button>
+      </div>
+    </mat-expansion-panel>
+    </mat-accordion>
+    <!--Prueba Final-->
     <mat-accordion>
       <mat-expansion-panel (opened)="panel2 = true"
                            (closed)="panel2 = false">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Prueba Inicial
-          </mat-panel-title>
-          <mat-panel-description>
-            Inicio de Curso
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-          <div class="row">
-            <div class="col-4">
-              <div class="row">
-                <h6>Objetivo</h6>
-              </div>
-              <div class="row">
-                <p>Diagnosticar el estado de las Funciones Básicas de los estudiantes que ingresan por
-                  primera vez a la escuela.</p>
-              </div>
-              <div class="row"><br></div>
-              <div class="row"><h6>Recursos</h6></div>
-              <div class="row">
-                <ul>
-                  <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
-                  <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
-                    de papel (o una botella) y pelota.</p></li>
-                  <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
-                    tener a mano un cuadernillo de calificación.</p></li>
-                </ul>
-              </div>
-              <div class="row">
-                <div class="col-5"></div>
-                <div class="col-7">
-                  <a href={{cuadernillo}}>
-                    <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
-                  </a>
-                </div>
-              </div>
-
-            </div>
-            <div class="col-4">
-              <div class="row">
-                <h6>Características</h6>
-              </div>
-              <div class="row">
-                <div class="col-1">
-                </div>
-                <div class="col-11">
-                  <ul>
-                    <li><p>Esta prueba es individual.</p></li>
-                    <li><p>El tiempo de aplicación es libre</p></li>
-                    <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
-                    <li><p>Esta prueba examina diecisiete áreas.</p></li>
-                    <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
-                      actividades para desarrollar estas áreas</p></li>
-                    <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
-                      aprendizaje y desarrollo de la lectura y escritura.</p></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                  <img src={{imagenTestI}} style="height: 100%; width: 100%">
-                </div>
-              </div>
-              <div class="row"><br><br><br></div>
-              <div class="row">
-                <div class="col-3"></div>
-                <div class="col-6">
-                  <button (click)="iniciarTest()" mat-flat-button style="background-color: #66CC44 ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-
-      </mat-expansion-panel>
-    </mat-accordion>
-
-    <!--segundo hedder-->
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panel3 = true"
-                           (closed)="panel3 = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Prueba Final
-          </mat-panel-title>
-          <mat-panel-description>
-            Fin de Curso
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-        <div class="row">
-          <div class="col-4">
-            <div class="row">
-              <h6>Objetivo</h6>
-            </div>
-            <div class="row">
-              <p>Identificar a estudiantes que no adquirieron la lectoescritura en el proceso escolar.
-                Establecer los tipos de dificultades que presentan los estudiantes en lectura y
-                escritura.</p>
-            </div>
-            <div class="row"><br></div>
-            <div class="row"><h6>Recursos</h6></div>
-            <div class="row">
-              <ul>
-                <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
-                <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
-                  de papel (o una botella) y pelota.</p></li>
-                <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
-                  tener a mano un cuadernillo de calificación</p></li>
-              </ul>
-            </div>
-            <div class="row">
-              <div class="col-5"></div>
-              <div class="col-7">
-                <a href={{cuadernillo}}>
-                  <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
-                </a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-4">
-            <div class="row">
-              <h6>Características</h6>
-            </div>
-            <div class="row">
-              <div class="col-1">
-              </div>
-              <div class="col-11">
-                <ul>
-                  <li> <p>Esta prueba es tomada al final del año lectivo.</p></li>
-                  <li><p>Esta prueba es individual.</p></li>
-                  <li><p>El tiempo de aplicación es libre</p></li>
-                  <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
-                  <li><p>Esta prueba examina diecisiete áreas.</p></li>
-                  <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
-                    actividades para desarrollar estas áreas</p></li>
-                  <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
-                    aprendizaje y desarrollo de la lectura y escritura.</p></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <img src={{imagenTestF}} style="height: 100%; width: 100%">
-              </div>
-            </div>
-            <div class="row"><br><br><br></div>
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <button (click)="iniciarReTest()" mat-flat-button style="background-color: greenyellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </mat-expansion-panel>
-    </mat-accordion>
-
-    <!--Tercer -->
-
-    <mat-accordion>
-      <mat-expansion-panel (opened)="panel3 = true"
-                           (closed)="panel3 = false">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            Prueba Libre
+            <b>Prueba Final</b>
           </mat-panel-title>
           <mat-panel-description>
 
           </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="row">
-          <div class="col-4">
-            <div class="row">
-              <h6>Objetivo</h6>
-            </div>
-            <div class="row">
-              <p>Identificar a estudiantes que no adquirieron la lectoescritura en el proceso escolar.
-                Establecer los tipos de dificultades que presentan los estudiantes en lectura y
-                escritura.</p>
-            </div>
-            <div class="row"><br></div>
-            <div class="row"><h6>Recursos</h6></div>
-            <div class="row">
-              <ul>
-                <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
-                <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
-                  de papel (o una botella) y pelota.</p></li>
-                <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
-                  tener a mano un cuadernillo de calificación</p></li>
-              </ul>
-            </div>
-            <div class="row">
-              <div class="col-5"></div>
-              <div class="col-7">
-                <a href={{cuadernillo}}>
-                  <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
-                </a>
-              </div>
-            </div>
-
-          </div>
-          <div class="col-4">
-            <div class="row">
-              <h6>Características</h6>
-            </div>
-            <div class="row">
-              <div class="col-1">
-              </div>
-              <div class="col-11">
-                <ul>
-                  <li> <p>Esta prueba es tomada al final del año lectivo.</p></li>
-                  <li><p>Esta prueba es individual.</p></li>
-                  <li><p>El tiempo de aplicación es libre</p></li>
-                  <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
-                  <li><p>Esta prueba examina diecisiete áreas.</p></li>
-                  <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
-                    actividades para desarrollar estas áreas</p></li>
-                  <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
-                    aprendizaje y desarrollo de la lectura y escritura.</p></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-4">
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <img src={{imagenTestF}} style="height: 100%; width: 100%">
-              </div>
-            </div>
-            <div class="row"><br><br><br></div>
-            <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
-                <button (click)="iniciarFreeTest()" mat-flat-button style="background-color: greenyellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
-              </div>
-            </div>
-
-          </div>
+          <p>Exclusiva para los estudiantes que terminan el primero de básica </p>
         </div>
+        <div class="row">
+          <button (click)="iniciarReTest()" mat-flat-button style="background-color: greenyellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <div class="row" style="background-color: aliceblue">
+      <div class="col-4"></div><h5>ESTADÍSTICA</h5></div>
+    <!--Estadisticas Prueba inicial-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel5 = true"
+                           (closed)="panel5 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Estadísticas Prueba Inicial</b>
+          </mat-panel-title>
+          <mat-panel-description>
 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Seleccione el año lectivo</p>
+        <button  mat-button (click)="irEstadisticas('0',anio1,'Inicial')" *ngFor="let anio1 of anioLectivo" style="background-color: #66CC44  ; width: 45%"><p>{{anio1}}</p></button>
 
       </mat-expansion-panel>
     </mat-accordion>
+    <!--Estadisticas prueba final-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel6 = true"
+                           (closed)="panel6 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Estadísticas Prueba Final</b>
+          </mat-panel-title>
+          <mat-panel-description>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <p>Seleeccione el año lectivo y el paralelo</p>
+        <button mat-button [matMenuTriggerFor] = "estadisticas" (click)="getAnio(anio)" *ngFor="let anio of anioLectivo" style="background-color: greenyellow  ; width: 45%"><p>{{anio}}</p></button>
+        <mat-menu #estadisticas="matMenu">
+          <button mat-menu-item  *ngFor="let curso of cursos"  (click)="irEstadisticas('1',anio,curso)"  >Paralelo {{curso}}</button>
+        </mat-menu>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <br>
+    <div class="row" style="background-color: white"><br></div>
+    <div class="row" style="background-color: aliceblue">
+      <div class="col-4"></div><h5>PRUEBA LIBRE</h5></div>
+    <!--Prueba Libre-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Prueba Libre</b>
+          </mat-panel-title>
+          <mat-panel-description>
 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>Se aplica a estudiantes de primero a séptimo de básica </p>
+        </div>
+        <div class="row">
+          <button (click)="iniciarFreeTest()" mat-flat-button style="background-color: yellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>Lista de Estudiantes</b>
+          </mat-panel-title>
+          <mat-panel-description>
 
-  </mat-expansion-panel>
-</mat-accordion>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>Seleccione el año lectivo </p>
+        </div>
+        <div class="row">
+          <button  mat-button (click)="irEstadisticasLibre('2',anio1)" *ngFor="let anio1 of anioLectivo" style="background-color: yellow  ; width: 45%"><p>{{anio1}}</p></button>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
 
-<!--Estadisticas-->
-
-<mat-accordion>
-  <mat-expansion-panel (opened)="panel4 = true"
-                       (closed)="panel4 = false">
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        Estadísticas
-      </mat-panel-title>
-      <mat-panel-description>
-        Cuadros Estadísticos
-      </mat-panel-description>
-    </mat-expansion-panel-header>
+  </div>
+  <div class="col-9">
     <div class="row">
-      <div class="col-1"></div>
-      <div class="col-10">
-        <div class="row">
-          <p>
-            Con esta prueba podemos elaborar cuadros estadísticos que nos dan un
-            perfil del estado de las funciones básicas tanto individual como grupal que requieren
-            atención para lograr un adecuado aprendizaje de la lecto-escritura.
-          </p>
-        </div>
-
-        <div class="row">
-          <div class="col-6">
-            <mat-accordion>
-              <mat-expansion-panel (opened)="panel5 = true"
-                                   (closed)="panel5 = false">
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Estadísticas Prueba Inicial
-                  </mat-panel-title>
-                  <mat-panel-description>
-                    Por año lectivo
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <button mat-button (click)="irEstadisticas('0',anio1,'Inicial')" *ngFor="let anio1 of anioLectivo" style="background-color: transparent  ; width: 45%"><p>{{anio1}}</p></button>
-
-              </mat-expansion-panel>
-            </mat-accordion>
+      <ngb-carousel *ngIf="images" style="width: 100%">
+        <ng-template ngbSlide>
+          <img [src]="images[0]" style="width: 100%" alt="Objetivo General">
+          <div class="carousel-caption">
+            <!--<h3>Objetivo General</h3>-->
+            <!--<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>-->
           </div>
-          <div class="col-6">
-            <mat-accordion>
-              <mat-expansion-panel (opened)="panel6 = true"
-                                   (closed)="panel6 = false">
-                <mat-expansion-panel-header>
-                  <mat-panel-title>
-                    Estadísticas Prueba Final
-                  </mat-panel-title>
-                  <mat-panel-description>
-                    Por año lectivo
-                  </mat-panel-description>
-                </mat-expansion-panel-header>
-                <button mat-button [matMenuTriggerFor] = "estadisticas" (click)="getAnio(anio)" *ngFor="let anio of anioLectivo" style="background-color: transparent  ; width: 45%"><p>{{anio}}</p></button>
-                <mat-menu #estadisticas="matMenu">
-                  <button mat-menu-item  *ngFor="let curso of cursos"  (click)="irEstadisticas('1',anio,curso)"  >Paralelo {{curso}}</button>
-                </mat-menu>
-              </mat-expansion-panel>
-            </mat-accordion>
+        </ng-template>
+        <ng-template ngbSlide>
+          <img [src]="images[1]"  style="width: 100%" alt="Objetivos Especificos">
+          <div class="carousel-caption">
+            <!--<h3>Objetivos Especificos</h3>-->
+            <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>-->
           </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-
-  </mat-expansion-panel>
-</mat-accordion>
-
-<!--Datos-->
-<div class="row"><br></div>
-<div class="row">
-  <div class="row"><br></div>
-  <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-      <img src="{{title[0]}}" style="height: auto;width: 100%" >
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-11">
-      <img src="{{title[1]}}" style="height: auto;width: 100%" >
+        </ng-template>
+        <ng-template ngbSlide>
+          <img [src]="images[2]" style="width: 100%" alt="Utilidad">
+          <div class="carousel-caption">
+            <!--<h3>Objetivos Especificos</h3>-->
+            <!--<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>-->
+          </div>
+        </ng-template>
+      </ngb-carousel>
     </div>
   </div>
 </div>
-<!--Contenido-->
-<div class="row"><br><br><br></div>
-<div class="row">
+
+
+<footer style="background-color: dimgray">
   <div class="row">
-    <div class="col-2"></div>
+    <div class="col-1"></div>
+    <div class="col-5">
+      <h3 style="color: white">Objetivo</h3>
+      <p style="color: white">El objetivo general de la prueba de Funciones Básicas es
+        diagnosticar el nivel en el que se encuentran las Funciones Básicas indispensables para
+        el aprendizaje de la lectoescritura</p>
+    </div>
+    <div class="col-2">
+      <h3 style="color: white">Recursos</h3>
+      <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+          <div class="row">
+            <a style="color: aqua" href={{cuadernillo[0]}}>
+              Cuadernillo
+            </a>
+          </div>
+          <div class="row">
+
+            <a style="color: aqua" href={{cuadernillo[1]}}>
+              Manual
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
     <div class="col-3">
-      <h1>Proceso</h1>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-3">
+      <h3 style="color: white">Contáctanos</h3>
       <div class="row">
-        <div class="row">
-          <p>Se maneja el concepto de Funciones Básicas para designar operacionalmente,
-            determinados aspectos, que el estudiante, antes del ingreso a un sistema escolar, debe
-            haberlos adquirido para que de esta manera pueda enfrentar adecuadamente
-            cualquier aprendizaje.</p>
+        <div class="col-1"></div>
+        <div class="col-10">
+          <p style="color: white">tania.gallar@epn.edu.ec</p>
+          <p style="color: white">jonathan.paez@epn.edu.ec</p>
         </div>
-        <br>
-        <div class="row">
-          <p>Cada una de las 17 áreas fueron estudiadas individualmente en un proceso de cuatro etapas:
-          </p>
-          <ul>
-            <li><p>El primer paso fue desarrollar un bosquejo de la aplicación web en papel.</p></li>
-            <li><p>Una vez que el bosquejo fue aprobado por los Psicólogos, se probó la navegabilidad y
-              el uso del bosquejo en la computadora para someterlo a un análisis y un proceso de mejora.</p></li>
-            <li><p>Una vez aprobada el área se realizó el mismo proceso para completar la prueba de Funciones Básicas.</p></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="col-7">
-      <img src="{{title[2]}}" style="border: solid 2px;height: auto;width: 100%" >
-    </div>
-  </div>
-</div>
-<!--area 1-->
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Esquema corporal</h1>
-      </div>
-      <div class="row">
-        <p>Es la conciencia que tiene el individuo de las partes de su cuerpo y del funcionamiento
-          correspondiente de cada una de ellas, con las cuales logra ejecutar múltiples acciones
-          manteniendo su estructura corporal como una unidad.</p>
+
       </div>
     </div>
   </div>
-</div>
-<!--area 2-->
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Dominancia lateral</h1>
-      </div>
-      <div class="row">
-        <p>Es la prevalencia en el sujeto de uno de los hemisferios cerebrales (izquierdo -
-          derecho). Cuando predomina el izquierdo la persona es diestra de ojo, oído, mano y
-          pie; aquí se encuentran las zonas del lenguaje, por ésta razón los sujetos tienen mayor
-          habilidad en el habla, escritura, lógica matemática y ciencias. Al predominar el
-          hemisferio derecho, la persona es zurda, aquí se encuentran las zonas espaciales y por
-          esta razón los sujetos tienen mayor habilidad en construcción espacial, pensamiento
-          creativo, fantasía, apreciación artística y musical. </p>
-      </div>
-      <br>
-      <div class="row">
-        <p>
-          Cuando la persona toma conciencia de que posee segmentos diestros y siniestros
-          (zurdo) en su cuerpo, se denomina lateralidad y cuando se proyecta la lateralidad al
-          espacio, se refiere a la direccionalidad. Dentro del proceso educativo, es fundamental
-          alcanzar la dominancia lateral como pre-requisito para el aprendizaje de la lectoescritura.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Orientación</h1>
-      </div>
-      <div class="row">
-        <p><b>Orientación Temporal:</b> Se refiere a la ubicación del sujeto en el tiempo: hora, día, semana, mes y año.</p>
-        <p><b>Orientación espacial:</b> Es la posición del cuerpo en relación a su entorno: personas, objetos y ambiente
-          próximo.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Coordinación dinámica</h1>
-      </div>
-      <div class="row">
-        <p>Son movimientos amplios y globales con las partes gruesas del cuerpo: cabeza, tronco
-          y extremidades; aquí también intervienen movimientos armónicos y uniformes de la
-          mano, que se alcanzan mediante el desarrollo de los músculos de este segmento
-          corporal.</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Receptiva auditiva</h1>
-      </div>
-      <div class="row">
-        <p>Se produce cuando un estímulo sonoro genera un grado de excitabilidad a nivel de los
-          centros nerviosos especializados, dando lugar a la identificación de lo escuchado.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Receptiva visual</h1>
-      </div>
-      <div class="row">
-        <p>Es la capacidad de receptar impresiones materiales que produce un estímulo visual y la
-          concienciación del mismo a nivel de la corteza cerebral; constituyéndose en la base
-          para una buena discriminación y memoria visual. </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Asociación auditiva</h1>
-      </div>
-      <div class="row">
-        <p>Esta área comprende tres aspectos: percepción, discriminación y memoria auditiva.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del Programa.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Expresivo manual</h1>
-      </div>
-      <div class="row">
-        <p>Es la facultad para acoplar los movimientos del cuerpo o parte de él, en base a los
-          estímulos auditivos percibidos.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Cierre auditivo vocal</h1>
-      </div>
-      <div class="row">
-        <p>Es la habilidad para integrar, fijar y evocar estímulos sonoros en forma secuencial.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Pronunciación</h1>
-      </div>
-      <div class="row">
-        <p>Es la facultad que permite expresar clara, organizada y bien articulada una o varias
-          palabras. Es el ejercicio mismo del lenguaje.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Memoria secuencia auditiva</h1>
-      </div>
-      <div class="row">
-        <p>Es la habilidad que permite adquirir, retener y exponer hechos, que han estimulado el
-          órgano auditivo.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Coordinación visual-auditivo-motora (ritmo)</h1>
-      </div>
-      <div class="row">
-        <p>Es la respuesta armónica motriz ante un patrón visual o un auditivo (sonidos separados
-          por intervalos), que se manifiestan a través de pulsaciones (palmadas, golpes,
-          metrónomo).
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Memoria visual
-        </h1>
-      </div>
-      <div class="row">
-        <p>Es la facultad para fijar y evocar los estímulos visuales percibidos.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Discriminación auditiva
-        </h1>
-      </div>
-      <div class="row">
-        <p>Es la capacidad para diferenciar la intensidad, timbre, calidad y características del
-          estímulo sonoro. “Percepción sonido-fondo” es la distinción del origen de dos, tres o
-          más sonidos que se producen a la vez.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Coordinación visomotora
-        </h1>
-      </div>
-      <div class="row">
-        <p>Es la coordinación entre el movimiento, espacio y tiempo. El movimiento se refiere a la
-          actividad ejecutada por la mano durante la escritura. El espacio es el lugar que ocupa
-          cada letra en el papel. El tiempo es período de duración que se emplea al dibujar las
-          letras. Es importante evaluar la coordinación visomotora, porque puede presentarse
-          una sobrecarga en ésta área dando lugar a que el estudiante escriba pero no lea.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Desarrollo manual
-        </h1>
-      </div>
-      <div class="row">
-        <p>Intervienen muchos elementos motores y viso espaciales tales como: tono muscular,
-          postura muscular, predominio lateral, disociación y coordinación de movimientos,
-          direccionalidad, sentido de rotación, precisión, continuidad, prehensión del
-          instrumento.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!--area-->
-
-<div class="row">
-  <div class="row">
-    <div class="col-1"></div>
-    <div class="col-10">
-      <div class="row">
-        <h1>Atención y fatiga
-        </h1>
-      </div>
-      <div class="row">
-        <p>Demanda de una atención visual concentrada, memoria visul inmediata, aptitud
-          visoperceptiva, rapidez de ejecución manual.
-          Diagnosticar el nivel en el que se encuentran las funciones básicas indispensables para
-          el aprendizaje de la lectoescritura de los estudiantes del programa.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="row" style="background-color: cornflowerblue">
-  <br>
-  <br>
-  <br>
-</div>
+</footer>

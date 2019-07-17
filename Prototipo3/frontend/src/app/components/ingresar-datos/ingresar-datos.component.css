@@ -21,6 +21,20 @@ input:invalid {
   border-color: tomato;
 }
 
+input:valid{
+  border-color: cornflowerblue;
+}
+
+select:invalid{
+  border-color: tomato;
+  color: dimgray;
+}
+
+select:valid{
+  border-color: cornflowerblue;
+  color: dimgray;
+}
+
 h1 {
   font-size: 3vw;
 }
@@ -42,5 +56,18 @@ h5 {
 }
 
 p {
+  font-size: 1.2vw;
+}
+
+span{
+  font-size: 1.2vw;
+  color: dimgray;
+}
+
+input{
+  font-size: 1.2vw;
+}
+
+select{
   font-size: 1.2vw;
 }

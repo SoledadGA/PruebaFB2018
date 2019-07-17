@@ -44,9 +44,10 @@ export class AreaDieciseisComponent implements OnInit {
   mensaje_computadora = 'Se considera como área negativa.';
   respuesta_papel = 1;
   respuestaFinal = 'Área Debilitada';
+  respuestaFinal1 = 'Se considera área debilitada.';
   mensaje_papel = 'Diagnostica atención y fatiga.\n';
   mensaje_papel_2 = 'Se debe realizar de izquierda a derecha y de arriba hacia abajo.\n' +
-    'No se admite que haga bombas o rallas, además no debe saltarse cuadros.';
+    'No se admite que haga bombas o rayas, además no debe saltarse cuadros.';
 
 
   siguientePregunta(numero: number) {
@@ -56,7 +57,8 @@ export class AreaDieciseisComponent implements OnInit {
     this.getEstudiante();
     if (numero == 1){
       this.respuesta_papel = 0;
-      this.respuestaFinal = 'Área Positiva'
+      this.respuestaFinal = 'Área Positiva';
+      this.respuestaFinal1 = 'Se considera área positiva.';
     }
   }
   terminar_ejemplo() {

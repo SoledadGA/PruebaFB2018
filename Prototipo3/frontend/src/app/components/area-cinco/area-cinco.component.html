@@ -29,8 +29,8 @@
 <div class="row" *ngIf="mostrarPreguntas"><br><br><br></div>
 <div class="row"*ngIf="mostrarPreguntas">
   <div class="col-4"></div>
-  <div class="col-2"   ><button style="background: cornflowerblue ; width: 100% ; height: 200% "(click)="siguiente('Si')" >Sí</button></div>
-  <div class="col-3"  ><button style="background: cornflowerblue ; width: 65%; height: 200% " (click)="siguiente('No')" >No</button></div>
+  <div class="col-2"   ><button style="background: cornflowerblue ; width: 100% ; height: 125% "(click)="siguiente('Si')" ><p>Sí</p></button></div>
+  <div class="col-3"  ><button style="background: cornflowerblue ; width: 65%; height: 125% " (click)="siguiente('No')" ><p>No</p></button></div>
 </div>
 
 <div class="row" *ngIf="!mostrarPreguntas">
@@ -75,6 +75,6 @@
 <div class="row" *ngIf="!mostrarPreguntas">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button style="background: cornflowerblue ; width: 100% ; height: 200% " (click)="agregarRespuestaAreaCinco()">Siguiente</button>
+    <button style="background: cornflowerblue ; width: 100% ; height: 150% " (click)="agregarRespuestaAreaCinco()"><p>Siguiente</p></button>
   </div>
 </div>

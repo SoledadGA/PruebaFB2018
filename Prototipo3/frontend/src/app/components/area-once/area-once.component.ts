@@ -21,7 +21,7 @@ export class AreaOnceComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio.';
   areaDebilitada = 'Se considera como área debilitada.';
   areaPositiva = 'Se considera como área positiva.';
-  queDiagnostica = 'Diagnóstico la memoria auditiva del estudiante.';
+  queDiagnostica = 'Diagnostica la memoria auditiva del estudiante.';
   instruccion = '"Escucha y repite después de mí."';
   explicacionBotonVerde = 'Si la respuesta es correcta y el estudiante tiene 5 años o menos, utilizar el botón verde.' +
     ' Caso contrario, si la respuesta es incorrecta dar clic en el botón Negativo y continuar con la prueba.';

@@ -53,10 +53,10 @@
 <div class="row" *ngIf="mostrar_ejercicio_en_papel">
   <div class="col-4"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" (click)="siguientePregunta(1)">Positivo</button>
+    <button class="sa-btn" (click)="siguientePregunta(1)"><p>Positivo</p></button>
   </div>
   <div class="col-3">
-    <button class="sa-btn1" (click)="siguientePregunta(0)">Negativo</button>
+    <button class="sa-btn1" (click)="siguientePregunta(0)"><p>Negativo</p></button>
   </div>
 </div>
 
@@ -73,7 +73,7 @@
 <div class="row" *ngIf="mostrar_respuesta">
   <div class="col-1"><p></p></div>
   <div class="col-10 sa-centrar" *ngIf="mostrar_respuesta_papel">
-    <h5>{{respuestaFinal}}</h5>
+    <h5>{{respuestaFinal1}}</h5>
   </div>
   <div class="col-1"><p></p></div>
 </div>
@@ -83,6 +83,6 @@
 <div class="row" *ngIf="mostrar_respuesta">
   <div class="col-10"><p></p></div>
   <div class="col-2">
-    <button class="sa-btn" (click)="agregarRespuestaAreaDieciseis()">Siguiente</button>
+    <button class="sa-btn" (click)="agregarRespuestaAreaDieciseis()"><p>Siguiente</p></button>
   </div>
 </div>

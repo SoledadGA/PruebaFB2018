@@ -21,7 +21,7 @@ export class AreaQuinceComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio.';
   areaDebilitada = 'Se considera como área debilitada.';
   areaPositiva = 'Se considera como área positiva.';
-  queDiagnostica = 'Diagnóstica coordinación visomotora.';
+  queDiagnostica = 'Diagnostica coordinación visomotora.';
   instruccion = 'Mira y copia este dibujo en una hoja.';
   preguntas = [
     'imagenes/area15/1.png',

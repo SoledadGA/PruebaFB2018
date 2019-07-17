@@ -51,6 +51,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {MatCardModule} from '@angular/material/card';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { EstadisticasFreeComponent } from './components/estadisticas-free/estadisticas-free.component';
+import {MatStepperModule} from '@angular/material/stepper';
 
 @NgModule({
   declarations: [
@@ -106,6 +107,7 @@ import { EstadisticasFreeComponent } from './components/estadisticas-free/estadi
     FormsModule,
     HttpClientModule,
     MatExpansionModule,
+    MatStepperModule,
 
 
   ],

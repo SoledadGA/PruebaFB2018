@@ -13,45 +13,52 @@ export class IngresarDatosComponent implements OnInit {
   checkControlador = false;
   identificador = localStorage.getItem('tipoTest');
   anioEGB = ['Primero'];
-  anioEGB1 = ['Primero','Segundo','Tercero','Cuarto','Quinto','Sexto','Septimo'];
-  paralelo = ['A','B','C','D','E','F'];
+  anioEGB1 = ['Primero', 'Segundo', 'Tercero', 'Cuarto', 'Quinto', 'Sexto', 'Séptimo'];
+  paralelo = ['A', 'B', 'C', 'D', 'E', 'F'];
   fecha = new Date();
   txtFecha = (this.fecha.getDate() + '/' + (this.fecha.getMonth() + 1) + '/' + (this.fecha.getFullYear()));
   anioLectivo = [this.fecha.getFullYear() - 1, this.fecha.getFullYear()];
   mostrar = false;
-  tipoPrueba = 0 ;
-  Fechita  = '';
+  tipoPrueba = 0;
+  Fechita = '';
   discapacidad = '';
+  nombreIncorrecto = false;
+  anioLectivoIncorrecto = false;
+  cursoIncorrecto = false;
+  paraleloIncorrecto = false;
+  evaluadorIncorrecto = false;
 
-  iniciarFecha(){
+  iniciarFecha() {
     this.Fechita = this.txtFecha;
   }
-  tipoTest(){
-    if(this.identificador == 'reTest'){
+
+  tipoTest() {
+    if (this.identificador == 'reTest') {
       this.mostrar = true;
-      this.tipoPrueba = 1 ;
+      this.tipoPrueba = 1;
     }
-    if(this.identificador == 'freeTest'){
+    if (this.identificador == 'freeTest') {
       this.mostrar = true;
-      this.tipoPrueba = 2 ;
+      this.tipoPrueba = 2;
       console.log(this.tipoPrueba);
       this.anioEGB = this.anioEGB1;
     }
   }
 
-  check(){
-    if(this.checkControlador){
+  check() {
+    if (this.checkControlador) {
       this.checkControlador = false;
       localStorage.setItem('discapacidad', 'no');
       console.log('no');
 
     }
     else {
-      this.checkControlador =true;
+      this.checkControlador = true;
       localStorage.setItem('discapacidad', 'si');
       console.log('chi');
     }
   }
+
   constructor(private estServ: EstudianteService) {
     this.iniciarFecha();
     console.log(this.Fechita);
@@ -61,46 +68,61 @@ export class IngresarDatosComponent implements OnInit {
     this.tipoTest();
 
   }
+
   guardar(form: NgForm) {
-
-    if(this.tipoPrueba == 0){
-      if(form.controls['nombreEstudiante'].value==''){
-        window.alert('Favor ingresar el nombre del Estudiante');
-
+    var constante = 0;
+    if (this.tipoPrueba == 0) {
+      if (form.controls['nombreEstudiante'].value == '') {
+        this.nombreIncorrecto = true;
+        //window.alert('Favor ingresar el nombre del Estudiante');
       }
-      if(form.controls['anioLectivo'].value==''){
-        window.alert('Favor ingresar el año lectivo');
+      if (form.controls['anioLectivo'].value === '') {
+        this.anioLectivoIncorrecto = true;
+        constante = 1;
+        //window.alert('Favor ingresar el año lectivo');
       }
-      if(form.controls['anioEGB'].value==''){
-        window.alert('Favor ingresar el año EGB');
+      if (form.controls['anioEGB'].value == '') {
+        constante = 1;
+        this.cursoIncorrecto = true;
+        //window.alert('Favor ingresar el año EGB');
       }
-      if(form.controls['nombreEvaluador'].value==''){
-        window.alert('Favor ingresar el nombre del evaluador');
+      if (form.controls['nombreEvaluador'].value == '') {
+        this.evaluadorIncorrecto = true;
+        //window.alert('Favor ingresar el nombre del evaluador');
       }
-      else{
+      if ( constante == 0){
         console.log(form.value);
         this.estServ.postEstudiante(form.value).subscribe(res => {
           console.log(res)
         });
         location.href = '/#/areaUno';
       }
-    }else{
+    } else {
 
-      if(form.controls['nombreEstudiante'].value==''){
-        window.alert('Favor ingresar el nombre del Estudiante');
+      if (form.controls['nombreEstudiante'].value == '') {
+        this.nombreIncorrecto = true;
+        //window.alert('Favor ingresar el nombre del Estudiante');
       }
-      if(form.controls['anioLectivo'].value==''){
-        window.alert('Favor ingresar el año lectivo');
+      if (form.controls['anioLectivo'].value == '') {
+        constante = 1;
+        this.anioLectivoIncorrecto = true;
+        //window.alert('Favor ingresar el año lectivo');
       }
-      if(form.controls['anioEGB'].value==''){
-        window.alert('Favor ingresar el año EGB');
+      if (form.controls['anioEGB'].value == '') {
+        constante = 1;
+        this.cursoIncorrecto = true;
+        //window.alert('Favor ingresar el año EGB');
       }
-      if(form.controls['paralelo'].value==''){
-        window.alert('Favor ingresar el paralelo');
+      if (form.controls['paralelo'].value == '') {
+        constante = 1;
+        this.paraleloIncorrecto = true;
+        //window.alert('Favor ingresar el paralelo');
       }
-      if(form.controls['nombreEvaluador'].value==''){
-        window.alert('Favor ingresar el nombre del evaluador');
-      }else{
+      if (form.controls['nombreEvaluador'].value == '') {
+        this.evaluadorIncorrecto = true;
+        //window.alert('Favor ingresar el nombre del evaluador');
+      }
+      if( constante == 0) {
         console.log(form.value);
         this.estServ.postEstudiante(form.value).subscribe(res => {
           console.log(res)
@@ -111,7 +133,6 @@ export class IngresarDatosComponent implements OnInit {
     }
 
   }
-
 
 
 }

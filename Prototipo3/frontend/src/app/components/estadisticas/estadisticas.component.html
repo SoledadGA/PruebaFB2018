@@ -1,9 +1,21 @@
 <!--Cabecera-->
-<div class="row" *ngIf="mostrarCabecera">
+<!--<div class="row" *ngIf="mostrarCabecera">-->
+  <!--<div class="row">-->
+    <!--<div class="col-sm-12">-->
+      <!--<img src="{{cabecera}}" style="height: auto;width: 100%">-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<div class="row" *ngIf="mostrarCabecera" style="background-color: midnightblue">
   <div class="row">
-    <div class="col-sm-12">
-      <img src="{{cabecera}}" style="height: auto;width: 100%">
+    <div class="col-4"><br><br><br></div>
+    <div class="col-4">
+      <button mat-flat-button [routerLink]="['/home']"
+              style="background-color: transparent ;width: 180% ; height: 100% "> <img style="height: 100% ;width: 100%" src="imagenes/inicio/logo.png">
+      </button>
     </div>
+
   </div>
 </div>
 

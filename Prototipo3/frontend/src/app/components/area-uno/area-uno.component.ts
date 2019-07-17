@@ -107,6 +107,7 @@ export class AreaUnoComponent implements OnInit {
   Fechita  = '';
   id = '';
   contadorDiscapacidad = 0;
+  mostrarCabecera = false;
 
   iniciarFecha(){
     this.Fechita = this.txtFecha;
@@ -313,6 +314,7 @@ export class AreaUnoComponent implements OnInit {
   comenzar(){
     this.mostrarDatos = false;
     this.mostrarEjemplo = true;
+    this.mostrarCabecera = true;
   }
 
 

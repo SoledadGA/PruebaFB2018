@@ -1,1 +1,353 @@
 
+<!--Arbol-->
+
+
+<mat-accordion>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Prueba de Funciones Básicas
+      </mat-panel-title>
+      <mat-panel-description>
+        Rendir prueba
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>El objetivo general de la prueba de Funciones Básicas es
+      diagnosticar el nivel en el que se encuentran las Funciones Básicas indispensables para
+      el aprendizaje de la lectoescritura de los estudiantes del programa.</p>
+    <!--Primer hedder-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Prueba Inicial
+          </mat-panel-title>
+          <mat-panel-description>
+            Inicio de Curso
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-4">
+            <div class="row">
+              <h6>Objetivo</h6>
+            </div>
+            <div class="row">
+              <p>Diagnosticar el estado de las Funciones Básicas de los estudiantes que ingresan por
+                primera vez a la escuela.</p>
+            </div>
+            <div class="row"><br></div>
+            <div class="row"><h6>Recursos</h6></div>
+            <div class="row">
+              <ul>
+                <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
+                <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
+                  de papel (o una botella) y pelota.</p></li>
+                <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
+                  tener a mano un cuadernillo de calificación.</p></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-5"></div>
+              <div class="col-7">
+                <a href={{cuadernillo}}>
+                  <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <h6>Características</h6>
+            </div>
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li><p>Esta prueba es individual.</p></li>
+                  <li><p>El tiempo de aplicación es libre</p></li>
+                  <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
+                  <li><p>Esta prueba examina diecisiete áreas.</p></li>
+                  <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
+                    actividades para desarrollar estas áreas</p></li>
+                  <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
+                    aprendizaje y desarrollo de la lectura y escritura.</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <img src={{imagenTestI}} style="height: 100%; width: 100%">
+              </div>
+            </div>
+            <div class="row"><br><br><br></div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <button (click)="iniciarTest()" mat-flat-button style="background-color: #66CC44 ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <!--segundo hedder-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel3 = true"
+                           (closed)="panel3 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Prueba Final
+          </mat-panel-title>
+          <mat-panel-description>
+            Fin de Curso
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-4">
+            <div class="row">
+              <h6>Objetivo</h6>
+            </div>
+            <div class="row">
+              <p>Identificar a estudiantes que no adquirieron la lectoescritura en el proceso escolar.
+                Establecer los tipos de dificultades que presentan los estudiantes en lectura y
+                escritura.</p>
+            </div>
+            <div class="row"><br></div>
+            <div class="row"><h6>Recursos</h6></div>
+            <div class="row">
+              <ul>
+                <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
+                <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
+                  de papel (o una botella) y pelota.</p></li>
+                <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
+                  tener a mano un cuadernillo de calificación</p></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-5"></div>
+              <div class="col-7">
+                <a href={{cuadernillo}}>
+                  <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <h6>Características</h6>
+            </div>
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li> <p>Esta prueba es tomada al final del año lectivo.</p></li>
+                  <li><p>Esta prueba es individual.</p></li>
+                  <li><p>El tiempo de aplicación es libre</p></li>
+                  <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
+                  <li><p>Esta prueba examina diecisiete áreas.</p></li>
+                  <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
+                    actividades para desarrollar estas áreas</p></li>
+                  <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
+                    aprendizaje y desarrollo de la lectura y escritura.</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <img src={{imagenTestF}} style="height: 100%; width: 100%">
+              </div>
+            </div>
+            <div class="row"><br><br><br></div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <button (click)="iniciarReTest()" mat-flat-button style="background-color: greenyellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <!--Tercer -->
+
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel3 = true"
+                           (closed)="panel3 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Prueba Libre
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <div class="col-4">
+            <div class="row">
+              <h6>Objetivo</h6>
+            </div>
+            <div class="row">
+              <p>Identificar a estudiantes que no adquirieron la lectoescritura en el proceso escolar.
+                Establecer los tipos de dificultades que presentan los estudiantes en lectura y
+                escritura.</p>
+            </div>
+            <div class="row"><br></div>
+            <div class="row"><h6>Recursos</h6></div>
+            <div class="row">
+              <ul>
+                <li><p>Un espejo donde se solicitará señalar las partes finas y gruesas del cuerpo.</p></li>
+                <li><p>Se realizará actividades con: lápiz (dibujo), pelota, reloj (o celular para escuchar), tubo
+                  de papel (o una botella) y pelota.</p></li>
+                <li><p>Para las áreas 15, 16 y 17 se calificará la acción, por lo cual es necesario
+                  tener a mano un cuadernillo de calificación</p></li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="col-5"></div>
+              <div class="col-7">
+                <a href={{cuadernillo}}>
+                  <button  mat-flat-button style="background-color: cornflowerblue ;width: 100% ; height: 100% "><p>Descargar Cuadernillo</p></button>
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <h6>Características</h6>
+            </div>
+            <div class="row">
+              <div class="col-1">
+              </div>
+              <div class="col-11">
+                <ul>
+                  <li> <p>Esta prueba es tomada al final del año lectivo.</p></li>
+                  <li><p>Esta prueba es individual.</p></li>
+                  <li><p>El tiempo de aplicación es libre</p></li>
+                  <li><p>No requiere que los estudiantes sepan leer o escribir.</p></li>
+                  <li><p>Esta prueba examina diecisiete áreas.</p></li>
+                  <li><p>Esta prueba al identificar una o varias destrezas no fortalecidas permite crear
+                    actividades para desarrollar estas áreas</p></li>
+                  <li><p>Es recomendable que todas las áreas se encuentren afianzadas para un adecuado
+                    aprendizaje y desarrollo de la lectura y escritura.</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <img src={{imagenTestF}} style="height: 100%; width: 100%">
+              </div>
+            </div>
+            <div class="row"><br><br><br></div>
+            <div class="row">
+              <div class="col-3"></div>
+              <div class="col-6">
+                <button (click)="iniciarFreeTest()" mat-flat-button style="background-color: greenyellow ;width: 100% ; height: 100% "><p>Comenzar Prueba</p></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+      </mat-expansion-panel>
+    </mat-accordion>
+
+
+  </mat-expansion-panel>
+</mat-accordion>
+
+<!--Estadisticas-->
+
+<mat-accordion>
+  <mat-expansion-panel (opened)="panel4 = true"
+                       (closed)="panel4 = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Estadísticas
+      </mat-panel-title>
+      <mat-panel-description>
+        Cuadros Estadísticos
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <div class="row">
+          <p>
+            Con esta prueba podemos elaborar cuadros estadísticos que nos dan un
+            perfil del estado de las funciones básicas tanto individual como grupal que requieren
+            atención para lograr un adecuado aprendizaje de la lecto-escritura.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-6">
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panel5 = true"
+                                   (closed)="panel5 = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Estadísticas Prueba Inicial
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Por año lectivo
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <button mat-button (click)="irEstadisticas('0',anio1,'Inicial')" *ngFor="let anio1 of anioLectivo" style="background-color: transparent  ; width: 45%"><p>{{anio1}}</p></button>
+
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="col-6">
+            <mat-accordion>
+              <mat-expansion-panel (opened)="panel6 = true"
+                                   (closed)="panel6 = false">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Estadísticas Prueba Final
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    Por año lectivo
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <button mat-button [matMenuTriggerFor] = "estadisticas" (click)="getAnio(anio)" *ngFor="let anio of anioLectivo" style="background-color: transparent  ; width: 45%"><p>{{anio}}</p></button>
+                <mat-menu #estadisticas="matMenu">
+                  <button mat-menu-item  *ngFor="let curso of cursos"  (click)="irEstadisticas('1',anio,curso)"  >Paralelo {{curso}}</button>
+                </mat-menu>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </mat-expansion-panel>
+</mat-accordion>

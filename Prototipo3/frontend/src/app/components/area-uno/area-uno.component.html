@@ -39,8 +39,8 @@
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image5"></div>
-          <mat-card-title>Datos del Estudiante</mat-card-title>
-          <mat-card-subtitle>Verificar datos</mat-card-subtitle>
+          <mat-card-title><h3>Datos del Estudiante</h3></mat-card-title>
+          <mat-card-subtitle><h5>Verificar datos</h5></mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
           <p>
@@ -59,8 +59,8 @@
           </ul>
         </mat-card-content>
         <mat-card-actions>
-          <button mat-button (click)="comenzar()" style="background-color: cornflowerblue">Iniciar</button>
-          <button mat-button [routerLink]="['/ingresarDatos']" style="background-color: cornflowerblue">Cambiar datos</button>
+          <button mat-button (click)="comenzar()" style="background-color: cornflowerblue ; width: 30% ; height: 30%"><p>Iniciar</p></button>
+          <button mat-button [routerLink]="['/ingresarDatos']" style="background-color: cornflowerblue ; width: 50% ; height: 50%"><p>Cambiar datos</p></button>
         </mat-card-actions>
       </mat-card>
       <!--<img src={{imagenesEjemplo[3]}} style="height: 100%; width: 100%">-->
@@ -75,7 +75,7 @@
 </div>
 
 
-  <div class="row"  *ngIf="mostrarEjemplo">
+  <div class="row"  *ngIf="mostrarCabecera">
     <div class="col-sm-12">
       <img src="{{cabecera}}" style="height: auto;width: 100%" >
     </div>
@@ -121,7 +121,7 @@
     </div>
     <div class="col-2">
       <br><br><br><br><br><br><br><br><br><br><br><br><br>
-      <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPreguntas()">Siguiente</button>
+      <button class=" {{estiloBotonEjemplo[numeroEjemplo]}} " style="background: cornflowerblue  " (click)="iniciarPreguntas()"><p>Siguiente</p></button>
     </div>
   </div>
 
@@ -139,10 +139,10 @@
   <div class="row"*ngIf="propioCuerpo">
     <div class="col-4"></div>
     <div class="col-2"  *ngIf="propioCuerpo">
-      <button style="background: cornflowerblue ; width: 100% ; height:200%  "(click)="siguiente(8)" >Positivo</button>
+      <button style="background: cornflowerblue ; width: 100% ; height:150%  "(click)="siguiente(8)" ><p>Positivo</p></button>
     </div>
     <div class="col-3" *ngIf="propioCuerpo">
-      <button style="background: cornflowerblue ; width: 65% ; height:200%  " (click)="siguiente(0)">Negativo</button>
+      <button style="background: cornflowerblue ; width: 65% ; height:150%  " (click)="siguiente(0)"><p>Negativo</p></button>
     </div>
   </div>
 
@@ -159,8 +159,8 @@
   <div class="row"*ngIf="espejo"><br><br><br><br></div>
   <div class="row"*ngIf="espejo">
     <div class="col-4"></div>
-    <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 100% ; height:200% "(click)="siguiente1(8)" >Positivo</button></div>
-    <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente1(0)">Negativo</button></div>
+    <div class="col-2"  *ngIf="espejo" ><button  style="background: cornflowerblue ; width: 100% ; height:150% "(click)="siguiente1(8)" ><p>Positivo</p></button></div>
+    <div class="col-3" *ngIf="espejo"><button style="background: cornflowerblue ; width: 65% ; height:150% "(click)="siguiente1(0)"><p>Negativo</p></button></div>
   </div>
 
   <!-- En el otro cuerpo !-->
@@ -177,8 +177,8 @@
   <div class="row"*ngIf="otroCuerpo"><br><br><br><br></div>
   <div class="row" *ngIf="otroCuerpo">
     <div class="col-4"></div>
-    <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ;width: 100% ; height:200%"(click)="siguiente2(8)" >Positivo</button></div>
-    <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:200% "(click)="siguiente2(0)">Negativo</button></div>
+    <div class="col-2"  *ngIf="otroCuerpo" ><button style="background: cornflowerblue ;width: 100% ; height:150%"(click)="siguiente2(8)" ><p>Positivo</p></button></div>
+    <div class="col-3" *ngIf="otroCuerpo"><button style="background: cornflowerblue ; width: 65% ; height:150% "(click)="siguiente2(0)"><p>Negativo</p></button></div>
   </div>
 
   <!-- Resultados !-->
@@ -231,7 +231,7 @@
   <div class="row" *ngIf="grafica">
     <div class="col-10"><p></p></div>
     <div class="col-2">
-      <button style="background: cornflowerblue ; width: 100% ; height:200% " (click)="agregarRespuestaAreaUno()">Siguiente</button>
+      <button style="background: cornflowerblue ; width: 100% ; height:150% " (click)="agregarRespuestaAreaUno()"><p>Siguiente</p></button>
     </div>
   </div>
 

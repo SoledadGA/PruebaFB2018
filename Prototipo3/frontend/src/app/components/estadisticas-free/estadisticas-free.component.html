@@ -1,1 +1,84 @@
-<p>jajajaja</p>
+<div class="row hoja"><br></div>
+<div class="row hoja">
+  <div class="col-1"></div>
+  <div class="col-1 sa-centrar">
+    <br>
+    <img src={{imagenCabecera}} style="height: auto;width: 120%">
+  </div>
+  <div class="col-9 sa-centrar">
+    <h4 class="sa-centrar">{{cabecera1}}</h4>
+    <br>
+    <h4>{{cabecera2}} {{anioLectivo}}</h4>
+    <br>
+    <h4 class="sa-centrar">{{cabecera3}}</h4>
+    <br>
+    <h4 class="sa-centrar">{{cabecera4}}</h4>
+  </div>
+  <div class="col-1"></div>
+</div>
+<div class="row hoja" >
+  <div class="col-1"><br></div>
+  <div class="col-10">
+    <br>
+    <h4>{{subtitulo}}</h4>
+    <br>
+  </div>
+</div>
+<div class="row hoja">
+  <div class="row"><br></div>
+</div>
+
+<!--Cuadro 1-->
+<div class="row hoja">
+  <div class="row"><br></div>
+  <div class="col-1"></div>
+  <div class="col-10">
+    <div class="row">
+      <table mat-table [dataSource]="listaEstudiantes" class="mat-elevation-z8" multiTemplateDataRows
+             id="Cuadro1">
+        <!-- Nombre Column -->
+        <ng-container matColumnDef="nombre">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar">Nombre</th>
+          <td mat-cell *matCellDef="let element" (click)="irFormulario(element._id)">{{verificarDiscapacidad(element.discapacidad)}}<p class="{{color}}">{{element.nombreEstudiante}}</p></td>
+        </ng-container>
+
+        <!-- Curso Column -->
+        <ng-container matColumnDef="curso">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar">Año EGB</th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">{{element.anioEGB}}</td>
+        </ng-container>
+
+        <!-- Paralelo Column -->
+        <ng-container matColumnDef="paralelo">
+          <th mat-header-cell *matHeaderCellDef class="sa-centrar">Paralelo</th>
+          <td mat-cell class="sa-centrar" *matCellDef="let element">{{element.paralelo}}</td>
+        </ng-container>
+
+        <!-- The table will render two header rows, one data row per data object, and two footer rows. -->
+        <tr mat-header-row *matHeaderRowDef="columnasCuadro1" class="example-first-header-row"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnasCuadro1;"></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!--boton Regresar-->
+<div class="row"><br></div>
+<div class="row"><br></div>
+<div class="row">
+  <div class="col-1"></div>
+  <div class="col-1">
+    <div class="row">
+      <button mat-flat-button (click)="imprimir()" style="background-color: transparent ;width: 25% ; height: 200% ">
+        <img src="{{botonImprimir}}" style="height: 100%;width: 100%"></button>
+    </div>
+  </div>
+  <div class="col-2">
+    <div class="row">
+      <button mat-flat-button (click)="regresar()" style="background-color: transparent ;width: 100% ; height: 100% ">
+        >  Inicio
+      </button>
+    </div>
+  </div>
+
+</div>

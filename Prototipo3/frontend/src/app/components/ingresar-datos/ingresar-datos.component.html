@@ -6,7 +6,7 @@
       <h5>Datos del Estudiante</h5></div>
     <div class="row"><p></p></div>
     <div class="row"><p></p></div>
-    <form #estudianteForm="ngForm" (ngSubmit)="guardar(estudianteForm)">
+    <form #estudianteForm="ngForm" (ngSubmit)="guardar(estudianteForm)" novalidate>
       <div class="row">
         <div class="col-3">
           <label for="nombre">
@@ -15,8 +15,9 @@
         </div>
         <div class="input-field col-9">
           <input id="nombre" type="text" pattern="[A-Za-zñÑáÁéÉíÍóÓúÚ ]{1,}" class="form-control input-sm"
-                 placeholder="Nombre del estudiante" title="Sólo ingresar letras"
+                 title="Sólo ingresar letras" required placeholder="* Nombre estudiante"
                  name="nombreEstudiante" #nombreE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.nombreEstudiante">
+          <span *ngIf="nombreIncorrecto">Ingrese el nombre del estudiante</span>
         </div>
       </div>
       <br>
@@ -27,10 +28,13 @@
           </label>
         </div>
         <div class="col-9">
-          <select class="form-control input-sm" title="Seleccionar una opción" style="width: 100%; max-width: 15vw;"
-                  name="anioLectivo" #anioLectivoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.anioLectivo">
+          <select class="form-control" title="Seleccionar una opción" style="width: 100%; max-width: 20vw;"
+                  name="anioLectivo" #anioLectivoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.anioLectivo"
+                  required>
+            <option value='' selected>* Seleccionar</option>
             <option *ngFor="let anio of anioLectivo">{{anio}} - {{anio+1}}</option>
           </select>
+          <span *ngIf="anioLectivoIncorrecto">Seleccione un año lectivo</span>
         </div>
       </div>
       <br>
@@ -41,10 +45,13 @@
           </label>
         </div>
         <div class="col-9">
-          <select class="form-control input-sm" title="Seleccionar una opción" style="width: 100%; max-width: 15vw;"
-                  name="anioEGB" #cursoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.anioEGB">
+          <select class="form-control" title="Seleccionar una opción" style="width: 100%; max-width: 20vw;"
+                  name="anioEGB" #cursoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.anioEGB"
+                  required>
+            <option value='' selected>* Seleccionar</option>
             <option *ngFor="let curso of anioEGB">{{curso}}</option>
           </select>
+          <span *ngIf="cursoIncorrecto">Seleccione un año de EGB</span>
         </div>
       </div>
       <br *ngIf="mostrar">
@@ -55,10 +62,12 @@
           </label>
         </div>
         <div class="col-9">
-          <select class="form-control input-sm" title="Seleccionar una opción" style="width: 100%; max-width: 15vw;"
-                  name="paralelo" #cursoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.paralelo">
+          <select class="form-control input-sm" title="Seleccionar una opción" style="width: 100%; max-width: 20vw;"
+                  name="paralelo" #cursoE="ngModel" [(ngModel)]="estServ.selecionarEstudiante.paralelo" required>
+            <option value="" selected>* Seleccionar</option>
             <option *ngFor="let curso of paralelo">{{curso}}</option>
           </select>
+          <span *ngIf="paraleloIncorrecto">Seleccione un paralelo</span>
         </div>
         <!--<div class="input-field col-9">-->
         <!--<input type="text" pattern="[A-Z]{1}" class="form-control input-sm" style="width: 100%; max-width: 15vw;"-->
@@ -87,9 +96,10 @@
           </label>
         </div>
         <div class="input-field col-9">
-          <input type="text" class="form-control input-sm" style="width: 100%; max-width: 15vw;"
-                 name="nombreEvaluador" #idEvaluador="ngModel"
+          <input id="eval" type="text" class="form-control input-sm" style="width: 100%; max-width: 20vw;"
+                 name="nombreEvaluador" #idEvaluador="ngModel" required placeholder="* Nombre psicóloga"
                  [(ngModel)]="estServ.selecionarEstudiante.nombreEvaluador">
+          <span *ngIf="evaluadorIncorrecto">Ingrese el nombre de la psicóloga</span>
         </div>
       </div>
       <br>
@@ -119,9 +129,11 @@
       <br><br>
       <div class="row">
         <br><br>
-        <div class="col-9"></div>
+        <div class="col-9">
+          <p style="color: tomato">* Campos obligatorios.</p>
+        </div>
         <div class="col-3">
-          <button class="sa-btn">Siguiente</button>
+          <button class="sa-btn" href="#popup1"><p>Siguiente</p></button>
         </div>
       </div>
       <div class="row"><p></p></div>

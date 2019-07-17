@@ -24,7 +24,7 @@ export class AreaSeisComponent implements OnInit {
   errorAudio = 'Tu navegador no implementa el elemento audio.';
   areaDebilitada = 'Se considera como área debilitada.';
   areaPositiva = 'Se considera como área positiva.';
-  queDiagnostica = 'Diagnostica si el estudiante precibe un estiímulo visual o no.';
+  queDiagnostica = 'Diagnostica si el estudiante percibe un estímulo visual o no.';
   preguntas = [
     'Este niño está leyendo, busca otro que esté haciendo lo mismo.',
     'Esta persona está barriendo, busca otra que esté haciendo lo mismo.',

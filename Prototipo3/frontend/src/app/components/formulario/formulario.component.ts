@@ -12,6 +12,7 @@ import {Estudiante} from "../../models/estudiante";
 export class FormularioComponent implements OnInit {
 
   identificador = localStorage.getItem('identificador');
+  identificador2 = localStorage.getItem('tipoTest');
   valor = 0;
   mostrarOpciones = false;
   mostrarFormulario = false;
@@ -25,7 +26,7 @@ export class FormularioComponent implements OnInit {
   cabeceraR1 = 'imagenes/formulario/foto2.png';
   botonImprimir = 'imagenes/formulario/imprimir.png';
   fotos = 'imagenes/formulario/foto7.png';
-
+  tipoPrueba = 'prueba inicial';
   imagenCabecera = 'imagenes/logo4.png';
   cabecera1 = 'UNIDAD EDUCATIVA MUNICIPAL EXPERIMENTAL “ANTONIO JOSÉ DE SUCRE”';
   cabecera2 = 'AÑO LECTIVO:';
@@ -271,6 +272,16 @@ export class FormularioComponent implements OnInit {
     }
   }
 
+  tipoTest(){
+    if(this.identificador2 == 'reTest'){
+      this.tipoPrueba = 'prueba final' ;
+    }
+    if(this.identificador2 == 'freeTest'){
+      this.tipoPrueba = 'prueba libre' ;
+
+    }
+  }
+
 
   imprimir() {
     if (window.print) {
@@ -285,6 +296,7 @@ export class FormularioComponent implements OnInit {
   }
 
   getEstudiante(){
+    this.tipoTest();
     console.log("El identificador es " +this.identificador);
     this.estServ.getEstudiantebyID(this.identificador)
       .subscribe(res => {
@@ -311,6 +323,7 @@ export class FormularioComponent implements OnInit {
 
   constructor(private estServ: EstudianteService) {
     this.getEstudiante();
+
   }
 
   ngOnInit() {

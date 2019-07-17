@@ -36,7 +36,7 @@ export class AreaSieteComponent implements OnInit {
     'El humo sube, la lluvia...',
     'Yo me siento en una silla, tu duermes en una...',
     'El fuego significa calor, el hielo significa...',
-    'Yo como en un plato, tú tomas en un...',
+    'Yo como en un plato, tú tomas en una...',
     'Juan es un niño, María es una...',
     'Los oídos son para escuchar, los ojos son para...',
     'Yo estoy despierto durante el día, tú estás dormido durante la...',

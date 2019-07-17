@@ -21,9 +21,10 @@ export class AreaTreceComponent implements OnInit {
   mostrarTres = false;
   mostrarResultado = false;
   resultadoArea = 1;
+  resultado2 = 'Se considera área debilitada.'
   resultado1 = 'Área Debilitada';
   numeroNivel = 0;
-  queDiagnostica = 'Diagnóstica la memoria visual.';
+  queDiagnostica = 'Diagnostica la memoria visual.';
   instruccion = 'Mira como estan ordenados estos dibujos, luego los desordenaré y tú los ordenarás.';
   primeraParte = [
     'imagenes/area13/1.png',
@@ -165,6 +166,7 @@ export class AreaTreceComponent implements OnInit {
                     this.numeroNivel = this.numeroNivel + 1;
                     this.resultadoArea = 0;
                     this.resultado1 = 'Área Positiva';
+                    this.resultado2 = 'Se considera área positiva.';
                     this.mostrarResultado = true;
                   } else {
                     this.mostrarResultado = true;
