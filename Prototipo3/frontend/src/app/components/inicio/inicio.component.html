@@ -84,7 +84,7 @@
           <mat-panel-description>
           </mat-panel-description>
         </mat-expansion-panel-header>
-        <p>Seleeccione el año lectivo y el paralelo</p>
+        <p>Seleccione el año lectivo y el paralelo</p>
         <button mat-button [matMenuTriggerFor] = "estadisticas" (click)="getAnio(anio)" *ngFor="let anio of anioLectivo" style="background-color: greenyellow  ; width: 45%"><p>{{anio}}</p></button>
         <mat-menu #estadisticas="matMenu">
           <button mat-menu-item  *ngFor="let curso of cursos"  (click)="irEstadisticas('1',anio,curso)"  >Paralelo {{curso}}</button>

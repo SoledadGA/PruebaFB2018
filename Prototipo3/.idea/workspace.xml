@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="estadisticas.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="estadisticas.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -74,7 +83,6 @@
         <option value="$PROJECT_DIR$/frontend/src/index.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
@@ -113,6 +121,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
       </list>
     </option>
   </component>
@@ -185,6 +194,15 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="estadisticas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prototipo3" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="inicio" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -262,12 +280,12 @@
       <workItem from="1563901033718" duration="706000" />
       <workItem from="1563983586991" duration="1749000" />
       <workItem from="1564066236078" duration="942000" />
-      <workItem from="1564332033056" duration="1465000" />
+      <workItem from="1564332033056" duration="1482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="243564000" />
+    <option name="totallyTimeSpent" value="243581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -569,13 +587,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="8" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -728,6 +739,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
         </state>
       </provider>
     </entry>
