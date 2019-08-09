@@ -1,0 +1,196 @@
+<div class="row" style="background-color: dimgray">
+  <div class="row">
+    <div class="col-4"><br><br><br></div>
+    <div class="col-4">
+      <button mat-flat-button [routerLink]="['/home']"
+              style="background-color: transparent ;width: 180% ; height: 100% "> <img style="height: 100% ;width: 100%" src="imagenes/inicio/logo.png">
+      </button>
+    </div>
+
+  </div>
+</div>
+
+<div class="row" style="background-color: aliceblue">
+  <div class="col-3"></div>
+  <div class="col-5 sa-centrar">
+    <h2>Bienvenido al Centro de Ayuda</h2>
+  </div>
+  <div class="col-4"></div>
+</div>
+
+<br>
+<div class="row" style="background-color: aliceblue">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <img src="imagenes/ayuda/1.png" style="height: 100% ;width:  100%">
+  </div>
+</div>
+<br>
+
+<div class="row" style="background-color: aliceblue">
+
+  <div class="col-10 sa-centrar">
+    <h4>Preguntas frecuentes</h4>
+    <!--pregunta uno-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>¿Cómo evalua la aplicación web las Funciones Básicas?</b>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>Para evaluar la madurez de las funciones básicas se aplica una prueba interativa,
+            basadas en la Prueba de Funciones Básicas Adaptación UC.IE.DI.2000 del Dr. Iván Espinosa Vega,
+            la cual cuenta con 17 áreas que evalúan las funciones báscias que intervienen en el proceso
+            de la lecto-escritura siendo ellas: Esquema corporal, dominancia lateral, orientación temporo-espacial,
+            coordinación dinámica, receptiva auditiva, receptivo visual, asociación auditiva, expresivo manual,
+            cierre auditivo vocal, pronunciación, memoria secuencia auditiva, coordinación visual-auditivo-motora,
+            memoria visual, discriminación auditiva, coordinación viso-motora, desarrollo manual, atención y fatiga </p>
+        </div>
+        <div class="row">
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <!--pregunta dos-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>¿Cúal es la diferencia entre la prueba inicial, la prueba final y la prueba libre?</b>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <ul>
+            <li><p><b>Prueba Inicial:</b> El sistema educativo de la U.E.M.E.S procura que los estudiantes que ingresan por
+              primera vez a primero de básica, rindan una prueba de funciones básicas para encaminar tanto a
+              los estudiantes como a los profesores a reforzar las áreas debilitadas de cada uno de los estudiantes.</p>
+            <p>Esta prueba servirá como base para los Psicólogos encargados de distribuir a los estudiantes en paralelos equitativos,
+              en base a estadísticas que generará la aplicación web de forma automática con todos los datos
+              de los estudiantes que ingresan al año lectivo correspondiente.
+            </p></li>
+            <li><p><b>Prueba final:</b> Al fanalizar el año lectivo, los estudiantes que culminen el primero de básica tendran que rendir
+              nuevamente la prueba de funciones básicas, con el objetivo de ver la evolución de cada uno de los estudiantes en el año lectivo.
+              Esta información generará estadisticas por paralelo y recomendaciones por estudiante que serviran tanto a los profesores del
+              segundo de básica como a los padres de familia.
+            </p></li>
+            <li><p><b>Prueba libre:</b>
+            La prueba inicial y la prueba final son realizadas exclusivamente para estudiantes de primero de básica en fechas especificas. Sin embargo
+              existen casos especiales donde la prueba de funciones básicas debe ser aplicada a estudiantes de primero a septimo de básica en cualquier
+              moemento. La prueba libre permite  que cualquier estudiante rinda la prueba de funciones básicas, esta prueba generará recomendaciones
+              especificas de las áreas debilitadas de los estudiantes.
+            </p></li>
+          </ul>
+        </div>
+        <div class="row">
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <!--pregunta tres-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>¿Cómo se realiza la calificación de la prueba?</b>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>La prueba de funciones básicas consta con un total de 109 preguntas, las preguntas son agrupadas en ítems y los ítems
+          son agrupados en áreas. Cada área tiene una calificación en particular que pueden revisar en la pantalla inicial,
+          en la parte de recursos y haciendo clic en manual.</p>
+        </div>
+        <div class="row">
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <!--pregunta cuatro-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>¿Cómo puedo ver un formulario y las recomendaciones de un estudiante?</b>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>Todas las pruebas realizadas son almacenadas y se puede acceder a dicha información siguiendo los siguientes pasos.</p>
+          <p>Para los estudiantes que rindieron tanto la prueba inicial como la prueba final los psicólogos deben dirigirse a:</p>
+          <ul><li><p>Pantalla inicial > Estadística prueba inicial / final > año lectivo > Cuadro de evaluación individual > Seleccionar el nombre del estudiante</p></li></ul>
+          <p>Para los estudiantes que rindieron la prueba libre, pueden ver sus resultados en:</p>
+          <ul>
+            <li>
+              <p>Pantalla inicial > Prueba Libre > Lista estudiantes > Nombre del estudiante.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <!--pregunta cinco-->
+    <mat-accordion>
+      <mat-expansion-panel (opened)="panel2 = true"
+                           (closed)="panel2 = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <b>¿La prueba me pide materiales extra?</b>
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="row">
+          <p>En el caso de áreas especificas se califica la acción. Para lo cual es necesario cierto materia extra</p>
+          <p>Área 1: Es necesario un espejo, en el cual se solicita al estudiante que señale partes finas y partes gruesas de su cuerpo</p>
+          <p>Área 2: Se califica la acción del estudiante con diversos objetos: un tubo, un lapiz, una pelota y un reloj</p>
+          <p>Área 15: Se le entrega al estudiante el cuadernillo que se puede imprimir desde la pantalla inicial en recursos para que realice los dibujos pertinentes</p>
+          <p>Área 16: La acción es realizada en el cuadernillo que se puede imprimir desde la pantalla inicial en recursos.</p>
+          <p>Área 17: Es necesario tener tijeras con las cuales los estudiantes recortaran las figuras de la segunda hoja del cuadernillo.</p>
+        </div>
+        <div class="row">
+
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+</div>
+
+<br>
+<div class="row" style="background-color: aliceblue">
+  <div class="col-1"></div>
+  <div class="col-10">
+    <div class="row">
+      <div class="col-8"></div>
+      <div class="col-4">
+        <a style="color: aqua" href='imagenes/manual.pdf'>
+          <button STYLE="background-color: cornflowerblue ; height: 100% ;width: 100%"><p>DESCARGAR MANUAL DE USUARIO</p></button>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+

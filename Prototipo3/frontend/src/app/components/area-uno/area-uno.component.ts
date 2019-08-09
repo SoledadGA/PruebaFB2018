@@ -114,6 +114,7 @@ export class AreaUnoComponent implements OnInit {
   }
 
   tipoTest(){
+    console.log('el tipo de test es lala');
     if(this.identificadorPrueba == 'reTest'){
       this.tipoPrueba = 1 ;
     }
@@ -123,11 +124,14 @@ export class AreaUnoComponent implements OnInit {
   }
 
   tipoDiscapacidad(){
+    console.log('entre a la funcion');
     if(this.identificadorDiscapacidad == 'no'){
       this.contadorDiscapacidad = 0 ;
+      console.log('no discapacidad');
     }
     if(this.identificadorDiscapacidad == 'si'){
       this.contadorDiscapacidad = 1 ;
+      console.log('si discapacidad');
     }
   }
 

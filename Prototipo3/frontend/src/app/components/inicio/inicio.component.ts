@@ -17,7 +17,7 @@ export class InicioComponent implements OnInit {
   prepararAnio = (this.fecha.getFullYear());
   anio = '';
   cuadernillo =['imagenes/hojaCuadernillo.pdf'
-    ,'https://educacion.gob.ec/wp-content/uploads/downloads/2016/06/MANUAL-PRUEBA-FUNCIONES-BASICAS-EBSF_2105.pdf'];
+    ,'https://educacion.gob.ec/wp-content/uploads/downloads/2016/06/MANUAL-PRUEBA-FUNCIONES-BASICAS-EBSF_2105.pdf', '/#/ayuda'];
   anioLectivo = ['2018 - 2019', '2019 - 2020'];
 
   cursos = ['A', 'B', 'C', 'D', 'E','F'];
@@ -28,6 +28,7 @@ export class InicioComponent implements OnInit {
   title = ['imagenes/inicio/9.png','imagenes/inicio/10.png', 'imagenes/inicio/11.png'];
 
   validadAnios(){
+
     if (this.prepararAnio >= 2020){
       this.anioLectivo[2]='2020 - 2021'
     }

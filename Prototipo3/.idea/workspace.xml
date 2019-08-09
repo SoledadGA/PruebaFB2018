@@ -14,20 +14,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="estadisticas.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html">
+      <file leaf-file-name="area-uno.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+            <state relative-caret-position="97">
+              <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inicio.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
+      <file leaf-file-name="ingresar-datos.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="1960">
+              <caret line="143" selection-start-line="143" selection-end-line="143" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ingresar-datos.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="18" column="10" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inicio.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
@@ -36,20 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tipoDiscapacidad</find>
-      <find>identificadorDiscapacidad</find>
-      <find>irf</find>
-      <find>ir</find>
-      <find>listaGeneralEstudiantes</find>
-      <find>nombrees</find>
-      <find>anio</find>
-      <find>color</find>
-      <find>cabecera</find>
-      <find>dat</find>
-      <find>positi</find>
-      <find>mostrarejemplo</find>
-      <find>cabece</find>
-      <find>comen</find>
       <find>img</find>
       <find>bu</find>
       <find>resultado1</find>
@@ -60,36 +64,41 @@
       <find>resultadoAreas</find>
       <find>Inicio</find>
       <find>identificador</find>
-      <find>nombre</find>
       <find>respuestaFinal</find>
       <find>tipo</find>
       <find>tipot</find>
-      <find>tipoTest</find>
       <find>diag</find>
+      <find>ver</find>
+      <find>nombre</find>
+      <find>nom</find>
+      <find>verificarDiscapacidad</find>
+      <find>color</find>
+      <find>discapacidad</find>
+      <find>chi</find>
+      <find>tipoTest</find>
+      <find>identificadorDiscapacidad</find>
+      <find>tipoDiscapacidad</find>
+      <find>checkControlador</find>
+      <find>check</find>
+      <find>validadAnios</find>
+      <find>Fechita</find>
+      <find>prepararAnio</find>
+      <find>txtFecha</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/database.js" />
-        <option value="$PROJECT_DIR$/backend/Modelos/estudiante.js" />
-        <option value="$PROJECT_DIR$/frontend/src/app/models/estudiante.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/app.rutas.ts" />
         <option value="$PROJECT_DIR$/backend/Controladores/estudiante.controller.js" />
         <option value="$PROJECT_DIR$/backend/Rutas/estudiante.routes.js" />
         <option value="$PROJECT_DIR$/frontend/src/app/services/estudiante.service.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/index.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html" />
@@ -111,7 +120,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-seis/area-seis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-siete/area-siete.component.ts" />
@@ -121,7 +129,17 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-quince/area-quince.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/area-dieciseis/area-dieciseis.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/index.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/app.rutas.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts" />
       </list>
     </option>
   </component>
@@ -141,7 +159,7 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="148" />
     <option name="y" value="-22" />
     <option name="width" value="697" />
@@ -152,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,7 +210,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="estadisticas" type="462c0819:PsiDirectoryNode" />
+              <item name="area-dos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prototipo3" type="b2602c69:ProjectViewProjectNode" />
@@ -208,6 +225,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -282,24 +300,30 @@
       <workItem from="1564066236078" duration="942000" />
       <workItem from="1564332033056" duration="2080000" />
       <workItem from="1564362455207" duration="612000" />
+      <workItem from="1564408675386" duration="1125000" />
+      <workItem from="1564779426293" duration="1850000" />
+      <workItem from="1565105502160" duration="7441000" />
+      <workItem from="1565140529874" duration="597000" />
+      <workItem from="1565276957091" duration="3778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="244791000" />
+    <option name="totallyTimeSpent" value="259582000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2596726" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2596726" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50074404" side_tool="true" weight="0.35478547" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.36633664" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49925596" visible="true" weight="0.46369636" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -388,97 +412,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="109" column="21" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/prueba/prueba.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="55" column="20" selection-start-line="53" selection-start-column="16" selection-end-line="55" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="36" column="18" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="27" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="106" column="55" lean-forward="true" selection-start-line="106" selection-start-column="55" selection-end-line="106" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="118" lean-forward="true" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-temporal/area-tres-temporal.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-tres-espacial/area-tres-espacial.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -601,31 +534,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/formulario/formulario.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
           <caret line="276" column="36" selection-start-line="276" selection-start-column="36" selection-end-line="276" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" selection-start-line="143" selection-end-line="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2312">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
         </state>
       </provider>
     </entry>
@@ -685,13 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" column="42" selection-start-line="77" selection-start-column="42" selection-end-line="77" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -715,17 +620,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="2" selection-end-line="96" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="11" selection-end-line="46" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="41" column="129" selection-start-line="41" selection-start-column="117" selection-end-line="41" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/app.rutas.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="151" column="28" selection-start-line="151" selection-start-column="28" selection-end-line="151" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas/estadisticas.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="63" selection-start-line="38" selection-start-column="63" selection-end-line="38" selection-end-column="63" />
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="22" lean-forward="true" selection-start-line="17" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/estadisticas-free/estadisticas-free.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="44" column="19" selection-start-line="44" selection-start-column="19" selection-end-line="44" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="195" column="55" selection-start-line="195" selection-start-column="55" selection-end-line="195" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#!!top" />
+            <element signature="n#style#0;n#ngb-carousel#0;n#div#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#2;n#div#1;n#div#0;n#div#2;n#div#0;n#footer#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-dos/area-dos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ayuda/hijo.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="9" column="41" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/area-uno/area-uno.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="116" column="40" selection-start-line="116" selection-start-column="40" selection-end-line="116" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inicio/inicio.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/ingresar-datos/ingresar-datos.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1960">
+          <caret line="143" selection-start-line="143" selection-end-line="143" />
         </state>
       </provider>
     </entry>

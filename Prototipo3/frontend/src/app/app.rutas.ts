@@ -22,7 +22,7 @@ import {AreaDieciseisComponent} from './components/area-dieciseis/area-dieciseis
 import {FormularioComponent} from './components/formulario/formulario.component';
 import {EstadisticasComponent} from './components/estadisticas/estadisticas.component';
 import {RecomendacionesComponent} from './components/recomendaciones/recomendaciones.component';
-import {HijoComponent} from './components/hijo/hijo.component';
+import {HijoComponent} from './components/ayuda/hijo.component';
 import {AsignarParalelosComponent} from './components/asignar-paralelos/asignar-paralelos.component';
 import {CambioParaleloComponent} from './components/cambio-paralelo/cambio-paralelo.component';
 import {NominaParaleloComponent} from './components/nomina-paralelo/nomina-paralelo.component';
@@ -146,6 +146,10 @@ export const RUTAS_APP: Routes = [
   {
     path: 'estadisticasFree',
     component: EstadisticasFreeComponent,
+  },
+  {
+    path: 'ayuda',
+    component: HijoComponent,
   },
   {
     path: '**',

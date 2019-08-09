@@ -61,6 +61,7 @@ export class IngresarDatosComponent implements OnInit {
 
   constructor(private estServ: EstudianteService) {
     this.iniciarFecha();
+    localStorage.setItem('discapacidad', 'no');
     console.log(this.Fechita);
   }
 
